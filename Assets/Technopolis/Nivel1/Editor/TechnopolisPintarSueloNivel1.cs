@@ -77,17 +77,20 @@ public static class TechnopolisPintarSueloNivel1
         Undo.RegisterCompleteObjectUndo(roadsMap, "Pintar caminos del Nivel 1");
 
         // 64 x 64: x = -40..23, y = -44..19. No modifica casillas exteriores.
+        // Se siguen las áreas dibujadas en el plano de referencia. Algunas
+        // etiquetas del propio dibujo indican rangos distintos a los píxeles.
         var cells = new TileBase[Side * Side];
         for (int row = 1; row <= Side; row++)
         for (int col = 1; col <= Side; col++)
         {
             TileBase[,] pattern = earth;
-            if (Dentro(col, row, 1, 14, 1, 16) || Dentro(col, row, 55, 64, 52, 64) ||
-                Dentro(col, row, 52, 63, 33, 44))
+            if (Dentro(col, row, 1, 14, 1, 14) ||
+                Dentro(col, row, 55, 64, 36, 43) ||
+                Dentro(col, row, 55, 64, 52, 64))
                 pattern = asphalt;
-            else if (Dentro(col, row, 1, 14, 17, 20) || Dentro(col, row, 51, 64, 32, 45))
+            else if (Callejon(col, row) || TallerGrava(col, row))
                 pattern = gravel;
-            else if (Dentro(col, row, 30, 50, 44, 53))
+            else if (Parque(col, row))
                 pattern = grass;
             else if (HierbaDispersa(col, row))
                 pattern = grass;
@@ -105,10 +108,10 @@ public static class TechnopolisPintarSueloNivel1
         for (int col = 1; col <= Side; col++)
         {
             TileBase[,] pattern = null;
-            if (Dentro(col, row, 31, 50, 32, 42)) pattern = stone;
+            if (Plaza(col, row)) pattern = stone;
             else if (Dentro(col, row, 35, 64, 28, 31) ||
                      Dentro(col, row, 52, 64, 50, 51)) pattern = concrete;
-            else if (Dentro(col, row, 51, 64, 46, 49)) pattern = gravel;
+            else if (Dentro(col, row, 52, 64, 49, 49)) pattern = gravel;
 
             roads[(Side - row) * Side + (col - 1)] = pattern == null ? null : Patron(pattern, col, row);
         }
@@ -140,11 +143,12 @@ public static class TechnopolisPintarSueloNivel1
 
         EditorUtility.DisplayDialog("Suelo del Nivel 1 pintado",
             "Se pintaron las 4096 casillas del mapa y las zonas de Caminos.\n\n" +
-            "Asfalto: columnas 1–14, filas 1–16; salida 55–64, 52–64.\n" +
-            "Callejón: columnas 1–14, filas 1–20.\n" +
-            "Plaza: columnas 31–50, filas 32–42.\n" +
-            "Parque: columnas 30–50, filas 44–53.\n" +
-            "Taller: columnas 51–64, filas 32–45.\n\n" +
+            "Asfalto superior: columnas 1–14, filas 1–14.\n" +
+            "Callejón: filas 15–23, con borde escalonado.\n" +
+            "Plaza: columnas 31–53, filas 32–42, con abertura.\n" +
+            "Parque: columnas 33–47, filas 44–51, con entrada.\n" +
+            "Taller: borde de grava y patio de asfalto, filas 32–45.\n" +
+            "Salida: columnas 55–64, filas 52–64.\n\n" +
             "Respaldo previo: " + backup, "Aceptar");
         Debug.Log("Technopolis: suelo 64x64 pintado. Respaldo previo: " + backup);
     }
@@ -180,10 +184,40 @@ public static class TechnopolisPintarSueloNivel1
         return col >= left && col <= right && row >= top && row <= bottom;
     }
 
+    private static bool Callejon(int col, int row)
+    {
+        // La grava sobresale dos casillas a la derecha arriba; abajo se estrecha.
+        return Dentro(col, row, 1, 16, 15, 18) ||
+               Dentro(col, row, 1, 13, 19, 21) ||
+               Dentro(col, row, 1, 14, 22, 23);
+    }
+
+    private static bool TallerGrava(int col, int row)
+    {
+        return Dentro(col, row, 54, 64, 32, 35) ||
+               Dentro(col, row, 54, 54, 36, 42) ||
+               Dentro(col, row, 51, 54, 43, 43) ||
+               Dentro(col, row, 51, 64, 44, 45);
+    }
+
+    private static bool Parque(int col, int row)
+    {
+        // Entrada de tierra de cuatro casillas en el borde norte.
+        return Dentro(col, row, 33, 47, 44, 51) &&
+               !Dentro(col, row, 38, 41, 44, 44);
+    }
+
+    private static bool Plaza(int col, int row)
+    {
+        // Paso de tierra centrado en el borde sur de la plaza.
+        return Dentro(col, row, 31, 53, 32, 42) &&
+               !Dentro(col, row, 38, 41, 42, 42);
+    }
+
     private static bool HierbaDispersa(int col, int row)
     {
         // Pequeños toques de pasto fuera de las zonas de uso, reproducibles en cada ejecución.
-        return (col * 73 + row * 137 + col * row * 11) % 89 == 7;
+        return (col * 73 + row * 137 + col * row * 11) % 53 == 7;
     }
 
     private static TileBase Patron(TileBase[,] pattern, int col, int row)

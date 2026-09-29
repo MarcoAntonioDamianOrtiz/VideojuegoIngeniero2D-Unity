@@ -176,3 +176,7 @@ Assets/Technopolis/Nivel1/Sprites/04_Objetos/columpios_viejos.png -filter -diff 
 Assets/Technopolis/Nivel1/Sprites/04_Objetos/resbaladilla_vieja.png -filter -diff -merge -text -lfs
 Assets/Technopolis/Nivel1/Sprites/04_Objetos/porton_salida_bloqueada.png -filter -diff -merge -text -lfs
 Assets/Technopolis/Nivel1/Sprites/04_Objetos/muro_perimetral.png -filter -diff -merge -text -lfs
+Assets/Technopolis/Nivel1/Sprites/04_Objetos/arbol_plaza_monumental.png -filter -diff -merge -text -lfs
+Assets/Technopolis/Nivel1/Sprites/04_Objetos/contenedor_basura_callejon.png -filter -diff -merge -text -lfs
+Assets/Technopolis/Nivel1/Sprites/04_Objetos/puesto_mercado_lona.png -filter -diff -merge -text -lfs
+Assets/Technopolis/Nivel1/Sprites/04_Objetos/huerto_comunitario.png -filter -diff -merge -text -lfs

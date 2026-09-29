@@ -169,3 +169,10 @@ Packages/packages-lock.json linguist-generated
 
 # Exceptions for .asset files such as lightning pre-baking
 LightingData.asset     binary
+
+# Small Level 1 sprites are committed directly, so GitHub Desktop can fetch
+# them together with the scene without a separate Git LFS upload.
+Assets/Technopolis/Nivel1/Sprites/04_Objetos/columpios_viejos.png -filter -diff -merge -text -lfs
+Assets/Technopolis/Nivel1/Sprites/04_Objetos/resbaladilla_vieja.png -filter -diff -merge -text -lfs
+Assets/Technopolis/Nivel1/Sprites/04_Objetos/porton_salida_bloqueada.png -filter -diff -merge -text -lfs
+Assets/Technopolis/Nivel1/Sprites/04_Objetos/muro_perimetral.png -filter -diff -merge -text -lfs

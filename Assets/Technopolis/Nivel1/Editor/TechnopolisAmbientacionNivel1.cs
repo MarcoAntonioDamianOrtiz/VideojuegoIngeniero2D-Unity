@@ -17,6 +17,8 @@ public static class TechnopolisAmbientacionNivel1
     private const string Root = "Assets/Technopolis/Nivel1/";
     private const string BackupFolder = "Assets/Scenes/Respaldos";
     private const string FloorName = "Ambientacion_Piso";
+    private const string ParkFloorName = "Ambientacion_Parque";
+    private const string PlazaFloorName = "Ambientacion_Plaza";
     private const string BuildingName = "Ambientacion_Edificios";
     private const string ObjectsName = "Ambientacion_PlanoReferencia";
     private const int Left = -40, Top = 19, Side = 64;
@@ -39,22 +41,25 @@ public static class TechnopolisAmbientacionNivel1
     private static readonly Placement[] ExtraBuildings =
     {
         new Placement("Casa_Norte_Oeste", "vivienda_techo_lamina", -31f, 8f, 1.2f),
-        new Placement("Casa_Norte_Centro", "vivienda_parches", -23f, 12f, 1.05f)
+        new Placement("Casa_Norte_Centro", "vivienda_parches", -23f, 12f, 1.05f),
+        new Placement("Casa_Sur_Este", "vivienda_techo_lamina", 9f, -40f, 1f)
     };
 
     // Pequeños grupos colocados a mano alrededor de los puntos de interés.
     private static readonly Placement[] LandmarkProps =
     {
-        new Placement("Mercado_Puesto_01", "mesa_mercado", -2f, 13f, 1.05f),
-        new Placement("Mercado_Puesto_02", "mesa_mercado", 4f, 14f, 0.95f),
         new Placement("Mercado_Caja_01", "cajas_apiladas", -4f, 11f, 0.65f),
-        new Placement("Mercado_Caja_02", "caja_madera", 6f, 12f, 0.8f),
-        new Placement("Mercado_Tambo", "tambo_azul", 9f, 11f, 0.8f),
-        new Placement("Mercado_Banco", "banco_viejo", 1f, 10f, 0.9f),
+        new Placement("Mercado_Caja_02", "caja_madera", 4.5f, 11f, 0.8f),
+        new Placement("Mercado_Tambo", "tambo_azul", 5.5f, 11f, 0.8f),
+        new Placement("Mercado_Banco", "banco_viejo", -4f, 10f, 0.9f),
 
         new Placement("Callejon_Basura_01", "bolsas_basura", -37f, 4f, 0.85f),
         new Placement("Callejon_Basura_02", "bolsa_basura_negra", -30f, 1f, 0.75f),
         new Placement("Callejon_Basura_03", "bolsa_basura_negra", -35f, -4f, 0.75f),
+        new Placement("Callejon_Basura_04", "bolsas_basura", -38f, -7f, 0.95f),
+        new Placement("Callejon_Basura_05", "bolsa_basura_negra", -28f, 5f, 0.8f),
+        new Placement("Callejon_Basura_06", "bolsas_basura", -33f, -3f, 0.8f),
+        new Placement("Callejon_Caja_Extra", "caja_madera", -27f, 2f, 0.85f),
         new Placement("Callejon_Cajas", "cajas_apiladas", -28f, -3f, 0.72f),
         new Placement("Callejon_Tambo", "tambo_oxidado", -39f, -6f, 0.85f),
         new Placement("Callejon_Llanta", "llanta_vieja", -33f, 2f, 0.9f),
@@ -78,10 +83,16 @@ public static class TechnopolisAmbientacionNivel1
         new Placement("Plaza_Poste_01", "poste_luz", -8.5f, -22.5f, 0.8f),
         new Placement("Plaza_Poste_02", "poste_luz", 10.5f, -21.8f, 0.8f),
         new Placement("Plaza_Maceta_01", "maceta_reutilizada", 8f, -15f, 0.8f),
+        new Placement("Plaza_Maceta_02", "maceta_reutilizada", -9f, -14f, 0.8f),
+        new Placement("Plaza_Bicicleta", "bicicleta_vieja", 9.5f, -18.2f, 0.65f),
 
         new Placement("Parque_Banco_Oeste", "banco_viejo", -7.5f, -31.5f, 0.75f),
         new Placement("Parque_Maceta", "maceta_reutilizada", 8f, -31f, 0.75f),
         new Placement("Parque_Poste", "poste_luz", 10f, -30f, 0.7f),
+        new Placement("Parque_Cerca_Norte_01", "cerca_madera", -8f, -23.8f),
+        new Placement("Parque_Cerca_Norte_02", "cerca_madera", -6f, -23.8f),
+        new Placement("Parque_Cerca_Norte_03", "cerca_madera", 5f, -23.8f),
+        new Placement("Parque_Cerca_Norte_04", "cerca_madera", 7f, -23.8f),
 
         new Placement("BarrioSur_Tendedero", "tendedero", -29f, -38f, 0.8f),
         new Placement("BarrioSur_Bicicleta", "bicicleta_vieja", -17f, -37f, 0.75f),
@@ -131,7 +142,11 @@ public static class TechnopolisAmbientacionNivel1
         foreach (string name in new[] { "arbusto_seco", "arbol_barrio", "maceta_reutilizada" })
             if (!LoadPrefab("04_Objetos", name, prefabs)) return;
         var sprites = new Dictionary<string, Sprite>();
-        foreach (string name in new[] { "columpios_viejos", "resbaladilla_vieja", "porton_salida_bloqueada", "muro_perimetral" })
+        foreach (string name in new[]
+        {
+            "columpios_viejos", "resbaladilla_vieja", "porton_salida_bloqueada", "muro_perimetral",
+            "arbol_plaza_monumental", "contenedor_basura_callejon", "puesto_mercado_lona", "huerto_comunitario"
+        })
         {
             string path = Root + "Sprites/04_Objetos/" + name + ".png";
             Sprite sprite = AssetDatabase.LoadAssetAtPath<Sprite>(path);
@@ -145,6 +160,9 @@ public static class TechnopolisAmbientacionNivel1
             detailTiles[i] = AssetDatabase.LoadAssetAtPath<Tile>(path);
             if (!detailTiles[i]) { Missing(path); return; }
         }
+        TileBase[,] grass = LoadPattern("01_Terreno", "pasto");
+        TileBase[,] concrete = LoadPattern("02_Caminos", "concreto");
+        if (grass == null || concrete == null) return;
 
         if (!EditorSceneManager.SaveScene(scene)) { Missing("No se pudo guardar la escena"); return; }
         if (!AssetDatabase.IsValidFolder(BackupFolder)) AssetDatabase.CreateFolder("Assets/Scenes", "Respaldos");
@@ -168,15 +186,15 @@ public static class TechnopolisAmbientacionNivel1
         }
 
         // El límite físico exterior ya lo crea la opción 06. El muro aquí solo lo viste.
-        for (int x = -38; x <= 22; x += 4)
+        for (int x = -36; x <= 20; x += 8)
         {
-            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Norte_" + x, x, 19f, 1f);
-            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Sur_" + x, x, -43.7f, 1f);
+            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Norte_" + x, x, 17.5f, 2f);
+            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Sur_" + x, x, -43.8f, 2f);
         }
-        for (int y = -41; y <= 17; y += 4)
+        for (int y = -40; y <= 16; y += 8)
         {
-            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Oeste_" + y, -39.5f, y, 1f, 90f);
-            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Este_" + y, 23.2f, y, 1f, 90f);
+            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Oeste_" + y, -39.4f, y, 2f, 90f);
+            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Este_" + y, 23.3f, y, 2f, 90f);
         }
 
         GameObject gate = PlaceSprite(sprites["porton_salida_bloqueada"], objectGroup,
@@ -193,10 +211,27 @@ public static class TechnopolisAmbientacionNivel1
         slideBox.size = new Vector2(1.2f, 0.4f);
         slideBox.offset = new Vector2(0f, 0.2f);
 
+        GameObject plazaTree = PlaceSprite(sprites["arbol_plaza_monumental"], objectGroup,
+            "Plaza_Arbol_Central", -1f, -18.5f, 1f);
+        CircleCollider2D treeBase = Undo.AddComponent<CircleCollider2D>(plazaTree);
+        treeBase.radius = 1.2f;
+        treeBase.offset = new Vector2(0f, 1.1f);
+
+        GameObject dumpster = PlaceSprite(sprites["contenedor_basura_callejon"], objectGroup,
+            "Callejon_Contenedor_Principal", -34f, 4f, 0.95f);
+        BoxCollider2D dumpsterBase = Undo.AddComponent<BoxCollider2D>(dumpster);
+        dumpsterBase.size = new Vector2(3.6f, 0.65f);
+        dumpsterBase.offset = new Vector2(0f, 0.34f);
+        PlaceSprite(sprites["puesto_mercado_lona"], objectGroup, "Mercado_Puesto_Lona", 0f, 13f, 1f);
+        PlaceSprite(sprites["huerto_comunitario"], objectGroup, "Mercado_Huerto_01", 8f, 14f, 1f);
+        PlaceSprite(sprites["huerto_comunitario"], objectGroup, "Mercado_Huerto_02", 13f, 16f, 0.9f);
+
         foreach (Placement p in LandmarkProps) PlacePrefab(prefabs[p.Prefab], objectGroup, p);
         AddTrees(prefabs["arbol_barrio"], objectGroup, buildings);
         AddSmallGreenery(prefabs, objectGroup, buildings);
         AdjustPark(objects);
+        int parkTiles = PaintPark(grid, grass);
+        int plazaTiles = PaintPlaza(grid, concrete);
         int details = PaintDetails(grid, detailTiles);
 
         Undo.CollapseUndoOperations(undoGroup);
@@ -207,8 +242,9 @@ public static class TechnopolisAmbientacionNivel1
             return;
         }
         EditorUtility.DisplayDialog("Ambientación terminada",
-            "Se añadieron dos viviendas del norte, muro perimetral, salida, juegos del parque, mercado, basura y vegetación.\n" +
-            "Detalles de suelo: " + details + ". Las casas existentes y el personaje se conservaron.\n\n" +
+            "Se amplió el parque (" + parkTiles + " casillas), se renovó la plaza (" + plazaTiles +
+            " casillas) y se añadieron árbol central, huerto, puesto y contenedor.\n" +
+            "Detalles de suelo: " + details + ". Los edificios principales y el personaje se conservaron.\n\n" +
             "Recorre callejón, plaza, parque y salida en Play.\nRespaldo: " + backup, "Aceptar");
         Debug.Log("Technopolis: ambientación del Nivel 1. Respaldo: " + backup);
     }
@@ -221,6 +257,20 @@ public static class TechnopolisAmbientacionNivel1
         if (!prefab) { Missing(path); return false; }
         cache.Add(name, prefab);
         return true;
+    }
+
+    private static TileBase[,] LoadPattern(string folder, string name)
+    {
+        var tiles = new TileBase[4, 4];
+        for (int row = 0; row < 4; row++)
+        for (int col = 0; col < 4; col++)
+        {
+            string path = Root + "Tiles/" + folder + "/" + name +
+                          "_bloque_f" + row + "_c" + col + ".asset";
+            tiles[row, col] = AssetDatabase.LoadAssetAtPath<Tile>(path);
+            if (!tiles[row, col]) { Missing(path); return null; }
+        }
+        return tiles;
     }
 
     private static void Missing(string path)
@@ -263,6 +313,7 @@ public static class TechnopolisAmbientacionNivel1
         SpriteRenderer sr = Undo.AddComponent<SpriteRenderer>(go);
         sr.sprite = sprite;
         sr.spriteSortPoint = SpriteSortPoint.Pivot;
+        sr.sortingOrder = name.StartsWith("Muro_", StringComparison.Ordinal) ? -1 : 0;
         return go;
     }
 
@@ -326,6 +377,18 @@ public static class TechnopolisAmbientacionNivel1
         MoveExisting(objects, "arbol_barrio", -8.5f, -29.5f);
         MoveExisting(objects, "decor_parque_arbol_02", 8.3f, -31.2f);
         MoveExisting(objects, "fuente_pequena", 0f, -30.5f);
+        MoveExisting(objects, "decor_plaza_arbol", -10.5f, -21.5f);
+        string[] fences =
+        {
+            "cerca_madera", "decor_parque_cerca_01", "decor_parque_cerca_02",
+            "decor_parque_cerca_03", "decor_parque_cerca_04", "decor_parque_cerca_05",
+            "decor_parque_cerca_06", "decor_parque_cerca_07"
+        };
+        foreach (string name in fences)
+        {
+            Transform fence = objects.Find(name);
+            if (fence) MoveExisting(objects, name, fence.position.x, -33.5f);
+        }
         // La valla anterior cruzaba todo el borde sur. Abrir tres tramos deja
         // una entrada caminable entre el parque y las viviendas.
         foreach (string name in new[] { "decor_parque_cerca_03", "decor_parque_cerca_04", "decor_parque_cerca_05" })
@@ -344,6 +407,81 @@ public static class TechnopolisAmbientacionNivel1
         Undo.RecordObject(item, "Acomodar " + name);
         item.position = new Vector3(x, y, item.position.z);
         PrefabUtility.RecordPrefabInstancePropertyModifications(item);
+    }
+
+    private static int PaintPark(Transform grid, TileBase[,] grass)
+    {
+        Tilemap map = GetFloorMap(grid, ParkFloorName, -25);
+        Undo.RegisterCompleteObjectUndo(map, "Ampliar césped del parque");
+        var cells = new TileBase[Side * Side];
+        int count = 0;
+        for (int row = 1; row <= Side; row++)
+        for (int col = 1; col <= Side; col++)
+        {
+            int x = Left + col - 1, y = Top - row + 1;
+            bool inside = x >= -9 && x <= 10 && y >= -34 && y <= -24;
+            if ((y == -24 && x >= -2 && x <= 2) ||
+                (y == -34 && x >= -3 && x <= 1) ||
+                ((x == -9 || x == 10) && (y == -24 || y == -34))) inside = false;
+            if (inside)
+            {
+                cells[(Side - row) * Side + col - 1] = grass[(row - 1) % 4, (col - 1) % 4];
+                count++;
+            }
+        }
+        map.SetTilesBlock(new BoundsInt(Left, Top - Side + 1, 0, Side, Side, 1), cells);
+        map.RefreshAllTiles();
+        return count;
+    }
+
+    private static int PaintPlaza(Transform grid, TileBase[,] concrete)
+    {
+        Tilemap map = GetFloorMap(grid, PlazaFloorName, -19);
+        Undo.RegisterCompleteObjectUndo(map, "Concreto envejecido de la plaza");
+        var cells = new TileBase[Side * Side];
+        int count = 0;
+        for (int row = 1; row <= Side; row++)
+        for (int col = 1; col <= Side; col++)
+        {
+            int x = Left + col - 1, y = Top - row + 1;
+            bool inside = x >= -10 && x <= 12 && y >= -22 && y <= -11;
+            if ((y == -11 && (x < -8 || x > 9)) ||
+                (y == -22 && x >= -2 && x <= 2) ||
+                (x == 12 && (y > -14 || y < -20))) inside = false;
+            if (inside)
+            {
+                cells[(Side - row) * Side + col - 1] = concrete[(row - 1) % 4, (col - 1) % 4];
+                count++;
+            }
+        }
+        map.SetTilesBlock(new BoundsInt(Left, Top - Side + 1, 0, Side, Side, 1), cells);
+        map.RefreshAllTiles();
+        return count;
+    }
+
+    private static Tilemap GetFloorMap(Transform grid, string name, int order)
+    {
+        Transform existing = grid.Find(name);
+        Tilemap map;
+        if (!existing)
+        {
+            GameObject go = new GameObject(name);
+            Undo.RegisterCreatedObjectUndo(go, "Crear " + name);
+            Undo.SetTransformParent(go.transform, grid, "Agrupar " + name);
+            go.transform.localPosition = Vector3.zero;
+            map = Undo.AddComponent<Tilemap>(go);
+            Undo.AddComponent<TilemapRenderer>(go);
+        }
+        else
+        {
+            map = existing.GetComponent<Tilemap>();
+            if (!map) map = Undo.AddComponent<Tilemap>(existing.gameObject);
+        }
+        TilemapRenderer renderer = map.GetComponent<TilemapRenderer>();
+        if (!renderer) renderer = Undo.AddComponent<TilemapRenderer>(map.gameObject);
+        Undo.RecordObject(renderer, "Orden de " + name);
+        renderer.sortingOrder = order;
+        return map;
     }
 
     private static int PaintDetails(Transform grid, TileBase[] tiles)
@@ -381,7 +519,7 @@ public static class TechnopolisAmbientacionNivel1
             bool park = x >= -8 && x <= 8 && y >= -31 && y <= -24;
             bool alley = x <= -25 && y >= -5 && y <= 7;
             bool exit = x >= 14 && y <= -32;
-            int chance = alley ? 220 : park ? 140 : plaza ? 42 : exit ? 72 : 100;
+            int chance = alley ? 300 : park ? 220 : plaza ? 85 : exit ? 95 : 150;
             TileBase tile = null;
             if (hash % 1000 < chance)
             {

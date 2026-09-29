@@ -7,8 +7,8 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /// <summary>
-/// Configura colisiones estáticas en las instancias de la escena, sin tocar
-/// los prefabs originales ni reemplazar colliders que ya ajustó el usuario.
+/// Ajusta las huellas de los objetos del Nivel 1 y la colisión del jugador.
+/// Trabaja sobre la escena y deja los prefabs originales intactos.
 /// </summary>
 public static class TechnopolisColisionesNivel1
 {
@@ -28,18 +28,19 @@ public static class TechnopolisColisionesNivel1
     }
 
     // Medidas locales: el Transform de cada prefab aplica su propia escala.
-    // El rectángulo cubre la huella visible; árboles y postes usan solo el tronco.
+    // Las casas tienen un pequeño margen lateral para dejar transitable el barrio.
+    // Árboles y postes usan solo el tronco.
     private static readonly Dictionary<string, Footprint> Footprints =
         new Dictionary<string, Footprint>
     {
-        { "casa_alex", new Footprint(5.2f, 4f, 2f) },
-        { "panaderia_dona_ramona", new Footprint(6.5f, 4.8f, 2.4f) },
-        { "tienda_miscelanea", new Footprint(5.9f, 5.5f, 2.75f) },
-        { "taller_mecanico", new Footprint(6.5f, 4.1f, 2.05f) },
-        { "vivienda_techo_lamina", new Footprint(5.5f, 4.5f, 2.25f) },
-        { "vivienda_ladrillo", new Footprint(5.1f, 4.5f, 2.25f) },
-        { "vivienda_parches", new Footprint(4.5f, 3.9f, 1.95f) },
-        { "centro_comunitario", new Footprint(6.5f, 4f, 2f) },
+        { "casa_alex", new Footprint(4.7f, 3.7f, 1.85f) },
+        { "panaderia_dona_ramona", new Footprint(5.9f, 4.4f, 2.2f) },
+        { "tienda_miscelanea", new Footprint(5.3f, 5f, 2.5f) },
+        { "taller_mecanico", new Footprint(5.9f, 3.7f, 1.85f) },
+        { "vivienda_techo_lamina", new Footprint(4.9f, 4f, 2f) },
+        { "vivienda_ladrillo", new Footprint(4.5f, 4f, 2f) },
+        { "vivienda_parches", new Footprint(4f, 3.5f, 1.75f) },
+        { "centro_comunitario", new Footprint(5.9f, 3.7f, 1.85f) },
         { "arbol_barrio", new Footprint(0.7f, 0.7f, 0.5f) },
         { "arbusto_seco", new Footprint(0.6f, 0.5f, 0.35f) },
         { "banco_viejo", new Footprint(2.5f, 0.65f, 0.45f) },
@@ -91,12 +92,14 @@ public static class TechnopolisColisionesNivel1
         Transform buildings = Find(scene, "Edificios");
         Transform objects = Find(scene, "Objetos");
         Transform player = Find(scene, "Jugador");
+        CapsuleCollider2D playerCollider = player ? player.GetComponent<CapsuleCollider2D>() : null;
         if (!grid || !buildings || !objects || !player ||
             buildings.parent != grid || objects.parent != grid ||
-            !player.GetComponent<Rigidbody2D>() || !player.GetComponent<Collider2D>())
+            !player.GetComponent<Rigidbody2D>() || !playerCollider ||
+            Mathf.Abs(player.lossyScale.x) < 0.01f || Mathf.Abs(player.lossyScale.y) < 0.01f)
         {
             EditorUtility.DisplayDialog("Escena incompleta",
-                "Se necesitan Grid > Edificios, Grid > Objetos y Jugador con Rigidbody2D y Collider2D.",
+                "Se necesitan Grid > Edificios, Grid > Objetos y Jugador con Rigidbody2D y CapsuleCollider2D.",
                 "Aceptar");
             return;
         }
@@ -119,9 +122,18 @@ public static class TechnopolisColisionesNivel1
         Undo.IncrementCurrentGroup();
         int group = Undo.GetCurrentGroup();
         Undo.SetCurrentGroupName("Colisiones y comienzo del Nivel 1");
-        int added = 0, preserved = 0;
-        added += CollidersUnder(buildings, ref preserved);
-        added += CollidersUnder(objects, ref preserved);
+        int added = 0, adjusted = 0, preserved = 0;
+        CollidersUnder(buildings, ref added, ref adjusted, ref preserved);
+        CollidersUnder(objects, ref added, ref adjusted, ref preserved);
+
+        // El transform del jugador está escalado. Mantener la cápsula en
+        // unidades del mundo evita que la escala visual cierre los pasillos.
+        Undo.RecordObject(playerCollider, "Reducir colisión del Jugador");
+        playerCollider.size = new Vector2(0.72f / Mathf.Abs(player.lossyScale.x),
+                                          0.90f / Mathf.Abs(player.lossyScale.y));
+        playerCollider.offset = new Vector2(0f, 0.45f / Mathf.Abs(player.lossyScale.y));
+        playerCollider.direction = CapsuleDirection2D.Vertical;
+        playerCollider.isTrigger = false;
 
         Transform limits = Find(scene, "Limites_Nivel1");
         if (!limits)
@@ -158,7 +170,9 @@ public static class TechnopolisColisionesNivel1
             return;
         }
         EditorUtility.DisplayDialog("Colisiones listas para probar",
-            "Colliders nuevos: " + added + "; existentes conservados: " + preserved + ".\n" +
+            "Colliders nuevos: " + added + "; ajustados: " + adjusted +
+            "; otros conservados: " + preserved + ".\n" +
+            "La cápsula del Jugador ahora ocupa 0.72 x 0.90 unidades junto a sus pies.\n" +
             "Se cerraron los cuatro bordes del mapa." +
             (movedPlayer ? "\nJugador ubicado en terreno libre junto a Casa Alex." : "") +
             "\n\nPrueba caminar en Game y revisa las entradas.\nRespaldo: " + backup,
@@ -166,26 +180,31 @@ public static class TechnopolisColisionesNivel1
         Debug.Log("Technopolis: colisiones del Nivel 1. Respaldo: " + backup);
     }
 
-    private static int CollidersUnder(Transform parent, ref int preserved)
+    private static void CollidersUnder(Transform parent, ref int added, ref int adjusted,
+                                       ref int preserved)
     {
-        int added = 0;
         foreach (Transform item in parent.GetComponentsInChildren<Transform>(true))
         {
             if (item == parent || !item.gameObject.activeInHierarchy) continue;
             GameObject prefab = PrefabUtility.GetCorrespondingObjectFromSource(item.gameObject) as GameObject;
             string type = prefab ? prefab.name : item.name;
             if (!Footprints.TryGetValue(type, out Footprint footprint)) continue;
-            if (item.GetComponent<Collider2D>()) { preserved++; continue; }
+            Collider2D existing = item.GetComponent<Collider2D>();
+            if (existing && !(existing is BoxCollider2D)) { preserved++; continue; }
 
-            BoxCollider2D box = Undo.AddComponent<BoxCollider2D>(item.gameObject);
+            BoxCollider2D box = existing as BoxCollider2D;
+            if (box) adjusted++;
+            else
+            {
+                box = Undo.AddComponent<BoxCollider2D>(item.gameObject);
+                added++;
+            }
             Undo.RecordObject(box, "Huella de " + item.name);
             box.size = footprint.Size;
             box.offset = footprint.Offset;
             box.isTrigger = false;
             PrefabUtility.RecordPrefabInstancePropertyModifications(box);
-            added++;
         }
-        return added;
     }
 
     private static void SetWall(Transform parent, string name, Vector3 position, Vector2 size)

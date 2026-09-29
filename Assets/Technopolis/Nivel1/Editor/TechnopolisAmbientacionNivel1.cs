@@ -19,6 +19,7 @@ public static class TechnopolisAmbientacionNivel1
     private const string FloorName = "Ambientacion_Piso";
     private const string ParkFloorName = "Ambientacion_Parque";
     private const string PlazaFloorName = "Ambientacion_Plaza";
+    private const string PathsFloorName = "Ambientacion_Senderos";
     private const string BuildingName = "Ambientacion_Edificios";
     private const string ObjectsName = "Ambientacion_PlanoReferencia";
     private const int Left = -40, Top = 19, Side = 64;
@@ -42,6 +43,7 @@ public static class TechnopolisAmbientacionNivel1
     {
         new Placement("Casa_Norte_Oeste", "vivienda_techo_lamina", -31f, 8f, 1.2f),
         new Placement("Casa_Norte_Centro", "vivienda_parches", -23f, 12f, 1.05f),
+        new Placement("Casa_Pasaje_Central", "vivienda_ladrillo", -11f, -4f, 1.05f),
         new Placement("Casa_Sur_Este", "vivienda_techo_lamina", 9f, -40f, 1f)
     };
 
@@ -52,6 +54,10 @@ public static class TechnopolisAmbientacionNivel1
         new Placement("Mercado_Caja_02", "caja_madera", 4.5f, 11f, 0.8f),
         new Placement("Mercado_Tambo", "tambo_azul", 5.5f, 11f, 0.8f),
         new Placement("Mercado_Banco", "banco_viejo", -4f, 10f, 0.9f),
+        new Placement("Mercado_Cerca_Huerto_01", "cerca_madera", 8f, 11.5f),
+        new Placement("Mercado_Cerca_Huerto_02", "cerca_madera", 10f, 11.5f),
+        new Placement("Mercado_Cerca_Huerto_03", "cerca_madera", 14f, 11.5f),
+        new Placement("Mercado_Tambo_Huerto", "tambo_oxidado", 18f, 14f, 0.7f),
 
         new Placement("Callejon_Basura_01", "bolsas_basura", -37f, 4f, 0.85f),
         new Placement("Callejon_Basura_02", "bolsa_basura_negra", -30f, 1f, 0.75f),
@@ -70,7 +76,11 @@ public static class TechnopolisAmbientacionNivel1
         new Placement("CasaAlex_Banco", "banco_viejo", -18f, -15.6f, 0.8f),
         new Placement("CasaAlex_Tambo", "tambo_azul", -27.5f, -16.5f, 0.75f),
         new Placement("Vecinos_Tendedero", "tendedero", -20f, -5f, 0.85f),
-        new Placement("Vecinos_Caja", "caja_madera", -11f, -4f, 0.85f),
+        new Placement("Vecinos_Caja", "caja_madera", -7f, -7f, 0.85f),
+        new Placement("Pasaje_Cerca_01", "cerca_rota", -15f, -5.5f, 0.8f),
+        new Placement("Pasaje_Cerca_02", "cerca_rota", -7f, -5.5f, 0.8f),
+        new Placement("Pasaje_Tambo", "tambo_azul", -15.5f, -3.5f, 0.7f),
+        new Placement("Pasaje_Poste", "poste_luz", -13f, -10.5f, 0.8f),
 
         new Placement("Panaderia_Maceta_01", "maceta_reutilizada", -4.5f, -10f, 0.85f),
         new Placement("Panaderia_Maceta_02", "maceta_reutilizada", 9.5f, -10f, 0.85f),
@@ -98,6 +108,10 @@ public static class TechnopolisAmbientacionNivel1
         new Placement("BarrioSur_Bicicleta", "bicicleta_vieja", -17f, -37f, 0.75f),
         new Placement("BarrioSur_Tambo", "tambo_azul", -9f, -39f, 0.75f),
         new Placement("BarrioSur_Cajas", "cajas_apiladas", 6f, -38.5f, 0.7f),
+        new Placement("BarrioSur_Cerca_01", "cerca_rota", -38f, -36f, 0.85f),
+        new Placement("BarrioSur_Cerca_02", "cerca_madera", -27f, -36f, 0.85f),
+        new Placement("BarrioSur_Cerca_03", "cerca_rota", -18f, -36f, 0.85f),
+        new Placement("BarrioSur_Poste", "poste_luz", -5.5f, -36f, 0.75f),
         new Placement("Taller_Papelera", "papelera", 13f, -26f, 0.8f),
         new Placement("Taller_Tambo", "tambo_oxidado", 22f, -25.5f, 0.85f),
         new Placement("Salida_Barricada_01", "valla_obras", 14.8f, -38.5f, 0.85f),
@@ -163,6 +177,13 @@ public static class TechnopolisAmbientacionNivel1
         TileBase[,] grass = LoadPattern("01_Terreno", "pasto");
         TileBase[,] concrete = LoadPattern("02_Caminos", "concreto");
         if (grass == null || concrete == null) return;
+        var pathTiles = new TileBase[5];
+        for (int i = 0; i < pathTiles.Length; i++)
+        {
+            string path = Root + "Tiles/02_Caminos/camino_tierra_0" + (i + 1) + ".asset";
+            pathTiles[i] = AssetDatabase.LoadAssetAtPath<Tile>(path);
+            if (!pathTiles[i]) { Missing(path); return; }
+        }
 
         if (!EditorSceneManager.SaveScene(scene)) { Missing("No se pudo guardar la escena"); return; }
         if (!AssetDatabase.IsValidFolder(BackupFolder)) AssetDatabase.CreateFolder("Assets/Scenes", "Respaldos");
@@ -181,20 +202,23 @@ public static class TechnopolisAmbientacionNivel1
             Placement p = ExtraBuildings[i];
             GameObject go = PlacePrefab(prefabs[p.Prefab], buildingGroup, p);
             var box = Undo.AddComponent<BoxCollider2D>(go);
-            box.size = p.Prefab == "vivienda_parches" ? new Vector2(4f, 3.5f) : new Vector2(4.9f, 4f);
+            box.size = p.Prefab == "vivienda_parches" ? new Vector2(4f, 3.5f) :
+                       p.Prefab == "vivienda_ladrillo" ? new Vector2(4.5f, 4f) : new Vector2(4.9f, 4f);
             box.offset = new Vector2(0f, box.size.y / 2f);
         }
 
-        // El límite físico exterior ya lo crea la opción 06. El muro aquí solo lo viste.
+        // El límite físico exterior ya lo crea la opción 06. El sprite tiene
+        // 11 px transparentes debajo y encima; su borde visible exterior se
+        // alinea con el rectángulo de 64 x 64, no con el pivote del sprite.
         for (int x = -36; x <= 20; x += 8)
         {
-            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Norte_" + x, x, 17.5f, 2f);
-            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Sur_" + x, x, -43.8f, 2f);
+            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Norte_" + x, x, 17.6875f, 2f);
+            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Sur_" + x, x, -44.6875f, 2f);
         }
         for (int y = -40; y <= 16; y += 8)
         {
-            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Oeste_" + y, -39.4f, y, 2f, 90f);
-            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Este_" + y, 23.3f, y, 2f, 90f);
+            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Oeste_" + y, -37.6875f, y, 2f, 90f);
+            PlaceSprite(sprites["muro_perimetral"], objectGroup, "Muro_Este_" + y, 21.6875f, y, 2f, -90f);
         }
 
         GameObject gate = PlaceSprite(sprites["porton_salida_bloqueada"], objectGroup,
@@ -227,11 +251,13 @@ public static class TechnopolisAmbientacionNivel1
         PlaceSprite(sprites["huerto_comunitario"], objectGroup, "Mercado_Huerto_02", 13f, 16f, 0.9f);
 
         foreach (Placement p in LandmarkProps) PlacePrefab(prefabs[p.Prefab], objectGroup, p);
+        AdjustEastBuildings(buildings);
         AddTrees(prefabs["arbol_barrio"], objectGroup, buildings);
         AddSmallGreenery(prefabs, objectGroup, buildings);
         AdjustPark(objects);
         int parkTiles = PaintPark(grid, grass);
         int plazaTiles = PaintPlaza(grid, concrete);
+        int pathCount = PaintPaths(grid, pathTiles, buildings);
         int details = PaintDetails(grid, detailTiles);
 
         Undo.CollapseUndoOperations(undoGroup);
@@ -242,8 +268,8 @@ public static class TechnopolisAmbientacionNivel1
             return;
         }
         EditorUtility.DisplayDialog("Ambientación terminada",
-            "Se amplió el parque (" + parkTiles + " casillas), se renovó la plaza (" + plazaTiles +
-            " casillas) y se añadieron árbol central, huerto, puesto y contenedor.\n" +
+            "Muros alineados con el borde del mapa, parque (" + parkTiles + " casillas), plaza (" + plazaTiles +
+            " casillas) y senderos (" + pathCount + " casillas). Se añadió una casa de pasaje y detalles de patios.\n" +
             "Detalles de suelo: " + details + ". Los edificios principales y el personaje se conservaron.\n\n" +
             "Recorre callejón, plaza, parque y salida en Play.\nRespaldo: " + backup, "Aceptar");
         Debug.Log("Technopolis: ambientación del Nivel 1. Respaldo: " + backup);
@@ -372,6 +398,23 @@ public static class TechnopolisAmbientacionNivel1
         return false;
     }
 
+    private static void AdjustEastBuildings(Transform buildings)
+    {
+        // Solo se desplazan instancias aún en las coordenadas que pusieron
+        // las opciones 03 y 05. Respeta los ajustes manuales de la escena.
+        MoveIfAt(buildings, "tienda_miscelanea", 18.5f, -8f, 17f, -8f);
+        MoveIfAt(buildings, "taller_mecanico", 18.5f, -20f, 17f, -20f);
+        MoveIfAt(buildings, "Mercado_Comunitario", 17.5f, 7f, 17f, 7f);
+    }
+
+    private static void MoveIfAt(Transform parent, string name, float oldX, float oldY, float x, float y)
+    {
+        Transform item = parent.Find(name);
+        if (!item || Mathf.Abs(item.position.x - oldX) > 0.05f ||
+            Mathf.Abs(item.position.y - oldY) > 0.05f) return;
+        MoveExisting(parent, name, x, y);
+    }
+
     private static void AdjustPark(Transform objects)
     {
         MoveExisting(objects, "arbol_barrio", -8.5f, -29.5f);
@@ -453,6 +496,37 @@ public static class TechnopolisAmbientacionNivel1
                 cells[(Side - row) * Side + col - 1] = concrete[(row - 1) % 4, (col - 1) % 4];
                 count++;
             }
+        }
+        map.SetTilesBlock(new BoundsInt(Left, Top - Side + 1, 0, Side, Side, 1), cells);
+        map.RefreshAllTiles();
+        return count;
+    }
+
+    private static int PaintPaths(Transform grid, TileBase[] pathTiles, Transform buildings)
+    {
+        Tilemap map = GetFloorMap(grid, PathsFloorName, -18);
+        Tilemap roads = grid.Find("Caminos") ? grid.Find("Caminos").GetComponent<Tilemap>() : null;
+        Undo.RegisterCompleteObjectUndo(map, "Trazar senderos del barrio");
+        var cells = new TileBase[Side * Side];
+        int count = 0;
+        for (int row = 1; row <= Side; row++)
+        for (int col = 1; col <= Side; col++)
+        {
+            int x = Left + col - 1, y = Top - row + 1;
+            // El pasaje norte enlaza el callejón con las viviendas y baja
+            // suavemente hacia la plaza. Los patios sur conservan un paso fino.
+            int northY = -2 - (x >= -10 ? 1 : 0);
+            bool northLane = x >= -27 && x <= 11 && y >= northY && y <= northY + 1;
+            bool westSpur = x >= -16 && x <= -15 && y >= -12 && y <= -4;
+            bool southLane = x >= -38 && x <= -10 && y == -35;
+            bool parkEntry = x >= -2 && x <= 2 && y >= -30 && y <= -22;
+            bool marketEntry = x >= -2 && x <= 1 && y >= 8 && y <= 11;
+            if (!northLane && !westSpur && !southLane && !parkEntry && !marketEntry) continue;
+            if (roads && roads.HasTile(new Vector3Int(x, y, 0))) continue;
+            if (NearBuilding(buildings, new Vector2(x + 0.5f, y + 0.5f), 0.25f)) continue;
+            int variation = Hash(x / 2, y / 2) % pathTiles.Length;
+            cells[(Side - row) * Side + col - 1] = pathTiles[variation];
+            count++;
         }
         map.SetTilesBlock(new BoundsInt(Left, Top - Side + 1, 0, Side, Side, 1), cells);
         map.RefreshAllTiles();

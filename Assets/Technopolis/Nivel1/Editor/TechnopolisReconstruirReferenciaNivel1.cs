@@ -163,7 +163,7 @@ public static class TechnopolisReconstruirReferenciaNivel1
             if(p.kind!="building")continue;
             float h=p.height>0?p.height:p.width*(p.bottom-p.top)/(p.right-p.left);
             float l=p.c-p.width/2,rr=p.c+p.width/2,t=p.r-h;
-            bool near=c>l-1.2f&&c<rr+1.2f&&r>t-.4f&&r<p.r+1.4f;
+            bool near=c>l-2f&&c<rr+2f&&r>t-.7f&&r<p.r+2.1f;
             bool inside=c>l+.65f&&c<rr-.65f&&r>t+.65f&&r<p.r-.25f;
             if(near&&!inside)return true;
         }

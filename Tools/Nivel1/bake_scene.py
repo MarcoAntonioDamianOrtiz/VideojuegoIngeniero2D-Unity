@@ -13,7 +13,14 @@ for m in re.finditer(r'^--- !u!(\d+) &(\d+)(?: stripped)?\n(.*?)(?=^--- !u!|\Z)'
 def inner(ident):return next(iter(blocks[ident].values()))
 def named(name):return next(i for i,b in blocks.items() if kinds[i]==1 and inner(i).get('m_Name')==name)
 def component(go,kind):return next(v['component']['fileID'] for v in inner(go)['m_Component'] if kinds[v['component']['fileID']]==kind)
-def template(kind):return copy.deepcopy(next(next(iter(b.values())) for i,b in blocks.items() if kinds[i]==kind))
+def template(kind):
+ for i,b in blocks.items():
+  if kinds[i]!=kind:continue
+  obj=next(iter(b.values()))
+  source=obj.get('m_CorrespondingSourceObject',{})
+  prefab=obj.get('m_PrefabInstance',{})
+  if source.get('fileID',0)==0 and prefab.get('fileID',0)==0:return copy.deepcopy(obj)
+ raise ValueError(f'No standalone Unity template found for class {kind}')
 def guid(p):return re.search(r'^guid: (\w+)',Path(str(p)+'.meta').read_text(),re.M)[1]
 def ref(i):return dict(fileID=i)
 def vec(x=0,y=0,z=0):return dict(x=round(x,7),y=round(y,7),z=round(z,7))
@@ -114,7 +121,7 @@ def garden(c,r):
  for p in data['placements']:
   if p['kind']!='building':continue
   h=p['height'] or p['width']*(p['bottom']-p['top'])/(p['right']-p['left']);l=p['c']-p['width']/2;rr=p['c']+p['width']/2;t=p['r']-h
-  near=l-1.2<c<rr+1.2 and t-.4<r<p['r']+1.4;inside=l+.65<c<rr-.65 and t+.65<r<p['r']-.25
+  near=l-2<c<rr+2 and t-.7<r<p['r']+2.1;inside=l+.65<c<rr-.65 and t+.65<r<p['r']-.25
   if near and not inside:return True
  return c<1.7 or c>62.3 or r<1.5 or r>62.5
 ground=[];paths=[]
@@ -161,8 +168,8 @@ def dict_rep(dumper,d):
 Dumper.add_representer(dict,dict_rep)
 text='%YAML 1.1\n%TAG !u! tag:unity3d.com,2011:\n'
 for i,b in out.items():text+=f'--- !u!{out_kinds[i]} &{i}\n'+yaml.dump(b,Dumper=Dumper,sort_keys=False,allow_unicode=True,width=120)
-target=repo/'Assets/Scenes/EscenaNivel1_Referencia.unity';target.write_text(text)
+target=repo/'Assets/Scenes/EscenaNivel1_Referencia.unity';target.write_text(text,newline='\n')
 meta=Path(str(target)+'.meta')
 if not meta.exists():meta.write_text('fileFormatVersion: 2\nguid: '+uuid.uuid4().hex+'\nDefaultImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n')
-(repo/'Documentacion/Nivel1/Huellas_Colisiones.json').write_text(json.dumps(collisions))
+(repo/'Documentacion/Nivel1/Huellas_Colisiones.json').write_text(json.dumps(collisions),newline='\n')
 print('Baked',target,len(out),'serialized objects;',len(ground),'ground cells;',len(paths),'path cells;',len(collisions),'footprints')

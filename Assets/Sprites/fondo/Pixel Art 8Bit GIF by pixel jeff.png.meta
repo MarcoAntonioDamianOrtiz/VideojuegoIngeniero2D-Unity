@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dca8873fbd2cb824aaecc4fddf0597f6
+guid: b9cbba2ac50fffb44992875f629b0d71
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1055535243610758605
-    second: sprite 1_0
+      213: 612700486311809980
+    second: Pixel Art 8Bit GIF by pixel jeff_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -139,13 +139,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sprite 1_0
+      name: Pixel Art 8Bit GIF by pixel jeff_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 2048
-        height: 1024
+        width: 1440
+        height: 1205
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -154,8 +154,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dcd135b26b306ae00800000000000000
-      internalID: 1055535243610758605
+      spriteID: cb3135898dfb08800800000000000000
+      internalID: 612700486311809980
       vertices: []
       indices: 
       edges: []
@@ -174,7 +174,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      sprite 1_0: 1055535243610758605
+      Pixel Art 8Bit GIF by pixel jeff_0: 612700486311809980
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

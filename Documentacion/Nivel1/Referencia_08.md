@@ -4,9 +4,9 @@ Abre `Assets/Scenes/EscenaNivel1_Referencia.unity` después de hacer Pull. La di
 
 La escena nueva conserva el jugador, sus animaciones y movimiento, la cámara que lo sigue y la iluminación de la escena existente. El barrio sigue ocupando 64 × 64 casillas, con límites en X = −40…24 y Y = −44…20. Su punto de inicio queda en el patio de Alex.
 
-Se trazaron las posiciones y proporciones de las zonas sobre la imagen de referencia: callejón al noroeste, viviendas alrededor de patios, huertos al noreste, casa de Alex al oeste de la plaza, panadería y miscelánea al norte, taller al este, parque al sur y salida bloqueada al sureste. Hay 32 edificios y 660 elementos en el plano, además de los 32 tramos de muro exterior.
+Se trazaron las posiciones y proporciones de las zonas sobre la imagen de referencia: callejón al noroeste, viviendas alrededor de patios, huertos al noreste, casa de Alex al oeste de la plaza, panadería y miscelánea al norte, taller al este, parque al sur y salida bloqueada al sureste. Esta revisión distribuye 42 edificios y 748 elementos en el plano, además de los 32 tramos de muro exterior; las viviendas secundarias se redujeron y se añadieron casas en los sectores norte, central y sur.
 
-Se añadieron ocho sprites con transparencia: casa de Alex con interior visible, panadería con letrero, miscelánea, taller, túnel, cancha, vagón del borde norte y maleza verde. Las casas vecinas reutilizan los sprites del proyecto. Por ello la composición se acerca a la referencia, pero el arte de esas viviendas y muchos detalles pequeños no es una copia exacta de la ilustración.
+Se añadieron catorce sprites con transparencia: ocho piezas principales y seis detalles de esta revisión. Los nuevos recursos son los murales `mural_estamos_solos` y `mural_aqui_somos_ciudad`, los cables aéreos, el poste de luz cálida, la barrera con conos y el aviso de zona cerrada. Se colocaron en los muros, calles y salida del distrito que corresponden a la referencia. Las casas vecinas reutilizan los sprites del proyecto; el arte no reproduce cada microdetalle de la ilustración.
 
 `Vista_Previa_Referencia.png` es una composición de los sprites y tiles reales con las mismas coordenadas de la escena; no es una captura del editor ni prueba de ejecución en Unity.
 
@@ -26,10 +26,10 @@ El orden de dibujo del jugador cambia con su posición vertical mediante `Techno
 
 `Assets/Technopolis/Nivel1/Editor/PlanoReferenciaNivel1.json` contiene las posiciones, tamaños visibles, materiales y senderos. Sus coordenadas empiezan en la esquina superior izquierda: columnas hacia la derecha y filas hacia abajo, de 0 a 64. Las dimensiones se calculan sobre el contenido visible de cada PNG, no sobre sus márgenes transparentes.
 
-Los auxiliares `Tools/Nivel1/build_layout.py` y `bake_scene.py` regeneran el plano/vista previa y la escena alternativa. Requieren Python con Pillow, NumPy y PyYAML; no son necesarios para abrir o jugar la escena en Unity.
+Los auxiliares `Tools/Nivel1/generate_reference_details.py`, `build_layout.py` y `bake_scene.py` regeneran los detalles, el plano/vista previa y la escena alternativa. `Tools/Nivel1/validate_reference_details.py` comprueba los recursos y GUID de Unity. Requieren Python con Pillow, NumPy y PyYAML; no son necesarios para abrir o jugar la escena en Unity.
 
 ## Procedencia de los sprites
 
-Se crearon con la herramienta de generación de imágenes integrada, tomando la ilustración adjunta como referencia de estilo y tema. Indicaciones utilizadas: pixel art de barrio mexicano, vista RPG ortográfica, contornos oscuros, materiales gastados, sujeto completo y fondo alfa transparente. Se pidió cada pieza por separado: casa abierta con cama azul y escritorio, fachada PANADERIA, fachada MISCELANEA, fachada TALLER, túnel de concreto, cancha de baloncesto deteriorada, vagón amarillo largo y grupo de maleza verde. Se recortaron los márgenes y se redujeron con muestreo de vecino más cercano para importarlas como sprites sin compresión y con filtro Point.
+Ocho piezas principales se generaron por separado con la herramienta integrada: casa abierta con cama azul y escritorio, fachada PANADERIA, fachada MISCELANEA, fachada TALLER, túnel de concreto, cancha de baloncesto deteriorada, vagón amarillo largo y grupo de maleza verde. Se recortaron los márgenes y se redujeron con muestreo de vecino más cercano para importarlas como sprites sin compresión y con filtro Point. `Tools/Nivel1/generate_reference_details.py` dibuja seis piezas complementarias con paleta y contornos pixelados: dos grafitis, cableado, luminaria, conos con barrera y aviso de cierre.
 
 Los ocho PNG se encuentran en `Assets/Technopolis/Nivel1/Sprites/04_Objetos` y `05_Edificios`, junto con sus archivos `.meta`.

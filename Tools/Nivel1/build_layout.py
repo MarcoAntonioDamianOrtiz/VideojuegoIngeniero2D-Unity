@@ -13,20 +13,25 @@ def add(sprite,c,r,w,kind='prop',name=None,angle=0,h=0,solid=False):
 
 # Coordinates traced from the reference, expressed in its 64 by 64 grid.
 houses=[
-('vivienda_parches',21.8,6.3,5.8),('vivienda_techo_lamina',27.4,9.3,6.5),
-('vivienda_ladrillo',36.8,9.6,6.5),('vivienda_techo_lamina',21.8,14.6,6.6),
-('vivienda_parches',30.4,15,6.4),('vivienda_techo_lamina',25,20.9,6.3),
-('vivienda_parches',32.7,20,4.6),('vivienda_techo_lamina',44,19.8,6.6),
-('vivienda_parches',54.2,20.4,6.1),('vivienda_ladrillo',59.4,18.1,4.3),
-('vivienda_parches',5.5,28.6,6.8),('vivienda_techo_lamina',29,27.5,6.3),
-('vivienda_techo_lamina',5.3,37.7,6.1),('vivienda_parches',6,45.5,6.8),
-('vivienda_techo_lamina',7.5,51.8,7),('vivienda_ladrillo',20.5,46.9,5.4),
-('vivienda_techo_lamina',23.1,51,6.3),('vivienda_ladrillo',57.1,49.4,6.6),
-('vivienda_parches',7.5,57.9,6.1),('vivienda_ladrillo',15.7,59.5,4.6),
-('vivienda_techo_lamina',20.3,60.4,5),('vivienda_parches',27.1,60.3,5.5),
-('vivienda_ladrillo',33,60.5,4.8),('vivienda_techo_lamina',44,58.8,6.1),
-('vivienda_parches',43.8,55.3,5.5),('vivienda_ladrillo',37.1,56.1,5),
-('vivienda_ladrillo',5,61.4,5.1),('vivienda_techo_lamina',49.9,60,5.1)]
+('vivienda_parches',21.8,6.3,5.2),('vivienda_techo_lamina',27.4,9.3,5.6),
+('vivienda_ladrillo',36.8,9.6,5.6),('vivienda_techo_lamina',21.8,14.6,5.7),
+('vivienda_parches',30.4,15,5.5),('vivienda_techo_lamina',25,20.9,5.4),
+('vivienda_parches',32.7,20,4.1),('vivienda_techo_lamina',44,19.8,5.7),
+('vivienda_parches',54.2,20.4,5.3),('vivienda_ladrillo',59.4,18.1,3.9),
+('vivienda_parches',5.5,28.6,5.8),('vivienda_techo_lamina',29,27.5,5.4),
+('vivienda_techo_lamina',5.3,37.7,5.2),('vivienda_parches',6,45.5,5.8),
+('vivienda_techo_lamina',7.5,51.8,6),('vivienda_ladrillo',20.5,46.9,4.8),
+('vivienda_techo_lamina',23.1,51,5.4),('vivienda_ladrillo',57.1,49.4,5.7),
+('vivienda_parches',7.5,57.9,5.2),('vivienda_ladrillo',15.7,59.5,4.1),
+('vivienda_techo_lamina',20.3,60.4,4.4),('vivienda_parches',27.1,60.3,4.8),
+('vivienda_ladrillo',33,60.5,4.2),('vivienda_techo_lamina',44,58.8,5.2),
+('vivienda_parches',43.8,55.3,4.8),('vivienda_ladrillo',37.1,56.1,4.4),
+('vivienda_ladrillo',5,61.4,4.5),('vivienda_techo_lamina',49.9,60,4.5),
+('vivienda_techo_lamina',17.1,4.8,4.4),('vivienda_ladrillo',32.8,6.1,4.2),
+('vivienda_parches',16.8,18.4,4.5),('vivienda_ladrillo',38.2,16.3,4.3),
+('vivienda_techo_lamina',50.2,15.9,4.5),('vivienda_parches',33.8,25.1,4.2),
+('vivienda_ladrillo',17.1,39.3,4.2),('vivienda_techo_lamina',24.4,43.7,4.5),
+('vivienda_parches',30.1,57.1,4.2),('vivienda_ladrillo',53.4,57.8,4.4)]
 for i,(s,c,r,w) in enumerate(houses): add(s,c,r,w,'building',f'Vivienda_{i+1:02}',solid=True)
 add('casa_alex_interior',18.1,31.6,8.8,'building','Casa_Alex',h=8.6,solid=True)
 add('panaderia_fachada',42,27.5,10.7,'building','Panaderia_Ramona',h=6.6,solid=True)
@@ -109,6 +114,18 @@ for c,r,angle in [(17.2,18.1,0),(39.4,19.6,90),(12.1,48.5,90),(50.4,20.4,0),(46.
 for c,r in [(10.8,21),(24.2,18.6),(39.5,22.1),(53.5,18.6),(17.2,54.5),(31.5,54.8),(52,52.1)]:
     add('arbusto_seco',c,r,1.5)
 
+# Distinct landmarks and infrastructure taken from the reference illustration.
+add('mural_estamos_solos',11.1,6.7,3.8,name='Mural_Estamos_Solos')
+add('mural_aqui_somos_ciudad',2,58,4.2,name='Mural_Aqui_Somos_Ciudad')
+for c,r,w in [(23,22.1,7),(39.5,22.1,7),(21.8,55.5,7),(37.2,55.5,7)]:
+    add('cableado_aereo_tramo',c,r,w,name=f'Cable_Aereo_{len(specs):03}',h=1.9)
+for c,r in [(16.2,24.2),(27.4,24),(38.8,23.6),(49,28.8),(28.2,39.2),(47.5,42.4),
+            (24.8,53),(40.8,53),(53.1,52.5)]:
+    add('poste_luz_calida',c,r,1.8,name=f'Poste_Luz_Calida_{len(specs):03}',h=2.6)
+add('barrera_conos_calle',57.1,41.9,5.4,name='Conos_Taller',h=3.6)
+add('barrera_conos_calle',58.5,58.5,5.4,name='Conos_Salida',h=3.6)
+add('aviso_zona_cerrada',58.5,59.5,2.6,name='Aviso_Salida_Cerrada',h=2.3)
+
 regions=[
 dict(material='asfalto',c=1,r=2,w=13,h=18),
 dict(material='concreto',c=29,r=30,w=18,h=11),
@@ -132,12 +149,11 @@ def building_rect(s):
 bounds=[building_rect(s) for s in specs if s['kind']=='building']
 rng=random.Random(20260929)
 # Greenery follows house foundations, fences and perimeter; no random solid obstacles.
-for s in specs[:32]:
-    if s['kind']!='building':continue
+for s in (p for p in specs if p['kind']=='building'):
     l,t,rr,b=building_rect(s)
     for c,r in [(l-.35,b-.15),(rr+.4,b-.3),(l+.7,b+.7),(rr-.6,b+.65)]:
         if 1<c<63 and 2<r<62 and not in_lane(c,r,.3):add('maleza_verde',c,r,rng.uniform(1.4,2.2))
-for i in range(190):
+for i in range(280):
     c=rng.uniform(1.7,62);r=rng.uniform(2,62)
     if in_lane(c,r,.3) or any(l-.5<c<rr+.5 and t-.3<r<b+.6 for l,t,rr,b in bounds):continue
     if 29<c<48 and 30<r<41:continue

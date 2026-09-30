@@ -4667,7 +4667,337 @@
       "bottom": 145
     },
     {
-      "name": "maleza_verde_311",
+      "name": "bolsa_basura_negra_311",
+      "sprite": "Sprites/04_Objetos/bolsa_basura_negra.png",
+      "c": 2.5,
+      "r": 7.8,
+      "width": 1.8,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 4,
+      "top": 2,
+      "right": 44,
+      "bottom": 46
+    },
+    {
+      "name": "bolsa_basura_negra_312",
+      "sprite": "Sprites/04_Objetos/bolsa_basura_negra.png",
+      "c": 8.8,
+      "r": 15.7,
+      "width": 1.7,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 4,
+      "top": 2,
+      "right": 44,
+      "bottom": 46
+    },
+    {
+      "name": "bolsa_basura_negra_313",
+      "sprite": "Sprites/04_Objetos/bolsa_basura_negra.png",
+      "c": 11.4,
+      "r": 18.8,
+      "width": 1.6,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 4,
+      "top": 2,
+      "right": 44,
+      "bottom": 46
+    },
+    {
+      "name": "bolsa_basura_negra_314",
+      "sprite": "Sprites/04_Objetos/bolsa_basura_negra.png",
+      "c": 54.7,
+      "r": 40.7,
+      "width": 1.8,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 4,
+      "top": 2,
+      "right": 44,
+      "bottom": 46
+    },
+    {
+      "name": "bolsa_basura_negra_315",
+      "sprite": "Sprites/04_Objetos/bolsa_basura_negra.png",
+      "c": 61,
+      "r": 43.2,
+      "width": 1.7,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 4,
+      "top": 2,
+      "right": 44,
+      "bottom": 46
+    },
+    {
+      "name": "cartel_madera_316",
+      "sprite": "Sprites/04_Objetos/cartel_madera.png",
+      "c": 16.8,
+      "r": 8.7,
+      "width": 2.1,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 2,
+      "right": 78,
+      "bottom": 94
+    },
+    {
+      "name": "cartel_madera_317",
+      "sprite": "Sprites/04_Objetos/cartel_madera.png",
+      "c": 40.8,
+      "r": 18.5,
+      "width": 2.3,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 2,
+      "right": 78,
+      "bottom": 94
+    },
+    {
+      "name": "cartel_madera_318",
+      "sprite": "Sprites/04_Objetos/cartel_madera.png",
+      "c": 17.2,
+      "r": 42.7,
+      "width": 2.2,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 2,
+      "right": 78,
+      "bottom": 94
+    },
+    {
+      "name": "cartel_madera_319",
+      "sprite": "Sprites/04_Objetos/cartel_madera.png",
+      "c": 50.4,
+      "r": 17.7,
+      "width": 2.2,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 2,
+      "right": 78,
+      "bottom": 94
+    },
+    {
+      "name": "cartel_madera_320",
+      "sprite": "Sprites/04_Objetos/cartel_madera.png",
+      "c": 52.5,
+      "r": 55.3,
+      "width": 2.3,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 2,
+      "right": 78,
+      "bottom": 94
+    },
+    {
+      "name": "cerca_rota_321",
+      "sprite": "Sprites/04_Objetos/cerca_rota.png",
+      "c": 17.2,
+      "r": 18.1,
+      "width": 2.2,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 10,
+      "right": 62,
+      "bottom": 53
+    },
+    {
+      "name": "cerca_rota_322",
+      "sprite": "Sprites/04_Objetos/cerca_rota.png",
+      "c": 39.4,
+      "r": 19.6,
+      "width": 2.2,
+      "height": 0,
+      "angle": 90,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 10,
+      "right": 62,
+      "bottom": 53
+    },
+    {
+      "name": "cerca_rota_323",
+      "sprite": "Sprites/04_Objetos/cerca_rota.png",
+      "c": 12.1,
+      "r": 48.5,
+      "width": 2.2,
+      "height": 0,
+      "angle": 90,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 10,
+      "right": 62,
+      "bottom": 53
+    },
+    {
+      "name": "cerca_rota_324",
+      "sprite": "Sprites/04_Objetos/cerca_rota.png",
+      "c": 50.4,
+      "r": 20.4,
+      "width": 2.2,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 10,
+      "right": 62,
+      "bottom": 53
+    },
+    {
+      "name": "cerca_rota_325",
+      "sprite": "Sprites/04_Objetos/cerca_rota.png",
+      "c": 46.9,
+      "r": 54.2,
+      "width": 2.2,
+      "height": 0,
+      "angle": 90,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 10,
+      "right": 62,
+      "bottom": 53
+    },
+    {
+      "name": "arbusto_seco_326",
+      "sprite": "Sprites/04_Objetos/arbusto_seco.png",
+      "c": 10.8,
+      "r": 21,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 5,
+      "right": 46,
+      "bottom": 42
+    },
+    {
+      "name": "arbusto_seco_327",
+      "sprite": "Sprites/04_Objetos/arbusto_seco.png",
+      "c": 24.2,
+      "r": 18.6,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 5,
+      "right": 46,
+      "bottom": 42
+    },
+    {
+      "name": "arbusto_seco_328",
+      "sprite": "Sprites/04_Objetos/arbusto_seco.png",
+      "c": 39.5,
+      "r": 22.1,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 5,
+      "right": 46,
+      "bottom": 42
+    },
+    {
+      "name": "arbusto_seco_329",
+      "sprite": "Sprites/04_Objetos/arbusto_seco.png",
+      "c": 53.5,
+      "r": 18.6,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 5,
+      "right": 46,
+      "bottom": 42
+    },
+    {
+      "name": "arbusto_seco_330",
+      "sprite": "Sprites/04_Objetos/arbusto_seco.png",
+      "c": 17.2,
+      "r": 54.5,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 5,
+      "right": 46,
+      "bottom": 42
+    },
+    {
+      "name": "arbusto_seco_331",
+      "sprite": "Sprites/04_Objetos/arbusto_seco.png",
+      "c": 31.5,
+      "r": 54.8,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 5,
+      "right": 46,
+      "bottom": 42
+    },
+    {
+      "name": "arbusto_seco_332",
+      "sprite": "Sprites/04_Objetos/arbusto_seco.png",
+      "c": 52,
+      "r": 52.1,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 2,
+      "top": 5,
+      "right": 46,
+      "bottom": 42
+    },
+    {
+      "name": "maleza_verde_333",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 18.55,
       "r": 6.1499999999999995,
@@ -4682,7 +5012,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_312",
+      "name": "maleza_verde_334",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 25.099999999999998,
       "r": 6.0,
@@ -4697,7 +5027,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_313",
+      "name": "maleza_verde_335",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 19.6,
       "r": 7.0,
@@ -4712,7 +5042,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_314",
+      "name": "maleza_verde_336",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 24.099999999999998,
       "r": 6.95,
@@ -4727,7 +5057,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_315",
+      "name": "maleza_verde_337",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 23.799999999999997,
       "r": 9.15,
@@ -4742,7 +5072,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_316",
+      "name": "maleza_verde_338",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 31.049999999999997,
       "r": 9.0,
@@ -4757,7 +5087,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_317",
+      "name": "maleza_verde_339",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 40.449999999999996,
       "r": 9.299999999999999,
@@ -4772,7 +5102,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_318",
+      "name": "maleza_verde_340",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 18.15,
       "r": 14.45,
@@ -4787,7 +5117,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_319",
+      "name": "maleza_verde_341",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 25.5,
       "r": 14.299999999999999,
@@ -4802,7 +5132,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_320",
+      "name": "maleza_verde_342",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 19.2,
       "r": 15.299999999999999,
@@ -4817,7 +5147,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_321",
+      "name": "maleza_verde_343",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 24.5,
       "r": 15.25,
@@ -4832,7 +5162,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_322",
+      "name": "maleza_verde_344",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 26.849999999999998,
       "r": 14.85,
@@ -4847,7 +5177,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_323",
+      "name": "maleza_verde_345",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 27.9,
       "r": 15.7,
@@ -4862,7 +5192,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_324",
+      "name": "maleza_verde_346",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 33.0,
       "r": 15.65,
@@ -4877,7 +5207,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_325",
+      "name": "maleza_verde_347",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 30.05,
       "r": 19.85,
@@ -4892,7 +5222,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_326",
+      "name": "maleza_verde_348",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 40.35,
       "r": 19.650000000000002,
@@ -4907,7 +5237,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_327",
+      "name": "maleza_verde_349",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 47.699999999999996,
       "r": 19.5,
@@ -4922,7 +5252,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_328",
+      "name": "maleza_verde_350",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 50.800000000000004,
       "r": 20.25,
@@ -4937,7 +5267,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_329",
+      "name": "maleza_verde_351",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 57.65,
       "r": 20.099999999999998,
@@ -4952,7 +5282,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_330",
+      "name": "maleza_verde_352",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 56.9,
       "r": 17.950000000000003,
@@ -4967,7 +5297,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_331",
+      "name": "maleza_verde_353",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 61.949999999999996,
       "r": 17.8,
@@ -4982,7 +5312,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_332",
+      "name": "maleza_verde_354",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 57.95,
       "r": 18.8,
@@ -4997,7 +5327,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_333",
+      "name": "maleza_verde_355",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 60.949999999999996,
       "r": 18.75,
@@ -5012,7 +5342,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_334",
+      "name": "maleza_verde_356",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.75,
       "r": 28.450000000000003,
@@ -5027,7 +5357,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_335",
+      "name": "maleza_verde_357",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 9.3,
       "r": 28.3,
@@ -5042,7 +5372,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_336",
+      "name": "maleza_verde_358",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 2.8,
       "r": 29.3,
@@ -5057,7 +5387,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_337",
+      "name": "maleza_verde_359",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 8.3,
       "r": 29.25,
@@ -5072,7 +5402,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_338",
+      "name": "maleza_verde_360",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 32.55,
       "r": 27.2,
@@ -5087,7 +5417,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_339",
+      "name": "maleza_verde_361",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 31.549999999999997,
       "r": 28.15,
@@ -5102,7 +5432,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_340",
+      "name": "maleza_verde_362",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.9,
       "r": 37.550000000000004,
@@ -5117,7 +5447,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_341",
+      "name": "maleza_verde_363",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 8.75,
       "r": 37.400000000000006,
@@ -5132,7 +5462,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_342",
+      "name": "maleza_verde_364",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 2.95,
       "r": 38.400000000000006,
@@ -5147,7 +5477,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_343",
+      "name": "maleza_verde_365",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 7.75,
       "r": 38.35,
@@ -5162,7 +5492,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_344",
+      "name": "maleza_verde_366",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 2.25,
       "r": 45.35,
@@ -5177,7 +5507,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_345",
+      "name": "maleza_verde_367",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 9.8,
       "r": 45.2,
@@ -5192,7 +5522,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_346",
+      "name": "maleza_verde_368",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 3.3,
       "r": 46.2,
@@ -5207,7 +5537,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_347",
+      "name": "maleza_verde_369",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 8.8,
       "r": 46.15,
@@ -5222,7 +5552,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_348",
+      "name": "maleza_verde_370",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 3.65,
       "r": 51.65,
@@ -5237,7 +5567,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_349",
+      "name": "maleza_verde_371",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 11.4,
       "r": 51.5,
@@ -5252,7 +5582,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_350",
+      "name": "maleza_verde_372",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 4.7,
       "r": 52.5,
@@ -5267,7 +5597,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_351",
+      "name": "maleza_verde_373",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 10.4,
       "r": 52.449999999999996,
@@ -5282,7 +5612,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_352",
+      "name": "maleza_verde_374",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 17.45,
       "r": 46.75,
@@ -5297,7 +5627,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_353",
+      "name": "maleza_verde_375",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 23.599999999999998,
       "r": 46.6,
@@ -5312,7 +5642,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_354",
+      "name": "maleza_verde_376",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 18.5,
       "r": 47.6,
@@ -5327,7 +5657,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_355",
+      "name": "maleza_verde_377",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 22.599999999999998,
       "r": 47.55,
@@ -5342,7 +5672,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_356",
+      "name": "maleza_verde_378",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 19.6,
       "r": 50.85,
@@ -5357,7 +5687,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_357",
+      "name": "maleza_verde_379",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 20.650000000000002,
       "r": 51.7,
@@ -5372,7 +5702,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_358",
+      "name": "maleza_verde_380",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 53.45,
       "r": 49.25,
@@ -5387,7 +5717,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_359",
+      "name": "maleza_verde_381",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 60.8,
       "r": 49.1,
@@ -5402,7 +5732,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_360",
+      "name": "maleza_verde_382",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 54.50000000000001,
       "r": 50.1,
@@ -5417,7 +5747,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_361",
+      "name": "maleza_verde_383",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 59.8,
       "r": 50.05,
@@ -5432,7 +5762,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_362",
+      "name": "maleza_verde_384",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 4.1000000000000005,
       "r": 57.75,
@@ -5447,7 +5777,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_363",
+      "name": "maleza_verde_385",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 10.950000000000001,
       "r": 57.6,
@@ -5462,7 +5792,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_364",
+      "name": "maleza_verde_386",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 5.15,
       "r": 58.6,
@@ -5477,7 +5807,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_365",
+      "name": "maleza_verde_387",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 9.950000000000001,
       "r": 58.55,
@@ -5492,7 +5822,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_366",
+      "name": "maleza_verde_388",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 18.4,
       "r": 59.2,
@@ -5507,7 +5837,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_367",
+      "name": "maleza_verde_389",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 17.4,
       "r": 60.15,
@@ -5522,7 +5852,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_368",
+      "name": "maleza_verde_390",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 17.45,
       "r": 60.25,
@@ -5537,7 +5867,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_369",
+      "name": "maleza_verde_391",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 23.2,
       "r": 60.1,
@@ -5552,7 +5882,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_370",
+      "name": "maleza_verde_392",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 18.5,
       "r": 61.1,
@@ -5567,7 +5897,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_371",
+      "name": "maleza_verde_393",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 22.2,
       "r": 61.05,
@@ -5582,7 +5912,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_372",
+      "name": "maleza_verde_394",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 24.0,
       "r": 60.15,
@@ -5597,7 +5927,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_373",
+      "name": "maleza_verde_395",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 30.25,
       "r": 60.0,
@@ -5612,7 +5942,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_374",
+      "name": "maleza_verde_396",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 25.05,
       "r": 61.0,
@@ -5627,7 +5957,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_375",
+      "name": "maleza_verde_397",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 29.25,
       "r": 60.949999999999996,
@@ -5642,7 +5972,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_376",
+      "name": "maleza_verde_398",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 30.25,
       "r": 60.35,
@@ -5657,7 +5987,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_377",
+      "name": "maleza_verde_399",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 35.8,
       "r": 60.2,
@@ -5672,7 +6002,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_378",
+      "name": "maleza_verde_400",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 31.3,
       "r": 61.2,
@@ -5687,7 +6017,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_379",
+      "name": "maleza_verde_401",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 34.8,
       "r": 61.15,
@@ -5702,7 +6032,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_380",
+      "name": "maleza_verde_402",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 40.6,
       "r": 58.65,
@@ -5717,7 +6047,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_381",
+      "name": "maleza_verde_403",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 47.449999999999996,
       "r": 58.5,
@@ -5732,7 +6062,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_382",
+      "name": "maleza_verde_404",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 41.650000000000006,
       "r": 59.5,
@@ -5747,7 +6077,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_383",
+      "name": "maleza_verde_405",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 46.449999999999996,
       "r": 59.449999999999996,
@@ -5762,7 +6092,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_384",
+      "name": "maleza_verde_406",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 41.75,
       "r": 56.0,
@@ -5777,7 +6107,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_385",
+      "name": "maleza_verde_407",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 45.949999999999996,
       "r": 55.949999999999996,
@@ -5792,7 +6122,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_386",
+      "name": "maleza_verde_408",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 34.25,
       "r": 55.95,
@@ -5807,7 +6137,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_387",
+      "name": "maleza_verde_409",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 40.0,
       "r": 55.800000000000004,
@@ -5822,7 +6152,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_388",
+      "name": "maleza_verde_410",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 35.300000000000004,
       "r": 56.800000000000004,
@@ -5837,7 +6167,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_389",
+      "name": "maleza_verde_411",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 39.0,
       "r": 56.75,
@@ -5852,7 +6182,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_390",
+      "name": "maleza_verde_412",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 2.1,
       "r": 61.25,
@@ -5867,7 +6197,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_391",
+      "name": "maleza_verde_413",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 7.95,
       "r": 61.1,
@@ -5882,7 +6212,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_392",
+      "name": "maleza_verde_414",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 47.0,
       "r": 59.85,
@@ -5897,7 +6227,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_393",
+      "name": "maleza_verde_415",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 52.849999999999994,
       "r": 59.7,
@@ -5912,7 +6242,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_394",
+      "name": "maleza_verde_416",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 48.050000000000004,
       "r": 60.7,
@@ -5927,7 +6257,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_395",
+      "name": "maleza_verde_417",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 51.849999999999994,
       "r": 60.65,
@@ -5942,7 +6272,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_396",
+      "name": "maleza_verde_418",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 22.9,
       "r": 31.3,
@@ -5957,7 +6287,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_397",
+      "name": "maleza_verde_419",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 21.9,
       "r": 32.25,
@@ -5972,7 +6302,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_398",
+      "name": "maleza_verde_420",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 36.3,
       "r": 27.35,
@@ -5987,7 +6317,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_399",
+      "name": "maleza_verde_421",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 47.75,
       "r": 27.2,
@@ -6002,7 +6332,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_400",
+      "name": "maleza_verde_422",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 37.35,
       "r": 28.2,
@@ -6017,7 +6347,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_401",
+      "name": "maleza_verde_423",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 46.75,
       "r": 28.15,
@@ -6032,7 +6362,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_402",
+      "name": "maleza_verde_424",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 53.55,
       "r": 27.950000000000003,
@@ -6047,7 +6377,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_403",
+      "name": "maleza_verde_425",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.7,
       "r": 27.8,
@@ -6062,7 +6392,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_404",
+      "name": "maleza_verde_426",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 54.6,
       "r": 28.8,
@@ -6077,7 +6407,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_405",
+      "name": "maleza_verde_427",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 61.7,
       "r": 28.75,
@@ -6092,7 +6422,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_406",
+      "name": "maleza_verde_428",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 61.75,
       "r": 37.900000000000006,
@@ -6107,7 +6437,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_407",
+      "name": "maleza_verde_429",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 51.550000000000004,
       "r": 38.900000000000006,
@@ -6122,7 +6452,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_408",
+      "name": "maleza_verde_430",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 60.75,
       "r": 38.85,
@@ -6137,7 +6467,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_409",
+      "name": "maleza_verde_431",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 48.53391741422253,
       "r": 5.933127211009513,
@@ -6152,7 +6482,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_410",
+      "name": "maleza_verde_432",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 19.078096190129028,
       "r": 16.94067409884333,
@@ -6167,7 +6497,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_411",
+      "name": "maleza_verde_433",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 58.995267605316236,
       "r": 3.155471057284232,
@@ -6182,7 +6512,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_412",
+      "name": "maleza_verde_434",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 37.377919131747525,
       "r": 12.600132627743285,
@@ -6197,7 +6527,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_413",
+      "name": "maleza_verde_435",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 21.00083935426428,
       "r": 36.86688755042035,
@@ -6212,7 +6542,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_414",
+      "name": "maleza_verde_436",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 9.922737332756318,
       "r": 8.327213483820298,
@@ -6227,7 +6557,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_415",
+      "name": "maleza_verde_437",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 11.03664801104851,
       "r": 8.137916363220455,
@@ -6242,7 +6572,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_416",
+      "name": "maleza_verde_438",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 20.595402283096334,
       "r": 35.98644046407295,
@@ -6257,7 +6587,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_417",
+      "name": "maceta_reutilizada_439",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 3.831962356002447,
       "r": 52.51634581316015,
@@ -6272,7 +6602,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_418",
+      "name": "maleza_verde_440",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 6.121237855097229,
       "r": 18.454232566676822,
@@ -6287,7 +6617,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_419",
+      "name": "maleza_verde_441",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 60.80958051027696,
       "r": 60.44951919529374,
@@ -6302,7 +6632,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_420",
+      "name": "maceta_reutilizada_442",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 33.20342166002355,
       "r": 29.76063709504346,
@@ -6317,7 +6647,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_421",
+      "name": "maleza_verde_443",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 45.50758849323562,
       "r": 46.88984778293869,
@@ -6332,7 +6662,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_422",
+      "name": "maleza_verde_444",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 6.661057820319415,
       "r": 19.20710869417972,
@@ -6347,7 +6677,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_423",
+      "name": "maleza_verde_445",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 17.257137909381086,
       "r": 45.05659561197352,
@@ -6362,7 +6692,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_424",
+      "name": "maleza_verde_446",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 38.53611831371695,
       "r": 58.050255633832094,
@@ -6377,7 +6707,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_425",
+      "name": "maceta_reutilizada_447",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 27.6371689680878,
       "r": 2.8955412059576906,
@@ -6392,7 +6722,7 @@
       "bottom": 54
     },
     {
-      "name": "maceta_reutilizada_426",
+      "name": "maceta_reutilizada_448",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 18.950583394596396,
       "r": 50.11203050432447,
@@ -6407,7 +6737,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_427",
+      "name": "maleza_verde_449",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 56.434636694051534,
       "r": 3.2205187734212464,
@@ -6422,7 +6752,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_428",
+      "name": "maceta_reutilizada_450",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 1.8014873086620349,
       "r": 31.779735928429055,
@@ -6437,7 +6767,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_429",
+      "name": "maleza_verde_451",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 20.126698853544195,
       "r": 19.57365414231615,
@@ -6452,7 +6782,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_430",
+      "name": "maleza_verde_452",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 30.54732712021482,
       "r": 29.422063873290753,
@@ -6467,7 +6797,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_431",
+      "name": "maleza_verde_453",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 3.018617175768938,
       "r": 18.263272034501778,
@@ -6482,7 +6812,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_432",
+      "name": "maleza_verde_454",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.7660731580868476,
       "r": 22.007569598823963,
@@ -6497,7 +6827,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_433",
+      "name": "maleza_verde_455",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 58.874479046182735,
       "r": 50.655945473203886,
@@ -6512,7 +6842,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_434",
+      "name": "maceta_reutilizada_456",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 46.173225641398716,
       "r": 5.884791790096567,
@@ -6527,7 +6857,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_435",
+      "name": "maleza_verde_457",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 58.016664507413005,
       "r": 2.113810007637871,
@@ -6542,7 +6872,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_436",
+      "name": "maceta_reutilizada_458",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 55.432068701938306,
       "r": 38.96773493872606,
@@ -6557,7 +6887,7 @@
       "bottom": 54
     },
     {
-      "name": "maceta_reutilizada_437",
+      "name": "maceta_reutilizada_459",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 11.903691828103543,
       "r": 38.27384952410213,
@@ -6572,7 +6902,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_438",
+      "name": "maleza_verde_460",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 6.827884708127485,
       "r": 16.795682331928077,
@@ -6587,7 +6917,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_439",
+      "name": "maceta_reutilizada_461",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 3.6991261011873053,
       "r": 31.521717435666048,
@@ -6602,7 +6932,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_440",
+      "name": "maleza_verde_462",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 10.204350066435723,
       "r": 27.838203060892837,
@@ -6617,7 +6947,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_441",
+      "name": "maceta_reutilizada_463",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 37.14598723778647,
       "r": 59.40804593945383,
@@ -6632,7 +6962,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_442",
+      "name": "maleza_verde_464",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 33.089121114750796,
       "r": 48.58844693372446,
@@ -6647,7 +6977,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_443",
+      "name": "maleza_verde_465",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 53.75944764530647,
       "r": 8.316160418701166,
@@ -6662,7 +6992,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_444",
+      "name": "maceta_reutilizada_466",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 57.347834279972496,
       "r": 7.010266610443644,
@@ -6677,7 +7007,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_445",
+      "name": "maleza_verde_467",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 58.13668758539129,
       "r": 41.62459856700019,
@@ -6692,7 +7022,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_446",
+      "name": "maceta_reutilizada_468",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 39.35478685877894,
       "r": 15.793857525944354,
@@ -6707,7 +7037,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_447",
+      "name": "maleza_verde_469",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 56.26827017744862,
       "r": 57.30785396099029,
@@ -6722,7 +7052,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_448",
+      "name": "maleza_verde_470",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 40.567327349713516,
       "r": 61.30959035361157,
@@ -6737,7 +7067,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_449",
+      "name": "maleza_verde_471",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 12.150134566276023,
       "r": 20.606427311710696,
@@ -6752,7 +7082,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_450",
+      "name": "maceta_reutilizada_472",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 2.7740156209897533,
       "r": 31.266155281130693,
@@ -6767,7 +7097,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_451",
+      "name": "maleza_verde_473",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 7.736911352301332,
       "r": 3.926291668510811,
@@ -6782,7 +7112,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_452",
+      "name": "maleza_verde_474",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 28.534065808234466,
       "r": 33.598711619837154,
@@ -6797,7 +7127,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_453",
+      "name": "maleza_verde_475",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 43.52025851509467,
       "r": 43.81606066208905,
@@ -6812,7 +7142,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_454",
+      "name": "maceta_reutilizada_476",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 38.73108568695629,
       "r": 12.788392514093093,
@@ -6827,7 +7157,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_455",
+      "name": "maleza_verde_477",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 17.544126610658406,
       "r": 49.3081932379519,
@@ -6842,7 +7172,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_456",
+      "name": "maleza_verde_478",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 44.23834087598251,
       "r": 47.54233096142033,
@@ -6857,7 +7187,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_457",
+      "name": "maceta_reutilizada_479",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 57.40881811202513,
       "r": 11.856626884766118,
@@ -6872,7 +7202,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_458",
+      "name": "maleza_verde_480",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 55.174931330100144,
       "r": 29.455544866087568,
@@ -6887,7 +7217,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_459",
+      "name": "maleza_verde_481",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.9909245385344694,
       "r": 14.549274637897161,
@@ -6902,7 +7232,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_460",
+      "name": "maleza_verde_482",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 46.210124787192335,
       "r": 46.23813099224453,
@@ -6917,7 +7247,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_461",
+      "name": "maceta_reutilizada_483",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 19.79150534138055,
       "r": 7.762774162820021,
@@ -6932,7 +7262,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_462",
+      "name": "maleza_verde_484",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 47.21822687583516,
       "r": 50.478530029879984,
@@ -6947,7 +7277,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_463",
+      "name": "maleza_verde_485",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 32.429179481690866,
       "r": 29.87140278205718,
@@ -6962,7 +7292,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_464",
+      "name": "maleza_verde_486",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 41.9963295339935,
       "r": 60.83505201285704,
@@ -6977,7 +7307,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_465",
+      "name": "maceta_reutilizada_487",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 60.237392869004736,
       "r": 6.5246184881872935,
@@ -6992,7 +7322,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_466",
+      "name": "maleza_verde_488",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 49.32390611411337,
       "r": 6.967682521911813,
@@ -7007,7 +7337,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_467",
+      "name": "maleza_verde_489",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 34.32857901623199,
       "r": 2.0458950732101915,
@@ -7022,7 +7352,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_468",
+      "name": "maceta_reutilizada_490",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 39.56676792658992,
       "r": 16.454300948056343,
@@ -7037,7 +7367,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_469",
+      "name": "maleza_verde_491",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 10.549352092583472,
       "r": 23.845300438608703,
@@ -7052,7 +7382,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_470",
+      "name": "maleza_verde_492",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 9.081230082254063,
       "r": 2.5356006797110124,
@@ -7067,7 +7397,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_471",
+      "name": "maceta_reutilizada_493",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 55.362385481893696,
       "r": 8.518027049212465,
@@ -7082,7 +7412,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_472",
+      "name": "maleza_verde_494",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 58.25998961902107,
       "r": 57.29160135115057,
@@ -7097,7 +7427,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_473",
+      "name": "maceta_reutilizada_495",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 55.11937106918945,
       "r": 61.49637562252728,
@@ -7112,7 +7442,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_474",
+      "name": "maleza_verde_496",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 7.7366795707372225,
       "r": 13.105045493557684,
@@ -7127,7 +7457,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_475",
+      "name": "maleza_verde_497",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 41.51882306871124,
       "r": 42.2656554472661,
@@ -7142,7 +7472,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_476",
+      "name": "maceta_reutilizada_498",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 43.29363514523175,
       "r": 48.00499847746537,
@@ -7157,7 +7487,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_477",
+      "name": "maleza_verde_499",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 5.92154514755778,
       "r": 15.87826151614395,
@@ -7172,7 +7502,7 @@
       "bottom": 32
     },
     {
-      "name": "maceta_reutilizada_478",
+      "name": "maceta_reutilizada_500",
       "sprite": "Sprites/04_Objetos/maceta_reutilizada.png",
       "c": 8.504499336928829,
       "r": 21.35475641903726,
@@ -7187,7 +7517,7 @@
       "bottom": 54
     },
     {
-      "name": "maleza_verde_479",
+      "name": "maleza_verde_501",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 6.576950083976152,
       "r": 15.386595147657081,
@@ -7202,7 +7532,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_480",
+      "name": "maleza_verde_502",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 31.86652587010887,
       "r": 7.883260459374034,
@@ -7217,7 +7547,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_481",
+      "name": "maleza_verde_503",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 43.654686792419476,
       "r": 2.1916298803143723,
@@ -7232,7 +7562,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_482",
+      "name": "maleza_verde_504",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 21.211161043258702,
       "r": 34.337856231669875,
@@ -7247,7 +7577,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_483",
+      "name": "maleza_verde_505",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 10.621034543041828,
       "r": 11.747917211594627,
@@ -7262,7 +7592,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_484",
+      "name": "maleza_verde_506",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 20.0452417934583,
       "r": 38.07912422042857,
@@ -7277,7 +7607,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_485",
+      "name": "maleza_verde_507",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 59.168764547280205,
       "r": 8.518974893426108,
@@ -7292,7 +7622,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_486",
+      "name": "maleza_verde_508",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 5.689505732210349,
       "r": 16.45204823862714,
@@ -7307,7 +7637,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_487",
+      "name": "maleza_verde_509",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 9.843179384852013,
       "r": 5.915297859960917,
@@ -7322,7 +7652,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_488",
+      "name": "maleza_verde_510",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 55.32512960186982,
       "r": 2.4055262307005503,
@@ -7337,7 +7667,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_489",
+      "name": "maleza_verde_511",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 53.41169917690438,
       "r": 4.408820060249548,
@@ -7352,7 +7682,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_490",
+      "name": "maleza_verde_512",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 2,
       "r": 2,
@@ -7367,7 +7697,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_491",
+      "name": "maleza_verde_513",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 2,
       "r": 62.5,
@@ -7382,7 +7712,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_492",
+      "name": "maleza_verde_514",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 4,
       "r": 2,
@@ -7397,7 +7727,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_493",
+      "name": "maleza_verde_515",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 4,
       "r": 62.5,
@@ -7412,7 +7742,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_494",
+      "name": "maleza_verde_516",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 6,
       "r": 2,
@@ -7427,7 +7757,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_495",
+      "name": "maleza_verde_517",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 6,
       "r": 62.5,
@@ -7442,7 +7772,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_496",
+      "name": "maleza_verde_518",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 8,
       "r": 2,
@@ -7457,7 +7787,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_497",
+      "name": "maleza_verde_519",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 8,
       "r": 62.5,
@@ -7472,7 +7802,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_498",
+      "name": "maleza_verde_520",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 10,
       "r": 2,
@@ -7487,7 +7817,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_499",
+      "name": "maleza_verde_521",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 10,
       "r": 62.5,
@@ -7502,7 +7832,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_500",
+      "name": "maleza_verde_522",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 12,
       "r": 2,
@@ -7517,7 +7847,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_501",
+      "name": "maleza_verde_523",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 12,
       "r": 62.5,
@@ -7532,7 +7862,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_502",
+      "name": "maleza_verde_524",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 14,
       "r": 62.5,
@@ -7547,339 +7877,9 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_503",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 16,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_504",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 16,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_505",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 18,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_506",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 18,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_507",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 20,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_508",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 20,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_509",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 22,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_510",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 22,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_511",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 24,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_512",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 24,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_513",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 26,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_514",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 26,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_515",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 28,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_516",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 28,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_517",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 30,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_518",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 30,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_519",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 32,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_520",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 32,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_521",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 34,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_522",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 34,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_523",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 36,
-      "r": 2,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
-      "name": "maleza_verde_524",
-      "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 36,
-      "r": 62.5,
-      "width": 1.6,
-      "height": 0,
-      "angle": 0,
-      "kind": "prop",
-      "solid": false,
-      "left": 0,
-      "top": 0,
-      "right": 64,
-      "bottom": 32
-    },
-    {
       "name": "maleza_verde_525",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 38,
+      "c": 16,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -7894,7 +7894,7 @@
     {
       "name": "maleza_verde_526",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 38,
+      "c": 16,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -7909,7 +7909,7 @@
     {
       "name": "maleza_verde_527",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 40,
+      "c": 18,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -7924,7 +7924,7 @@
     {
       "name": "maleza_verde_528",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 40,
+      "c": 18,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -7939,7 +7939,7 @@
     {
       "name": "maleza_verde_529",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 42,
+      "c": 20,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -7954,7 +7954,7 @@
     {
       "name": "maleza_verde_530",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 42,
+      "c": 20,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -7969,7 +7969,7 @@
     {
       "name": "maleza_verde_531",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 44,
+      "c": 22,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -7984,7 +7984,7 @@
     {
       "name": "maleza_verde_532",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 44,
+      "c": 22,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -7999,7 +7999,7 @@
     {
       "name": "maleza_verde_533",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 46,
+      "c": 24,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -8014,7 +8014,7 @@
     {
       "name": "maleza_verde_534",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 46,
+      "c": 24,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -8029,7 +8029,7 @@
     {
       "name": "maleza_verde_535",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 48,
+      "c": 26,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -8044,7 +8044,7 @@
     {
       "name": "maleza_verde_536",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 48,
+      "c": 26,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -8059,7 +8059,7 @@
     {
       "name": "maleza_verde_537",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 50,
+      "c": 28,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -8074,7 +8074,7 @@
     {
       "name": "maleza_verde_538",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 50,
+      "c": 28,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -8089,7 +8089,7 @@
     {
       "name": "maleza_verde_539",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 52,
+      "c": 30,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -8104,7 +8104,7 @@
     {
       "name": "maleza_verde_540",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 52,
+      "c": 30,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -8119,7 +8119,7 @@
     {
       "name": "maleza_verde_541",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 54,
+      "c": 32,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -8134,7 +8134,7 @@
     {
       "name": "maleza_verde_542",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 54,
+      "c": 32,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -8149,7 +8149,7 @@
     {
       "name": "maleza_verde_543",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 56,
+      "c": 34,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -8164,7 +8164,7 @@
     {
       "name": "maleza_verde_544",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 56,
+      "c": 34,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -8179,7 +8179,7 @@
     {
       "name": "maleza_verde_545",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 58,
+      "c": 36,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -8194,7 +8194,7 @@
     {
       "name": "maleza_verde_546",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 58,
+      "c": 36,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -8209,7 +8209,7 @@
     {
       "name": "maleza_verde_547",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 60,
+      "c": 38,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -8224,7 +8224,7 @@
     {
       "name": "maleza_verde_548",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 60,
+      "c": 38,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -8239,7 +8239,7 @@
     {
       "name": "maleza_verde_549",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62,
+      "c": 40,
       "r": 2,
       "width": 1.6,
       "height": 0,
@@ -8254,7 +8254,7 @@
     {
       "name": "maleza_verde_550",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62,
+      "c": 40,
       "r": 62.5,
       "width": 1.6,
       "height": 0,
@@ -8269,9 +8269,9 @@
     {
       "name": "maleza_verde_551",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 5,
-      "width": 1.5,
+      "c": 42,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8284,9 +8284,9 @@
     {
       "name": "maleza_verde_552",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 5,
-      "width": 1.5,
+      "c": 42,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8299,9 +8299,9 @@
     {
       "name": "maleza_verde_553",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 7,
-      "width": 1.5,
+      "c": 44,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8314,9 +8314,9 @@
     {
       "name": "maleza_verde_554",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 7,
-      "width": 1.5,
+      "c": 44,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8329,9 +8329,9 @@
     {
       "name": "maleza_verde_555",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 9,
-      "width": 1.5,
+      "c": 46,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8344,9 +8344,9 @@
     {
       "name": "maleza_verde_556",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 9,
-      "width": 1.5,
+      "c": 46,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8359,9 +8359,9 @@
     {
       "name": "maleza_verde_557",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 11,
-      "width": 1.5,
+      "c": 48,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8374,9 +8374,9 @@
     {
       "name": "maleza_verde_558",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 11,
-      "width": 1.5,
+      "c": 48,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8389,9 +8389,9 @@
     {
       "name": "maleza_verde_559",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 13,
-      "width": 1.5,
+      "c": 50,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8404,9 +8404,9 @@
     {
       "name": "maleza_verde_560",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 13,
-      "width": 1.5,
+      "c": 50,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8419,9 +8419,9 @@
     {
       "name": "maleza_verde_561",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 15,
-      "width": 1.5,
+      "c": 52,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8434,9 +8434,9 @@
     {
       "name": "maleza_verde_562",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 15,
-      "width": 1.5,
+      "c": 52,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8449,9 +8449,9 @@
     {
       "name": "maleza_verde_563",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 17,
-      "width": 1.5,
+      "c": 54,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8464,9 +8464,9 @@
     {
       "name": "maleza_verde_564",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 17,
-      "width": 1.5,
+      "c": 54,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8479,9 +8479,9 @@
     {
       "name": "maleza_verde_565",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 19,
-      "width": 1.5,
+      "c": 56,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8494,9 +8494,9 @@
     {
       "name": "maleza_verde_566",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 19,
-      "width": 1.5,
+      "c": 56,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8509,9 +8509,9 @@
     {
       "name": "maleza_verde_567",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 21,
-      "width": 1.5,
+      "c": 58,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8524,9 +8524,9 @@
     {
       "name": "maleza_verde_568",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 21,
-      "width": 1.5,
+      "c": 58,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8539,9 +8539,9 @@
     {
       "name": "maleza_verde_569",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 23,
-      "width": 1.5,
+      "c": 60,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8554,9 +8554,9 @@
     {
       "name": "maleza_verde_570",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 23,
-      "width": 1.5,
+      "c": 60,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8569,9 +8569,9 @@
     {
       "name": "maleza_verde_571",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 1.5,
-      "r": 25,
-      "width": 1.5,
+      "c": 62,
+      "r": 2,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8584,9 +8584,9 @@
     {
       "name": "maleza_verde_572",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
-      "c": 62.5,
-      "r": 25,
-      "width": 1.5,
+      "c": 62,
+      "r": 62.5,
+      "width": 1.6,
       "height": 0,
       "angle": 0,
       "kind": "prop",
@@ -8600,7 +8600,7 @@
       "name": "maleza_verde_573",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 27,
+      "r": 5,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8615,7 +8615,7 @@
       "name": "maleza_verde_574",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 27,
+      "r": 5,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8630,7 +8630,7 @@
       "name": "maleza_verde_575",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 29,
+      "r": 7,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8645,7 +8645,7 @@
       "name": "maleza_verde_576",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 29,
+      "r": 7,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8660,7 +8660,7 @@
       "name": "maleza_verde_577",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 31,
+      "r": 9,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8675,7 +8675,7 @@
       "name": "maleza_verde_578",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 31,
+      "r": 9,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8690,7 +8690,7 @@
       "name": "maleza_verde_579",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 33,
+      "r": 11,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8705,7 +8705,7 @@
       "name": "maleza_verde_580",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 33,
+      "r": 11,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8720,7 +8720,7 @@
       "name": "maleza_verde_581",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 35,
+      "r": 13,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8735,7 +8735,7 @@
       "name": "maleza_verde_582",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 35,
+      "r": 13,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8750,7 +8750,7 @@
       "name": "maleza_verde_583",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 37,
+      "r": 15,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8765,7 +8765,7 @@
       "name": "maleza_verde_584",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 37,
+      "r": 15,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8780,7 +8780,7 @@
       "name": "maleza_verde_585",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 39,
+      "r": 17,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8795,7 +8795,7 @@
       "name": "maleza_verde_586",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 39,
+      "r": 17,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8810,7 +8810,7 @@
       "name": "maleza_verde_587",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 41,
+      "r": 19,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8825,7 +8825,7 @@
       "name": "maleza_verde_588",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 41,
+      "r": 19,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8840,7 +8840,7 @@
       "name": "maleza_verde_589",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 43,
+      "r": 21,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8855,7 +8855,7 @@
       "name": "maleza_verde_590",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 43,
+      "r": 21,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8870,7 +8870,7 @@
       "name": "maleza_verde_591",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 45,
+      "r": 23,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8885,7 +8885,7 @@
       "name": "maleza_verde_592",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 45,
+      "r": 23,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8900,7 +8900,7 @@
       "name": "maleza_verde_593",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 47,
+      "r": 25,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8915,7 +8915,7 @@
       "name": "maleza_verde_594",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 47,
+      "r": 25,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8930,7 +8930,7 @@
       "name": "maleza_verde_595",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 49,
+      "r": 27,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8945,7 +8945,7 @@
       "name": "maleza_verde_596",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 49,
+      "r": 27,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8960,7 +8960,7 @@
       "name": "maleza_verde_597",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 51,
+      "r": 29,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8975,7 +8975,7 @@
       "name": "maleza_verde_598",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 51,
+      "r": 29,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -8990,7 +8990,7 @@
       "name": "maleza_verde_599",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 53,
+      "r": 31,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -9005,7 +9005,7 @@
       "name": "maleza_verde_600",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 53,
+      "r": 31,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -9020,7 +9020,7 @@
       "name": "maleza_verde_601",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 55,
+      "r": 33,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -9035,7 +9035,7 @@
       "name": "maleza_verde_602",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 55,
+      "r": 33,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -9050,7 +9050,7 @@
       "name": "maleza_verde_603",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 57,
+      "r": 35,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -9065,7 +9065,7 @@
       "name": "maleza_verde_604",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 57,
+      "r": 35,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -9080,7 +9080,7 @@
       "name": "maleza_verde_605",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 1.5,
-      "r": 59,
+      "r": 37,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -9095,7 +9095,7 @@
       "name": "maleza_verde_606",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 62.5,
-      "r": 59,
+      "r": 37,
       "width": 1.5,
       "height": 0,
       "angle": 0,
@@ -9108,6 +9108,336 @@
     },
     {
       "name": "maleza_verde_607",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 39,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_608",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 39,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_609",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 41,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_610",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 41,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_611",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 43,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_612",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 43,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_613",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 45,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_614",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 45,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_615",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 47,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_616",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 47,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_617",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 49,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_618",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 49,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_619",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 51,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_620",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 51,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_621",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 53,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_622",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 53,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_623",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 55,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_624",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 55,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_625",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 57,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_626",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 57,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_627",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 1.5,
+      "r": 59,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_628",
+      "sprite": "Sprites/04_Objetos/maleza_verde.png",
+      "c": 62.5,
+      "r": 59,
+      "width": 1.5,
+      "height": 0,
+      "angle": 0,
+      "kind": "prop",
+      "solid": false,
+      "left": 0,
+      "top": 0,
+      "right": 64,
+      "bottom": 32
+    },
+    {
+      "name": "maleza_verde_629",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 29,
       "r": 43,
@@ -9122,7 +9452,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_608",
+      "name": "maleza_verde_630",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 31,
       "r": 43,
@@ -9137,7 +9467,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_609",
+      "name": "maleza_verde_631",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 43,
       "r": 43,
@@ -9152,7 +9482,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_610",
+      "name": "maleza_verde_632",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 46,
       "r": 43,
@@ -9167,7 +9497,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_611",
+      "name": "maleza_verde_633",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 29,
       "r": 45,
@@ -9182,7 +9512,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_612",
+      "name": "maleza_verde_634",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 29,
       "r": 50.5,
@@ -9197,7 +9527,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_613",
+      "name": "maleza_verde_635",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 31,
       "r": 51.5,
@@ -9212,7 +9542,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_614",
+      "name": "maleza_verde_636",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 33,
       "r": 51.5,
@@ -9227,7 +9557,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_615",
+      "name": "maleza_verde_637",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 41,
       "r": 51.5,
@@ -9242,7 +9572,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_616",
+      "name": "maleza_verde_638",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 43,
       "r": 51.5,
@@ -9257,7 +9587,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_617",
+      "name": "maleza_verde_639",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 45,
       "r": 51.5,
@@ -9272,7 +9602,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_618",
+      "name": "maleza_verde_640",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 48,
       "r": 44,
@@ -9287,7 +9617,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_619",
+      "name": "maleza_verde_641",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 48,
       "r": 46,
@@ -9302,7 +9632,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_620",
+      "name": "maleza_verde_642",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 48,
       "r": 50,
@@ -9317,7 +9647,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_621",
+      "name": "maleza_verde_643",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 45,
       "r": 4,
@@ -9332,7 +9662,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_622",
+      "name": "maleza_verde_644",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 47,
       "r": 4,
@@ -9347,7 +9677,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_623",
+      "name": "maleza_verde_645",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 50,
       "r": 4,
@@ -9362,7 +9692,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_624",
+      "name": "maleza_verde_646",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 54,
       "r": 4,
@@ -9377,7 +9707,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_625",
+      "name": "maleza_verde_647",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 57,
       "r": 4,
@@ -9392,7 +9722,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_626",
+      "name": "maleza_verde_648",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 60,
       "r": 4,
@@ -9407,7 +9737,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_627",
+      "name": "maleza_verde_649",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 47,
       "r": 11,
@@ -9422,7 +9752,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_628",
+      "name": "maleza_verde_650",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 49,
       "r": 11,
@@ -9437,7 +9767,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_629",
+      "name": "maleza_verde_651",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 55,
       "r": 11,
@@ -9452,7 +9782,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_630",
+      "name": "maleza_verde_652",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 59,
       "r": 11,
@@ -9467,7 +9797,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_631",
+      "name": "maleza_verde_653",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 12,
       "r": 6,
@@ -9482,7 +9812,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_632",
+      "name": "maleza_verde_654",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 12,
       "r": 10,
@@ -9497,7 +9827,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_633",
+      "name": "maleza_verde_655",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 12,
       "r": 18,
@@ -9512,7 +9842,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_634",
+      "name": "maleza_verde_656",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 13,
       "r": 21,
@@ -9527,7 +9857,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_635",
+      "name": "maleza_verde_657",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 3,
       "r": 20,
@@ -9542,7 +9872,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_636",
+      "name": "maleza_verde_658",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 5,
       "r": 20,
@@ -9557,7 +9887,7 @@
       "bottom": 32
     },
     {
-      "name": "maleza_verde_637",
+      "name": "maleza_verde_659",
       "sprite": "Sprites/04_Objetos/maleza_verde.png",
       "c": 7,
       "r": 20,

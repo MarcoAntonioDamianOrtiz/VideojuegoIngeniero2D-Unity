@@ -15,4 +15,4 @@ Consulta Documentacion/Nivel1/Referencia_08.md y la vista previa PNG.
 La vista previa se compuso a partir de los sprites y coordenadas reales, fuera de Unity.
 Las conexiones entre zonas se comprobaron geométricamente; falta probar la importación y el recorrido en Unity.
 
-Contiene 32 edificios, 638 elementos de plano, ocho sprites nuevos y 32 tramos de muro exterior.
+Contiene 32 edificios, 660 elementos de plano, ocho sprites nuevos y 32 tramos de muro exterior.

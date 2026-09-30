@@ -4,7 +4,7 @@ Abre `Assets/Scenes/EscenaNivel1_Referencia.unity` después de hacer Pull. La di
 
 La escena nueva conserva el jugador, sus animaciones y movimiento, la cámara que lo sigue y la iluminación de la escena existente. El barrio sigue ocupando 64 × 64 casillas, con límites en X = −40…24 y Y = −44…20. Su punto de inicio queda en el patio de Alex.
 
-Se trazaron las posiciones y proporciones de las zonas sobre la imagen de referencia: callejón al noroeste, viviendas alrededor de patios, huertos al noreste, casa de Alex al oeste de la plaza, panadería y miscelánea al norte, taller al este, parque al sur y salida bloqueada al sureste. Hay 32 edificios y 638 elementos en el plano, además de los 32 tramos de muro exterior.
+Se trazaron las posiciones y proporciones de las zonas sobre la imagen de referencia: callejón al noroeste, viviendas alrededor de patios, huertos al noreste, casa de Alex al oeste de la plaza, panadería y miscelánea al norte, taller al este, parque al sur y salida bloqueada al sureste. Hay 32 edificios y 660 elementos en el plano, además de los 32 tramos de muro exterior.
 
 Se añadieron ocho sprites con transparencia: casa de Alex con interior visible, panadería con letrero, miscelánea, taller, túnel, cancha, vagón del borde norte y maleza verde. Las casas vecinas reutilizan los sprites del proyecto. Por ello la composición se acerca a la referencia, pero el arte de esas viviendas y muchos detalles pequeños no es una copia exacta de la ilustración.
 

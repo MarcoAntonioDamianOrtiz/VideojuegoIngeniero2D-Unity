@@ -99,6 +99,16 @@ for c,r in [(55.3,56.2),(61.6,56.2)]:add('valla_obras',c,r,1.5,solid=True)
 add('senal_bloqueo',58.5,57.7,1.6)
 for c,r,w in [(13,5,2.6),(31.5,9,3.9),(38.7,8,3),(59,9.5,3.5),(57.5,15,3),(2.1,24.5,3.8),(26.5,27,3.2),(24.9,31,2.4),(29,39.5,3.2),(38.3,40.6,3.5),(30,44.5,2.9),(45.5,44.3,3.6),(47,50.8,3.4),(30,51.7,2.8),(32.4,57,3.1),(39,61.2,3),(48.8,61.6,3.5),(11,60.9,3),(2.5,56.5,3)]:add('arbol_barrio',c,r,w)
 
+# Street-level details that make the residential lanes read as lived-in blocks.
+for c,r,w in [(2.5,7.8,1.8),(8.8,15.7,1.7),(11.4,18.8,1.6),(54.7,40.7,1.8),(61,43.2,1.7)]:
+    add('bolsa_basura_negra',c,r,w)
+for c,r,w in [(16.8,8.7,2.1),(40.8,18.5,2.3),(17.2,42.7,2.2),(50.4,17.7,2.2),(52.5,55.3,2.3)]:
+    add('cartel_madera',c,r,w)
+for c,r,angle in [(17.2,18.1,0),(39.4,19.6,90),(12.1,48.5,90),(50.4,20.4,0),(46.9,54.2,90)]:
+    add('cerca_rota',c,r,2.2,angle=angle)
+for c,r in [(10.8,21),(24.2,18.6),(39.5,22.1),(53.5,18.6),(17.2,54.5),(31.5,54.8),(52,52.1)]:
+    add('arbusto_seco',c,r,1.5)
+
 regions=[
 dict(material='asfalto',c=1,r=2,w=13,h=18),
 dict(material='concreto',c=29,r=30,w=18,h=11),
@@ -141,7 +151,7 @@ for r in range(5,61,2):
 for c,r in [(29,43),(31,43),(43,43),(46,43),(29,45),(29,50.5),(31,51.5),(33,51.5),(41,51.5),(43,51.5),(45,51.5),(48,44),(48,46),(48,50),(45,4),(47,4),(50,4),(54,4),(57,4),(60,4),(47,11),(49,11),(55,11),(59,11),(12,6),(12,10),(12,18),(13,21),(3,20),(5,20),(7,20)]:add('maleza_verde',c,r,1.7)
 
 data=dict(version=1,placements=specs,regions=regions,lanes=lanes)
-out=ROOT/'Editor/PlanoReferenciaNivel1.json';out.write_text(json.dumps(data,ensure_ascii=False,indent=2))
+out=ROOT/'Editor/PlanoReferenciaNivel1.json';out.write_text(json.dumps(data,ensure_ascii=False,indent=2),newline='\n')
 meta=Path(str(out)+'.meta')
 if not meta.exists():meta.write_text('fileFormatVersion: 2\nguid: '+uuid.uuid4().hex+'\nTextScriptImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n')
 print(len(specs),'placements;',len(houses)+4,'buildings')
@@ -155,7 +165,7 @@ def material(c,r):
     return m
 def garden(c,r):
     for l,t,rr,b in bounds:
-        near=l-1.2<c<rr+1.2 and t-.4<r<b+1.4
+        near=l-2<c<rr+2 and t-.7<r<b+2.1
         inside=l+.65<c<rr-.65 and t+.65<r<b-.25
         if near and not inside:return True
     return c<1.7 or c>62.3 or r<1.5 or r>62.5

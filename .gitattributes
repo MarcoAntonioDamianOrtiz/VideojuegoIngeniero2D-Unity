@@ -192,5 +192,6 @@ Assets/Technopolis/Nivel1/Sprites/04_Objetos/mural_estamos_solos.png -filter -di
 Assets/Technopolis/Nivel1/Sprites/04_Objetos/mural_aqui_somos_ciudad.png -filter -diff -merge -text -lfs
 Assets/Technopolis/Nivel1/Sprites/04_Objetos/cableado_aereo_tramo.png -filter -diff -merge -text -lfs
 Assets/Technopolis/Nivel1/Sprites/04_Objetos/poste_luz_calida.png -filter -diff -merge -text -lfs
+Assets/Technopolis/Nivel1/Sprites/04_Objetos/mapa_nivel1_fiel_referencia.png -filter -diff -merge -text -lfs
 Assets/Technopolis/Nivel1/Sprites/04_Objetos/barrera_conos_calle.png -filter -diff -merge -text -lfs
 Assets/Technopolis/Nivel1/Sprites/04_Objetos/aviso_zona_cerrada.png -filter -diff -merge -text -lfs

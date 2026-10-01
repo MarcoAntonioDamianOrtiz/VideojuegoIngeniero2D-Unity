@@ -37,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -143,11 +143,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 1440
-        height: 1205
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -160,11 +160,2013 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db91bb9f580d7d847aa8b1c9f017ea34
+      internalID: 932264000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb68c4eeb1eee5e46a6f8ae1de44c5be
+      internalID: 1396623675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed6ade5f90178444929cb6bb90a67f1
+      internalID: -1203426830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fab5ed3e740f1e4d9979e707c134a5f
+      internalID: -2146263088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 511d0b265621d94458ed02cc06f253b2
+      internalID: -1802851187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7412e8b20aff6d54084d75aa79c43cb2
+      internalID: -1160315548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dca8f111d60aa5468f6b68c1a8244e2
+      internalID: -60171254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a547ca287d0e94298791f0ba57a2e4
+      internalID: -755108074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20229e678b71a6d439426bd135317d4f
+      internalID: -757860282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1077
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188765e3e8ad61b45aedb486c9c33c87
+      internalID: -1971688442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c4d7049a867fcc45aa523031b2c0959
+      internalID: -1183962227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_12
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d7399d1781f604bbcdb7ad0631257a
+      internalID: -325641208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_13
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4edc219902319949ad287af282888b8
+      internalID: 267549100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd9a60ec8403e9540a80f49de8f402bb
+      internalID: 2065577898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_15
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 713a507b10f128043b6ca7ba7a7ef368
+      internalID: -955340806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_16
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8faebe5b4bca8438c70ccc70b40998
+      internalID: 2005093850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_17
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720d420fa21fc0b4b9d02e5c24eeb9bd
+      internalID: 544933388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_18
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc68c6f0f2f4f7e47be787ca9a3bb7dd
+      internalID: -1084160318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_19
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4eab8b1d2358c3449e5bec34b08f151
+      internalID: -554002911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_20
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02ab0039e788eb48963ae7768997088
+      internalID: -1867429832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 949
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16187593ae6657c4883ec1f8ab44db78
+      internalID: -1459453811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991200afd94473d459f7d4cf140f27ba
+      internalID: -968660920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad766a7e8babdf94fbcfe9f20a8d522e
+      internalID: 905599577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_24
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1518aa7a2cefc48bedb2cc941c7709
+      internalID: 492684005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_25
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa56558844c2c6b4586fdc1526733e42
+      internalID: 959541197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e590536b19a8cf74d93012cb90fda260
+      internalID: -394773257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_27
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bea07ce506df2574d9fb5b42aec49db7
+      internalID: -914286164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_28
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24eef016af2f1bf4295189eee3b675b1
+      internalID: 1191049268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_29
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407c90134a002c7498806515d45c72bc
+      internalID: 547799496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_30
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d88887fc58277449f9b51dd55e95f6
+      internalID: 640692780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_31
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f431e91aac118f47bd7fd947500f9f4
+      internalID: 752735950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_32
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 821
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6573a46c32877744dbdd949860991d68
+      internalID: 410224146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_33
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6605096c6a636844ab2d7b90101d0497
+      internalID: 1292707371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_34
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06c493003bfd2bc40a1f9055156b530f
+      internalID: 1234222074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_35
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b719f8a5d67aa1b43935978b878d877f
+      internalID: -1331385827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_36
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 053a528c7dec58749b5a815ca51b93f1
+      internalID: 1468923360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_37
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f32c61f49be5ed4ab9d1595ca266662
+      internalID: 899524407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_38
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b705c4cc0440c7f4fb3d43e38bb34fe1
+      internalID: 1758853604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_39
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de126cb04217d694f88ea3d4c58a9093
+      internalID: -1634622382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_40
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e73fc9e6eb43c744a9555c7c26c0a6c
+      internalID: -1980519877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_41
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7997f13238fe68e4f8b856398487ba72
+      internalID: 916739475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_42
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093fb0ae562f11d41af79f3fc9e4a55f
+      internalID: 1079020236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_43
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 693
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fe040727c0778499510ab82ed07450
+      internalID: -1740172464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0043885aef5c2a2408c747a058abb768
+      internalID: 1857297067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_45
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4add33ec9501a454da0434be284de8ed
+      internalID: -680420554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_46
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f56ed2cca09f504d963efd577992dbc
+      internalID: 212105802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_47
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab979a00eb73e9d4ea40dfe27979eca6
+      internalID: -187201827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_48
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1da25b7effb38948ae743a62f9ba666
+      internalID: 1784790262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_49
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48510a1c9d3888b40a679ea69e5f8aee
+      internalID: 1294647036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_50
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ce892199bf1dc242af859be01bc0f1f
+      internalID: 518771332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_51
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e11f1b563fb1ea4478be9ac5dc71632d
+      internalID: 314188979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_52
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835e7d0f79a10404488bbc367baae5d4
+      internalID: -1056890004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_53
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649ff0e42b056d14b8798f6d7e78c7cf
+      internalID: -359797316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_54
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 565
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a88adc918a97cf45a645cbcafd0f572
+      internalID: -607852310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db9df5dc5ccac10409de2102cc41f2ba
+      internalID: -419099328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08820895ff82d0f42be80202f4539a40
+      internalID: 1008338306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_57
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f220f9ab00879394cb0519069babae28
+      internalID: 1488068934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_58
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03a81d118ec360844b5280c5697dba65
+      internalID: -1023774966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_59
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c34de9c0ade500419ac894e4d99543b
+      internalID: 2005485587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_60
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80d20e6d6b5bab4d83e933bd53c83d5
+      internalID: 1333584301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_61
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e996a8a56e8aa354f96c254d2f47ec6a
+      internalID: 1854273153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_62
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82022e519b42efd4db84f7582ed4941e
+      internalID: -759887838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_63
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8657ed0943b8eff449deaf8376bddf1c
+      internalID: -1840329313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_64
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf66348be53931488fe49059d1bbdda
+      internalID: -1266163397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_65
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 437
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc1435254ed0d54bb85136808a72885
+      internalID: -1151140302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c222f461ff909246b984e9c516a0f8e
+      internalID: -57707874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_67
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490c43e8dcd71dd409b1ae963b0b0528
+      internalID: -1479968430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_68
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ef778e8d715bc144ac3eefd13a65bbc
+      internalID: -1940784756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_69
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe994e6f9b1057b4dbd10a8b05af8a24
+      internalID: 950651891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_70
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274124a26aca3234f95ef5fba1a659d9
+      internalID: 347486237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_71
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d43006a05a693a418e4af3bf484f3cf
+      internalID: 1399498153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_72
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61bbc7cde6cfa53499dad11b81172f65
+      internalID: 1427865485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_73
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0022d2190917062499c1a0f043c7d295
+      internalID: -1617543807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_74
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cddd7507df6bf04b90beaa0794420b9
+      internalID: -303511877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_75
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2de527f192a993b45af154c28d3497be
+      internalID: 930469698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_76
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 309
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0689f6c017d1ea41ae7b14ab1380bac
+      internalID: 1948979156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_77
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe9bd420e05f6ba4fb1b178103b0e57b
+      internalID: 77103950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_78
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7eeaf8ee18ce794991e95f8d0c0d63b
+      internalID: -737313571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_79
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf14296d63b5a54ba735ccc29efd530
+      internalID: -1569596468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_80
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 733288485bb6d3a46b94d24bf4cfc93b
+      internalID: 1134938463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_81
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d36e88e2c738cb4a9c1d55341d5187e
+      internalID: 286920477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_82
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8499e862f0f685f44806c8d38770894e
+      internalID: -936962421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_83
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5540af684c27d8340a143cf679a62e61
+      internalID: 871022954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_84
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f072fe973ea9a846a611e45c7164a50
+      internalID: 2053863563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_85
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7773255ff77a6fb4dbe8f237932d4f8f
+      internalID: -1074117956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_86
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919ab332ba456bf4d87f64ff9c246dff
+      internalID: 223172886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_87
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 181
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0be210ed9eb48b6459f05887c6578098
+      internalID: -1155356292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 53
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b646805b0311cf44d9bab1708c1c075a
+      internalID: 1535834942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_89
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 53
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac74047299842248938f52067e51d67
+      internalID: 1853965087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_90
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 53
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9c08dbbd45513e4a9fa0669a82c4c09
+      internalID: -1294562388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pixel Art 8Bit GIF by pixel jeff_91
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 53
+        width: 128
+        height: 128
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca53756920626b4da79d6e624b8b0e3
+      internalID: -2062542663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6ed09af0f6d689d4d919dff80995a232
     internalID: 0
     vertices: []
     indices: 
@@ -172,9 +2174,102 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.0},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":7,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       Pixel Art 8Bit GIF by pixel jeff_0: 612700486311809980
+      Pixel Art 8Bit GIF by pixel jeff_1: 932264000
+      Pixel Art 8Bit GIF by pixel jeff_10: -1971688442
+      Pixel Art 8Bit GIF by pixel jeff_11: -1183962227
+      Pixel Art 8Bit GIF by pixel jeff_12: -325641208
+      Pixel Art 8Bit GIF by pixel jeff_13: 267549100
+      Pixel Art 8Bit GIF by pixel jeff_14: 2065577898
+      Pixel Art 8Bit GIF by pixel jeff_15: -955340806
+      Pixel Art 8Bit GIF by pixel jeff_16: 2005093850
+      Pixel Art 8Bit GIF by pixel jeff_17: 544933388
+      Pixel Art 8Bit GIF by pixel jeff_18: -1084160318
+      Pixel Art 8Bit GIF by pixel jeff_19: -554002911
+      Pixel Art 8Bit GIF by pixel jeff_2: 1396623675
+      Pixel Art 8Bit GIF by pixel jeff_20: -1867429832
+      Pixel Art 8Bit GIF by pixel jeff_21: -1459453811
+      Pixel Art 8Bit GIF by pixel jeff_22: -968660920
+      Pixel Art 8Bit GIF by pixel jeff_23: 905599577
+      Pixel Art 8Bit GIF by pixel jeff_24: 492684005
+      Pixel Art 8Bit GIF by pixel jeff_25: 959541197
+      Pixel Art 8Bit GIF by pixel jeff_26: -394773257
+      Pixel Art 8Bit GIF by pixel jeff_27: -914286164
+      Pixel Art 8Bit GIF by pixel jeff_28: 1191049268
+      Pixel Art 8Bit GIF by pixel jeff_29: 547799496
+      Pixel Art 8Bit GIF by pixel jeff_3: -1203426830
+      Pixel Art 8Bit GIF by pixel jeff_30: 640692780
+      Pixel Art 8Bit GIF by pixel jeff_31: 752735950
+      Pixel Art 8Bit GIF by pixel jeff_32: 410224146
+      Pixel Art 8Bit GIF by pixel jeff_33: 1292707371
+      Pixel Art 8Bit GIF by pixel jeff_34: 1234222074
+      Pixel Art 8Bit GIF by pixel jeff_35: -1331385827
+      Pixel Art 8Bit GIF by pixel jeff_36: 1468923360
+      Pixel Art 8Bit GIF by pixel jeff_37: 899524407
+      Pixel Art 8Bit GIF by pixel jeff_38: 1758853604
+      Pixel Art 8Bit GIF by pixel jeff_39: -1634622382
+      Pixel Art 8Bit GIF by pixel jeff_4: -2146263088
+      Pixel Art 8Bit GIF by pixel jeff_40: -1980519877
+      Pixel Art 8Bit GIF by pixel jeff_41: 916739475
+      Pixel Art 8Bit GIF by pixel jeff_42: 1079020236
+      Pixel Art 8Bit GIF by pixel jeff_43: -1740172464
+      Pixel Art 8Bit GIF by pixel jeff_44: 1857297067
+      Pixel Art 8Bit GIF by pixel jeff_45: -680420554
+      Pixel Art 8Bit GIF by pixel jeff_46: 212105802
+      Pixel Art 8Bit GIF by pixel jeff_47: -187201827
+      Pixel Art 8Bit GIF by pixel jeff_48: 1784790262
+      Pixel Art 8Bit GIF by pixel jeff_49: 1294647036
+      Pixel Art 8Bit GIF by pixel jeff_5: -1802851187
+      Pixel Art 8Bit GIF by pixel jeff_50: 518771332
+      Pixel Art 8Bit GIF by pixel jeff_51: 314188979
+      Pixel Art 8Bit GIF by pixel jeff_52: -1056890004
+      Pixel Art 8Bit GIF by pixel jeff_53: -359797316
+      Pixel Art 8Bit GIF by pixel jeff_54: -607852310
+      Pixel Art 8Bit GIF by pixel jeff_55: -419099328
+      Pixel Art 8Bit GIF by pixel jeff_56: 1008338306
+      Pixel Art 8Bit GIF by pixel jeff_57: 1488068934
+      Pixel Art 8Bit GIF by pixel jeff_58: -1023774966
+      Pixel Art 8Bit GIF by pixel jeff_59: 2005485587
+      Pixel Art 8Bit GIF by pixel jeff_6: -1160315548
+      Pixel Art 8Bit GIF by pixel jeff_60: 1333584301
+      Pixel Art 8Bit GIF by pixel jeff_61: 1854273153
+      Pixel Art 8Bit GIF by pixel jeff_62: -759887838
+      Pixel Art 8Bit GIF by pixel jeff_63: -1840329313
+      Pixel Art 8Bit GIF by pixel jeff_64: -1266163397
+      Pixel Art 8Bit GIF by pixel jeff_65: -1151140302
+      Pixel Art 8Bit GIF by pixel jeff_66: -57707874
+      Pixel Art 8Bit GIF by pixel jeff_67: -1479968430
+      Pixel Art 8Bit GIF by pixel jeff_68: -1940784756
+      Pixel Art 8Bit GIF by pixel jeff_69: 950651891
+      Pixel Art 8Bit GIF by pixel jeff_7: -60171254
+      Pixel Art 8Bit GIF by pixel jeff_70: 347486237
+      Pixel Art 8Bit GIF by pixel jeff_71: 1399498153
+      Pixel Art 8Bit GIF by pixel jeff_72: 1427865485
+      Pixel Art 8Bit GIF by pixel jeff_73: -1617543807
+      Pixel Art 8Bit GIF by pixel jeff_74: -303511877
+      Pixel Art 8Bit GIF by pixel jeff_75: 930469698
+      Pixel Art 8Bit GIF by pixel jeff_76: 1948979156
+      Pixel Art 8Bit GIF by pixel jeff_77: 77103950
+      Pixel Art 8Bit GIF by pixel jeff_78: -737313571
+      Pixel Art 8Bit GIF by pixel jeff_79: -1569596468
+      Pixel Art 8Bit GIF by pixel jeff_8: -755108074
+      Pixel Art 8Bit GIF by pixel jeff_80: 1134938463
+      Pixel Art 8Bit GIF by pixel jeff_81: 286920477
+      Pixel Art 8Bit GIF by pixel jeff_82: -936962421
+      Pixel Art 8Bit GIF by pixel jeff_83: 871022954
+      Pixel Art 8Bit GIF by pixel jeff_84: 2053863563
+      Pixel Art 8Bit GIF by pixel jeff_85: -1074117956
+      Pixel Art 8Bit GIF by pixel jeff_86: 223172886
+      Pixel Art 8Bit GIF by pixel jeff_87: -1155356292
+      Pixel Art 8Bit GIF by pixel jeff_88: 1535834942
+      Pixel Art 8Bit GIF by pixel jeff_89: 1853965087
+      Pixel Art 8Bit GIF by pixel jeff_9: -757860282
+      Pixel Art 8Bit GIF by pixel jeff_90: -1294562388
+      Pixel Art 8Bit GIF by pixel jeff_91: -2062542663
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

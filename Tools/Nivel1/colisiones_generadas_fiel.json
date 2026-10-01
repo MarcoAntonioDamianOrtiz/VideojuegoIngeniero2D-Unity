@@ -1,0 +1,620 @@
+[
+  {
+    "name": "Vivienda_01",
+    "shape": "box",
+    "bounds": [
+      19.928,
+      5.2265,
+      23.672,
+      6.22
+    ]
+  },
+  {
+    "name": "Vivienda_02",
+    "shape": "box",
+    "bounds": [
+      25.384,
+      8.1911,
+      29.416,
+      9.22
+    ]
+  },
+  {
+    "name": "Vivienda_03",
+    "shape": "box",
+    "bounds": [
+      34.784,
+      8.5023,
+      38.816,
+      9.52
+    ]
+  },
+  {
+    "name": "Vivienda_04",
+    "shape": "box",
+    "bounds": [
+      19.748,
+      13.4727,
+      23.852,
+      14.52
+    ]
+  },
+  {
+    "name": "Vivienda_05",
+    "shape": "box",
+    "bounds": [
+      28.42,
+      13.8692,
+      32.38,
+      14.92
+    ]
+  },
+  {
+    "name": "Vivienda_06",
+    "shape": "box",
+    "bounds": [
+      23.056,
+      19.8278,
+      26.944,
+      20.82
+    ]
+  },
+  {
+    "name": "Vivienda_07",
+    "shape": "box",
+    "bounds": [
+      31.224,
+      19.1367,
+      34.176,
+      19.92
+    ]
+  },
+  {
+    "name": "Vivienda_08",
+    "shape": "box",
+    "bounds": [
+      41.948,
+      18.6841,
+      46.052,
+      19.72
+    ]
+  },
+  {
+    "name": "Vivienda_09",
+    "shape": "box",
+    "bounds": [
+      52.292,
+      19.3074,
+      56.108,
+      20.32
+    ]
+  },
+  {
+    "name": "Vivienda_10",
+    "shape": "box",
+    "bounds": [
+      57.996,
+      17.2528,
+      60.804,
+      18.02
+    ]
+  },
+  {
+    "name": "Vivienda_11",
+    "shape": "box",
+    "bounds": [
+      3.412,
+      27.4119,
+      7.588,
+      28.52
+    ]
+  },
+  {
+    "name": "Vivienda_12",
+    "shape": "box",
+    "bounds": [
+      27.056,
+      26.4278,
+      30.944,
+      27.42
+    ]
+  },
+  {
+    "name": "Vivienda_13",
+    "shape": "box",
+    "bounds": [
+      3.428,
+      36.675,
+      7.172,
+      37.62
+    ]
+  },
+  {
+    "name": "Vivienda_14",
+    "shape": "box",
+    "bounds": [
+      3.912,
+      44.3119,
+      8.088,
+      45.42
+    ]
+  },
+  {
+    "name": "Vivienda_15",
+    "shape": "box",
+    "bounds": [
+      5.34,
+      50.6176,
+      9.66,
+      51.72
+    ]
+  },
+  {
+    "name": "Vivienda_16",
+    "shape": "box",
+    "bounds": [
+      18.772,
+      45.8758,
+      22.228,
+      46.82
+    ]
+  },
+  {
+    "name": "Vivienda_17",
+    "shape": "box",
+    "bounds": [
+      21.156,
+      49.9278,
+      25.044,
+      50.92
+    ]
+  },
+  {
+    "name": "Vivienda_18",
+    "shape": "box",
+    "bounds": [
+      55.048,
+      48.1988,
+      59.152,
+      49.32
+    ]
+  },
+  {
+    "name": "Vivienda_19",
+    "shape": "box",
+    "bounds": [
+      5.628,
+      56.875,
+      9.372,
+      57.82
+    ]
+  },
+  {
+    "name": "Vivienda_20",
+    "shape": "box",
+    "bounds": [
+      14.224,
+      58.6135,
+      17.176,
+      59.42
+    ]
+  },
+  {
+    "name": "Vivienda_21",
+    "shape": "box",
+    "bounds": [
+      18.716,
+      59.5116,
+      21.884,
+      60.32
+    ]
+  },
+  {
+    "name": "Vivienda_22",
+    "shape": "box",
+    "bounds": [
+      25.372,
+      59.3029,
+      28.828,
+      60.22
+    ]
+  },
+  {
+    "name": "Vivienda_23",
+    "shape": "box",
+    "bounds": [
+      31.488,
+      59.5938,
+      34.512,
+      60.42
+    ]
+  },
+  {
+    "name": "Vivienda_24",
+    "shape": "box",
+    "bounds": [
+      42.128,
+      57.775,
+      45.872,
+      58.72
+    ]
+  },
+  {
+    "name": "Vivienda_25",
+    "shape": "box",
+    "bounds": [
+      42.072,
+      54.3029,
+      45.528,
+      55.22
+    ]
+  },
+  {
+    "name": "Vivienda_26",
+    "shape": "box",
+    "bounds": [
+      35.516,
+      55.1545,
+      38.684,
+      56.02
+    ]
+  },
+  {
+    "name": "Vivienda_27",
+    "shape": "box",
+    "bounds": [
+      3.38,
+      60.4348,
+      6.62,
+      61.32
+    ]
+  },
+  {
+    "name": "Vivienda_28",
+    "shape": "box",
+    "bounds": [
+      48.28,
+      59.0932,
+      51.52,
+      59.92
+    ]
+  },
+  {
+    "name": "Vivienda_29",
+    "shape": "box",
+    "bounds": [
+      15.516,
+      3.9116,
+      18.684,
+      4.72
+    ]
+  },
+  {
+    "name": "Vivienda_30",
+    "shape": "box",
+    "bounds": [
+      31.288,
+      5.2567,
+      34.312,
+      6.02
+    ]
+  },
+  {
+    "name": "Vivienda_31",
+    "shape": "box",
+    "bounds": [
+      15.18,
+      17.4603,
+      18.42,
+      18.32
+    ]
+  },
+  {
+    "name": "Vivienda_32",
+    "shape": "box",
+    "bounds": [
+      36.652,
+      15.3742,
+      39.748,
+      16.22
+    ]
+  },
+  {
+    "name": "Vivienda_33",
+    "shape": "box",
+    "bounds": [
+      48.58,
+      14.9932,
+      51.82,
+      15.82
+    ]
+  },
+  {
+    "name": "Vivienda_34",
+    "shape": "box",
+    "bounds": [
+      32.288,
+      24.2176,
+      35.312,
+      25.02
+    ]
+  },
+  {
+    "name": "Vivienda_35",
+    "shape": "box",
+    "bounds": [
+      15.588,
+      38.4567,
+      18.612,
+      39.22
+    ]
+  },
+  {
+    "name": "Vivienda_36",
+    "shape": "box",
+    "bounds": [
+      22.78,
+      42.7932,
+      26.02,
+      43.62
+    ]
+  },
+  {
+    "name": "Vivienda_37",
+    "shape": "box",
+    "bounds": [
+      28.588,
+      56.2176,
+      31.612,
+      57.02
+    ]
+  },
+  {
+    "name": "Vivienda_38",
+    "shape": "box",
+    "bounds": [
+      51.816,
+      56.9203,
+      54.984,
+      57.72
+    ]
+  },
+  {
+    "name": "Casa_Alex_Norte",
+    "shape": "box",
+    "bounds": [
+      14.404,
+      23.0,
+      21.796,
+      23.22
+    ]
+  },
+  {
+    "name": "Casa_Alex_Oeste",
+    "shape": "box",
+    "bounds": [
+      14.294,
+      23.15,
+      14.514,
+      31.45
+    ]
+  },
+  {
+    "name": "Casa_Alex_Este",
+    "shape": "box",
+    "bounds": [
+      21.686,
+      23.15,
+      21.906,
+      31.45
+    ]
+  },
+  {
+    "name": "Casa_Alex_Sur_Oeste",
+    "shape": "box",
+    "bounds": [
+      15.577,
+      31.38,
+      16.75,
+      31.6
+    ]
+  },
+  {
+    "name": "Casa_Alex_Sur_Este",
+    "shape": "box",
+    "bounds": [
+      19.45,
+      31.38,
+      20.623,
+      31.6
+    ]
+  },
+  {
+    "name": "Panaderia_Ramona",
+    "shape": "box",
+    "bounds": [
+      38.148,
+      25.97,
+      45.852,
+      27.42
+    ]
+  },
+  {
+    "name": "Miscelanea",
+    "shape": "box",
+    "bounds": [
+      55.076,
+      26.57,
+      61.124,
+      28.02
+    ]
+  },
+  {
+    "name": "Taller",
+    "shape": "box",
+    "bounds": [
+      52.32,
+      36.67,
+      59.88,
+      38.12
+    ]
+  },
+  {
+    "name": "Arbol_Plaza",
+    "shape": "circle",
+    "center": [
+      35.5,
+      34.75
+    ],
+    "radius": 0.6
+  },
+  {
+    "name": "Fuente_Parque",
+    "shape": "circle",
+    "center": [
+      37.7,
+      48.55
+    ],
+    "radius": 0.85
+  },
+  {
+    "name": "Columpios",
+    "shape": "box",
+    "bounds": [
+      31.93,
+      44.8,
+      32.15,
+      45.2
+    ]
+  },
+  {
+    "name": "Columpios",
+    "shape": "box",
+    "bounds": [
+      36.25,
+      44.8,
+      36.47,
+      45.2
+    ]
+  },
+  {
+    "name": "Resbaladilla",
+    "shape": "box",
+    "bounds": [
+      40.95,
+      45.9,
+      41.65,
+      46.8
+    ]
+  },
+  {
+    "name": "Porton_Salida",
+    "shape": "box",
+    "bounds": [
+      55.692,
+      55.9,
+      61.308,
+      56.5
+    ]
+  },
+  {
+    "name": "Contenedor_Sur",
+    "shape": "box",
+    "bounds": [
+      8.408,
+      17.3,
+      11.792,
+      17.9
+    ]
+  },
+  {
+    "name": "Contenedor_Norte",
+    "shape": "box",
+    "bounds": [
+      4.584,
+      10.0,
+      6.816,
+      10.6
+    ]
+  },
+  {
+    "name": "Auto_Taller",
+    "shape": "box",
+    "bounds": [
+      56.836,
+      38.9,
+      58.564,
+      39.5
+    ]
+  },
+  {
+    "name": "valla_obras_299",
+    "shape": "box",
+    "bounds": [
+      54.76,
+      55.6,
+      55.84,
+      56.2
+    ]
+  },
+  {
+    "name": "valla_obras_300",
+    "shape": "box",
+    "bounds": [
+      61.06,
+      55.6,
+      62.14,
+      56.2
+    ]
+  },
+  {
+    "name": "Vivienda_39",
+    "shape": "box",
+    "bounds": [
+      8.796,
+      33.6112,
+      11.604,
+      34.32
+    ]
+  },
+  {
+    "name": "Vivienda_40",
+    "shape": "box",
+    "bounds": [
+      8.632,
+      41.4294,
+      11.368,
+      42.12
+    ]
+  },
+  {
+    "name": "Vivienda_41",
+    "shape": "box",
+    "bounds": [
+      38.432,
+      4.9294,
+      41.168,
+      5.62
+    ]
+  },
+  {
+    "name": "Muro_Salida_Oeste",
+    "shape": "box",
+    "bounds": [
+      55.125,
+      56.0,
+      55.675,
+      64.0
+    ]
+  },
+  {
+    "name": "Muro_Salida_Este",
+    "shape": "box",
+    "bounds": [
+      61.325,
+      56.0,
+      61.875,
+      64.0
+    ]
+  }
+]

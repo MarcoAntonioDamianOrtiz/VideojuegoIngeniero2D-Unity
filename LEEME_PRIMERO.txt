@@ -6,10 +6,11 @@ Despues de actualizar el repositorio, abre esa escena en Unity. Esta registrada
 como la primera escena del juego en Build Settings. No reemplaza tus escenas
 locales ni la escena de referencia anterior.
 
-El fondo del mapa queda debajo del jugador. Sus colisiones se generan desde
-Tools/Nivel1/colisiones_mapa_fiel.json, no desde los edificios de la escena
-anterior. La casa de Alex tiene una salida libre y la salida del distrito
-comercial permanece bloqueada.
+El mapa se construye con tiles de terreno y sprites separados de viviendas,
+comercios, vegetacion y objetos. No se usa una imagen unica de fondo. Grid
+queda debajo de las demas piezas. Las colisiones se ajustan a los objetos
+visibles para dejar abiertos los senderos; la salida comercial sigue bloqueada.
+La camara pixel-perfect conserva la nitidez de los sprites al jugar.
 
 Consulta Documentacion/Nivel1/Escena_Fiel_Referencia.md para los detalles de
 regeneracion y verificacion.

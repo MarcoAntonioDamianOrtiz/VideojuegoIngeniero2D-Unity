@@ -1,0 +1,36 @@
+{
+  "spriteOverrides": {
+    "Vivienda_03": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
+    "Vivienda_08": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
+    "Vivienda_13": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
+    "Vivienda_19": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
+    "Vivienda_24": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
+    "Vivienda_30": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
+    "Vivienda_35": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
+    "Vivienda_38": "Sprites/05_Edificios/vivienda_ocre_lamina.png"
+  },
+  "extraPlacements": [
+    {"name": "Vivienda_39", "sprite": "Sprites/05_Edificios/vivienda_ocre_lamina.png", "c": 10.2, "r": 34.4, "width": 3.9, "height": 0, "angle": 0, "kind": "building", "solid": true, "left": 2, "top": 2, "right": 94, "bottom": 78},
+    {"name": "Vivienda_40", "sprite": "Sprites/05_Edificios/vivienda_ocre_lamina.png", "c": 10.0, "r": 42.2, "width": 3.8, "height": 0, "angle": 0, "kind": "building", "solid": true, "left": 2, "top": 2, "right": 94, "bottom": 78},
+    {"name": "Vivienda_41", "sprite": "Sprites/05_Edificios/vivienda_ocre_lamina.png", "c": 39.8, "r": 5.7, "width": 3.8, "height": 0, "angle": 0, "kind": "building", "solid": true, "left": 2, "top": 2, "right": 94, "bottom": 78},
+    {"name": "Muro_Salida_Oeste", "sprite": "Sprites/04_Objetos/muro_perimetral.png", "c": 55.4, "r": 64.0, "width": 8.0, "height": 0.65, "angle": 90, "kind": "prop", "solid": true, "left": 0, "top": 11, "right": 128, "bottom": 37},
+    {"name": "Muro_Salida_Este", "sprite": "Sprites/04_Objetos/muro_perimetral.png", "c": 61.6, "r": 64.0, "width": 8.0, "height": 0.65, "angle": 90, "kind": "prop", "solid": true, "left": 0, "top": 11, "right": 128, "bottom": 37}
+  ],
+  "routeChecks": [
+    {"name": "Salida_Alex", "c": 18.1, "r": 33.4},
+    {"name": "Callejon", "c": 12.0, "r": 19.8},
+    {"name": "Cruce_Norte", "c": 35.0, "r": 22.0},
+    {"name": "Panaderia", "c": 42.0, "r": 29.0},
+    {"name": "Miscelanea", "c": 57.8, "r": 30.8},
+    {"name": "Plaza", "c": 40.4, "r": 38.8},
+    {"name": "Taller", "c": 51.6, "r": 42.8},
+    {"name": "Entrada_Parque", "c": 37.5, "r": 43.3},
+    {"name": "Parque", "c": 40.1, "r": 48.8},
+    {"name": "Pasaje_Parque_Este", "c": 50.0, "r": 47.0},
+    {"name": "Pasaje_Parque_Sur", "c": 40.0, "r": 53.0},
+    {"name": "Barrio_Sur", "c": 27.0, "r": 53.5},
+    {"name": "Viviendas_Sur_Oeste", "c": 15.0, "r": 55.0},
+    {"name": "Viviendas_Sur_Centro", "c": 29.0, "r": 55.0},
+    {"name": "Salida_Bloqueada", "c": 58.5, "r": 54.4}
+  ]
+}

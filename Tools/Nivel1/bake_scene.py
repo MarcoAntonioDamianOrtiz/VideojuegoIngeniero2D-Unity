@@ -36,6 +36,7 @@ for name in ['Grid','Jugador','Main Camera','Global Light 2D']:
  go=named(name);keep.add(go)
  for x in inner(go)['m_Component']:keep.add(x['component']['fileID'])
  root_transforms.append(component(go,4))
+if args.fiel:root_transforms=root_transforms[1:]+root_transforms[:1]
 out={i:copy.deepcopy(blocks[i]) for i in keep}
 out_kinds={i:kinds[i] for i in keep}
 inner_out=lambda i:next(iter(out[i].values()))
@@ -70,6 +71,7 @@ og,props=group('Colisiones_Objetos' if args.fiel else 'Objetos_Referencia',gener
 sr_template=template(212); box_template=template(61)
 if args.fiel:
  from PIL import Image
+ _,visual_parent=group('Fondo_Visual',generated)
  map_path=root/'Sprites/04_Objetos/mapa_nivel1_fiel_referencia.png'
  map_image=Image.open(map_path)
  map_meta=Path(str(map_path)+'.meta')
@@ -80,9 +82,9 @@ if args.fiel:
   source=source.replace('87334db6a76c534d963a4374274a4f8f',uuid.uuid5(uuid.NAMESPACE_URL,'technopolis/mapa_nivel1_fiel_referencia/sprite').hex)
   source=re.sub(r'(?m)^        x: 1\n        y: 27\n        width: 46\n        height: 75$',f'        x: 0\n        y: 0\n        width: {map_image.width}\n        height: {map_image.height}',source)
   map_meta.write_text('\n'.join(line.rstrip() for line in source.splitlines())+'\n',newline='\n')
- map_go,map_transform=group('Mapa_Visual_Fiel',generated,vec(-8,-44),vec(64*32/map_image.width,64*32/map_image.height,1))
+ map_go,map_transform=group('Mapa_Visual_Fiel',visual_parent,vec(-8,-44),vec(64*32/map_image.width,64*32/map_image.height,1))
  map_renderer=copy.deepcopy(sr_template)
- map_renderer.update(m_Sprite=dict(fileID=21300000,guid=guid(map_path),type=3),m_Color=dict(r=1,g=1,b=1,a=1),m_SortingOrder=-150,m_SpriteSortPoint=0,m_FlipX=0,m_FlipY=0,m_Size=dict(x=map_image.width/32,y=map_image.height/32))
+ map_renderer.update(m_Sprite=dict(fileID=21300000,guid=guid(map_path),type=3),m_Color=dict(r=1,g=1,b=1,a=1),m_SortingOrder=-1000,m_SpriteSortPoint=0,m_FlipX=0,m_FlipY=0,m_Size=dict(x=map_image.width/32,y=map_image.height/32))
  add_component(map_go,212,'SpriteRenderer',map_renderer)
 circles=[b for i,b in blocks.items() if kinds[i]==58]
 circle_template=copy.deepcopy(next(iter(circles[0].values()))) if circles else copy.deepcopy(box_template)
@@ -127,8 +129,25 @@ def place(p,parent):
   box(go,0,fh/2,w*.78,fh)
   collisions.append((p['c']-w*.39,p['r']-fh,p['c']+w*.39,p['r'],p['name']))
 
-for p in data['placements']:
- if not args.fiel or p['solid']:place(p,bld if p['kind']=='building' else props)
+if args.fiel:
+ layout=json.loads((repo/'Tools/Nivel1/colisiones_mapa_fiel.json').read_text())
+ if layout['imageSize']!=map_image.width or map_image.width!=map_image.height:
+  raise ValueError('Collision layout and visual map have different dimensions')
+ pixels_to_world=64/layout['imageSize']
+ for shape in layout['rects']:
+  x1,y1,x2,y2=shape['bounds']
+  parent=bld if shape['group']=='building' else props
+  go,_=group(shape['name'],parent,vec(-40+(x1+x2)*pixels_to_world/2,20-(y1+y2)*pixels_to_world/2))
+  box(go,0,0,(x2-x1)*pixels_to_world,(y2-y1)*pixels_to_world)
+ for shape in layout['circles']:
+  x,y=shape['center']
+  parent=bld if shape['group']=='building' else props
+  go,_=group(shape['name'],parent,vec(-40+x*pixels_to_world,20-y*pixels_to_world))
+  circle=copy.deepcopy(circle_template)
+  circle.update(m_Radius=shape['radius']*pixels_to_world,m_Offset=dict(x=0,y=0),m_IsTrigger=0,m_Enabled=1)
+  add_component(go,58,'CircleCollider2D',circle)
+else:
+ for p in data['placements']:place(p,bld if p['kind']=='building' else props)
 if not args.fiel:
  for i in range(8):
   for name,c,r,angle in [('Muro_Norte',4+i*8,.95,0),('Muro_Sur',4+i*8,64,0),('Muro_Oeste',.475,8+i*8,90),('Muro_Este',63.525,8+i*8,90)]:
@@ -194,5 +213,6 @@ for i,b in out.items():text+=f'--- !u!{out_kinds[i]} &{i}\n'+yaml.dump(b,Dumper=
 target=repo/('Assets/Scenes/EscenaNivel1_FielReferencia.unity' if args.fiel else 'Assets/Scenes/EscenaNivel1_Referencia.unity');target.write_text(text,newline='\n')
 meta=Path(str(target)+'.meta')
 if not meta.exists():meta.write_text('fileFormatVersion: 2\nguid: '+uuid.uuid4().hex+'\nDefaultImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n')
-(repo/'Documentacion/Nivel1/Huellas_Colisiones.json').write_text(json.dumps(collisions),newline='\n')
-print('Baked',target,len(out),'serialized objects;',len(ground),'ground cells;',len(paths),'path cells;',len(collisions),'footprints')
+if not args.fiel:(repo/'Documentacion/Nivel1/Huellas_Colisiones.json').write_text(json.dumps(collisions),newline='\n')
+footprint_count=len(layout['rects'])+len(layout['circles']) if args.fiel else len(collisions)
+print('Baked',target,len(out),'serialized objects;',len(ground),'ground cells;',len(paths),'path cells;',footprint_count,'footprints')

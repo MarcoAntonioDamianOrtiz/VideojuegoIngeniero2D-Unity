@@ -1,18 +1,15 @@
-TECHNOPOLIS - NIVEL 1 - DISEÑO DE REFERENCIA
+TECHNOPOLIS - NIVEL 1
 
-1. Cierra Unity o sal de Play y guarda tu escena actual.
-2. Extrae este ZIP en la raíz de tu proyecto, donde están Assets, Packages y ProjectSettings.
-   Las carpetas Assets, Documentacion y Tools deben combinarse con las de tu proyecto.
-3. Abre el proyecto en Unity y espera a que importe los recursos.
-4. Abre Assets/Scenes/EscenaNivel1_Referencia.unity. El mapa ya está colocado.
-5. Prueba Play. Esta escena conserva al jugador y su cámara de la versión del repositorio.
+Escena principal: Assets/Scenes/EscenaNivel1_FielReferencia.unity
 
-Tu escena EscenaNivel1.unity no se reemplaza.
-Para aplicar el diseño sobre ella puedes usar Tools > Technopolis > Nivel 1 > 08 Reconstruir diseño de la referencia. Esa opción crea un respaldo.
-No vuelvas a ejecutar las opciones 02–07 sobre la nueva distribución.
+Despues de actualizar el repositorio, abre esa escena en Unity. Esta registrada
+como la primera escena del juego en Build Settings. No reemplaza tus escenas
+locales ni la escena de referencia anterior.
 
-Consulta Documentacion/Nivel1/Referencia_08.md y la vista previa PNG.
-La vista previa se compuso a partir de los sprites y coordenadas reales, fuera de Unity.
-Las conexiones entre zonas se comprobaron geométricamente; falta probar la importación y el recorrido en Unity.
+El fondo del mapa queda debajo del jugador. Sus colisiones se generan desde
+Tools/Nivel1/colisiones_mapa_fiel.json, no desde los edificios de la escena
+anterior. La casa de Alex tiene una salida libre y la salida del distrito
+comercial permanece bloqueada.
 
-Contiene 32 edificios, 660 elementos de plano, ocho sprites nuevos y 32 tramos de muro exterior.
+Consulta Documentacion/Nivel1/Escena_Fiel_Referencia.md para los detalles de
+regeneracion y verificacion.

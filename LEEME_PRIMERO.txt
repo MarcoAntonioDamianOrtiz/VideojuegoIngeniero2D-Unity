@@ -5,6 +5,8 @@ Escena principal: Assets/Scenes/EscenaNivel1_FielReferencia.unity
 Despues de actualizar el repositorio, abre esa escena en Unity. Esta registrada
 como la primera escena del juego en Build Settings. No reemplaza tus escenas
 locales ni la escena de referencia anterior.
+Si Unity ya tenia esta escena abierta y pregunta si desea recargarla, elige
+Reload para ver los archivos nuevos; no guardes antes la version antigua.
 
 El mapa se construye con tiles de terreno y sprites separados de viviendas,
 comercios, vegetacion y objetos. No se usa una imagen unica de fondo. Grid

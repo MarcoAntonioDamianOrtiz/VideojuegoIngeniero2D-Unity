@@ -11,7 +11,11 @@ public static class TechnopolisVerificarEscenaFiel
 {
     const string ScenePath = "Assets/Scenes/EscenaNivel1_FielReferencia.unity";
     const string OldMapPath = "Assets/Technopolis/Nivel1/Sprites/04_Objetos/mapa_nivel1_fiel_referencia.png";
-    const string NewHousePath = "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_ocre_lamina.png";
+    static readonly string[] NewHousePaths = {
+        "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_dos_pisos_ocre.png",
+        "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_dos_pisos_ladrillo.png",
+        "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_lona_azul.png"
+    };
 
     public static void Verificar()
     {
@@ -29,6 +33,8 @@ public static class TechnopolisVerificarEscenaFiel
         GameObject cameraObject = GameObject.Find("Main Camera");
         Transform barrio = grid.transform.Find("Barrio_Fiel_Referencia");
         if (!jugador || !cameraObject || !barrio) throw new InvalidOperationException("Falta el jugador, la camara o el barrio.");
+        if (Mathf.Abs(grid.transform.localScale.y - 1.25f) > .001f)
+            throw new InvalidOperationException("El mapa no conserva la proporcion vertical de la referencia.");
 
         Transform ground = barrio.Find("Suelo_Tiles");
         Transform paths = barrio.Find("Senderos_Tiles");
@@ -45,24 +51,32 @@ public static class TechnopolisVerificarEscenaFiel
             throw new InvalidOperationException("La camara pixel-perfect no esta configurada.");
 
         SpriteRenderer[] sprites = barrio.GetComponentsInChildren<SpriteRenderer>();
-        if (sprites.Length < 750) throw new InvalidOperationException($"Faltan sprites independientes: {sprites.Length}.");
-        int generatedHouses = 0;
+        if (sprites.Length < 860) throw new InvalidOperationException($"Faltan sprites independientes: {sprites.Length}.");
+        int[] generatedHouses = new int[NewHousePaths.Length];
         foreach (SpriteRenderer sprite in sprites)
         {
+            if (!sprite.sprite) throw new InvalidOperationException($"Sprite faltante en {sprite.name}.");
             string path = AssetDatabase.GetAssetPath(sprite.sprite);
             if (path == OldMapPath) throw new InvalidOperationException("La escena aun usa el fondo unico del mapa.");
-            if (path == NewHousePath) generatedHouses++;
+            for (int i = 0; i < NewHousePaths.Length; i++)
+                if (path == NewHousePaths[i])
+                {
+                    generatedHouses[i]++;
+                    if (sprite.sprite.texture.filterMode != FilterMode.Point)
+                        throw new InvalidOperationException($"El sprite {path} no usa filtro Point.");
+                }
         }
-        if (generatedHouses < 8) throw new InvalidOperationException("Faltan las variantes nuevas de vivienda.");
+        foreach (int count in generatedHouses)
+            if (count < 3) throw new InvalidOperationException("Falta alguna variante nueva de vivienda.");
 
         Collider2D[] obstacles = barrio.GetComponentsInChildren<Collider2D>();
         Collider2D playerCollider = jugador.GetComponent<Collider2D>();
-        if (!playerCollider || obstacles.Length < 55) throw new InvalidOperationException("Faltan colisiones del nivel.");
+        if (!playerCollider || obstacles.Length < 76) throw new InvalidOperationException("Faltan colisiones del nivel.");
         foreach (Collider2D obstacle in obstacles)
             if (obstacle.bounds.Intersects(playerCollider.bounds))
                 throw new InvalidOperationException($"El jugador empieza dentro de {obstacle.name}.");
 
-        Debug.Log($"TECHNOPOLIS_SPRITES_OK sprites={sprites.Length} viviendasNuevas={generatedHouses} tiles={groundMap.cellBounds.size} colliders={obstacles.Length} ppu={pixelCamera.assetsPPU}");
+        Debug.Log($"TECHNOPOLIS_SPRITES_OK sprites={sprites.Length} viviendasNuevas={string.Join(",", generatedHouses)} tiles={groundMap.cellBounds.size} colliders={obstacles.Length} escalaY={grid.transform.localScale.y} ppu={pixelCamera.assetsPPU}");
     }
 }
 #endif

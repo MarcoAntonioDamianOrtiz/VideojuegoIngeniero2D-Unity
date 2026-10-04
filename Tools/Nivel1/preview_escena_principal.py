@@ -3,6 +3,7 @@
 import json
 from pathlib import Path
 from PIL import Image
+from path_geometry import on_path
 
 
 REPO = Path(__file__).resolve().parents[2]
@@ -11,11 +12,25 @@ data = json.loads((ROOT / "Editor/PlanoReferenciaNivel1.json").read_text())
 config = json.loads((REPO / "Tools/Nivel1/escena_principal_sprites.json").read_text())
 placements = [dict(item) for item in data["placements"]]
 for item in placements:
+    if item["name"].startswith("Vivienda_"):
+        item["width"] = round(item["width"] * config["houseWidthScale"], 3)
+    item.update(config.get("placementOverrides", {}).get(item["name"], {}))
     replacement = config["spriteOverrides"].get(item["name"])
     if replacement:
         item["sprite"] = replacement
-        item["left"], item["top"], item["right"], item["bottom"] = Image.open(ROOT / replacement).getchannel("A").getbbox()
-placements.extend(config["extraPlacements"])
+        item["left"], item["top"], item["right"], item["bottom"] = Image.open(ROOT / replacement).getchannel("A").point(lambda v: 255 if v > 160 else 0).getbbox()
+for item in config["extraPlacements"]:
+    item = dict(item)
+    if "left" not in item:
+        item["left"], item["top"], item["right"], item["bottom"] = Image.open(ROOT / item["sprite"]).getchannel("A").point(lambda v: 255 if v > 160 else 0).getbbox()
+    placements.append(item)
+for group in config.get("repeatSprites", []):
+    left, top, right, bottom = Image.open(ROOT / group["sprite"]).convert("RGBA").getchannel("A").point(lambda v: 255 if v > 160 else 0).getbbox()
+    for index, (c, r) in enumerate(group["points"], 1):
+        placements.append(dict(name=f"{group['name']}_{index:02}", sprite=group["sprite"], c=c, r=r,
+                               width=group["width"], height=group.get("height", 0), angle=group.get("angle", 0),
+                               kind=group.get("kind", "prop"), solid=group.get("solid", False),
+                               left=left, top=top, right=right, bottom=bottom))
 
 for i in range(8):
     for name, c, r, angle in (("Norte", 4+i*8, .95, 0), ("Sur", 4+i*8, 64, 0),
@@ -26,9 +41,7 @@ for i in range(8):
 
 
 def lane(c, r):
-    return any(min(item["c1"], item["c2"])-item["width"]/2 <= c <= max(item["c1"], item["c2"])+item["width"]/2 and
-               min(item["r1"], item["r2"])-item["width"]/2 <= r <= max(item["r1"], item["r2"])+item["width"]/2
-               for item in data["lanes"])
+    return on_path(c, r, config["pathSegments"])
 
 
 def garden(c, r):
@@ -45,8 +58,10 @@ def garden(c, r):
     return c < 1.7 or c > 62.3 or r < 1.5 or r > 62.5
 
 
-scale = 16
-canvas = Image.new("RGBA", (64*scale, 64*scale))
+scale_x = 16
+scale_y = round(scale_x * config["verticalScale"])
+canvas = Image.new("RGBA", (64*scale_x, 64*scale_y))
+path_tint = (1.2, 1.13, 1.02)
 for row in range(64):
     for col in range(64):
         material = "tierra"
@@ -57,18 +72,23 @@ for row in range(64):
             material = "pasto"
         folder = "02_Caminos" if material in ("concreto", "empedrado") else "01_Terreno"
         tile = Image.open(ROOT / f"Sprites/{folder}/{material}_bloque_f{row%4}_c{col%4}.png").convert("RGBA")
-        canvas.alpha_composite(tile.resize((scale, scale), Image.Resampling.NEAREST), (col*scale, row*scale))
+        canvas.alpha_composite(tile.resize((scale_x, scale_y), Image.Resampling.NEAREST), (col*scale_x, row*scale_y))
+        if material == "tierra" and lane(col+.5, row+.5):
+            channels = tile.split()
+            lit = Image.merge("RGBA", tuple(channel.point(lambda value, factor=factor: min(255, round(value*factor)))
+                                           for channel, factor in zip(channels[:3], path_tint)) + (channels[3],))
+            canvas.alpha_composite(lit.resize((scale_x, scale_y), Image.Resampling.NEAREST), (col*scale_x, row*scale_y))
 
-for item in sorted(placements, key=lambda value: -100 if value["kind"] == "floor" else value["r"]):
+for item in sorted(placements, key=lambda value: value.get("sortingOrder", -80 if value["kind"] == "floor" else round(value["r"]*10))):
     art = Image.open(ROOT / item["sprite"]).convert("RGBA")
     art = art.crop((item["left"], item["top"], item["right"], item["bottom"]))
     width = item["width"]
     height = item["height"] or width*art.height/art.width
-    art = art.resize((max(1, round(width*scale)), max(1, round(height*scale))), Image.Resampling.NEAREST)
+    art = art.resize((max(1, round(width*scale_x)), max(1, round(height*scale_y))), Image.Resampling.NEAREST)
     if item["angle"]:
         art = art.rotate(-item["angle"], expand=True)
-    x = round(item["c"]*scale-art.width/2)
-    y = round(item["r"]*scale-art.height)
+    x = round(item["c"]*scale_x-art.width/2)
+    y = round(item["r"]*scale_y-art.height)
     canvas.alpha_composite(art, (x, y))
 
 output = REPO / "Documentacion/Nivel1/Vista_Previa_EscenaPrincipal.png"

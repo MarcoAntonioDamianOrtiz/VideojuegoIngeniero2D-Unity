@@ -1,6 +1,7 @@
 {
   "houseWidthScale": 1.10,
   "verticalScale": 1.25,
+  "terrainSprite": "Sprites/01_Terreno/terreno_organico_nivel1.png",
   "placementOverrides": {
     "Panaderia_Ramona": {"width": 11.6, "height": 7.2},
     "Miscelanea": {"width": 9.6, "height": 7.8},
@@ -12,20 +13,20 @@
     "Vivienda_24": {"c": 43.6, "r": 60.5}
   },
   "spriteOverrides": {
-    "Vivienda_03": "Sprites/05_Edificios/vivienda_dos_pisos_ocre.png",
-    "Vivienda_04": "Sprites/05_Edificios/vivienda_dos_pisos_ladrillo.png",
-    "Vivienda_08": "Sprites/05_Edificios/vivienda_dos_pisos_ladrillo.png",
+    "Vivienda_03": "Sprites/05_Edificios/vivienda_baja_remendada.png",
+    "Vivienda_04": "Sprites/05_Edificios/vivienda_baja_remendada.png",
+    "Vivienda_08": "Sprites/05_Edificios/vivienda_baja_remendada.png",
     "Vivienda_09": "Sprites/05_Edificios/vivienda_lona_azul.png",
     "Vivienda_10": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
     "Vivienda_13": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
     "Vivienda_15": "Sprites/05_Edificios/vivienda_lona_azul.png",
-    "Vivienda_19": "Sprites/05_Edificios/vivienda_dos_pisos_ladrillo.png",
+    "Vivienda_19": "Sprites/05_Edificios/vivienda_baja_remendada.png",
     "Vivienda_24": "Sprites/05_Edificios/vivienda_ocre_lamina.png",
-    "Vivienda_30": "Sprites/05_Edificios/vivienda_dos_pisos_ocre.png",
-    "Vivienda_32": "Sprites/05_Edificios/vivienda_dos_pisos_ladrillo.png",
+    "Vivienda_30": "Sprites/05_Edificios/vivienda_baja_remendada.png",
+    "Vivienda_32": "Sprites/05_Edificios/vivienda_baja_remendada.png",
     "Vivienda_34": "Sprites/05_Edificios/vivienda_lona_azul.png",
-    "Vivienda_35": "Sprites/05_Edificios/vivienda_dos_pisos_ocre.png",
-    "Vivienda_38": "Sprites/05_Edificios/vivienda_dos_pisos_ladrillo.png"
+    "Vivienda_35": "Sprites/05_Edificios/vivienda_baja_remendada.png",
+    "Vivienda_38": "Sprites/05_Edificios/vivienda_baja_remendada.png"
   },
   "extraPlacements": [
     {"name": "Vivienda_39", "sprite": "Sprites/05_Edificios/vivienda_ocre_lamina.png", "c": 10.2, "r": 34.4, "width": 3.9, "height": 0, "angle": 0, "kind": "building", "solid": true, "left": 2, "top": 2, "right": 94, "bottom": 78},

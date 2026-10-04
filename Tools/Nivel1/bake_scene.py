@@ -231,6 +231,13 @@ depth=template(114)
 depth={k:v for k,v in depth.items() if k.startswith('m_')}
 depth.update(m_Script=dict(fileID=11500000,guid=guid(repo/'Assets/Scripts/TechnopolisOrdenBarrio.cs'),type=3),m_EditorClassIdentifier='Assembly-CSharp::TechnopolisOrdenBarrio',jugador=ref(player_sr),escalaVertical=sprite_config['verticalScale'] if args.fiel else 1,m_Name='')
 add_component(inner_out(generated)['m_GameObject']['fileID'],114,'MonoBehaviour',depth)
+if args.fiel:
+ _,terrain=group('Terreno_Base_Sprite',generated)
+ terrain_path=sprite_config['terrainSprite']
+ terrain_image=Image.open(root/terrain_path)
+ place(dict(name='Terreno_Organico',sprite=terrain_path,c=32,r=64,width=64,height=64,
+  angle=0,kind='floor',solid=False,left=0,top=0,right=terrain_image.width,bottom=terrain_image.height,
+  sortingOrder=-850),terrain)
 out[9223372036854775807]={'SceneRoots':dict(m_ObjectHideFlags=0,m_Roots=[ref(i) for i in root_transforms])};out_kinds[9223372036854775807]=1660057539
 
 class Dumper(yaml.SafeDumper):pass

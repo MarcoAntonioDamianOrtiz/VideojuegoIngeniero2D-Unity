@@ -11,6 +11,7 @@ public static class TechnopolisVerificarEscenaFiel
 {
     const string ScenePath = "Assets/Scenes/EscenaNivel1_FielReferencia.unity";
     const string OldMapPath = "Assets/Technopolis/Nivel1/Sprites/04_Objetos/mapa_nivel1_fiel_referencia.png";
+    const string TerrainPath = "Assets/Technopolis/Nivel1/Sprites/01_Terreno/terreno_organico_nivel1.png";
     static readonly string[] NewHousePaths = {
         "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_dos_pisos_ocre.png",
         "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_dos_pisos_ladrillo.png",
@@ -41,8 +42,13 @@ public static class TechnopolisVerificarEscenaFiel
         Tilemap groundMap = ground ? ground.GetComponent<Tilemap>() : null;
         TilemapRenderer groundRenderer = ground ? ground.GetComponent<TilemapRenderer>() : null;
         TilemapRenderer pathRenderer = paths ? paths.GetComponent<TilemapRenderer>() : null;
+        Transform terrain = barrio.Find("Terreno_Base_Sprite/Terreno_Organico");
+        SpriteRenderer terrainRenderer = terrain ? terrain.GetComponentInChildren<SpriteRenderer>() : null;
         if (!groundMap || !groundRenderer || !pathRenderer || groundMap.cellBounds.size.x != 64 || groundMap.cellBounds.size.y != 64 ||
-            groundRenderer.sortingOrder >= pathRenderer.sortingOrder || pathRenderer.sortingOrder >= 0)
+            !terrainRenderer || AssetDatabase.GetAssetPath(terrainRenderer.sprite) != TerrainPath ||
+            terrain.GetComponentInChildren<Collider2D>() || terrainRenderer.sprite.texture.filterMode != FilterMode.Point ||
+            groundRenderer.sortingOrder >= pathRenderer.sortingOrder || pathRenderer.sortingOrder >= terrainRenderer.sortingOrder ||
+            terrainRenderer.sortingOrder >= 0)
             throw new InvalidOperationException("Faltan los tiles de 64 x 64 o su orden de dibujo es incorrecto.");
 
         PixelPerfectCamera pixelCamera = cameraObject.GetComponent<PixelPerfectCamera>();
@@ -51,7 +57,7 @@ public static class TechnopolisVerificarEscenaFiel
             throw new InvalidOperationException("La camara pixel-perfect no esta configurada.");
 
         SpriteRenderer[] sprites = barrio.GetComponentsInChildren<SpriteRenderer>();
-        if (sprites.Length < 860) throw new InvalidOperationException($"Faltan sprites independientes: {sprites.Length}.");
+        if (sprites.Length < 861) throw new InvalidOperationException($"Faltan sprites independientes: {sprites.Length}.");
         int[] generatedHouses = new int[NewHousePaths.Length];
         foreach (SpriteRenderer sprite in sprites)
         {
@@ -76,7 +82,7 @@ public static class TechnopolisVerificarEscenaFiel
             if (obstacle.bounds.Intersects(playerCollider.bounds))
                 throw new InvalidOperationException($"El jugador empieza dentro de {obstacle.name}.");
 
-        Debug.Log($"TECHNOPOLIS_SPRITES_OK sprites={sprites.Length} viviendasNuevas={string.Join(",", generatedHouses)} tiles={groundMap.cellBounds.size} colliders={obstacles.Length} escalaY={grid.transform.localScale.y} ppu={pixelCamera.assetsPPU}");
+        Debug.Log($"TECHNOPOLIS_SPRITES_OK sprites={sprites.Length} viviendasNuevas={string.Join(",", generatedHouses)} terreno={terrainRenderer.sprite.texture.width}x{terrainRenderer.sprite.texture.height} tiles={groundMap.cellBounds.size} colliders={obstacles.Length} escalaY={grid.transform.localScale.y} ppu={pixelCamera.assetsPPU}");
     }
 }
 #endif

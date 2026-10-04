@@ -3,7 +3,6 @@
 import json
 from pathlib import Path
 from PIL import Image
-from path_geometry import on_path
 
 
 REPO = Path(__file__).resolve().parents[2]
@@ -40,44 +39,10 @@ for i in range(8):
                                left=0, top=11, right=128, bottom=37))
 
 
-def lane(c, r):
-    return on_path(c, r, config["pathSegments"])
-
-
-def garden(c, r):
-    for item in placements:
-        if item["kind"] != "building":
-            continue
-        width = item["width"]
-        height = item["height"] or width*(item["bottom"]-item["top"])/(item["right"]-item["left"])
-        left, right, top, bottom = item["c"]-width/2, item["c"]+width/2, item["r"]-height, item["r"]
-        near = left-2 < c < right+2 and top-.7 < r < bottom+2.1
-        inside = left+.65 < c < right-.65 and top+.65 < r < bottom-.25
-        if near and not inside:
-            return True
-    return c < 1.7 or c > 62.3 or r < 1.5 or r > 62.5
-
-
 scale_x = 16
 scale_y = round(scale_x * config["verticalScale"])
-canvas = Image.new("RGBA", (64*scale_x, 64*scale_y))
-path_tint = (1.2, 1.13, 1.02)
-for row in range(64):
-    for col in range(64):
-        material = "tierra"
-        for region in data["regions"]:
-            if region["c"] <= col < region["c"]+region["w"] and region["r"] <= row < region["r"]+region["h"]:
-                material = region["material"]
-        if material == "tierra" and garden(col+.5, row+.5) and not lane(col+.5, row+.5) and (col*73+row*29)%10 < 7:
-            material = "pasto"
-        folder = "02_Caminos" if material in ("concreto", "empedrado") else "01_Terreno"
-        tile = Image.open(ROOT / f"Sprites/{folder}/{material}_bloque_f{row%4}_c{col%4}.png").convert("RGBA")
-        canvas.alpha_composite(tile.resize((scale_x, scale_y), Image.Resampling.NEAREST), (col*scale_x, row*scale_y))
-        if material == "tierra" and lane(col+.5, row+.5):
-            channels = tile.split()
-            lit = Image.merge("RGBA", tuple(channel.point(lambda value, factor=factor: min(255, round(value*factor)))
-                                           for channel, factor in zip(channels[:3], path_tint)) + (channels[3],))
-            canvas.alpha_composite(lit.resize((scale_x, scale_y), Image.Resampling.NEAREST), (col*scale_x, row*scale_y))
+canvas = Image.open(ROOT / config["terrainSprite"]).convert("RGBA").resize(
+    (64*scale_x, 64*scale_y), Image.Resampling.NEAREST)
 
 for item in sorted(placements, key=lambda value: value.get("sortingOrder", -80 if value["kind"] == "floor" else round(value["r"]*10))):
     art = Image.open(ROOT / item["sprite"]).convert("RGBA")

@@ -3,6 +3,7 @@ import argparse, copy, json, math, re, uuid
 from pathlib import Path
 from collections import Counter
 import yaml
+from path_geometry import on_path
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--fiel',action='store_true',help='Bake the main level from independent terrain tiles and sprites')
@@ -14,13 +15,29 @@ placements=copy.deepcopy(data['placements'])
 if args.fiel:
  from PIL import Image
  for p in placements:
+  if p['name'].startswith('Vivienda_'):
+   p['width']=round(p['width']*sprite_config['houseWidthScale'],3)
+  p.update(sprite_config.get('placementOverrides',{}).get(p['name'],{}))
   replacement=sprite_config['spriteOverrides'].get(p['name'])
   if replacement:
    p['sprite']=replacement
-   left,top,right,bottom=Image.open(root/replacement).getchannel('A').getbbox()
+   left,top,right,bottom=Image.open(root/replacement).getchannel('A').point(lambda v:255 if v>160 else 0).getbbox()
    p.update(left=left,top=top,right=right,bottom=bottom)
- placements.extend(sprite_config['extraPlacements'])
-original=(repo/'Assets/Scenes/EscenaNivel1.unity').read_text()
+ for p in sprite_config['extraPlacements']:
+  p=copy.deepcopy(p)
+  if 'left' not in p:
+   p['left'],p['top'],p['right'],p['bottom']=Image.open(root/p['sprite']).getchannel('A').point(lambda v:255 if v>160 else 0).getbbox()
+  placements.append(p)
+ for group in sprite_config.get('repeatSprites',[]):
+  image=Image.open(root/group['sprite']).convert('RGBA').getchannel('A').point(lambda v:255 if v>160 else 0)
+  left,top,right,bottom=image.getbbox()
+  for index,(c,r) in enumerate(group['points'],1):
+   placements.append(dict(name=f"{group['name']}_{index:02}",sprite=group['sprite'],c=c,r=r,
+    width=group['width'],height=group.get('height',0),angle=group.get('angle',0),kind=group.get('kind','prop'),solid=group.get('solid',False),
+    left=left,top=top,right=right,bottom=bottom))
+source_scene=repo/'Assets/Scenes/EscenaNivel1.unity'
+if not source_scene.exists():source_scene=repo/'Assets/Scenes/Respaldos/EscenaNivel1.unity'
+original=source_scene.read_text()
 blocks={}; kinds={}
 for m in re.finditer(r'^--- !u!(\d+) &(\d+)(?: stripped)?\n(.*?)(?=^--- !u!|\Z)',original,re.M|re.S):
  ident=int(m[2]);blocks[ident]=yaml.safe_load(m[3]);kinds[ident]=int(m[1])
@@ -52,7 +69,8 @@ out={i:copy.deepcopy(blocks[i]) for i in keep}
 out_kinds={i:kinds[i] for i in keep}
 inner_out=lambda i:next(iter(out[i].values()))
 inner_out(grid_t)['m_Children']=[]
-inner_out(player_t)['m_LocalPosition']=vec(-40+(18.1 if args.fiel else 19.3),20-(33.4 if args.fiel else 34.4))
+if args.fiel:inner_out(grid_t)['m_LocalScale']=vec(1,sprite_config['verticalScale'],1)
+inner_out(player_t)['m_LocalPosition']=vec(-40+(18.1 if args.fiel else 19.3),(20-(33.4 if args.fiel else 34.4))*(sprite_config['verticalScale'] if args.fiel else 1))
 inner_out(player_sr)['m_SortingOrder']=344
 capsule=component(player,70) if any(kinds[x['component']['fileID']]==70 for x in inner(player)['m_Component']) else None
 if capsule:
@@ -117,7 +135,7 @@ def place(p,parent):
  go,anchor=group(p['name'],parent,vec(-40+p['c'],20-p['r']))
  vgo,visual=group('Sprite',anchor,vec(-(minx+maxx)/2,-miny),vec(sx,sy,1),p['angle'])
  sr=copy.deepcopy(sr_template)
- sr.update(m_Sprite=dict(fileID=21300000,guid=guid(path),type=3),m_Color=dict(r=1,g=1,b=1,a=1),m_SortingOrder=-80 if p['kind']=='floor' else round(p['r']*10),m_SpriteSortPoint=1,m_FlipX=0,m_FlipY=0,m_Size=dict(x=im.width/ppu,y=im.height/ppu))
+ sr.update(m_Sprite=dict(fileID=21300000,guid=guid(path),type=3),m_Color=dict(r=1,g=1,b=1,a=1),m_SortingOrder=p.get('sortingOrder',-80 if p['kind']=='floor' else round(p['r']*10)),m_SpriteSortPoint=1,m_FlipX=0,m_FlipY=0,m_Size=dict(x=im.width/ppu,y=im.height/ppu))
  add_component(vgo,212,'SpriteRenderer',sr)
  if not p['solid']:return
  w,h=maxx-minx,maxy-miny
@@ -134,11 +152,14 @@ def place(p,parent):
    faithful_box(go,p,0,depth/2+.08,w*.72,depth)
   elif p['name'].startswith('Arbol_'):
    faithful_circle(go,p,0,.55,.6)
+  elif p['name'].startswith(('Poste_','Farol_')):
+   faithful_circle(go,p,0,.2,.25)
   elif p['name']=='Fuente_Parque':
    faithful_circle(go,p,0,.55,.85)
   elif p['name']=='Columpios':
    for side in [-1,1]:faithful_box(go,p,side*w*.4,.2,.22,.4,p['name'])
   elif p['name']=='Resbaladilla':faithful_box(go,p,0,.45,.7,.9)
+  elif p['name']=='Porton_Salida':faithful_box(go,p,0,4.0,w*.84,.85)
   elif p['name'].startswith('Muro_Salida_'):faithful_box(go,p,0,h/2,.55,h)
   else:faithful_box(go,p,0,.3,w*.72,.6)
   return
@@ -164,6 +185,7 @@ for i in range(8):
 
 # Keep the baked floors identical to the editor command and its preview.
 def lane(c,r):
+ if args.fiel:return on_path(c,r,sprite_config['pathSegments'])
  for l in data['lanes']:
   if min(l['c1'],l['c2'])-l['width']/2<=c<=max(l['c1'],l['c2'])+l['width']/2 and min(l['r1'],l['r2'])-l['width']/2<=r<=max(l['r1'],l['r2'])+l['width']/2:return True
  return False
@@ -207,8 +229,15 @@ for name,x,y,w,h in [('Oeste',-40.2,-12,.4,64),('Este',24.2,-12,.4,64),('Norte',
  go,_=group(name,limits,vec(x,y));box(go,0,0,w,h)
 depth=template(114)
 depth={k:v for k,v in depth.items() if k.startswith('m_')}
-depth.update(m_Script=dict(fileID=11500000,guid=guid(repo/'Assets/Scripts/TechnopolisOrdenBarrio.cs'),type=3),m_EditorClassIdentifier='Assembly-CSharp::TechnopolisOrdenBarrio',jugador=ref(player_sr),m_Name='')
+depth.update(m_Script=dict(fileID=11500000,guid=guid(repo/'Assets/Scripts/TechnopolisOrdenBarrio.cs'),type=3),m_EditorClassIdentifier='Assembly-CSharp::TechnopolisOrdenBarrio',jugador=ref(player_sr),escalaVertical=sprite_config['verticalScale'] if args.fiel else 1,m_Name='')
 add_component(inner_out(generated)['m_GameObject']['fileID'],114,'MonoBehaviour',depth)
+if args.fiel:
+ _,terrain=group('Terreno_Base_Sprite',generated)
+ terrain_path=sprite_config['terrainSprite']
+ terrain_image=Image.open(root/terrain_path)
+ place(dict(name='Terreno_Organico',sprite=terrain_path,c=32,r=64,width=64,height=64,
+  angle=0,kind='floor',solid=False,left=0,top=0,right=terrain_image.width,bottom=terrain_image.height,
+  sortingOrder=-850),terrain)
 out[9223372036854775807]={'SceneRoots':dict(m_ObjectHideFlags=0,m_Roots=[ref(i) for i in root_transforms])};out_kinds[9223372036854775807]=1660057539
 
 class Dumper(yaml.SafeDumper):pass

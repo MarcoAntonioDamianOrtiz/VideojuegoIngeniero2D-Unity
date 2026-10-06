@@ -5,10 +5,11 @@ using UnityEngine;
 public sealed class TechnopolisOrdenBarrio : MonoBehaviour
 {
     public SpriteRenderer jugador;
-    public static int Orden(float groundY) { return Mathf.RoundToInt((20f-groundY)*10f); }
+    public float escalaVertical=1f;
+    public static int Orden(float groundY, float verticalScale=1f) { return Mathf.RoundToInt((20f-groundY/verticalScale)*10f); }
     public void Actualizar()
     {
-        if(jugador)jugador.sortingOrder=Orden(jugador.transform.position.y);
+        if(jugador)jugador.sortingOrder=Orden(jugador.transform.position.y, escalaVertical);
     }
     void LateUpdate() { Actualizar(); }
 }

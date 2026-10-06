@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 85c95fd818f64d2283ed9783e9a5a90d
+guid: aaba46d8aef1406788d8030daf867614
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -8978157115721392671
+    second: escalera_barrio_concreto_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -47,7 +50,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 0
   alignment: 9
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -95,7 +98,29 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: escalera_barrio_concreto_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1
+        width: 84
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1edd7cbebad276380800000000000000
+      internalID: -8978157115721392671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -109,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      escalera_barrio_concreto_0: -8978157115721392671
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

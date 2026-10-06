@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 
 from PIL import Image
+from reference_layout import keep_placement, reference_house
 
 
 repo = Path(__file__).resolve().parents[2]
@@ -15,11 +16,14 @@ buildings = []
 for source in plan["placements"] + config["extraPlacements"]:
     if source["kind"] != "building":
         continue
+    if not keep_placement(source):
+        continue
     item = dict(source)
-    if item["name"].startswith("Vivienda_") and source in plan["placements"]:
-        item["width"] *= config["houseWidthScale"]
+    if item["name"].startswith("Vivienda_"):
+        item["width"] *= config["houseWidthScale"] if source in plan["placements"] else config.get("extraHouseWidthScale", 1)
     item.update(config.get("placementOverrides", {}).get(item["name"], {}))
-    if item["name"] in config["spriteOverrides"]:
+    reference_house(item)
+    if item["name"] in config["spriteOverrides"] and not item["name"].startswith("Vivienda_"):
         item["sprite"] = config["spriteOverrides"][item["name"]]
     if "left" not in item or item["sprite"] != source["sprite"]:
         item["left"], item["top"], item["right"], item["bottom"] = Image.open(root / item["sprite"]).getchannel("A").point(lambda v: 255 if v > 160 else 0).getbbox()

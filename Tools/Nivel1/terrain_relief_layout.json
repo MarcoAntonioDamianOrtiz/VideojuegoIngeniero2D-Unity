@@ -1,0 +1,28 @@
+{
+  "version": 1,
+  "terraces": [
+    {"name":"Viviendas_Norte", "bounds":[16.0,2.8,63.0,20.7], "material":"tierra", "stairs":[
+      {"side":"west","at":16.6,"width":3.0,"style":"tierra"},
+      {"side":"south","at":29.0,"width":3.2,"style":"tierra"},
+      {"side":"south","at":35.2,"width":3.2,"style":"concreto"},
+      {"side":"south","at":39.0,"width":3.2,"style":"tierra"},
+      {"side":"south","at":59.0,"width":3.2,"style":"tierra"}]},
+    {"name":"Casa_Alex", "bounds":[12.8,23.0,24.1,32.6], "material":"tierra", "stairs":[
+      {"side":"south","at":18.1,"width":3.4,"style":"concreto"},
+      {"side":"east","at":28.0,"width":3.0,"style":"tierra"}]},
+    {"name":"Panaderia", "bounds":[34.0,22.8,50.5,29.6], "material":"concreto", "stairs":[
+      {"side":"north","at":42.0,"width":3.2,"style":"concreto"},
+      {"side":"south","at":42.0,"width":3.6,"style":"concreto"},
+      {"side":"west","at":26.5,"width":3.0,"style":"tierra"}]},
+    {"name":"Plaza", "bounds":[28.8,30.0,48.1,40.9], "material":"piedra", "stairs":[
+      {"side":"north","at":42.0,"width":3.6,"style":"concreto"},
+      {"side":"south","at":37.5,"width":3.6,"style":"concreto"},
+      {"side":"west","at":37.0,"width":3.0,"style":"concreto"},
+      {"side":"east","at":37.5,"width":3.0,"style":"concreto"}]},
+    {"name":"Parque", "bounds":[29.0,43.0,48.0,51.9], "material":"tierra", "stairs":[
+      {"side":"north","at":37.5,"width":3.6,"style":"tierra"},
+      {"side":"south","at":37.5,"width":3.6,"style":"concreto"},
+      {"side":"west","at":48.4,"width":3.0,"style":"tierra"},
+      {"side":"east","at":47.5,"width":3.0,"style":"tierra"}]}
+  ]
+}

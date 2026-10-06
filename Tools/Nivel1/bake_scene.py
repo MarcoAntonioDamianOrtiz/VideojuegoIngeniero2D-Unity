@@ -4,6 +4,7 @@ from pathlib import Path
 from collections import Counter
 import yaml
 from path_geometry import on_path
+from reference_layout import keep_placement, reference_house, keep_group
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--fiel',action='store_true',help='Bake the main level from independent terrain tiles and sprites')
@@ -11,30 +12,46 @@ args=parser.parse_args()
 repo=Path(__file__).resolve().parents[2];root=repo/'Assets/Technopolis/Nivel1'
 data=json.loads((root/'Editor/PlanoReferenciaNivel1.json').read_text())
 sprite_config=json.loads((repo/'Tools/Nivel1/escena_principal_sprites.json').read_text()) if args.fiel else None
-placements=copy.deepcopy(data['placements'])
+relief=json.loads((repo/'Tools/Nivel1/terrain_relief_layout.json').read_text()) if args.fiel else None
+placements=copy.deepcopy([p for p in data['placements'] if not args.fiel or keep_placement(p)])
 if args.fiel:
  from PIL import Image
  for p in placements:
   if p['name'].startswith('Vivienda_'):
    p['width']=round(p['width']*sprite_config['houseWidthScale'],3)
   p.update(sprite_config.get('placementOverrides',{}).get(p['name'],{}))
-  replacement=sprite_config['spriteOverrides'].get(p['name'])
+  reference_house(p)
+  replacement=p.get('sprite') if p['name'].startswith('Vivienda_') else sprite_config['spriteOverrides'].get(p['name'])
   if replacement:
    p['sprite']=replacement
    left,top,right,bottom=Image.open(root/replacement).getchannel('A').point(lambda v:255 if v>160 else 0).getbbox()
    p.update(left=left,top=top,right=right,bottom=bottom)
  for p in sprite_config['extraPlacements']:
+  if not keep_placement(p):continue
   p=copy.deepcopy(p)
+  if p['name'].startswith('Vivienda_'):
+   p['width']=round(p['width']*sprite_config.get('extraHouseWidthScale',1),3)
+  reference_house(p)
+  replacement=p.get('sprite') if p['name'].startswith('Vivienda_') else sprite_config['spriteOverrides'].get(p['name'])
+  if replacement:
+   p['sprite']=replacement
+   for key in ('left','top','right','bottom'):p.pop(key,None)
   if 'left' not in p:
    p['left'],p['top'],p['right'],p['bottom']=Image.open(root/p['sprite']).getchannel('A').point(lambda v:255 if v>160 else 0).getbbox()
   placements.append(p)
  for group in sprite_config.get('repeatSprites',[]):
+  if not keep_group(group):continue
   image=Image.open(root/group['sprite']).convert('RGBA').getchannel('A').point(lambda v:255 if v>160 else 0)
   left,top,right,bottom=image.getbbox()
   for index,(c,r) in enumerate(group['points'],1):
    placements.append(dict(name=f"{group['name']}_{index:02}",sprite=group['sprite'],c=c,r=r,
-    width=group['width'],height=group.get('height',0),angle=group.get('angle',0),kind=group.get('kind','prop'),solid=group.get('solid',False),
+    width=group['width'],height=group.get('height',0),angle=group.get('angle',0),kind=group.get('kind','prop'),solid=group.get('solid',False),opacity=group.get('opacity',1),sortingOrder=group.get('sortingOrder',-80 if group.get('kind')=='floor' else round(r*10)),
     left=left,top=top,right=right,bottom=bottom))
+ for p in placements:
+  replacement=sprite_config.get('assetReplacements',{}).get(p['sprite'])
+  if replacement:
+   p['sprite']=replacement
+   p['left'],p['top'],p['right'],p['bottom']=Image.open(root/replacement).getchannel('A').point(lambda v:255 if v>160 else 0).getbbox()
 source_scene=repo/'Assets/Scenes/EscenaNivel1.unity'
 if not source_scene.exists():source_scene=repo/'Assets/Scenes/Respaldos/EscenaNivel1.unity'
 original=source_scene.read_text()
@@ -97,6 +114,9 @@ def add_component(go,kind,name,obj):
 _,generated=group('Barrio_Fiel_Referencia' if args.fiel else 'Barrio_Referencia_08',grid_t)
 bg,bld=group('Edificios_Sprites' if args.fiel else 'Edificios_Referencia',generated)
 og,props=group('Objetos_Sprites' if args.fiel else 'Objetos_Referencia',generated)
+if args.fiel:
+ _,steps_group=group('Escaleras_Sprites',generated)
+ _,cliffs_group=group('Bordes_Desnivel_Colision',generated)
 sr_template=template(212); box_template=template(61)
 if args.fiel:
  camera=named('Main Camera')
@@ -135,7 +155,7 @@ def place(p,parent):
  go,anchor=group(p['name'],parent,vec(-40+p['c'],20-p['r']))
  vgo,visual=group('Sprite',anchor,vec(-(minx+maxx)/2,-miny),vec(sx,sy,1),p['angle'])
  sr=copy.deepcopy(sr_template)
- sr.update(m_Sprite=dict(fileID=21300000,guid=guid(path),type=3),m_Color=dict(r=1,g=1,b=1,a=1),m_SortingOrder=p.get('sortingOrder',-80 if p['kind']=='floor' else round(p['r']*10)),m_SpriteSortPoint=1,m_FlipX=0,m_FlipY=0,m_Size=dict(x=im.width/ppu,y=im.height/ppu))
+ sr.update(m_Sprite=dict(fileID=21300000,guid=guid(path),type=3),m_Color=dict(r=1,g=1,b=1,a=p.get('opacity',1)),m_SortingOrder=p.get('sortingOrder',-80 if p['kind']=='floor' else round(p['r']*10)),m_SpriteSortPoint=1,m_FlipX=0,m_FlipY=0,m_Size=dict(x=im.width/ppu,y=im.height/ppu))
  add_component(vgo,212,'SpriteRenderer',sr)
  if not p['solid']:return
  w,h=maxx-minx,maxy-miny
@@ -179,6 +199,41 @@ def place(p,parent):
   collisions.append((p['c']-w*.39,p['r']-fh,p['c']+w*.39,p['r'],p['name']))
 
 for p in placements:place(p,bld if p['kind']=='building' else props)
+if args.fiel:
+ from PIL import Image
+ stair_path='Sprites/04_Objetos/escalera_barrio_concreto.png'
+ im=Image.open(root/stair_path).convert('RGBA')
+ sl,st,sr,sb=im.getchannel('A').point(lambda v:255 if v>32 else 0).getbbox()
+ for terrace in relief['terraces']:
+  x1,y1,x2,y2=terrace['bounds']
+  for n,stair in enumerate(terrace['stairs'],1):
+   side,at,width=stair['side'],stair['at'],stair['width']
+   c,r,angle=(at,y2+1.0,0) if side=='south' else (at,y1+1.0,180) if side=='north' else (x1,at+1.6,90) if side=='west' else (x2,at+1.6,270)
+   place(dict(name=f"Escalera_{terrace['name']}_{side}_{n:02}",sprite=stair_path,c=c,r=r,width=width,height=1.9,
+    angle=angle,kind='floor',solid=False,left=sl,top=st,right=sr,bottom=sb,sortingOrder=-820),steps_group)
+
+ def edge_parts(start,end,gaps):
+  cursor=start
+  for a,b in sorted(gaps):
+   a,b=max(start,a),min(end,b)
+   if a>cursor+.05:yield cursor,a
+   cursor=max(cursor,b)
+  if cursor<end-.05:yield cursor,end
+
+ for terrace in relief['terraces']:
+  x1,y1,x2,y2=terrace['bounds']
+  for side in ('north','south','west','east'):
+   horizontal=side in ('north','south')
+   fixed=y1 if side=='north' else y2 if side=='south' else x1 if side=='west' else x2
+   start,end=(x1,x2) if horizontal else (y1,y2)
+   gaps=[(s['at']-s['width']/2-.18,s['at']+s['width']/2+.18) for s in terrace['stairs'] if s['side']==side]
+   for index,(a,b) in enumerate(edge_parts(start,end,gaps),1):
+    name=f"Borde_{terrace['name']}_{side}_{index:02}"
+    c,r=((a+b)/2,fixed) if horizontal else (fixed,(a+b)/2)
+    go,_=group(name,cliffs_group,vec(-40+c,20-r))
+    w,h=(b-a,.44) if horizontal else (.44,b-a)
+    box(go,0,0,w,h)
+    collisions.append(dict(name=name,shape='box',bounds=[round(c-w/2,4),round(r-h/2,4),round(c+w/2,4),round(r+h/2,4)]))
 for i in range(8):
  for name,c,r,angle in [('Muro_Norte',4+i*8,.95,0),('Muro_Sur',4+i*8,64,0),('Muro_Oeste',.475,8+i*8,90),('Muro_Este',63.525,8+i*8,90)]:
   place(dict(name=f'{name}_{i}',sprite='Sprites/04_Objetos/muro_perimetral.png',c=c,r=r,width=8,height=.95,angle=angle,left=0,top=11,right=128,bottom=37,solid=False,kind='prop'),props)

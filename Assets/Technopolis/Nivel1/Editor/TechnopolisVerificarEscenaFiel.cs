@@ -13,9 +13,9 @@ public static class TechnopolisVerificarEscenaFiel
     const string OldMapPath = "Assets/Technopolis/Nivel1/Sprites/04_Objetos/mapa_nivel1_fiel_referencia.png";
     const string TerrainPath = "Assets/Technopolis/Nivel1/Sprites/01_Terreno/terreno_organico_nivel1.png";
     static readonly string[] NewHousePaths = {
-        "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_dos_pisos_ocre.png",
-        "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_dos_pisos_ladrillo.png",
-        "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_lona_azul.png"
+        "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_dos_pisos_azul_referencia.png",
+        "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_dos_pisos_roja_referencia.png",
+        "Assets/Technopolis/Nivel1/Sprites/05_Edificios/vivienda_taller_lona_referencia.png"
     };
 
     public static void Verificar()
@@ -43,6 +43,9 @@ public static class TechnopolisVerificarEscenaFiel
         TilemapRenderer groundRenderer = ground ? ground.GetComponent<TilemapRenderer>() : null;
         TilemapRenderer pathRenderer = paths ? paths.GetComponent<TilemapRenderer>() : null;
         Transform terrain = barrio.Find("Terreno_Base_Sprite/Terreno_Organico");
+        Transform stairs = barrio.Find("Escaleras_Sprites");
+        Transform reliefEdges = barrio.Find("Bordes_Desnivel_Colision");
+        Transform buildings = barrio.Find("Edificios_Sprites");
         SpriteRenderer terrainRenderer = terrain ? terrain.GetComponentInChildren<SpriteRenderer>() : null;
         if (!groundMap || !groundRenderer || !pathRenderer || groundMap.cellBounds.size.x != 64 || groundMap.cellBounds.size.y != 64 ||
             !terrainRenderer || AssetDatabase.GetAssetPath(terrainRenderer.sprite) != TerrainPath ||
@@ -50,6 +53,14 @@ public static class TechnopolisVerificarEscenaFiel
             groundRenderer.sortingOrder >= pathRenderer.sortingOrder || pathRenderer.sortingOrder >= terrainRenderer.sortingOrder ||
             terrainRenderer.sortingOrder >= 0)
             throw new InvalidOperationException("Faltan los tiles de 64 x 64 o su orden de dibujo es incorrecto.");
+        if (!stairs || stairs.GetComponentsInChildren<SpriteRenderer>().Length != 18 ||
+            !reliefEdges || reliefEdges.GetComponentsInChildren<BoxCollider2D>().Length < 30)
+            throw new InvalidOperationException("Faltan escaleras o bordes de desnivel con colision.");
+        int homes = 0;
+        if (!buildings) throw new InvalidOperationException("Falta la capa de edificios.");
+        foreach (Transform building in buildings)
+            if (building.name.StartsWith("Vivienda_", StringComparison.Ordinal)) homes++;
+        if (homes != 54) throw new InvalidOperationException($"Distribucion residencial incompleta: {homes} viviendas.");
 
         PixelPerfectCamera pixelCamera = cameraObject.GetComponent<PixelPerfectCamera>();
         if (!pixelCamera || pixelCamera.assetsPPU != 32 || pixelCamera.refResolutionX != 640 || pixelCamera.refResolutionY != 360 ||
@@ -73,7 +84,7 @@ public static class TechnopolisVerificarEscenaFiel
                 }
         }
         foreach (int count in generatedHouses)
-            if (count < 3) throw new InvalidOperationException("Falta alguna variante nueva de vivienda.");
+            if (count < 2) throw new InvalidOperationException("Falta alguna variante nueva de vivienda.");
 
         Collider2D[] obstacles = barrio.GetComponentsInChildren<Collider2D>();
         Collider2D playerCollider = jugador.GetComponent<Collider2D>();
@@ -82,7 +93,7 @@ public static class TechnopolisVerificarEscenaFiel
             if (obstacle.bounds.Intersects(playerCollider.bounds))
                 throw new InvalidOperationException($"El jugador empieza dentro de {obstacle.name}.");
 
-        Debug.Log($"TECHNOPOLIS_SPRITES_OK sprites={sprites.Length} viviendasNuevas={string.Join(",", generatedHouses)} terreno={terrainRenderer.sprite.texture.width}x{terrainRenderer.sprite.texture.height} tiles={groundMap.cellBounds.size} colliders={obstacles.Length} escalaY={grid.transform.localScale.y} ppu={pixelCamera.assetsPPU}");
+        Debug.Log($"TECHNOPOLIS_SPRITES_OK sprites={sprites.Length} viviendas={homes} viviendasNuevas={string.Join(",", generatedHouses)} terreno={terrainRenderer.sprite.texture.width}x{terrainRenderer.sprite.texture.height} tiles={groundMap.cellBounds.size} colliders={obstacles.Length} escalaY={grid.transform.localScale.y} ppu={pixelCamera.assetsPPU}");
     }
 }
 #endif

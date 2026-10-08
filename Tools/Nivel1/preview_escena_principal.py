@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 from PIL import Image
 from reference_layout import keep_placement, reference_house, keep_group
+from wall_layout import iter_walls
 
 
 REPO = Path(__file__).resolve().parents[2]
@@ -46,19 +47,20 @@ for group in config.get("repeatSprites", []):
                                kind=group.get("kind", "prop"), solid=group.get("solid", False), opacity=group.get("opacity", 1),
                                sortingOrder=group.get("sortingOrder", -80 if group.get("kind") == "floor" else round(r*10)),
                                left=left, top=top, right=right, bottom=bottom))
+placements.extend(iter_walls(config, relief, ROOT))
 
-stair_sprite = "Sprites/04_Objetos/escalera_barrio_concreto.png"
-stair_bounds = Image.open(ROOT / stair_sprite).getchannel("A").point(lambda v: 255 if v > 32 else 0).getbbox()
 for terrace in relief["terraces"]:
     x1, y1, x2, y2 = terrace["bounds"]
     for index, stair in enumerate(terrace["stairs"], 1):
         side, at = stair["side"], stair["at"]
-        c, r, angle = ((at, y2+1, 0) if side == "south" else
-                       (at, y1+1, 180) if side == "north" else
-                       (x1, at+1.6, 90) if side == "west" else
-                       (x2, at+1.6, 270))
+        stair_sprite = f"Sprites/04_Objetos/escalera_barrio_{stair['style']}_nueva.png"
+        stair_bounds = Image.open(ROOT / stair_sprite).getchannel("A").point(lambda v: 255 if v > 32 else 0).getbbox()
+        c, r, angle = ((at, y2+.78, 0) if side == "south" else
+                       (at, y1+.78, 180) if side == "north" else
+                       (x1, at+stair["width"]/2, 90) if side == "west" else
+                       (x2, at+stair["width"]/2, 270))
         placements.append(dict(name=f"Escalera_{terrace['name']}_{side}_{index:02}", sprite=stair_sprite,
-                               c=c, r=r, width=stair["width"], height=1.9, angle=angle,
+                               c=c, r=r, width=stair["width"], height=1.55, angle=angle,
                                kind="floor", solid=False, left=stair_bounds[0], top=stair_bounds[1],
                                right=stair_bounds[2], bottom=stair_bounds[3], sortingOrder=-820))
 

@@ -5,6 +5,7 @@ from collections import Counter
 import yaml
 from path_geometry import on_path
 from reference_layout import keep_placement, reference_house, keep_group
+from wall_layout import iter_walls
 
 parser=argparse.ArgumentParser()
 parser.add_argument('--fiel',action='store_true',help='Bake the main level from independent terrain tiles and sprites')
@@ -47,6 +48,7 @@ if args.fiel:
    placements.append(dict(name=f"{group['name']}_{index:02}",sprite=group['sprite'],c=c,r=r,
     width=group['width'],height=group.get('height',0),angle=group.get('angle',0),kind=group.get('kind','prop'),solid=group.get('solid',False),opacity=group.get('opacity',1),sortingOrder=group.get('sortingOrder',-80 if group.get('kind')=='floor' else round(r*10)),
     left=left,top=top,right=right,bottom=bottom))
+ placements.extend(iter_walls(sprite_config,relief,root))
  for p in placements:
   replacement=sprite_config.get('assetReplacements',{}).get(p['sprite'])
   if replacement:
@@ -54,10 +56,40 @@ if args.fiel:
    p['left'],p['top'],p['right'],p['bottom']=Image.open(root/replacement).getchannel('A').point(lambda v:255 if v>160 else 0).getbbox()
 source_scene=repo/'Assets/Scenes/EscenaNivel1.unity'
 if not source_scene.exists():source_scene=repo/'Assets/Scenes/Respaldos/EscenaNivel1.unity'
-original=source_scene.read_text()
+original=source_scene.read_text(encoding='utf-8')
 blocks={}; kinds={}
 for m in re.finditer(r'^--- !u!(\d+) &(\d+)(?: stripped)?\n(.*?)(?=^--- !u!|\Z)',original,re.M|re.S):
  ident=int(m[2]);blocks[ident]=yaml.safe_load(m[3]);kinds[ident]=int(m[1])
+core_roots=('Grid','Jugador','Main Camera','Global Light 2D')
+donor_blocks={};donor_kinds={}
+if args.fiel:
+ donor_scene=repo/'Assets/Scenes/EscenaNivel1_FielReferencia.unity'
+ if donor_scene.exists():
+  for m in re.finditer(r'^--- !u!(\d+) &(\d+)(?: stripped)?\n(.*?)(?=^--- !u!|\Z)',donor_scene.read_text(encoding='utf-8'),re.M|re.S):
+   ident=int(m[2]);donor_blocks[ident]=yaml.safe_load(m[3]);donor_kinds[ident]=int(m[1])
+  donor_inner=lambda ident:next(iter(donor_blocks[ident].values()))
+  donor_go_by_name={donor_inner(i).get('m_Name'):i for i in donor_blocks if donor_kinds[i]==1}
+  # The imported scene owns gameplay changes, such as the player's tag and
+  # movement settings. Keep those components while rebuilding only the map.
+  for name in core_roots:
+   source_go=next((i for i in blocks if kinds[i]==1 and next(iter(blocks[i].values())).get('m_Name')==name),None)
+   donor_go=donor_go_by_name.get(name)
+   if source_go is None or donor_go!=source_go:continue
+   imported_go=copy.deepcopy(donor_blocks[donor_go])
+   components=imported_go['GameObject']['m_Component']
+   if name=='Main Camera':
+    # The pixel camera is created below with a generated ID. Reusing its old
+    # generated ID would collide with the next bake's objects.
+    components[:]=[entry for entry in components if not (
+     entry['component']['fileID'] in donor_blocks and
+     donor_kinds[entry['component']['fileID']]==114 and
+     donor_inner(entry['component']['fileID']).get('m_Script',{}).get('guid')=='c88f5cead0c0b2a4eb05b5900433f8d1')]
+   blocks[source_go]=imported_go
+   for component_ref in components:
+    component_id=component_ref['component']['fileID']
+    if component_id in donor_blocks:
+     blocks[component_id]=copy.deepcopy(donor_blocks[component_id])
+     kinds[component_id]=donor_kinds[component_id]
 def inner(ident):return next(iter(blocks[ident].values()))
 def named(name):return next(i for i,b in blocks.items() if kinds[i]==1 and inner(i).get('m_Name')==name)
 def component(go,kind):return next(v['component']['fileID'] for v in inner(go)['m_Component'] if kinds[v['component']['fileID']]==kind)
@@ -77,7 +109,7 @@ grid=named('Grid');grid_t=component(grid,4)
 player=named('Jugador');player_t=component(player,4);player_sr=component(player,212)
 keep={1,2,3,4}
 root_transforms=[]
-for name in ['Grid','Jugador','Main Camera','Global Light 2D']:
+for name in core_roots:
  go=named(name);keep.add(go)
  for x in inner(go)['m_Component']:keep.add(x['component']['fileID'])
  root_transforms.append(component(go,4))
@@ -120,10 +152,13 @@ if args.fiel:
 sr_template=template(212); box_template=template(61)
 if args.fiel:
  camera=named('Main Camera')
- pixel=template(114)
- pixel={k:v for k,v in pixel.items() if k.startswith('m_')}
- pixel.update(m_Script=dict(fileID=11500000,guid='c88f5cead0c0b2a4eb05b5900433f8d1',type=3),m_EditorClassIdentifier='',m_Name='',m_ComponentVersion=1,m_AssetsPPU=32,m_RefResolutionX=640,m_RefResolutionY=360,m_CropFrame=0,m_GridSnapping=2,m_FilterMode=1)
- add_component(camera,114,'MonoBehaviour',pixel)
+ pixel_guid='c88f5cead0c0b2a4eb05b5900433f8d1'
+ has_pixel=any(out_kinds[x['component']['fileID']]==114 and inner_out(x['component']['fileID']).get('m_Script',{}).get('guid')==pixel_guid for x in inner_out(camera)['m_Component'])
+ if not has_pixel:
+  pixel=template(114)
+  pixel={k:v for k,v in pixel.items() if k.startswith('m_')}
+  pixel.update(m_Script=dict(fileID=11500000,guid=pixel_guid,type=3),m_EditorClassIdentifier='',m_Name='',m_ComponentVersion=1,m_AssetsPPU=32,m_RefResolutionX=640,m_RefResolutionY=360,m_CropFrame=0,m_GridSnapping=2,m_FilterMode=1)
+  add_component(camera,114,'MonoBehaviour',pixel)
 circles=[b for i,b in blocks.items() if kinds[i]==58]
 circle_template=copy.deepcopy(next(iter(circles[0].values()))) if circles else copy.deepcopy(box_template)
 for key in ['m_Size','m_EdgeRadius','m_AutoTiling','m_SpriteTilingProperty']:circle_template.pop(key,None)
@@ -176,11 +211,15 @@ def place(p,parent):
    faithful_circle(go,p,0,.2,.25)
   elif p['name']=='Fuente_Parque':
    faithful_circle(go,p,0,.55,.85)
+  elif p['name']=='Auto_Taller':faithful_box(go,p,0,h*.38,w*.66,h*.74)
   elif p['name']=='Columpios':
    for side in [-1,1]:faithful_box(go,p,side*w*.4,.2,.22,.4,p['name'])
   elif p['name']=='Resbaladilla':faithful_box(go,p,0,.45,.7,.9)
   elif p['name']=='Porton_Salida':faithful_box(go,p,0,4.0,w*.84,.85)
   elif p['name'].startswith('Muro_Salida_'):faithful_box(go,p,0,h/2,.55,h)
+  elif p['name'].startswith('Muro_Parcela_'):
+   if p['angle'] in (90,270):faithful_box(go,p,0,h/2,.48,h-.02)
+   else:faithful_box(go,p,0,.24,w-.02,.48)
   else:faithful_box(go,p,0,.3,w*.72,.6)
   return
  if p['kind']=='building':
@@ -201,15 +240,15 @@ def place(p,parent):
 for p in placements:place(p,bld if p['kind']=='building' else props)
 if args.fiel:
  from PIL import Image
- stair_path='Sprites/04_Objetos/escalera_barrio_concreto.png'
- im=Image.open(root/stair_path).convert('RGBA')
- sl,st,sr,sb=im.getchannel('A').point(lambda v:255 if v>32 else 0).getbbox()
  for terrace in relief['terraces']:
   x1,y1,x2,y2=terrace['bounds']
   for n,stair in enumerate(terrace['stairs'],1):
    side,at,width=stair['side'],stair['at'],stair['width']
-   c,r,angle=(at,y2+1.0,0) if side=='south' else (at,y1+1.0,180) if side=='north' else (x1,at+1.6,90) if side=='west' else (x2,at+1.6,270)
-   place(dict(name=f"Escalera_{terrace['name']}_{side}_{n:02}",sprite=stair_path,c=c,r=r,width=width,height=1.9,
+   stair_path=f"Sprites/04_Objetos/escalera_barrio_{stair['style']}_nueva.png"
+   im=Image.open(root/stair_path).convert('RGBA')
+   sl,st,sr,sb=im.getchannel('A').point(lambda v:255 if v>32 else 0).getbbox()
+   c,r,angle=(at,y2+.78,0) if side=='south' else (at,y1+.78,180) if side=='north' else (x1,at+width/2,90) if side=='west' else (x2,at+width/2,270)
+   place(dict(name=f"Escalera_{terrace['name']}_{side}_{n:02}",sprite=stair_path,c=c,r=r,width=width,height=1.55,
     angle=angle,kind='floor',solid=False,left=sl,top=st,right=sr,bottom=sb,sortingOrder=-820),steps_group)
 
  def edge_parts(start,end,gaps):
@@ -293,6 +332,40 @@ if args.fiel:
  place(dict(name='Terreno_Organico',sprite=terrain_path,c=32,r=64,width=64,height=64,
   angle=0,kind='floor',solid=False,left=0,top=0,right=terrain_image.width,bottom=terrain_image.height,
   sortingOrder=-850),terrain)
+ # Preserve the imported NPC, dialogue/minigame Canvas and EventSystem. They
+ # are root hierarchies outside the regenerated Grid, with stable file IDs.
+ if donor_blocks:
+  donor_inner=lambda ident:next(iter(donor_blocks[ident].values()))
+  scene_roots=next((donor_inner(i)['m_Roots'] for i in donor_blocks if donor_kinds[i]==1660057539),[])
+  imported_roots=[]; imported_ids=set()
+  def import_tree(transform_id):
+   if transform_id in imported_ids:return
+   transform=donor_inner(transform_id)
+   go_id=transform['m_GameObject']['fileID']
+   go=donor_inner(go_id)
+   imported_ids.update((transform_id,go_id))
+   for component_ref in go['m_Component']:
+    component_id=component_ref['component']['fileID']
+    if component_id not in donor_blocks:raise ValueError(f'Missing imported component {component_id} on {go["m_Name"]}')
+    imported_ids.add(component_id)
+   for child_ref in transform.get('m_Children',[]):import_tree(child_ref['fileID'])
+  for root_ref in scene_roots:
+   transform_id=root_ref['fileID']
+   name=donor_inner(donor_inner(transform_id)['m_GameObject']['fileID'])['m_Name']
+   if name in core_roots:continue
+   imported_roots.append(transform_id)
+   import_tree(transform_id)
+  for ident in sorted(imported_ids):
+   if ident in out:raise ValueError(f'Imported gameplay ID collides with generated scene: {ident}')
+   out[ident]=copy.deepcopy(donor_blocks[ident]);out_kinds[ident]=donor_kinds[ident]
+  for transform_id in imported_roots:
+   go_id=donor_inner(transform_id)['m_GameObject']['fileID']
+   if donor_inner(go_id)['m_Name']=='Ramona_Npc':
+    inner_out(transform_id)['m_LocalPosition']=vec(4.0,-10.4,0)
+    for component_ref in inner_out(go_id)['m_Component']:
+     ident=component_ref['component']['fileID']
+     if out_kinds[ident]==212:inner_out(ident)['m_SortingOrder']=288
+  root_transforms=root_transforms[:-1]+imported_roots+root_transforms[-1:]
 out[9223372036854775807]={'SceneRoots':dict(m_ObjectHideFlags=0,m_Roots=[ref(i) for i in root_transforms])};out_kinds[9223372036854775807]=1660057539
 
 class Dumper(yaml.SafeDumper):pass
@@ -302,7 +375,7 @@ def dict_rep(dumper,d):
 Dumper.add_representer(dict,dict_rep)
 text='%YAML 1.1\n%TAG !u! tag:unity3d.com,2011:\n'
 for i,b in out.items():text+=f'--- !u!{out_kinds[i]} &{i}\n'+yaml.dump(b,Dumper=Dumper,sort_keys=False,allow_unicode=True,width=120)
-target=repo/('Assets/Scenes/EscenaNivel1_FielReferencia.unity' if args.fiel else 'Assets/Scenes/EscenaNivel1_Referencia.unity');target.write_text(text,newline='\n')
+target=repo/('Assets/Scenes/EscenaNivel1_FielReferencia.unity' if args.fiel else 'Assets/Scenes/EscenaNivel1_Referencia.unity');target.write_text(text,encoding='utf-8',newline='\n')
 meta=Path(str(target)+'.meta')
 if not meta.exists():meta.write_text('fileFormatVersion: 2\nguid: '+uuid.uuid4().hex+'\nDefaultImporter:\n  externalObjects: {}\n  userData: \n  assetBundleName: \n  assetBundleVariant: \n')
 footprints_path=repo/('Tools/Nivel1/colisiones_generadas_fiel.json' if args.fiel else 'Documentacion/Nivel1/Huellas_Colisiones.json')

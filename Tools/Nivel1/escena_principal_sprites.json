@@ -11,13 +11,16 @@
     "Sprites/04_Objetos/porton_salida_bloqueada.png": "Sprites/04_Objetos/porton_comercial_reforzado.png"
   },
   "placementOverrides": {
-    "Panaderia_Ramona": {"width": 11.6, "height": 7.2},
-    "Miscelanea": {"width": 9.6, "height": 7.8},
-    "Taller": {"width": 12.2, "height": 9.2},
-    "Porton_Salida": {"c": 58.5, "r": 61.0, "width": 9.5, "height": 8.3, "sortingOrder": 610},
-    "Conos_Salida": {"c": 58.5, "r": 61.7, "width": 5.0, "sortingOrder": 635},
-    "Aviso_Salida_Cerrada": {"c": 62.0, "r": 59.0, "width": 1.8, "height": 1.6, "sortingOrder": 640},
-    "Tunel_Callejon": {"c": 7.2, "r": 8.0, "width": 8.0, "height": 6.5},
+    "Panaderia_Ramona": {"c": 42.0, "r": 28.2, "width": 11.8, "height": 7.9},
+    "Miscelanea": {"c": 58.0, "r": 28.5, "width": 9.8, "height": 7.8},
+    "Taller": {"c": 56.3, "r": 40.2, "width": 12.3, "height": 9.4},
+    "Auto_Taller": {"c": 58.5, "r": 40.7, "width": 2.7},
+    "Conos_Taller": {"c": 60.4, "r": 42.2, "width": 2.6, "height": 1.8},
+    "Porton_Salida": {"c": 58.5, "r": 60.5, "width": 9.2, "height": 7.2, "sortingOrder": 610},
+    "Conos_Salida": {"c": 58.5, "r": 57.1, "width": 6.0, "height": 3.2, "sortingOrder": 635},
+    "Aviso_Salida_Cerrada": {"c": 61.5, "r": 58.5, "width": 2.0, "height": 1.8, "sortingOrder": 640},
+    "senal_bloqueo_301": {"c": 58.5, "r": 59.3, "width": 2.6, "sortingOrder": 645},
+    "Tunel_Callejon": {"c": 7.0, "r": 7.5, "width": 7.1, "height": 6.0},
     "Fuente_Parque": {"c": 37.7, "r": 48.1},
     "Vivienda_04": {"c": 21.9, "r": 14.2},
     "Vivienda_05": {"c": 30.7, "r": 14.8},
@@ -27,6 +30,7 @@
     "Vivienda_24": {"c": 43.6, "r": 60.5}
   },
   "spriteOverrides": {
+    "Auto_Taller": "Sprites/04_Objetos/auto_taller_rojo.png",
     "Vivienda_02": "Sprites/05_Edificios/vivienda_turquesa_florida.png",
     "Vivienda_07": "Sprites/05_Edificios/vivienda_turquesa_florida.png",
     "Vivienda_12": "Sprites/05_Edificios/vivienda_coral_techo_azul.png",
@@ -97,8 +101,8 @@
     {"name": "Vivienda_69", "sprite": "Sprites/05_Edificios/vivienda_techo_rojo_nueva.png", "c": 53.0, "r": 13.4, "width": 3.7, "height": 0, "angle": 0, "kind": "building", "solid": true},
     {"name": "Vivienda_70", "sprite": "Sprites/05_Edificios/vivienda_techo_azul_nueva.png", "c": 21.5, "r": 56.8, "width": 3.8, "height": 0, "angle": 0, "kind": "building", "solid": true},
     {"name": "Vivienda_71", "sprite": "Sprites/05_Edificios/vivienda_techo_rojo_nueva.png", "c": 52.8, "r": 49.5, "width": 3.7, "height": 0, "angle": 0, "kind": "building", "solid": true},
-    {"name": "Muro_Salida_Oeste", "sprite": "Sprites/04_Objetos/muro_perimetral.png", "c": 55.4, "r": 64.0, "width": 8.0, "height": 0.65, "angle": 90, "kind": "prop", "solid": true, "left": 0, "top": 11, "right": 128, "bottom": 37},
-    {"name": "Muro_Salida_Este", "sprite": "Sprites/04_Objetos/muro_perimetral.png", "c": 61.6, "r": 64.0, "width": 8.0, "height": 0.65, "angle": 90, "kind": "prop", "solid": true, "left": 0, "top": 11, "right": 128, "bottom": 37}
+    {"name": "Muro_Salida_Oeste", "sprite": "Sprites/04_Objetos/muro_patios_ocre.png", "c": 54.6, "r": 64.0, "width": 8.0, "height": 1.1, "angle": 90, "kind": "prop", "solid": true},
+    {"name": "Muro_Salida_Este", "sprite": "Sprites/04_Objetos/muro_patios_ocre.png", "c": 62.5, "r": 64.0, "width": 8.0, "height": 1.1, "angle": 90, "kind": "prop", "solid": true}
   ],
   "pathSegments": [
     {"from": [14.0, 2.0], "to": [13.4, 10.7], "width": 1.9},
@@ -201,8 +205,51 @@
      "points": [[4.0, 30.3], [9.3, 30.3], [4.0, 38.7], [9.3, 38.7], [4.0, 46.4], [9.3, 46.4], [4.0, 52.2], [9.3, 52.2], [18.8, 40.5], [22.7, 40.5], [17.4, 52.1], [22.4, 53.2]]}
     ,{"name": "Muros_Parcelas_Sur", "sprite": "Sprites/04_Objetos/muro_perimetral.png", "width": 3.5, "height": 0.72, "solid": true,
      "points": [[4.0, 60.3], [9.7, 60.3], [20.0, 60.5], [25.2, 60.5], [32.7, 60.6], [39.5, 60.6], [45.8, 60.6], [51.7, 60.4]]}
+    ,{"name": "Muro_Parcela_Norte", "sprite": "Sprites/04_Objetos/muro_patios_ocre.png", "width": 3.1, "height": 1.04, "solid": true,
+     "points": [[17.8, 10.8], [20.9, 10.8], [24.0, 10.8], [27.1, 10.8], [30.2, 10.8], [38.0, 10.8], [41.1, 10.8], [48.8, 10.8], [51.9, 10.8], [55.0, 10.8], [58.1, 10.8], [18.0, 20.8], [21.1, 20.8], [24.2, 20.8], [32.0, 20.8], [42.3, 20.8], [45.4, 20.8], [53.4, 20.8], [56.5, 20.8]]}
+    ,{"name": "Muro_Parcela_Oeste", "sprite": "Sprites/04_Objetos/muro_patios_ocre.png", "width": 3.1, "height": 1.04, "solid": true,
+     "points": [[3.5, 30.2], [6.6, 30.2], [9.7, 30.2], [3.5, 38.7], [6.6, 38.7], [9.7, 38.7], [3.5, 46.3], [6.6, 46.3], [9.7, 46.3], [17.0, 40.3], [20.1, 40.3], [23.2, 40.3], [17.0, 52.0], [20.1, 52.0], [23.2, 52.0]]}
+    ,{"name": "Muro_Parcela_Sur", "sprite": "Sprites/04_Objetos/muro_patios_ocre.png", "width": 3.1, "height": 1.04, "solid": true,
+     "points": [[3.5, 55.1], [6.6, 55.1], [9.7, 55.1], [18.0, 55.3], [21.1, 55.3], [24.2, 55.3], [32.5, 55.4], [40.0, 55.4], [43.1, 55.4], [46.2, 55.4], [50.7, 55.4]]}
+    ,{"name": "Muro_Parcela_Vertical", "sprite": "Sprites/04_Objetos/muro_patios_ocre.png", "width": 3.0, "height": 1.04, "angle": 90, "solid": true,
+     "points": [[12.1, 29.3], [12.1, 32.3], [12.1, 38.8], [12.1, 41.8], [12.1, 47.4], [26.7, 15.2], [48.8, 15.7], [49.0, 18.7], [26.7, 47.6], [48.1, 46.3]]}
+    ,{"name": "Muro_Parcela_Parque", "sprite": "Sprites/04_Objetos/muro_patios_ocre.png", "width": 3.1, "height": 1.04, "solid": true,
+     "points": [[31.0, 43.0], [34.1, 43.0], [40.9, 43.0], [44.0, 43.0], [47.1, 43.0], [31.0, 51.9], [34.1, 51.9], [40.9, 51.9], [44.0, 51.9], [47.1, 51.9]]}
+    ,{"name": "Muro_Parcela_Callejon", "sprite": "Sprites/04_Objetos/muro_patios_ocre.png", "width": 3.0, "height": 1.04, "angle": 90, "solid": true,
+     "points": [[12.4, 8.5], [12.4, 11.5], [12.4, 14.5], [12.4, 17.5]]}
+    ,{"name": "Arboles_Parque_Rincones", "sprite": "Sprites/04_Objetos/arbol_barrio_verde.png", "width": 4.1, "solid": true,
+     "points": [[33.0, 47.4], [45.2, 49.2]]}
+    ,{"name": "Basurero_Bolsas_Extra", "sprite": "Sprites/04_Objetos/bolsas_basura.png", "width": 1.4, "solid": true,
+     "points": [[2.6, 12.5], [9.2, 12.4], [4.2, 17.8], [10.9, 18.1]]}
+    ,{"name": "Basurero_Cajas_Extra", "sprite": "Sprites/04_Objetos/cajas_apiladas.png", "width": 1.7, "solid": true,
+     "points": [[2.2, 17.9], [9.8, 8.7]]}
+    ,{"name": "Plaza_Macetas_Extra", "sprite": "Sprites/04_Objetos/maceta_reutilizada.png", "width": 0.85,
+     "points": [[30.4, 34.8], [31.1, 40.3], [44.4, 40.3], [47.0, 34.7]]}
+    ,{"name": "Maleza_Patios", "sprite": "Sprites/04_Objetos/maleza_verde.png", "width": 1.9,
+     "points": [[16.9, 6.0], [24.2, 6.1], [28.1, 9.2], [34.1, 7.1], [46.8, 8.2], [52.3, 15.2], [59.2, 15.8], [17.6, 17.8], [25.6, 18.8], [32.4, 17.0], [38.4, 18.9], [43.3, 18.9], [6.7, 26.4], [9.8, 35.2], [4.1, 41.9], [19.1, 37.0], [25.4, 36.9], [7.4, 48.8], [18.2, 47.0], [25.5, 49.6], [32.1, 44.9], [44.7, 46.0], [32.7, 50.6], [45.6, 50.8], [10.9, 57.3], [28.3, 58.4], [36.4, 58.1], [47.9, 58.2]]}
+    ,{"name": "Tendederos_Patios", "sprite": "Sprites/04_Objetos/tendedero.png", "width": 2.9,
+     "points": [[24.6, 18.0], [38.4, 19.7], [20.8, 44.7], [46.4, 55.1]]}
     ,{"name": "Luz_Suelo_Faroles", "sprite": "Sprites/04_Objetos/halo_farol_suelo.png", "width": 3.1, "height": 1.15, "kind": "floor", "opacity": 0.24, "sortingOrder": -830,
      "points": [[13.0, 8.7], [16.3, 20.2], [26.4, 21.8], [37.2, 22.5], [48.0, 22.8], [25.4, 31.0], [29.5, 35.5], [48.8, 35.0], [28.0, 42.3], [33.0, 53.1], [50.1, 54.0], [14.0, 58.7], [47.5, 42.4], [40.8, 53.0]]}
+  ],
+  "wallRuns": [
+    {"name":"Callejon_Este","axis":"vertical","fixed":12.4,"start":5.5,"end":17.5},
+    {"name":"Norte_Oeste","terrace":"Viviendas_Norte","side":"west"},
+    {"name":"Norte_Frente","terrace":"Viviendas_Norte","side":"south"},
+    {"name":"Norte_Patios","axis":"horizontal","fixed":10.8,"start":16.1,"end":34.0,"gaps":[[20.0,22.2],[28.2,30.2]]},
+    {"name":"Norte_Huertos","axis":"horizontal","fixed":10.8,"start":47.0,"end":62.6,"gaps":[[53.0,55.0],[59.0,61.0]]},
+    {"name":"Oeste_Patio_1","axis":"horizontal","fixed":30.2,"start":1.5,"end":12.2,"gaps":[[5.2,7.2]]},
+    {"name":"Oeste_Patio_2","axis":"horizontal","fixed":38.7,"start":1.5,"end":12.2,"gaps":[[8.0,10.0]]},
+    {"name":"Oeste_Patio_3","axis":"horizontal","fixed":46.3,"start":1.5,"end":12.2,"gaps":[[5.3,7.3]]},
+    {"name":"Oeste_Patio_4","axis":"horizontal","fixed":55.1,"start":1.5,"end":12.2,"gaps":[[8.5,10.5]]},
+    {"name":"Oeste_Lateral","axis":"vertical","fixed":12.1,"start":23.0,"end":52.0,"gaps":[[32.3,34.5],[40.0,42.0],[47.7,50.0]]},
+    {"name":"Centro_Patios_1","axis":"horizontal","fixed":40.3,"start":16.0,"end":26.0,"gaps":[[20.0,22.3]]},
+    {"name":"Centro_Patios_2","axis":"horizontal","fixed":52.0,"start":16.0,"end":26.0,"gaps":[[19.0,21.2]]},
+    {"name":"Sur_Frente","axis":"horizontal","fixed":55.3,"start":16.0,"end":54.0,"gaps":[[27.3,30.8],[36.2,39.0],[47.3,49.8]]},
+    {"name":"Parque_Norte","terrace":"Parque","side":"north"},
+    {"name":"Parque_Sur","terrace":"Parque","side":"south"},
+    {"name":"Parque_Oeste","terrace":"Parque","side":"west"},
+    {"name":"Parque_Este","terrace":"Parque","side":"east"}
   ],
   "routeChecks": [
     {"name": "Salida_Alex", "c": 18.1, "r": 33.4},

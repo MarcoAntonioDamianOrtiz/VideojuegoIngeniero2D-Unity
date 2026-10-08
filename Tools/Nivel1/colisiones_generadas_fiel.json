@@ -24,7 +24,7 @@
     "shape": "box",
     "bounds": [
       35.74,
-      9.1014,
+      9.342,
       38.26,
       10.42
     ]
@@ -34,7 +34,7 @@
     "shape": "box",
     "bounds": [
       21.128,
-      13.9946,
+      13.8024,
       24.872,
       14.72
     ]
@@ -94,7 +94,7 @@
     "shape": "box",
     "bounds": [
       51.228,
-      17.5946,
+      17.375,
       54.972,
       18.32
     ]
@@ -134,7 +134,7 @@
     "shape": "box",
     "bounds": [
       1.492,
-      35.5807,
+      35.3568,
       5.308,
       36.32
     ]
@@ -164,7 +164,7 @@
     "shape": "box",
     "bounds": [
       7.816,
-      43.67,
+      43.5436,
       10.984,
       44.32
     ]
@@ -184,7 +184,7 @@
     "shape": "box",
     "bounds": [
       3.692,
-      48.97,
+      49.122,
       7.508,
       50.42
     ]
@@ -244,7 +244,7 @@
     "shape": "box",
     "bounds": [
       38.408,
-      57.97,
+      58.144,
       41.792,
       59.42
     ]
@@ -264,7 +264,7 @@
     "shape": "box",
     "bounds": [
       50.092,
-      57.17,
+      57.322,
       53.908,
       58.62
     ]
@@ -423,30 +423,30 @@
     "name": "Panaderia_Ramona",
     "shape": "box",
     "bounds": [
-      37.824,
-      25.97,
-      46.176,
-      27.42
+      37.752,
+      26.67,
+      46.248,
+      28.12
     ]
   },
   {
     "name": "Miscelanea",
     "shape": "box",
     "bounds": [
-      54.644,
-      26.57,
-      61.556,
-      28.02
+      54.472,
+      26.97,
+      61.528,
+      28.42
     ]
   },
   {
     "name": "Taller",
     "shape": "box",
     "bounds": [
-      51.708,
-      36.67,
-      60.492,
-      38.12
+      51.872,
+      38.67,
+      60.728,
+      40.12
     ]
   },
   {
@@ -501,10 +501,10 @@
     "name": "Porton_Salida",
     "shape": "box",
     "bounds": [
-      54.51,
-      56.575,
-      62.49,
-      57.425
+      54.636,
+      56.075,
+      62.364,
+      56.925
     ]
   },
   {
@@ -531,10 +531,10 @@
     "name": "Auto_Taller",
     "shape": "box",
     "bounds": [
-      56.836,
-      38.9,
-      58.564,
-      39.5
+      57.609,
+      38.4347,
+      59.391,
+      40.6698
     ]
   },
   {
@@ -582,7 +582,7 @@
     "shape": "box",
     "bounds": [
       2.888,
-      31.67,
+      31.6077,
       5.912,
       32.32
     ]
@@ -672,7 +672,7 @@
     "shape": "box",
     "bounds": [
       35.404,
-      17.37,
+      17.294,
       37.996,
       18.02
     ]
@@ -692,7 +692,7 @@
     "shape": "box",
     "bounds": [
       54.788,
-      11.37,
+      11.129,
       57.812,
       12.02
     ]
@@ -711,9 +711,9 @@
     "name": "Muro_Salida_Oeste",
     "shape": "box",
     "bounds": [
-      55.125,
+      54.325,
       56.0,
-      55.675,
+      54.875,
       64.0
     ]
   },
@@ -721,9 +721,9 @@
     "name": "Muro_Salida_Este",
     "shape": "box",
     "bounds": [
-      61.325,
+      62.225,
       56.0,
-      61.875,
+      62.775,
       64.0
     ]
   },
@@ -1255,323 +1255,1033 @@
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_01",
+    "name": "Arboles_Parque_Rincones_01",
     "shape": "box",
     "bounds": [
-      16.776,
-      11.4,
-      19.224,
-      12.0
+      31.524,
+      46.8,
+      34.476,
+      47.4
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_02",
+    "name": "Arboles_Parque_Rincones_02",
     "shape": "box",
     "bounds": [
-      20.976,
-      11.4,
-      23.424,
-      12.0
+      43.724,
+      48.6,
+      46.676,
+      49.2
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_03",
+    "name": "Basurero_Bolsas_Extra_01",
     "shape": "box",
     "bounds": [
-      25.176,
-      11.4,
-      27.624,
-      12.0
+      2.096,
+      11.9,
+      3.104,
+      12.5
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_04",
+    "name": "Basurero_Bolsas_Extra_02",
     "shape": "box",
     "bounds": [
-      29.376,
-      11.4,
-      31.824,
-      12.0
+      8.696,
+      11.8,
+      9.704,
+      12.4
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_05",
+    "name": "Basurero_Bolsas_Extra_03",
     "shape": "box",
     "bounds": [
-      38.676,
-      10.1,
-      41.124,
-      10.7
+      3.696,
+      17.2,
+      4.704,
+      17.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_06",
+    "name": "Basurero_Bolsas_Extra_04",
     "shape": "box",
     "bounds": [
-      46.276,
-      10.2,
-      48.724,
+      10.396,
+      17.5,
+      11.404,
+      18.1
+    ]
+  },
+  {
+    "name": "Basurero_Cajas_Extra_01",
+    "shape": "box",
+    "bounds": [
+      1.588,
+      17.3,
+      2.812,
+      17.9
+    ]
+  },
+  {
+    "name": "Basurero_Cajas_Extra_02",
+    "shape": "box",
+    "bounds": [
+      9.188,
+      8.1,
+      10.412,
+      8.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Callejon_Este_01",
+    "shape": "box",
+    "bounds": [
+      12.16,
+      5.45,
+      12.64,
+      8.49
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Callejon_Este_02",
+    "shape": "box",
+    "bounds": [
+      12.16,
+      8.45,
+      12.64,
+      11.49
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Callejon_Este_03",
+    "shape": "box",
+    "bounds": [
+      12.16,
+      11.45,
+      12.64,
+      14.49
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Callejon_Este_04",
+    "shape": "box",
+    "bounds": [
+      12.16,
+      14.45,
+      12.64,
+      17.49
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Oeste_01",
+    "shape": "box",
+    "bounds": [
+      15.76,
+      2.75,
+      16.24,
+      5.25
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Oeste_02",
+    "shape": "box",
+    "bounds": [
+      15.76,
+      5.21,
+      16.24,
+      7.71
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Oeste_03",
+    "shape": "box",
+    "bounds": [
+      15.76,
+      7.67,
+      16.24,
+      10.17
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Oeste_04",
+    "shape": "box",
+    "bounds": [
+      15.76,
+      10.13,
+      16.24,
+      12.63
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Oeste_05",
+    "shape": "box",
+    "bounds": [
+      15.76,
+      12.59,
+      16.24,
+      15.09
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Oeste_06",
+    "shape": "box",
+    "bounds": [
+      15.76,
+      18.05,
+      16.24,
+      20.69
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_01",
+    "shape": "box",
+    "bounds": [
+      15.98,
+      20.22,
+      18.8825,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_02",
+    "shape": "box",
+    "bounds": [
+      18.8425,
+      20.22,
+      21.745,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_03",
+    "shape": "box",
+    "bounds": [
+      21.705,
+      20.22,
+      24.6075,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_04",
+    "shape": "box",
+    "bounds": [
+      24.5675,
+      20.22,
+      27.47,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_05",
+    "shape": "box",
+    "bounds": [
+      30.53,
+      20.22,
+      32.12,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_06",
+    "shape": "box",
+    "bounds": [
+      32.08,
+      20.22,
+      33.67,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_07",
+    "shape": "box",
+    "bounds": [
+      36.73,
+      20.22,
+      37.47,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_08",
+    "shape": "box",
+    "bounds": [
+      40.53,
+      20.22,
+      43.3867,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_09",
+    "shape": "box",
+    "bounds": [
+      43.3467,
+      20.22,
+      46.2033,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_10",
+    "shape": "box",
+    "bounds": [
+      46.1633,
+      20.22,
+      49.02,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_11",
+    "shape": "box",
+    "bounds": [
+      48.98,
+      20.22,
+      51.8367,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_12",
+    "shape": "box",
+    "bounds": [
+      51.7967,
+      20.22,
+      54.6533,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_13",
+    "shape": "box",
+    "bounds": [
+      54.6133,
+      20.22,
+      57.47,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Frente_14",
+    "shape": "box",
+    "bounds": [
+      60.53,
+      20.22,
+      63.02,
+      20.7
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Patios_01",
+    "shape": "box",
+    "bounds": [
+      16.08,
+      10.32,
+      18.07,
       10.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_07",
+    "name": "Muro_Parcela_Norte_Patios_02",
     "shape": "box",
     "bounds": [
-      50.776,
-      10.2,
-      53.224,
+      18.03,
+      10.32,
+      20.02,
       10.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_08",
+    "name": "Muro_Parcela_Norte_Patios_03",
     "shape": "box",
     "bounds": [
-      56.576,
-      10.3,
-      59.024,
-      10.9
+      22.18,
+      10.32,
+      25.22,
+      10.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_09",
+    "name": "Muro_Parcela_Norte_Patios_04",
     "shape": "box",
     "bounds": [
-      17.176,
-      20.6,
-      19.624,
-      21.2
+      25.18,
+      10.32,
+      28.22,
+      10.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_10",
+    "name": "Muro_Parcela_Norte_Patios_05",
     "shape": "box",
     "bounds": [
-      23.176,
-      20.6,
-      25.624,
-      21.2
+      30.18,
+      10.32,
+      32.12,
+      10.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_11",
+    "name": "Muro_Parcela_Norte_Patios_06",
     "shape": "box",
     "bounds": [
-      44.576,
-      20.2,
-      47.024,
-      20.8
+      32.08,
+      10.32,
+      34.02,
+      10.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Norte_12",
+    "name": "Muro_Parcela_Norte_Huertos_01",
     "shape": "box",
     "bounds": [
-      52.276,
-      20.2,
-      54.724,
-      20.8
+      46.98,
+      10.32,
+      50.02,
+      10.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_01",
+    "name": "Muro_Parcela_Norte_Huertos_02",
     "shape": "box",
     "bounds": [
-      2.776,
-      29.7,
-      5.224,
-      30.3
+      49.98,
+      10.32,
+      53.02,
+      10.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_02",
+    "name": "Muro_Parcela_Norte_Huertos_03",
     "shape": "box",
     "bounds": [
-      8.076,
-      29.7,
-      10.524,
-      30.3
+      54.98,
+      10.32,
+      57.02,
+      10.8
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_03",
+    "name": "Muro_Parcela_Norte_Huertos_04",
     "shape": "box",
     "bounds": [
-      2.776,
-      38.1,
-      5.224,
+      56.98,
+      10.32,
+      59.02,
+      10.8
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Norte_Huertos_05",
+    "shape": "box",
+    "bounds": [
+      60.98,
+      10.32,
+      62.62,
+      10.8
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Oeste_Patio_1_01",
+    "shape": "box",
+    "bounds": [
+      1.48,
+      29.72,
+      3.37,
+      30.2
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Oeste_Patio_1_02",
+    "shape": "box",
+    "bounds": [
+      3.33,
+      29.72,
+      5.22,
+      30.2
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Oeste_Patio_1_03",
+    "shape": "box",
+    "bounds": [
+      7.18,
+      29.72,
+      9.72,
+      30.2
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Oeste_Patio_1_04",
+    "shape": "box",
+    "bounds": [
+      9.68,
+      29.72,
+      12.22,
+      30.2
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Oeste_Patio_2_01",
+    "shape": "box",
+    "bounds": [
+      1.48,
+      38.22,
+      3.6867,
       38.7
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_04",
+    "name": "Muro_Parcela_Oeste_Patio_2_02",
     "shape": "box",
     "bounds": [
-      8.076,
-      38.1,
-      10.524,
+      3.6467,
+      38.22,
+      5.8533,
       38.7
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_05",
+    "name": "Muro_Parcela_Oeste_Patio_2_03",
     "shape": "box",
     "bounds": [
-      2.776,
-      45.8,
-      5.224,
-      46.4
+      5.8133,
+      38.22,
+      8.02,
+      38.7
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_06",
+    "name": "Muro_Parcela_Oeste_Patio_2_04",
     "shape": "box",
     "bounds": [
-      8.076,
-      45.8,
-      10.524,
-      46.4
+      9.98,
+      38.22,
+      12.22,
+      38.7
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_07",
+    "name": "Muro_Parcela_Oeste_Patio_3_01",
     "shape": "box",
     "bounds": [
-      2.776,
-      51.6,
-      5.224,
-      52.2
+      1.48,
+      45.82,
+      3.42,
+      46.3
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_08",
+    "name": "Muro_Parcela_Oeste_Patio_3_02",
     "shape": "box",
     "bounds": [
-      8.076,
-      51.6,
-      10.524,
-      52.2
+      3.38,
+      45.82,
+      5.32,
+      46.3
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_09",
+    "name": "Muro_Parcela_Oeste_Patio_3_03",
     "shape": "box",
     "bounds": [
-      17.576,
-      39.9,
-      20.024,
-      40.5
+      7.28,
+      45.82,
+      9.77,
+      46.3
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_10",
+    "name": "Muro_Parcela_Oeste_Patio_3_04",
     "shape": "box",
     "bounds": [
-      21.476,
-      39.9,
-      23.924,
-      40.5
+      9.73,
+      45.82,
+      12.22,
+      46.3
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_11",
+    "name": "Muro_Parcela_Oeste_Patio_4_01",
     "shape": "box",
     "bounds": [
-      16.176,
-      51.5,
-      18.624,
-      52.1
+      1.48,
+      54.62,
+      3.8533,
+      55.1
     ]
   },
   {
-    "name": "Muros_Parcelas_Oeste_12",
+    "name": "Muro_Parcela_Oeste_Patio_4_02",
     "shape": "box",
     "bounds": [
-      21.176,
-      52.6,
-      23.624,
-      53.2
+      3.8133,
+      54.62,
+      6.1867,
+      55.1
     ]
   },
   {
-    "name": "Muros_Parcelas_Sur_01",
+    "name": "Muro_Parcela_Oeste_Patio_4_03",
     "shape": "box",
     "bounds": [
-      2.74,
-      59.7,
-      5.26,
-      60.3
+      6.1467,
+      54.62,
+      8.52,
+      55.1
     ]
   },
   {
-    "name": "Muros_Parcelas_Sur_02",
+    "name": "Muro_Parcela_Oeste_Patio_4_04",
     "shape": "box",
     "bounds": [
-      8.44,
-      59.7,
-      10.96,
-      60.3
+      10.48,
+      54.62,
+      12.22,
+      55.1
     ]
   },
   {
-    "name": "Muros_Parcelas_Sur_03",
+    "name": "Muro_Parcela_Oeste_Lateral_01",
     "shape": "box",
     "bounds": [
-      18.74,
-      59.9,
-      21.26,
-      60.5
+      11.86,
+      22.95,
+      12.34,
+      25.315
     ]
   },
   {
-    "name": "Muros_Parcelas_Sur_04",
+    "name": "Muro_Parcela_Oeste_Lateral_02",
     "shape": "box",
     "bounds": [
-      23.94,
-      59.9,
-      26.46,
-      60.5
+      11.86,
+      25.275,
+      12.34,
+      27.64
     ]
   },
   {
-    "name": "Muros_Parcelas_Sur_05",
+    "name": "Muro_Parcela_Oeste_Lateral_03",
     "shape": "box",
     "bounds": [
-      31.44,
-      60.0,
-      33.96,
-      60.6
+      11.86,
+      27.6,
+      12.34,
+      29.965
     ]
   },
   {
-    "name": "Muros_Parcelas_Sur_06",
+    "name": "Muro_Parcela_Oeste_Lateral_04",
     "shape": "box",
     "bounds": [
-      38.24,
-      60.0,
-      40.76,
-      60.6
+      11.86,
+      29.925,
+      12.34,
+      32.29
     ]
   },
   {
-    "name": "Muros_Parcelas_Sur_07",
+    "name": "Muro_Parcela_Oeste_Lateral_05",
     "shape": "box",
     "bounds": [
-      44.54,
-      60.0,
-      47.06,
-      60.6
+      11.86,
+      34.45,
+      12.34,
+      37.24
     ]
   },
   {
-    "name": "Muros_Parcelas_Sur_08",
+    "name": "Muro_Parcela_Oeste_Lateral_06",
     "shape": "box",
     "bounds": [
-      50.44,
-      59.8,
-      52.96,
-      60.4
+      11.86,
+      37.2,
+      12.34,
+      39.99
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Oeste_Lateral_07",
+    "shape": "box",
+    "bounds": [
+      11.86,
+      41.95,
+      12.34,
+      44.84
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Oeste_Lateral_08",
+    "shape": "box",
+    "bounds": [
+      11.86,
+      44.8,
+      12.34,
+      47.69
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Oeste_Lateral_09",
+    "shape": "box",
+    "bounds": [
+      11.86,
+      49.95,
+      12.34,
+      51.99
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Centro_Patios_1_01",
+    "shape": "box",
+    "bounds": [
+      15.98,
+      39.82,
+      18.02,
+      40.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Centro_Patios_1_02",
+    "shape": "box",
+    "bounds": [
+      17.98,
+      39.82,
+      20.02,
+      40.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Centro_Patios_1_03",
+    "shape": "box",
+    "bounds": [
+      22.28,
+      39.82,
+      24.17,
+      40.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Centro_Patios_1_04",
+    "shape": "box",
+    "bounds": [
+      24.13,
+      39.82,
+      26.02,
+      40.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Centro_Patios_2_01",
+    "shape": "box",
+    "bounds": [
+      15.98,
+      51.52,
+      19.02,
+      52.0
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Centro_Patios_2_02",
+    "shape": "box",
+    "bounds": [
+      21.18,
+      51.52,
+      23.62,
+      52.0
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Centro_Patios_2_03",
+    "shape": "box",
+    "bounds": [
+      23.58,
+      51.52,
+      26.02,
+      52.0
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_01",
+    "shape": "box",
+    "bounds": [
+      15.98,
+      54.82,
+      18.845,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_02",
+    "shape": "box",
+    "bounds": [
+      18.805,
+      54.82,
+      21.67,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_03",
+    "shape": "box",
+    "bounds": [
+      21.63,
+      54.82,
+      24.495,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_04",
+    "shape": "box",
+    "bounds": [
+      24.455,
+      54.82,
+      27.32,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_05",
+    "shape": "box",
+    "bounds": [
+      30.78,
+      54.82,
+      33.52,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_06",
+    "shape": "box",
+    "bounds": [
+      33.48,
+      54.82,
+      36.22,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_07",
+    "shape": "box",
+    "bounds": [
+      38.98,
+      54.82,
+      41.7867,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_08",
+    "shape": "box",
+    "bounds": [
+      41.7467,
+      54.82,
+      44.5533,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_09",
+    "shape": "box",
+    "bounds": [
+      44.5133,
+      54.82,
+      47.32,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_10",
+    "shape": "box",
+    "bounds": [
+      49.78,
+      54.82,
+      51.92,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Sur_Frente_11",
+    "shape": "box",
+    "bounds": [
+      51.88,
+      54.82,
+      54.02,
+      55.3
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Norte_01",
+    "shape": "box",
+    "bounds": [
+      28.98,
+      42.52,
+      31.32,
+      43.0
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Norte_02",
+    "shape": "box",
+    "bounds": [
+      31.28,
+      42.52,
+      33.62,
+      43.0
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Norte_03",
+    "shape": "box",
+    "bounds": [
+      33.58,
+      42.52,
+      35.92,
+      43.0
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Norte_04",
+    "shape": "box",
+    "bounds": [
+      39.08,
+      42.52,
+      42.0867,
+      43.0
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Norte_05",
+    "shape": "box",
+    "bounds": [
+      42.0467,
+      42.52,
+      45.0533,
+      43.0
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Norte_06",
+    "shape": "box",
+    "bounds": [
+      45.0133,
+      42.52,
+      48.02,
+      43.0
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Sur_01",
+    "shape": "box",
+    "bounds": [
+      28.98,
+      51.42,
+      31.32,
+      51.9
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Sur_02",
+    "shape": "box",
+    "bounds": [
+      31.28,
+      51.42,
+      33.62,
+      51.9
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Sur_03",
+    "shape": "box",
+    "bounds": [
+      33.58,
+      51.42,
+      35.92,
+      51.9
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Sur_04",
+    "shape": "box",
+    "bounds": [
+      39.08,
+      51.42,
+      42.0867,
+      51.9
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Sur_05",
+    "shape": "box",
+    "bounds": [
+      42.0467,
+      51.42,
+      45.0533,
+      51.9
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Sur_06",
+    "shape": "box",
+    "bounds": [
+      45.0133,
+      51.42,
+      48.02,
+      51.9
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Oeste_01",
+    "shape": "box",
+    "bounds": [
+      28.76,
+      42.95,
+      29.24,
+      44.94
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Oeste_02",
+    "shape": "box",
+    "bounds": [
+      28.76,
+      44.9,
+      29.24,
+      46.89
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Oeste_03",
+    "shape": "box",
+    "bounds": [
+      28.76,
+      49.85,
+      29.24,
+      51.89
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Este_01",
+    "shape": "box",
+    "bounds": [
+      47.76,
+      42.95,
+      48.24,
+      45.99
+    ]
+  },
+  {
+    "name": "Muro_Parcela_Parque_Este_02",
+    "shape": "box",
+    "bounds": [
+      47.76,
+      48.95,
+      48.24,
+      51.89
     ]
   },
   {
@@ -1590,7 +2300,7 @@
     "bounds": [
       16.0,
       20.48,
-      27.22,
+      27.52,
       20.92
     ]
   },
@@ -1598,9 +2308,9 @@
     "name": "Borde_Viviendas_Norte_south_02",
     "shape": "box",
     "bounds": [
-      30.78,
+      30.48,
       20.48,
-      33.42,
+      33.72,
       20.92
     ]
   },
@@ -1608,9 +2318,9 @@
     "name": "Borde_Viviendas_Norte_south_03",
     "shape": "box",
     "bounds": [
-      36.98,
+      36.68,
       20.48,
-      37.22,
+      37.52,
       20.92
     ]
   },
@@ -1618,9 +2328,9 @@
     "name": "Borde_Viviendas_Norte_south_04",
     "shape": "box",
     "bounds": [
-      40.78,
+      40.48,
       20.48,
-      57.22,
+      57.52,
       20.92
     ]
   },
@@ -1628,7 +2338,7 @@
     "name": "Borde_Viviendas_Norte_south_05",
     "shape": "box",
     "bounds": [
-      60.78,
+      60.48,
       20.48,
       63.0,
       20.92
@@ -1641,7 +2351,7 @@
       15.78,
       2.8,
       16.22,
-      14.92
+      15.17
     ]
   },
   {
@@ -1649,7 +2359,7 @@
     "shape": "box",
     "bounds": [
       15.78,
-      18.28,
+      18.03,
       16.22,
       20.7
     ]
@@ -1680,7 +2390,7 @@
     "bounds": [
       12.8,
       32.38,
-      16.22,
+      16.57,
       32.82
     ]
   },
@@ -1688,7 +2398,7 @@
     "name": "Borde_Casa_Alex_south_02",
     "shape": "box",
     "bounds": [
-      19.98,
+      19.63,
       32.38,
       24.1,
       32.82
@@ -1711,7 +2421,7 @@
       23.88,
       23.0,
       24.32,
-      26.32
+      26.57
     ]
   },
   {
@@ -1719,7 +2429,7 @@
     "shape": "box",
     "bounds": [
       23.88,
-      29.68,
+      29.43,
       24.32,
       32.6
     ]
@@ -1730,7 +2440,7 @@
     "bounds": [
       34.0,
       22.58,
-      40.22,
+      40.52,
       23.02
     ]
   },
@@ -1738,7 +2448,7 @@
     "name": "Borde_Panaderia_north_02",
     "shape": "box",
     "bounds": [
-      43.78,
+      43.48,
       22.58,
       50.5,
       23.02
@@ -1750,7 +2460,7 @@
     "bounds": [
       34.0,
       29.38,
-      40.02,
+      40.42,
       29.82
     ]
   },
@@ -1758,7 +2468,7 @@
     "name": "Borde_Panaderia_south_02",
     "shape": "box",
     "bounds": [
-      43.98,
+      43.58,
       29.38,
       50.5,
       29.82
@@ -1771,7 +2481,7 @@
       33.78,
       22.8,
       34.22,
-      24.82
+      25.07
     ]
   },
   {
@@ -1779,7 +2489,7 @@
     "shape": "box",
     "bounds": [
       33.78,
-      28.18,
+      27.93,
       34.22,
       29.6
     ]
@@ -1800,7 +2510,7 @@
     "bounds": [
       28.8,
       29.78,
-      40.02,
+      40.42,
       30.22
     ]
   },
@@ -1808,7 +2518,7 @@
     "name": "Borde_Plaza_north_02",
     "shape": "box",
     "bounds": [
-      43.98,
+      43.58,
       29.78,
       48.1,
       30.22
@@ -1820,7 +2530,7 @@
     "bounds": [
       28.8,
       40.68,
-      35.52,
+      35.97,
       41.12
     ]
   },
@@ -1828,7 +2538,7 @@
     "name": "Borde_Plaza_south_02",
     "shape": "box",
     "bounds": [
-      39.48,
+      39.03,
       40.68,
       48.1,
       41.12
@@ -1841,7 +2551,7 @@
       28.58,
       30.0,
       29.02,
-      35.32
+      35.57
     ]
   },
   {
@@ -1849,7 +2559,7 @@
     "shape": "box",
     "bounds": [
       28.58,
-      38.68,
+      38.43,
       29.02,
       40.9
     ]
@@ -1861,7 +2571,7 @@
       47.88,
       30.0,
       48.32,
-      35.82
+      36.07
     ]
   },
   {
@@ -1869,7 +2579,7 @@
     "shape": "box",
     "bounds": [
       47.88,
-      39.18,
+      38.93,
       48.32,
       40.9
     ]
@@ -1880,7 +2590,7 @@
     "bounds": [
       29.0,
       42.78,
-      35.52,
+      35.97,
       43.22
     ]
   },
@@ -1888,7 +2598,7 @@
     "name": "Borde_Parque_north_02",
     "shape": "box",
     "bounds": [
-      39.48,
+      39.03,
       42.78,
       48.0,
       43.22
@@ -1900,7 +2610,7 @@
     "bounds": [
       29.0,
       51.68,
-      35.52,
+      35.97,
       52.12
     ]
   },
@@ -1908,7 +2618,7 @@
     "name": "Borde_Parque_south_02",
     "shape": "box",
     "bounds": [
-      39.48,
+      39.03,
       51.68,
       48.0,
       52.12
@@ -1921,7 +2631,7 @@
       28.78,
       43.0,
       29.22,
-      46.72
+      46.97
     ]
   },
   {
@@ -1929,7 +2639,7 @@
     "shape": "box",
     "bounds": [
       28.78,
-      50.08,
+      49.83,
       29.22,
       51.9
     ]
@@ -1941,7 +2651,7 @@
       47.78,
       43.0,
       48.22,
-      45.82
+      46.07
     ]
   },
   {
@@ -1949,7 +2659,7 @@
     "shape": "box",
     "bounds": [
       47.78,
-      49.18,
+      48.93,
       48.22,
       51.9
     ]

@@ -8,6 +8,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EscenaNivel1_FielReferencia.unity
     guid: 0b9eb911078a4432a4d8206f277af904
+  - enabled: 1
+    path: Assets/Scenes/ESCENA NUEVA.unity
+    guid: a4fbac0ff5f4ad44fb85898740868827
   m_configObjects:
     com.unity.dt.app-ui: {fileID: 11400000, guid: 1b1c20d82303e4b5781c3ef50ac1449f,
       type: 2}

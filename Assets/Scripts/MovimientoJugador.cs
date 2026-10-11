@@ -15,6 +15,19 @@ public class MovimientoJugador : MonoBehaviour
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Vector2 movimiento;
+    private Vector2 movimientoTactil;
+
+    public void SetTouchDirection(Vector2 direccion)
+    {
+        movimientoTactil = Vector2.ClampMagnitude(direccion, 1f);
+    }
+
+    private void OnDisable()
+    {
+        movimiento = Vector2.zero;
+        movimientoTactil = Vector2.zero;
+        if (animator != null) animator.SetBool("Caminando", false);
+    }
 
     private void Awake()
     {
@@ -100,6 +113,9 @@ public class MovimientoJugador : MonoBehaviour
             Input.GetAxisRaw("Vertical")
         );
 #endif
+
+        if (movimiento.sqrMagnitude < 0.01f)
+            movimiento = movimientoTactil;
 
         movimiento = movimiento.normalized;
     }

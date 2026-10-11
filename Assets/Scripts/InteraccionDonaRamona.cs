@@ -27,20 +27,21 @@ public class InteraccionDonaRamona : MonoBehaviour
 
     void Update()
     {
-        // Al presionar 'E' dentro del Trigger
-        if (jugadorEnTrigger && Input.GetKeyDown(KeyCode.E))
-        {
-            // 1. Si no hay nada abierto, abre el diálogo
-            if (!dialogoActivo && !panelTerminalMinijuego.activeSelf)
-            {
-                AbrirDialogo();
-            }
-            // 2. Si el diálogo ya está abierto y vuelve a presionar 'E', pasa al minijuego
-            else if (dialogoActivo)
-            {
-                CerrarDialogoYAbrirMinijuego();
-            }
-        }
+        if (Input.GetKeyDown(KeyCode.E)) Interactuar();
+    }
+
+    public bool PuedeInteractuar => jugadorEnTrigger &&
+        (panelTerminalMinijuego == null || !panelTerminalMinijuego.activeSelf);
+
+    public bool DialogoActivo => dialogoActivo;
+
+    // Lo llaman tanto el teclado como los controles táctiles.
+    public void Interactuar()
+    {
+        if (!PuedeInteractuar) return;
+
+        if (dialogoActivo) CerrarDialogoYAbrirMinijuego();
+        else AbrirDialogo();
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -48,7 +49,7 @@ public class InteraccionDonaRamona : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             jugadorEnTrigger = true;
-            Debug.Log("Presiona 'E' para hablar con Doña Ramona.");
+            Debug.Log("Habla con Doña Ramona con E o con el botón en pantalla.");
         }
     }
 

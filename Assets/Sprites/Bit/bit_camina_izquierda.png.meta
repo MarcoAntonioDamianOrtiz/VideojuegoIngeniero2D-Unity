@@ -1,0 +1,399 @@
+fileFormatVersion: 2
+guid: fc750a9f6508d6141b7ace4006291e5d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5870829025683846725
+    second: bit_camina_izquierda_0
+  - first:
+      213: -8473650930104159269
+    second: bit_camina_izquierda_1
+  - first:
+      213: 5713611344853753661
+    second: bit_camina_izquierda_2
+  - first:
+      213: -382591027418956932
+    second: bit_camina_izquierda_3
+  - first:
+      213: -141681468013944412
+    second: bit_camina_izquierda_4
+  - first:
+      213: 5398741518496383489
+    second: bit_camina_izquierda_5
+  - first:
+      213: -688053280059917712
+    second: bit_camina_izquierda_6
+  - first:
+      213: -2479473175122544975
+    second: bit_camina_izquierda_7
+  - first:
+      213: 7211656598772465729
+    second: bit_camina_izquierda_8
+  - first:
+      213: -7605909125980601142
+    second: bit_camina_izquierda_9
+  - first:
+      213: -9075976112434408350
+    second: bit_camina_izquierda_10
+  - first:
+      213: -1401639500795680113
+    second: bit_camina_izquierda_11
+  - first:
+      213: -135261183451180991
+    second: bit_camina_izquierda_12
+  - first:
+      213: -6229680685660575424
+    second: bit_camina_izquierda_13
+  - first:
+      213: 629659221951126745
+    second: bit_camina_izquierda_14
+  - first:
+      213: 2757914379790428490
+    second: bit_camina_izquierda_15
+  - first:
+      213: -7411915939556735707
+    second: bit_camina_izquierda_16
+  - first:
+      213: 654098926488118442
+    second: bit_camina_izquierda_17
+  - first:
+      213: 1778398098534532330
+    second: bit_camina_izquierda_18
+  - first:
+      213: 6753881382556659888
+    second: bit_camina_izquierda_19
+  - first:
+      213: 4191968030948220061
+    second: bit_camina_izquierda_20
+  - first:
+      213: 7184866677332856126
+    second: bit_camina_izquierda_21
+  - first:
+      213: 4806373531214312808
+    second: bit_camina_izquierda_22
+  - first:
+      213: 2299816369195445409
+    second: bit_camina_izquierda_23
+  - first:
+      213: -6368472154172092082
+    second: bit_camina_izquierda_24
+  - first:
+      213: 2668215369114287339
+    second: bit_camina_izquierda_25
+  - first:
+      213: 1060267016161121350
+    second: bit_camina_izquierda_26
+  - first:
+      213: 7383538346378360627
+    second: bit_camina_izquierda_27
+  - first:
+      213: 1890896358744045708
+    second: bit_camina_izquierda_28
+  - first:
+      213: -6084215376981211091
+    second: bit_camina_izquierda_29
+  - first:
+      213: -3741504254785727440
+    second: bit_camina_izquierda_30
+  - first:
+      213: 2541529363517070211
+    second: bit_camina_izquierda_31
+  - first:
+      213: -4472496478661858979
+    second: bit_camina_izquierda_32
+  - first:
+      213: -42485032431805000
+    second: bit_camina_izquierda_33
+  - first:
+      213: -3629170316289414054
+    second: bit_camina_izquierda_34
+  - first:
+      213: -3554797078457373588
+    second: bit_camina_izquierda_35
+  - first:
+      213: -7312806502023026028
+    second: bit_camina_izquierda_36
+  - first:
+      213: 3374376939750149294
+    second: bit_camina_izquierda_37
+  - first:
+      213: 8056049543490611087
+    second: bit_camina_izquierda_38
+  - first:
+      213: -1421552315222336306
+    second: bit_camina_izquierda_39
+  - first:
+      213: 6031399845885154415
+    second: bit_camina_izquierda_40
+  - first:
+      213: -7355346434377160896
+    second: bit_camina_izquierda_41
+  - first:
+      213: 2550090008050132192
+    second: bit_camina_izquierda_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: bit_camina_izquierda_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 362
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54630f4d4ef597150800000000000000
+      internalID: 5870829025683846725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bit_camina_izquierda_1
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 0
+        width: 362
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd3bb78df5b876a80800000000000000
+      internalID: -8473650930104159269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bit_camina_izquierda_2
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 0
+        width: 362
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3f56a20f33da4f40800000000000000
+      internalID: 5713611344853753661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bit_camina_izquierda_3
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 0
+        width: 362
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7bf074dc73c0baf0800000000000000
+      internalID: -382591027418956932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bit_camina_izquierda_4
+      rect:
+        serializedVersion: 2
+        x: 1448
+        y: 0
+        width: 362
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a1e5cb9475a80ef0800000000000000
+      internalID: -141681468013944412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bit_camina_izquierda_5
+      rect:
+        serializedVersion: 2
+        x: 1810
+        y: 0
+        width: 362
+        height: 724
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 102412caece2cea40800000000000000
+      internalID: 5398741518496383489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: ad37a0e293a59324fb7d8d50fcccb0bb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":6.0,"y":1.0},"gridSpriteSize":{"x":362.0,"y":724.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      bit_camina_izquierda_0: 5870829025683846725
+      bit_camina_izquierda_1: -8473650930104159269
+      bit_camina_izquierda_2: 5713611344853753661
+      bit_camina_izquierda_3: -382591027418956932
+      bit_camina_izquierda_4: -141681468013944412
+      bit_camina_izquierda_5: 5398741518496383489
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

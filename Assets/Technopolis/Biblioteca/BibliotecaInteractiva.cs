@@ -80,7 +80,10 @@ public sealed class BibliotecaInteractiva : MonoBehaviour
             else if (cerca) Abrir();
         }
         if (abierto && audioEstado && !reproductor.isPlaying && audioEstado.text == "Reproduciendo…")
+        {
+            MusicaBarrio.SilenciarPorBiblioteca(false);
             audioEstado.text = "Audio listo para escuchar";
+        }
     }
 
     static bool PresionoE()
@@ -121,6 +124,7 @@ public sealed class BibliotecaInteractiva : MonoBehaviour
     {
         if (!abierto) return;
         reproductor.Stop();
+        MusicaBarrio.SilenciarPorBiblioteca(false);
         abierto = false;
         libro.SetActive(false);
         if (movimientoJugador && movimientoEstabaActivo) movimientoJugador.enabled = true;
@@ -199,6 +203,7 @@ public sealed class BibliotecaInteractiva : MonoBehaviour
     void Mostrar(Vista nuevaVista)
     {
         reproductor.Stop();
+        MusicaBarrio.SilenciarPorBiblioteca(false);
         vista = nuevaVista;
         Limpiar(paginaIzquierda);
         Limpiar(paginaDerecha);
@@ -265,6 +270,7 @@ public sealed class BibliotecaInteractiva : MonoBehaviour
     void CambiarEntrada(int delta)
     {
         reproductor.Stop();
+        MusicaBarrio.SilenciarPorBiblioteca(false);
         entradaActual = Mathf.Clamp(entradaActual + delta, 0, entradas.Length - 1);
         MostrarEntrada();
     }
@@ -276,6 +282,7 @@ public sealed class BibliotecaInteractiva : MonoBehaviour
         if (!clip) { if (audioEstado) audioEstado.text = "Audio no disponible"; return; }
         reproductor.Stop();
         reproductor.clip = clip;
+        MusicaBarrio.SilenciarPorBiblioteca(true);
         reproductor.Play();
         if (audioEstado) audioEstado.text = "Reproduciendo…";
     }

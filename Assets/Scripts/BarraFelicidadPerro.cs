@@ -10,42 +10,10 @@ public class BarraFelicidadPerro : MonoBehaviour
     [SerializeField] private Image iconoPerro;
     [SerializeField] private TMP_Text textoPorcentaje;
 
-    [Header("Sprites de las barras")]
-    [SerializeField] private Sprite barraVerde;
-    [SerializeField] private Sprite barraAmarilla;
-    [SerializeField] private Sprite barraRoja;
-
     [Header("Rostros del perro")]
     [SerializeField] private Sprite perroFeliz;
     [SerializeField] private Sprite perroSerio;
     [SerializeField] private Sprite perroTriste;
-
-    [Header("Posicion y tamaño VERDE")]
-    [SerializeField]
-    private Vector2 posicionVerde =
-        new Vector2(-431.0315f, 223.25f);
-
-    [SerializeField]
-    private Vector2 tamanoVerde =
-        new Vector2(290f, 62.5f);
-
-    [Header("Posicion y tamaño AMARILLO")]
-    [SerializeField]
-    private Vector2 posicionAmarillo =
-        new Vector2(-425f, 230f);
-
-    [SerializeField]
-    private Vector2 tamanoAmarillo =
-        new Vector2(280f, 40f);
-
-    [Header("Posicion y tamaño ROJO")]
-    [SerializeField]
-    private Vector2 posicionRojo =
-        new Vector2(-425f, 223.25f);
-
-    [SerializeField]
-    private Vector2 tamanoRojo =
-        new Vector2(280f, 62.5f);
 
     [Header("Configuracion de felicidad")]
     [SerializeField, Range(0, 100)]
@@ -57,18 +25,14 @@ public class BarraFelicidadPerro : MonoBehaviour
     private float felicidadVisible;
     private RectTransform rectBarra;
 
-    // Guarda el estado para evitar redimensionar
-    // innecesariamente en cada fotograma.
-    private int estadoAnterior = -1;
-
     private readonly Color32 colorVerde =
-        new Color32(85, 255, 51, 255);
+        new Color32(118, 186, 103, 255);
 
     private readonly Color32 colorAmarillo =
-        new Color32(255, 208, 43, 255);
+        new Color32(231, 189, 92, 255);
 
     private readonly Color32 colorRojo =
-        new Color32(255, 56, 56, 255);
+        new Color32(210, 105, 82, 255);
 
     private void Start()
     {
@@ -85,21 +49,9 @@ public class BarraFelicidadPerro : MonoBehaviour
             return;
         }
 
-        rectBarra = barraRelleno.rectTransform;
-
-        // Anclaje central como en tus capturas.
-        rectBarra.anchorMin = new Vector2(0.5f, 0.5f);
-        rectBarra.anchorMax = new Vector2(0.5f, 0.5f);
-        rectBarra.pivot = new Vector2(0.5f, 0.5f);
-        rectBarra.localScale = Vector3.one;
-
-        // Recorte horizontal.
-        barraRelleno.type = Image.Type.Filled;
-        barraRelleno.fillMethod =
-            Image.FillMethod.Horizontal;
-        barraRelleno.fillOrigin = 0;
-        barraRelleno.preserveAspect = false;
-        barraRelleno.color = Color.white;
+        rectBarra = HudBarrioVisual.ConfigurarPerro(transform, barraRelleno, iconoPerro, textoPorcentaje);
+        HudBarrioVisual.ConfigurarDinero();
+        MusicaBarrio.IniciarSiFalta();
 
         felicidadVisible = felicidad;
         ActualizarHUD();
@@ -124,42 +76,29 @@ public class BarraFelicidadPerro : MonoBehaviour
             100
         );
 
-        // La barra disminuye progresivamente.
-        barraRelleno.fillAmount =
-            Mathf.Clamp01(felicidadVisible / 100f);
+        rectBarra.anchorMax = new Vector2(Mathf.Clamp01(felicidadVisible / 100f), 1);
+        rectBarra.offsetMin = rectBarra.offsetMax = Vector2.zero;
 
         // Actualizar texto.
         textoPorcentaje.text = porcentaje + "%";
 
-        int estado;
         Sprite spritePerro;
         Color colorTexto;
 
         if (porcentaje > 50)
         {
-            estado = 0; // VERDE
             spritePerro = perroFeliz;
             colorTexto = colorVerde;
         }
         else if (porcentaje > 20)
         {
-            estado = 1; // AMARILLO
             spritePerro = perroSerio;
             colorTexto = colorAmarillo;
         }
         else
         {
-            estado = 2; // ROJO
             spritePerro = perroTriste;
             colorTexto = colorRojo;
-        }
-
-        // Solo actualizar sprite y tamaño
-        // cuando cambia de estado.
-        if (estado != estadoAnterior)
-        {
-            estadoAnterior = estado;
-            CambiarEstadoBarra(estado);
         }
 
         // Actualizar rostro.
@@ -169,59 +108,7 @@ public class BarraFelicidadPerro : MonoBehaviour
             iconoPerro.sprite = spritePerro;
         }
 
-        // Actualizar color del porcentaje.
-        textoPorcentaje.color = colorTexto;
-    }
-
-    private void CambiarEstadoBarra(int estado)
-    {
-        Sprite nuevoSprite;
-        Vector2 nuevaPosicion;
-        Vector2 nuevoTamano;
-
-        switch (estado)
-        {
-            case 0: // VERDE
-                nuevoSprite = barraVerde;
-                nuevaPosicion = posicionVerde;
-                nuevoTamano = tamanoVerde;
-                break;
-
-            case 1: // AMARILLO
-                nuevoSprite = barraAmarilla;
-                nuevaPosicion = posicionAmarillo;
-                nuevoTamano = tamanoAmarillo;
-                break;
-
-            default: // ROJO
-                nuevoSprite = barraRoja;
-                nuevaPosicion = posicionRojo;
-                nuevoTamano = tamanoRojo;
-                break;
-        }
-
-        // Cambiar imagen.
-        if (nuevoSprite != null)
-        {
-            barraRelleno.sprite = nuevoSprite;
-        }
-
-        // Cambiar ancho y alto.
-        rectBarra.SetSizeWithCurrentAnchors(
-            RectTransform.Axis.Horizontal,
-            nuevoTamano.x
-        );
-
-        rectBarra.SetSizeWithCurrentAnchors(
-            RectTransform.Axis.Vertical,
-            nuevoTamano.y
-        );
-
-        // Cambiar posicion.
-        rectBarra.anchoredPosition = nuevaPosicion;
-
-        // Mantener escala original.
-        rectBarra.localScale = Vector3.one;
+        barraRelleno.color = colorTexto;
     }
 
     // Cambiar felicidad desde otros scripts.

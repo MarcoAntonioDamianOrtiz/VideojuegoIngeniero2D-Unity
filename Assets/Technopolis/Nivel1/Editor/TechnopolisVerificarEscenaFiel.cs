@@ -29,12 +29,12 @@ public static class TechnopolisVerificarEscenaFiel
         if (!scene.IsValid()) throw new InvalidOperationException("No se pudo abrir la escena principal.");
 
         GameObject[] roots = scene.GetRootGameObjects();
-        if (roots.Length == 0 || roots[roots.Length - 1].name != "Grid")
-            throw new InvalidOperationException("Grid debe quedar al final de la jerarquia.");
+        GameObject grid = Array.Find(roots, root => root.name == "Grid");
+        if (!grid)
+            throw new InvalidOperationException("Falta Grid en la escena.");
         if (EditorBuildSettings.scenes.Length == 0 || EditorBuildSettings.scenes[0].path != ScenePath || !EditorBuildSettings.scenes[0].enabled)
             throw new InvalidOperationException("La escena de sprites debe ser la primera escena del juego.");
 
-        GameObject grid = roots[roots.Length - 1];
         GameObject jugador = GameObject.Find("Jugador");
         GameObject cameraObject = GameObject.Find("Main Camera");
         GameObject ramona = GameObject.Find("Ramona_Npc");

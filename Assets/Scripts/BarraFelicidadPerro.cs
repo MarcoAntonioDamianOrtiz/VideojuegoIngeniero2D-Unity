@@ -85,7 +85,7 @@ public class BarraFelicidadPerro : MonoBehaviour
         Sprite spritePerro;
         Color colorTexto;
 
-        if (porcentaje > 50)
+        if (porcentaje >= 60)
         {
             spritePerro = perroFeliz;
             colorTexto = colorVerde;

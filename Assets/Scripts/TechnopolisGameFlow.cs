@@ -11,10 +11,23 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     public const string LevelScene = "EscenaNivel1_FielReferencia";
     public const string MenuScene = "ESCENA NUEVA";
 
-    const string SavePrefix = "Technopolis.Level1.";
-    const string SaveVersion = SavePrefix + "Version";
-    const string SaveX = SavePrefix + "PlayerX";
-    const string SaveY = SavePrefix + "PlayerY";
+    const string Nivel2 = "EscenaNivel2Taller";
+    const string Nivel3 = "EscenaNivel3Silicio";
+    const string NivelGuardado = "Technopolis.Campaign.Scene";
+    static string currentLevel = LevelScene;
+
+    public static void AvanzarCampana(int numero)
+    {
+        string siguiente = numero == 2 ? Nivel2 : Nivel3;
+        startWithoutMenu = true;
+        restoreOnLoad = false;
+        currentLevel = siguiente;
+        SceneManager.LoadScene(siguiente, LoadSceneMode.Single);
+    }
+    static string SavePrefix => currentLevel == Nivel3 ? "Technopolis.Level3." : currentLevel == Nivel2 ? "Technopolis.Level2." : "Technopolis.Level1.";
+    static string SaveVersion => SavePrefix + "Version";
+    static string SaveX => SavePrefix + "PlayerX";
+    static string SaveY => SavePrefix + "PlayerY";
     const float SaveInterval = 10f;
 
     static TechnopolisGameFlow instance;
@@ -29,7 +42,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     float saveElapsed;
 
     public static bool HasSavedGame => PlayerPrefs.GetInt(SaveVersion, 0) == 1;
-    public static bool CanContinue => sessionStarted || HasSavedGame;
+    public static bool CanContinue => sessionStarted || HasSavedGame || PlayerPrefs.HasKey(NivelGuardado);
     public static bool IsMenuOpen => menuOpen;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
@@ -37,6 +50,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
         SceneManager.sceneLoaded += OnSceneLoaded;
+        currentLevel = LevelScene;
         player = null;
         instance = null;
         sessionStarted = false;
@@ -49,12 +63,20 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
 
     static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == LevelScene)
+        if (scene.name == LevelScene || scene.name == Nivel2 || scene.name == Nivel3)
         {
+            currentLevel = scene.name;
             GameObject found = GameObject.Find("Jugador");
             player = found ? found.transform : null;
             if (player) startingPosition = player.position;
             EnsureHost();
+            if (scene.name != LevelScene && found && found.TryGetComponent<MovimientoJugador>(out var movimiento))
+            {
+                var campana = new GameObject("Objetivos de campaña");
+                SceneManager.MoveGameObjectToScene(campana, scene);
+                campana.AddComponent<TechnopolisCampana>().Configurar(scene.name == Nivel3 ? 3 : 2, movimiento);
+                MusicaBarrio.IniciarSiFalta();
+            }
 
             if (restoreOnLoad)
             {
@@ -69,6 +91,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
                 sessionStarted = true;
                 menuOpen = false;
                 Time.timeScale = 1f;
+                SavePosition();
             }
             else if (firstLevelLoad)
             {
@@ -94,14 +117,15 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     public static void StartNewGame()
     {
         EconomiaBarrio.ReiniciarPartida();
+        PlayerPrefs.DeleteKey(NivelGuardado);
         ClearSave();
-        if (sessionStarted || !SceneManager.GetSceneByName(LevelScene).isLoaded)
+        if (sessionStarted || !SceneManager.GetSceneByName(currentLevel).isLoaded)
         {
             startWithoutMenu = true;
             restoreOnLoad = false;
             menuOpen = false;
             Time.timeScale = 1f;
-            SceneManager.LoadScene(LevelScene, LoadSceneMode.Single);
+            SceneManager.LoadScene(currentLevel, LoadSceneMode.Single);
             return;
         }
 
@@ -117,9 +141,12 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
             CloseMenu();
             return;
         }
+        string guardado = PlayerPrefs.GetString(NivelGuardado, currentLevel);
+        if (guardado == LevelScene || guardado == Nivel2 || guardado == Nivel3)
+            currentLevel = guardado;
         if (!HasSavedGame) return;
 
-        if (SceneManager.GetSceneByName(LevelScene).isLoaded)
+        if (SceneManager.GetSceneByName(currentLevel).isLoaded)
         {
             RestorePosition();
             sessionStarted = true;
@@ -131,7 +158,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
             startWithoutMenu = true;
             menuOpen = false;
             Time.timeScale = 1f;
-            SceneManager.LoadScene(LevelScene, LoadSceneMode.Single);
+            SceneManager.LoadScene(currentLevel, LoadSceneMode.Single);
         }
     }
 
@@ -154,7 +181,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     {
         menuOpen = false;
         Time.timeScale = 1f;
-        Scene level = SceneManager.GetSceneByName(LevelScene);
+        Scene level = SceneManager.GetSceneByName(currentLevel);
         if (level.isLoaded) SceneManager.SetActiveScene(level);
         Scene menu = SceneManager.GetSceneByName(MenuScene);
         if (menu.isLoaded) SceneManager.UnloadSceneAsync(menu);
@@ -184,6 +211,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
         PlayerPrefs.SetFloat(SaveX, player.position.x);
         PlayerPrefs.SetFloat(SaveY, player.position.y);
         PlayerPrefs.SetInt(SaveVersion, 1);
+        PlayerPrefs.SetString(NivelGuardado, currentLevel);
         PlayerPrefs.Save();
     }
 

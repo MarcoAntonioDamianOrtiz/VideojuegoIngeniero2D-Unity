@@ -23,6 +23,7 @@ public class BarraFelicidadPerro : MonoBehaviour
     private float velocidadCambio = 25f;
 
     private float felicidadVisible;
+    public Sprite IconoActual => iconoPerro ? iconoPerro.sprite : perroFeliz;
     private RectTransform rectBarra;
 
     private readonly Color32 colorVerde =

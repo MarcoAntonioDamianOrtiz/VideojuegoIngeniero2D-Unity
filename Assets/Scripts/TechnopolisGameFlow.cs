@@ -18,6 +18,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
 
     public static void AvanzarCampana(int numero)
     {
+        if (!ProgresoTechnopolis.PuedeAvanzar(numero)) return;
         string siguiente = numero == 2 ? Nivel2 : Nivel3;
         startWithoutMenu = true;
         restoreOnLoad = false;
@@ -119,6 +120,13 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
         EconomiaBarrio.ReiniciarPartida();
         PlayerPrefs.DeleteKey(NivelGuardado);
         ClearSave();
+        foreach (string prefix in new[] { "Technopolis.Level1.", "Technopolis.Level2.", "Technopolis.Level3." })
+        {
+            PlayerPrefs.DeleteKey(prefix + "Version");
+            PlayerPrefs.DeleteKey(prefix + "PlayerX");
+            PlayerPrefs.DeleteKey(prefix + "PlayerY");
+        }
+        currentLevel = LevelScene;
         if (sessionStarted || !SceneManager.GetSceneByName(currentLevel).isLoaded)
         {
             startWithoutMenu = true;

@@ -107,11 +107,13 @@ public sealed class TechnopolisCampana : MonoBehaviour
             return;
         }
         paso = 1;
+        ProgresoTechnopolis.Premiar("taller", 5000, 20);
         objetivo = "Módulo calibrado. Trabajo del taller completado.";
     }
 
     void ResultadoTerminal(bool exito)
     {
+        if (exito) ProgresoTechnopolis.Premiar("auditoria", 10000, 15);
         jugador.enabled = false;
         oficina = exito ? Oficina.Contrato : Oficina.Reintento;
     }
@@ -271,10 +273,13 @@ public sealed class TechnopolisCampana : MonoBehaviour
                 if (GUILayout.Button("Alimentación")) Conectar(0);
                 GUILayout.EndHorizontal();
             }
-            else if (GUILayout.Button("Viajar al distrito corporativo"))
+            else if (GUILayout.Button(ProgresoTechnopolis.PuedeAvanzar(3) ? "Viajar a La Ciudad de Silicio" : "Falta " + ProgresoTechnopolis.Requisito(3)))
             {
-                cargando = true;
-                TechnopolisGameFlow.AvanzarCampana(3);
+                if (ProgresoTechnopolis.PuedeAvanzar(3))
+                {
+                    cargando = true;
+                    TechnopolisGameFlow.AvanzarCampana(3);
+                }
             }
             if (GUILayout.Button("Salir del taller"))
             {

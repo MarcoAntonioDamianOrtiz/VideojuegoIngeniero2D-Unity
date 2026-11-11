@@ -17,6 +17,8 @@ public class BitSeguidor : MonoBehaviour
     bool alcanzandoJugador;
     Collider2D colisionJugadorIgnorada;
     string animacionActual = string.Empty;
+    float siguienteRuta;
+    List<Vector2> rutaAlterna = new List<Vector2>();
 
     void Awake()
     {
@@ -44,7 +46,7 @@ public class BitSeguidor : MonoBehaviour
         }
 
         Vector2 origen = cuerpo.position;
-        Vector2 destino = jugador.position;
+        Vector2 destino = (Vector2)jugador.position + Vector2.up * .5f;
         // Remember the corners the player took while a building blocks the shortcut.
         if (recorrido.Count == 0 || (destino - recorrido[recorrido.Count - 1]).sqrMagnitude >= .04f)
             recorrido.Add(destino);
@@ -52,7 +54,7 @@ public class BitSeguidor : MonoBehaviour
         if (CaminoLibre(origen, destino))
         {
             if (recorrido.Count > 24) recorrido.RemoveRange(0, recorrido.Count - 24);
-            float margen = Mathf.Max(distanciaDetener, 2.4f);
+            float margen = Mathf.Clamp(distanciaDetener, 1f, 1.4f);
             float distancia = Vector2.Distance(origen, destino);
             float umbral = alcanzandoJugador ? margen + .001f : margen + .5f;
             alcanzandoJugador = distancia > umbral;
@@ -72,7 +74,14 @@ public class BitSeguidor : MonoBehaviour
             Avanzar(origen, punto, 0f);
             return;
         }
-        CambiarAnimacion("Bit_Idle");
+        if (Time.time >= siguienteRuta)
+        {
+            siguienteRuta = Time.time + 1f;
+            rutaAlterna = BitRutaObstaculos.Buscar(origen, destino, caja, jugador);
+        }
+        while (rutaAlterna.Count > 0 && Vector2.Distance(origen, rutaAlterna[0]) < .16f) rutaAlterna.RemoveAt(0);
+        if (rutaAlterna.Count > 0) Avanzar(origen, rutaAlterna[0], 0);
+        else CambiarAnimacion("Bit_Idle");
     }
 
     private bool CaminoLibre(Vector2 origen, Vector2 destino)

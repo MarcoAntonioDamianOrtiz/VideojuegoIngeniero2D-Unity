@@ -18,6 +18,21 @@ public sealed class EconomiaBarrio : MonoBehaviour
     public int Dinero => dinero;
     public bool PanaderiaPagada => panaderiaPagada;
 
+    public static EconomiaBarrio Obtener()
+    {
+        if (!instancia) instancia = FindFirstObjectByType<EconomiaBarrio>();
+        if (!instancia) instancia = new GameObject("EconomiaBarrio").AddComponent<EconomiaBarrio>();
+        return instancia;
+    }
+
+    public bool Gastar(int cantidad)
+    {
+        if (cantidad <= 0 || dinero < cantidad) return false;
+        dinero -= cantidad;
+        Guardar();
+        return true;
+    }
+
     void Awake()
     {
         instancia = this;
@@ -45,11 +60,13 @@ public sealed class EconomiaBarrio : MonoBehaviour
         if (!instancia || instancia.panaderiaPagada) return false;
         instancia.panaderiaPagada = true;
         instancia.AgregarDinero(PagoPanaderia);
+        ProgresoTechnopolis.Premiar("panaderia", 0, 20);
         return true;
     }
 
     public static void ReiniciarPartida()
     {
+        ProgresoTechnopolis.Reiniciar();
         PlayerPrefs.DeleteKey(ClaveDinero);
         PlayerPrefs.DeleteKey(ClavePagoPanaderia);
         PlayerPrefs.Save();

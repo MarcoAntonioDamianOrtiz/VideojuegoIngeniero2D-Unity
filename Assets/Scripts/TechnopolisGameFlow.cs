@@ -39,12 +39,13 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     static bool firstLevelLoad;
     static bool startWithoutMenu;
     static bool restoreOnLoad;
+    static bool introPendiente;
 
     float saveElapsed;
 
     public static bool HasSavedGame => PlayerPrefs.GetInt(SaveVersion, 0) == 1;
     public static bool CanContinue => sessionStarted || HasSavedGame || PlayerPrefs.HasKey(NivelGuardado);
-    public static bool IsMenuOpen => menuOpen;
+    public static bool IsMenuOpen => menuOpen || HistoriaAlexIntro.IsPlaying;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Initialize()
@@ -59,6 +60,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
         firstLevelLoad = true;
         startWithoutMenu = false;
         restoreOnLoad = false;
+        introPendiente = false;
         Time.timeScale = 1f;
     }
 
@@ -93,6 +95,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
                 menuOpen = false;
                 Time.timeScale = 1f;
                 SavePosition();
+                MostrarIntroPendiente();
             }
             else if (firstLevelLoad)
             {
@@ -117,6 +120,8 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
 
     public static void StartNewGame()
     {
+        if (HistoriaAlexIntro.IsPlaying) return;
+        introPendiente = true;
         EconomiaBarrio.ReiniciarPartida();
         PlayerPrefs.DeleteKey(NivelGuardado);
         ClearSave();
@@ -140,6 +145,14 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
         MovePlayer(startingPosition);
         sessionStarted = true;
         CloseMenu();
+        MostrarIntroPendiente();
+    }
+
+    static void MostrarIntroPendiente()
+    {
+        if (!introPendiente) return;
+        introPendiente = false;
+        HistoriaAlexIntro.Mostrar(SavePosition);
     }
 
     public static void ContinueGame()
@@ -233,7 +246,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
 
     void Update()
     {
-        if (!sessionStarted || menuOpen) return;
+        if (!sessionStarted || IsMenuOpen || Time.unscaledTime < HistoriaAlexIntro.ReanudarEn) return;
 
         bool open = Input.GetKeyDown(KeyCode.Escape);
 #if ENABLE_INPUT_SYSTEM

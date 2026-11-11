@@ -28,6 +28,8 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
 
     private int vidasActuales;
     private int preguntaActualIndice;
+    private List<PreguntaMinijuego> preguntasOriginales;
+    private bool finalizado;
 
     void OnEnable()
     {
@@ -37,6 +39,8 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
 
     public void IniciarMinijuego()
     {
+        CancelInvoke(nameof(CerrarTerminal));
+        finalizado = false;
         vidasActuales = maxVidas;
         ActualizarVidasUI();
 
@@ -45,6 +49,14 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
         {
             CargarPreguntasPorDefecto();
         }
+
+        if (preguntasOriginales == null)
+            preguntasOriginales = new List<PreguntaMinijuego>(listaPreguntas);
+        else
+            listaPreguntas = new List<PreguntaMinijuego>(preguntasOriginales);
+
+        foreach (Button boton in botonesOpciones)
+            if (boton) boton.interactable = true;
 
         CargarSiguientePregunta();
     }
@@ -94,6 +106,7 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
 
     public void Responder(int indiceSeleccionado)
     {
+        if (finalizado || listaPreguntas.Count == 0) return;
         if (indiceSeleccionado == listaPreguntas[preguntaActualIndice].indiceCorrecto)
         {
             Debug.Log("¡Respuesta Correcta!");
@@ -105,8 +118,12 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
             }
             else
             {
+                finalizado = true;
+                foreach (Button boton in botonesOpciones)
+                    if (boton) boton.interactable = false;
+                EconomiaBarrio.RecibirPagoPanaderia();
                 textoEnunciado.text = "¡SISTEMA REPARADO CON ÉXITO!\nGracias por ayudar a Doña Ramona.";
-                Invoke("CerrarTerminal", 2f);
+                Invoke(nameof(CerrarTerminal), 2f);
             }
         }
         else
@@ -117,8 +134,11 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
 
             if (vidasActuales <= 0)
             {
+                finalizado = true;
+                foreach (Button boton in botonesOpciones)
+                    if (boton) boton.interactable = false;
                 textoEnunciado.text = "¡ERROR DEL SISTEMA!\nInténtalo de nuevo.";
-                Invoke("CerrarTerminal", 2f);
+                Invoke(nameof(CerrarTerminal), 2f);
             }
         }
     }
@@ -145,7 +165,7 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
         if (panelTerminal != null) panelTerminal.SetActive(false);
 
         // Reactiva el movimiento del personaje si la referencia existe
-        InteraccionDonaRamona scriptRamona = FindObjectOfType<InteraccionDonaRamona>();
+        InteraccionDonaRamona scriptRamona = FindFirstObjectByType<InteraccionDonaRamona>();
         if (scriptRamona != null && scriptRamona.scriptMovimientoAlex != null)
         {
             scriptRamona.scriptMovimientoAlex.enabled = true;

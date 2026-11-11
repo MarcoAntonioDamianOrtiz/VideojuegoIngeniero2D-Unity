@@ -93,6 +93,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
 
     public static void StartNewGame()
     {
+        EconomiaBarrio.ReiniciarPartida();
         ClearSave();
         if (sessionStarted || !SceneManager.GetSceneByName(LevelScene).isLoaded)
         {

@@ -1,0 +1,780 @@
+fileFormatVersion: 2
+guid: 22eaecdcba28efe4a93d07d9e7b74752
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1507167237237909517
+    second: Banquetas_0
+  - first:
+      213: -1917556120641611178
+    second: Banquetas_1
+  - first:
+      213: -3846430381434714656
+    second: Banquetas_2
+  - first:
+      213: 2119292218384404634
+    second: Banquetas_3
+  - first:
+      213: 2949159026883754535
+    second: Banquetas_4
+  - first:
+      213: -1139233955766520451
+    second: Banquetas_5
+  - first:
+      213: 5040163179502960220
+    second: Banquetas_6
+  - first:
+      213: -6456617504316041983
+    second: Banquetas_7
+  - first:
+      213: -2094504702598888131
+    second: Banquetas_8
+  - first:
+      213: -638164789769949407
+    second: Banquetas_9
+  - first:
+      213: -6828112219054046947
+    second: Banquetas_10
+  - first:
+      213: -6402953938968088516
+    second: Banquetas_11
+  - first:
+      213: -2931563345677660843
+    second: Banquetas_12
+  - first:
+      213: 8341680386903154352
+    second: Banquetas_13
+  - first:
+      213: 2959035635708367460
+    second: Banquetas_14
+  - first:
+      213: 5423861375726413480
+    second: Banquetas_15
+  - first:
+      213: 6516357581976301522
+    second: Banquetas_16
+  - first:
+      213: -4650309131634911858
+    second: Banquetas_17
+  - first:
+      213: -6582256337105208743
+    second: Banquetas_18
+  - first:
+      213: 1181074391909965954
+    second: Banquetas_19
+  - first:
+      213: -274908612896064485
+    second: Banquetas_20
+  - first:
+      213: 4605235795355177634
+    second: Banquetas_21
+  - first:
+      213: 5095303825658208738
+    second: Banquetas_22
+  - first:
+      213: -6823906376000381353
+    second: Banquetas_23
+  - first:
+      213: 9007863894594156376
+    second: Banquetas_24
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Banquetas_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 791
+        width: 119
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d082ca0fd988ae410800000000000000
+      internalID: 1507167237237909517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_1
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 791
+        width: 306
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65ad7403ed87365e0800000000000000
+      internalID: -1917556120641611178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_2
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 791
+        width: 503
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e5405582fbbe9ac0800000000000000
+      internalID: -3846430381434714656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_3
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 791
+        width: 201
+        height: 232
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a905d0c4b0d396d10800000000000000
+      internalID: 2119292218384404634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_4
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 789
+        width: 236
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72afa8772848de820800000000000000
+      internalID: 2949159026883754535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 511
+        width: 730
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d75397ec0c0a030f0800000000000000
+      internalID: -1139233955766520451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_6
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 351
+        width: 809
+        height: 431
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5ef64435b142f540800000000000000
+      internalID: 5040163179502960220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_7
+      rect:
+        serializedVersion: 2
+        x: 1327
+        y: 630
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1055ca4a69c7566a0800000000000000
+      internalID: -6456617504316041983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_8
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 352
+        width: 397
+        height: 154
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d354535f113dee2e0800000000000000
+      internalID: -2094504702598888131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_9
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 356
+        width: 160
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fa99d3188c427f0800000000000000
+      internalID: -638164789769949407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 54
+        width: 297
+        height: 290
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1187c81d1cad31a0800000000000000
+      internalID: -6828112219054046947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_11
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 74
+        width: 248
+        height: 270
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c307e9a11532427a0800000000000000
+      internalID: -6402953938968088516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_12
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 236
+        width: 154
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55dc3505baef057d0800000000000000
+      internalID: -2931563345677660843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_13
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 236
+        width: 409
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0be9433ad1a93c370800000000000000
+      internalID: 8341680386903154352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_14
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 94
+        width: 133
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4629e18ab3b901920800000000000000
+      internalID: 2959035635708367460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_15
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 92
+        width: 264
+        height: 252
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a662233f2d654b40800000000000000
+      internalID: 5423861375726413480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_16
+      rect:
+        serializedVersion: 2
+        x: 1289
+        y: 234
+        width: 130
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dfee1712b0ce6a50800000000000000
+      internalID: 6516357581976301522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_17
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 93
+        width: 209
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e855521bb78c67fb0800000000000000
+      internalID: -4650309131634911858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_18
+      rect:
+        serializedVersion: 2
+        x: 662
+        y: 0
+        width: 105
+        height: 228
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ab7465cb027a4a0800000000000000
+      internalID: -6582256337105208743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_19
+      rect:
+        serializedVersion: 2
+        x: 750
+        y: 96
+        width: 74
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 280aa1fd6e4046010800000000000000
+      internalID: 1181074391909965954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_20
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 94
+        width: 83
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c72a6b2145f2cf0800000000000000
+      internalID: -274908612896064485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_21
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 0
+        width: 205
+        height: 233
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a21f096e8519ef30800000000000000
+      internalID: 4605235795355177634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_22
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 48
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e1eb0755d726b640800000000000000
+      internalID: 5095303825658208738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_23
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 0
+        width: 18
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e59fd3e4d9c41a0800000000000000
+      internalID: -6823906376000381353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Banquetas_24
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 0
+        width: 25
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 857f9568c7c520d70800000000000000
+      internalID: 9007863894594156376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Banquetas_0: 1507167237237909517
+      Banquetas_1: -1917556120641611178
+      Banquetas_10: -6828112219054046947
+      Banquetas_11: -6402953938968088516
+      Banquetas_12: -2931563345677660843
+      Banquetas_13: 8341680386903154352
+      Banquetas_14: 2959035635708367460
+      Banquetas_15: 5423861375726413480
+      Banquetas_16: 6516357581976301522
+      Banquetas_17: -4650309131634911858
+      Banquetas_18: -6582256337105208743
+      Banquetas_19: 1181074391909965954
+      Banquetas_2: -3846430381434714656
+      Banquetas_20: -274908612896064485
+      Banquetas_21: 4605235795355177634
+      Banquetas_22: 5095303825658208738
+      Banquetas_23: -6823906376000381353
+      Banquetas_24: 9007863894594156376
+      Banquetas_3: 2119292218384404634
+      Banquetas_4: 2949159026883754535
+      Banquetas_5: -1139233955766520451
+      Banquetas_6: 5040163179502960220
+      Banquetas_7: -6456617504316041983
+      Banquetas_8: -2094504702598888131
+      Banquetas_9: -638164789769949407
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -183,7 +183,7 @@ public class RamonaResponsiveUI : MonoBehaviour
             texto.fontSizeMin = 16f;
             texto.fontSizeMax = 26f;
             texto.alignment = TextAlignmentOptions.Center;
-            texto.enableWordWrapping = true;
+            texto.textWrappingMode = TextWrappingModes.Normal;
             texto.raycastTarget = false;
         }
 
@@ -217,7 +217,7 @@ public class RamonaResponsiveUI : MonoBehaviour
         texto.enableAutoSizing = true;
         texto.fontSizeMin = min;
         texto.fontSizeMax = max;
-        texto.enableWordWrapping = true;
+        texto.textWrappingMode = TextWrappingModes.Normal;
         texto.raycastTarget = false;
     }
 

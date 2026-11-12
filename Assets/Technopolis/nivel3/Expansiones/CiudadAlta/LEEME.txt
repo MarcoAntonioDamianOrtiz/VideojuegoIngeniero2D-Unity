@@ -1,0 +1,36 @@
+TECHNOPOLIS NIVEL 3 - EXPANSION CIUDAD ALTA (ASSETS ADICIONALES)
+============================================================
+
+Estos assets NO reemplazan los edificios, paletas ni scripts anteriores.
+Conservan una estética pixel art urbana para la zona de mayor poder adquisitivo.
+
+CONTENIDO
+- 8 casas de ciudad modernas
+- 7 edificios institucionales y corporativos
+- 9 edificios residenciales/negocios de calle comercial
+- 15 árboles, setos y arbustos sin anillos de concreto
+- Lámina original de referencia
+
+INSTALACION
+1. Descomprime el ZIP en la raíz del proyecto Unity, combinando Assets.
+2. Abre Assets/Technopolis/nivel3/Expansiones/CiudadAlta/Sprites.
+3. En Project, selecciona todos los PNG de una carpeta y en Inspector cambia
+   Texture Type a Sprite (2D and UI), Sprite Mode Single, Filter Mode Point,
+   Compression None y Pixels Per Unit 96 (o el PPU que uses en tu juego).
+4. Pulsa Apply y arrastra individualmente los sprites a la escena.
+5. Ajusta la escala y crea colliders SOLO en la base de casas/edificios.
+6. Para un sorting correcto en top-down, usa los mismos Sorting Layers y
+   pivotes que tus prefabs existentes. Puedes configurar Pivot: Bottom.
+
+SUGERENCIA
+- Crea un objeto Edificios_Adicionales fuera de N3_MAPA_GENERADO.
+- Crea otro Arboles_Adicionales fuera de N3_MAPA_GENERADO.
+  Así no perderás el trabajo si vuelves a ejecutar el generador.
+
+NOTAS
+- Son sprites recortados individualmente a partir de una lámina generada
+  para este proyecto. Algunos bordes/acabados pueden requerir limpieza fina.
+- Las fachadas son decorativas, sin interiores jugables ni scripts asociados.
+- No es una Tile Palette automática: son sprites individuales para colocar
+  manualmente tal como solicitaste.
+============================================================

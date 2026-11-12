@@ -26,10 +26,13 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
     public int maxVidas = 3;
     public GameObject panelTerminal; // Para cerrar la terminal al ganar o perder
 
+    public event System.Action<bool> ResultadoCampana;
+    private List<PreguntaMinijuego> pendientes;
+    private bool terminado;
+    bool Corporativa => gameObject.scene.name == "EscenaNivel3Silicio";
+    private bool exito;
     private int vidasActuales;
     private int preguntaActualIndice;
-    private List<PreguntaMinijuego> preguntasOriginales;
-    private bool finalizado;
 
     void OnEnable()
     {
@@ -39,8 +42,6 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
 
     public void IniciarMinijuego()
     {
-        CancelInvoke(nameof(CerrarTerminal));
-        finalizado = false;
         vidasActuales = maxVidas;
         ActualizarVidasUI();
 
@@ -50,14 +51,16 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
             CargarPreguntasPorDefecto();
         }
 
-        if (preguntasOriginales == null)
-            preguntasOriginales = new List<PreguntaMinijuego>(listaPreguntas);
-        else
-            listaPreguntas = new List<PreguntaMinijuego>(preguntasOriginales);
-
-        foreach (Button boton in botonesOpciones)
-            if (boton) boton.interactable = true;
-
+        CancelInvoke(nameof(CerrarTerminal));
+        terminado = false;
+        pendientes = Corporativa ? Diagnostico() : new List<PreguntaMinijuego>(listaPreguntas);
+        if (Corporativa)
+        {
+            var titulo = transform.Find("TextoTitulo");
+            if (titulo && titulo.TryGetComponent<TextMeshProUGUI>(out var texto))
+                texto.text = "SILICON ALLEY · DIAGNÓSTICO";
+        }
+        foreach (Button boton in botonesOpciones) boton.interactable = true;
         CargarSiguientePregunta();
     }
 
@@ -83,14 +86,33 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
         };
     }
 
+    static List<PreguntaMinijuego> Diagnostico() => new List<PreguntaMinijuego>
+    {
+        new PreguntaMinijuego {
+            enunciado = "El servicio falló tras un cambio. ¿Qué revisas primero?",
+            opciones = new[] { "Registros y cambios recientes", "Colores de la interfaz", "Nombres de usuarios" },
+            indiceCorrecto = 0
+        },
+        new PreguntaMinijuego {
+            enunciado = "Alteraron la configuración. ¿Cómo recuperas el servicio?",
+            opciones = new[] { "Borrar los datos", "Restaurar la versión validada", "Desactivar los registros" },
+            indiceCorrecto = 1
+        },
+        new PreguntaMinijuego {
+            enunciado = "El servicio ya inicia. ¿Cómo compruebas la reparación?",
+            opciones = new[] { "Cerrar la terminal", "Revisar el icono", "Probar el flujo completo" },
+            indiceCorrecto = 2
+        }
+    };
+
     void CargarSiguientePregunta()
     {
-        if (listaPreguntas.Count == 0) return;
+        if (pendientes.Count == 0) return;
 
-        preguntaActualIndice = Random.Range(0, listaPreguntas.Count);
-        PreguntaMinijuego q = listaPreguntas[preguntaActualIndice];
+        preguntaActualIndice = Random.Range(0, pendientes.Count);
+        PreguntaMinijuego q = pendientes[preguntaActualIndice];
 
-        textoEnunciado.text = q.enunciado;
+        textoEnunciado.text = $"Restantes: {pendientes.Count}  ·  Vidas: {vidasActuales}\n{q.enunciado}";
 
         for (int i = 0; i < botonesOpciones.Length; i++)
         {
@@ -106,24 +128,26 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
 
     public void Responder(int indiceSeleccionado)
     {
-        if (finalizado || listaPreguntas.Count == 0) return;
-        if (indiceSeleccionado == listaPreguntas[preguntaActualIndice].indiceCorrecto)
+        if (terminado || pendientes == null || pendientes.Count == 0 || TechnopolisGameFlow.IsMenuOpen) return;
+        bool acierto = indiceSeleccionado == pendientes[preguntaActualIndice].indiceCorrecto;
+        var campana = FindFirstObjectByType<TechnopolisCampana>();
+        if (campana) campana.Sonido(acierto);
+        if (acierto)
         {
             Debug.Log("¡Respuesta Correcta!");
-            listaPreguntas.RemoveAt(preguntaActualIndice);
+            pendientes.RemoveAt(preguntaActualIndice);
 
-            if (listaPreguntas.Count > 0)
+            if (pendientes.Count > 0)
             {
                 CargarSiguientePregunta();
             }
             else
             {
-                finalizado = true;
-                foreach (Button boton in botonesOpciones)
-                    if (boton) boton.interactable = false;
-                EconomiaBarrio.RecibirPagoPanaderia();
-                textoEnunciado.text = "¡SISTEMA REPARADO CON ÉXITO!\nGracias por ayudar a Doña Ramona.";
-                Invoke(nameof(CerrarTerminal), 2f);
+                textoEnunciado.text = Corporativa
+                    ? "¡SERVICIO RESTAURADO!\nDon Dinero tiene una propuesta para Alex."
+                    : "¡SISTEMA REPARADO CON ÉXITO!\nGracias por ayudar a Doña Ramona.";
+                if (!Corporativa) EconomiaBarrio.RecibirPagoPanaderia();
+                Finalizar(true);
             }
         }
         else
@@ -134,12 +158,11 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
 
             if (vidasActuales <= 0)
             {
-                finalizado = true;
-                foreach (Button boton in botonesOpciones)
-                    if (boton) boton.interactable = false;
                 textoEnunciado.text = "¡ERROR DEL SISTEMA!\nInténtalo de nuevo.";
-                Invoke(nameof(CerrarTerminal), 2f);
+                Finalizar(false);
+                return;
             }
+            textoEnunciado.text = $"Respuesta incorrecta. Vidas: {vidasActuales}\n{pendientes[preguntaActualIndice].enunciado}";
         }
     }
 
@@ -159,10 +182,20 @@ public class MinijuegoAleatorioPanaderia : MonoBehaviour
         }
     }
 
+    void Finalizar(bool reparada)
+    {
+        terminado = true;
+        exito = reparada;
+        foreach (Button boton in botonesOpciones) boton.interactable = false;
+        Invoke(nameof(CerrarTerminal), 2f);
+    }
+
     void CerrarTerminal()
     {
         // Cierra el panel de la terminal
         if (panelTerminal != null) panelTerminal.SetActive(false);
+
+        ResultadoCampana?.Invoke(exito);
 
         // Reactiva el movimiento del personaje si la referencia existe
         InteraccionDonaRamona scriptRamona = FindFirstObjectByType<InteraccionDonaRamona>();

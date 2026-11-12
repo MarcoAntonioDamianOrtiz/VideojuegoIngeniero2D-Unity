@@ -30,7 +30,7 @@ public class InteraccionDonaRamona : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E)) Interactuar();
     }
 
-    public bool PuedeInteractuar => jugadorEnTrigger &&
+    public bool PuedeInteractuar => isActiveAndEnabled && jugadorEnTrigger &&
         (panelTerminalMinijuego == null || !panelTerminalMinijuego.activeSelf);
 
     public bool DialogoActivo => dialogoActivo;

@@ -1,0 +1,3562 @@
+fileFormatVersion: 2
+guid: 96e7f252993daad4a890334f72422db7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1414716581224249026
+    second: Referencia_Casa_Principal_0
+  - first:
+      213: -8288710178348431329
+    second: Referencia_Casa_Principal_1
+  - first:
+      213: -7851390616987876042
+    second: Referencia_Casa_Principal_2
+  - first:
+      213: 3708993748689554908
+    second: Referencia_Casa_Principal_3
+  - first:
+      213: -1145933064296584970
+    second: Referencia_Casa_Principal_4
+  - first:
+      213: -6929758934502246507
+    second: Referencia_Casa_Principal_5
+  - first:
+      213: -7933418465119195918
+    second: Referencia_Casa_Principal_6
+  - first:
+      213: 2356717597020345316
+    second: Referencia_Casa_Principal_7
+  - first:
+      213: 3572721585163179511
+    second: Referencia_Casa_Principal_8
+  - first:
+      213: -7433282631655174469
+    second: Referencia_Casa_Principal_9
+  - first:
+      213: -6117661844242983091
+    second: Referencia_Casa_Principal_10
+  - first:
+      213: -6825693604375980649
+    second: Referencia_Casa_Principal_11
+  - first:
+      213: 5922600980968672472
+    second: Referencia_Casa_Principal_12
+  - first:
+      213: -6172086900786456199
+    second: Referencia_Casa_Principal_13
+  - first:
+      213: 1321576423719989858
+    second: Referencia_Casa_Principal_14
+  - first:
+      213: 2008346548155054448
+    second: Referencia_Casa_Principal_15
+  - first:
+      213: -3520629991786039019
+    second: Referencia_Casa_Principal_16
+  - first:
+      213: 6890974840556910026
+    second: Referencia_Casa_Principal_17
+  - first:
+      213: -4383865804150871988
+    second: Referencia_Casa_Principal_18
+  - first:
+      213: 8849810705439835097
+    second: Referencia_Casa_Principal_19
+  - first:
+      213: -4445773191513345963
+    second: Referencia_Casa_Principal_20
+  - first:
+      213: 1903677208171923965
+    second: Referencia_Casa_Principal_21
+  - first:
+      213: -4800014766795177172
+    second: Referencia_Casa_Principal_22
+  - first:
+      213: -1137246623720108829
+    second: Referencia_Casa_Principal_23
+  - first:
+      213: 4444802849041193421
+    second: Referencia_Casa_Principal_24
+  - first:
+      213: 2415782999572550484
+    second: Referencia_Casa_Principal_25
+  - first:
+      213: -469241390753823693
+    second: Referencia_Casa_Principal_26
+  - first:
+      213: 6556853889922075994
+    second: Referencia_Casa_Principal_27
+  - first:
+      213: -1319411417704942567
+    second: Referencia_Casa_Principal_28
+  - first:
+      213: 6835765881430578285
+    second: Referencia_Casa_Principal_29
+  - first:
+      213: 6844631218746288216
+    second: Referencia_Casa_Principal_30
+  - first:
+      213: 8244613817094174494
+    second: Referencia_Casa_Principal_31
+  - first:
+      213: 4895651502959532886
+    second: Referencia_Casa_Principal_32
+  - first:
+      213: 370131170859633915
+    second: Referencia_Casa_Principal_33
+  - first:
+      213: 2727843991593037108
+    second: Referencia_Casa_Principal_34
+  - first:
+      213: 1820006824337673009
+    second: Referencia_Casa_Principal_35
+  - first:
+      213: 8723246389460860571
+    second: Referencia_Casa_Principal_36
+  - first:
+      213: -36465669737074367
+    second: Referencia_Casa_Principal_37
+  - first:
+      213: -8738586467373113968
+    second: Referencia_Casa_Principal_38
+  - first:
+      213: -7279330753440637799
+    second: Referencia_Casa_Principal_39
+  - first:
+      213: -6216927791743127424
+    second: Referencia_Casa_Principal_40
+  - first:
+      213: -2322280205391890298
+    second: Referencia_Casa_Principal_41
+  - first:
+      213: 411000467191327808
+    second: Referencia_Casa_Principal_42
+  - first:
+      213: 244919167856571552
+    second: Referencia_Casa_Principal_43
+  - first:
+      213: 2048701142427829813
+    second: Referencia_Casa_Principal_44
+  - first:
+      213: 665023805543627979
+    second: Referencia_Casa_Principal_45
+  - first:
+      213: -5820005052165063266
+    second: Referencia_Casa_Principal_46
+  - first:
+      213: -9098850962897644309
+    second: Referencia_Casa_Principal_47
+  - first:
+      213: -7587343892462305112
+    second: Referencia_Casa_Principal_48
+  - first:
+      213: -5120520874546636845
+    second: Referencia_Casa_Principal_49
+  - first:
+      213: 1639898890361049149
+    second: Referencia_Casa_Principal_50
+  - first:
+      213: 6284542609790432561
+    second: Referencia_Casa_Principal_51
+  - first:
+      213: -6921793707109634849
+    second: Referencia_Casa_Principal_52
+  - first:
+      213: -8261735773295149325
+    second: Referencia_Casa_Principal_53
+  - first:
+      213: -6842626582570658861
+    second: Referencia_Casa_Principal_54
+  - first:
+      213: 8566231988781910506
+    second: Referencia_Casa_Principal_55
+  - first:
+      213: -933841731406420680
+    second: Referencia_Casa_Principal_56
+  - first:
+      213: -4782043068538926177
+    second: Referencia_Casa_Principal_57
+  - first:
+      213: -1823305687895553221
+    second: Referencia_Casa_Principal_58
+  - first:
+      213: 5971139170569750286
+    second: Referencia_Casa_Principal_59
+  - first:
+      213: -2048531982595894867
+    second: Referencia_Casa_Principal_60
+  - first:
+      213: 5269210001021106688
+    second: Referencia_Casa_Principal_61
+  - first:
+      213: -7519079340029779537
+    second: Referencia_Casa_Principal_62
+  - first:
+      213: 6362410066116494436
+    second: Referencia_Casa_Principal_63
+  - first:
+      213: -1004175486990236263
+    second: Referencia_Casa_Principal_64
+  - first:
+      213: -2002943829465947055
+    second: Referencia_Casa_Principal_65
+  - first:
+      213: 7225726075157318198
+    second: Referencia_Casa_Principal_66
+  - first:
+      213: 2460054585876603213
+    second: Referencia_Casa_Principal_67
+  - first:
+      213: 1746039547773407628
+    second: Referencia_Casa_Principal_68
+  - first:
+      213: -8416483048266702395
+    second: Referencia_Casa_Principal_69
+  - first:
+      213: -1591246608050390119
+    second: Referencia_Casa_Principal_70
+  - first:
+      213: -8421379784666092032
+    second: Referencia_Casa_Principal_71
+  - first:
+      213: -6084479258495580518
+    second: Referencia_Casa_Principal_72
+  - first:
+      213: -7972880898770593142
+    second: Referencia_Casa_Principal_73
+  - first:
+      213: 2649162231994988187
+    second: Referencia_Casa_Principal_74
+  - first:
+      213: 2958434207604833224
+    second: Referencia_Casa_Principal_75
+  - first:
+      213: 7714281700264240702
+    second: Referencia_Casa_Principal_76
+  - first:
+      213: -8664036555231720861
+    second: Referencia_Casa_Principal_77
+  - first:
+      213: 5120238075327435601
+    second: Referencia_Casa_Principal_78
+  - first:
+      213: 4463828271783946418
+    second: Referencia_Casa_Principal_79
+  - first:
+      213: -3333572902703508311
+    second: Referencia_Casa_Principal_80
+  - first:
+      213: 1816056864528972814
+    second: Referencia_Casa_Principal_81
+  - first:
+      213: -1487600722555433729
+    second: Referencia_Casa_Principal_82
+  - first:
+      213: 4650241863823433456
+    second: Referencia_Casa_Principal_83
+  - first:
+      213: -6883152538879982873
+    second: Referencia_Casa_Principal_84
+  - first:
+      213: 9128452436879288420
+    second: Referencia_Casa_Principal_85
+  - first:
+      213: -542562678004004480
+    second: Referencia_Casa_Principal_86
+  - first:
+      213: -8723050856277439214
+    second: Referencia_Casa_Principal_87
+  - first:
+      213: -7755680737103385511
+    second: Referencia_Casa_Principal_88
+  - first:
+      213: 488737673055704988
+    second: Referencia_Casa_Principal_89
+  - first:
+      213: -5919742832784521097
+    second: Referencia_Casa_Principal_90
+  - first:
+      213: -9189923523380092393
+    second: Referencia_Casa_Principal_91
+  - first:
+      213: 5383952889035824582
+    second: Referencia_Casa_Principal_92
+  - first:
+      213: -5022906626435553094
+    second: Referencia_Casa_Principal_93
+  - first:
+      213: -6380801357258547735
+    second: Referencia_Casa_Principal_94
+  - first:
+      213: -3604009335173133168
+    second: Referencia_Casa_Principal_95
+  - first:
+      213: 8492489317082259712
+    second: Referencia_Casa_Principal_96
+  - first:
+      213: -7634292297651963524
+    second: Referencia_Casa_Principal_97
+  - first:
+      213: 7875652809159585224
+    second: Referencia_Casa_Principal_98
+  - first:
+      213: 6138577222756969516
+    second: Referencia_Casa_Principal_99
+  - first:
+      213: 6241694020603179432
+    second: Referencia_Casa_Principal_100
+  - first:
+      213: 3963951749398793905
+    second: Referencia_Casa_Principal_101
+  - first:
+      213: -7854271349449138709
+    second: Referencia_Casa_Principal_102
+  - first:
+      213: 2531214166670647045
+    second: Referencia_Casa_Principal_103
+  - first:
+      213: -8392184786938140934
+    second: Referencia_Casa_Principal_104
+  - first:
+      213: 7503217582013346543
+    second: Referencia_Casa_Principal_105
+  - first:
+      213: 5128004592594451413
+    second: Referencia_Casa_Principal_106
+  - first:
+      213: -2909036711584612121
+    second: Referencia_Casa_Principal_107
+  - first:
+      213: -9119783999495986180
+    second: Referencia_Casa_Principal_108
+  - first:
+      213: 6688392388703358956
+    second: Referencia_Casa_Principal_109
+  - first:
+      213: -9194680375552663822
+    second: Referencia_Casa_Principal_110
+  - first:
+      213: 4941598254989743711
+    second: Referencia_Casa_Principal_111
+  - first:
+      213: 3434344501710860835
+    second: Referencia_Casa_Principal_112
+  - first:
+      213: 7015107838986446033
+    second: Referencia_Casa_Principal_113
+  - first:
+      213: 6932930330368956454
+    second: Referencia_Casa_Principal_114
+  - first:
+      213: -406698445237315538
+    second: Referencia_Casa_Principal_115
+  - first:
+      213: -5817842069205687744
+    second: Referencia_Casa_Principal_116
+  - first:
+      213: 7988042181015768502
+    second: Referencia_Casa_Principal_117
+  - first:
+      213: 499605272219001896
+    second: Referencia_Casa_Principal_118
+  - first:
+      213: -8905930015363281689
+    second: Referencia_Casa_Principal_119
+  - first:
+      213: 6077160309039615004
+    second: Referencia_Casa_Principal_120
+  - first:
+      213: 6112023539492384091
+    second: Referencia_Casa_Principal_121
+  - first:
+      213: -8539126481040750144
+    second: Referencia_Casa_Principal_122
+  - first:
+      213: 8000123288278618742
+    second: Referencia_Casa_Principal_123
+  - first:
+      213: -8623104623160497837
+    second: Referencia_Casa_Principal_124
+  - first:
+      213: -915332362264598925
+    second: Referencia_Casa_Principal_125
+  - first:
+      213: -3168368228666537310
+    second: Referencia_Casa_Principal_126
+  - first:
+      213: 6171291673495718185
+    second: Referencia_Casa_Principal_127
+  - first:
+      213: -6047581190027694085
+    second: Referencia_Casa_Principal_128
+  - first:
+      213: 6613205623637828148
+    second: Referencia_Casa_Principal_129
+  - first:
+      213: 6064772108912571184
+    second: Referencia_Casa_Principal_130
+  - first:
+      213: -7033773847233524980
+    second: Referencia_Casa_Principal_131
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 486
+        height: 1059
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c6f9b13c3512a310800000000000000
+      internalID: 1414716581224249026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_1
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 988
+        width: 124
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f18806d120698fc80800000000000000
+      internalID: -8288710178348431329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_2
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1012
+        width: 31
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6354a9115d14a0390800000000000000
+      internalID: -7851390616987876042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_3
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 1042
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd09c0d92ef87330800000000000000
+      internalID: 3708993748689554908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_4
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 945
+        width: 108
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f82a3e03f3d810f0800000000000000
+      internalID: -1145933064296584970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_5
+      rect:
+        serializedVersion: 2
+        x: 700
+        y: 864
+        width: 212
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59777e9e6fc84df90800000000000000
+      internalID: -6929758934502246507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_6
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 1004
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fcab0460f5d6e190800000000000000
+      internalID: -7933418465119195918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_7
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1004
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e35f460b2eb4b020800000000000000
+      internalID: 2356717597020345316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_8
+      rect:
+        serializedVersion: 2
+        x: 1028
+        y: 866
+        width: 182
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f595054a5bd49130800000000000000
+      internalID: 3572721585163179511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_9
+      rect:
+        serializedVersion: 2
+        x: 1247
+        y: 949
+        width: 188
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbecc1964dca7d890800000000000000
+      internalID: -7433282631655174469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_10
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 980
+        width: 14
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d479fe527f2b91ba0800000000000000
+      internalID: -6117661844242983091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_11
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 924
+        width: 54
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7959385b4d34641a0800000000000000
+      internalID: -6825693604375980649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_12
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 986
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc8401863e413250800000000000000
+      internalID: 5922600980968672472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_13
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 982
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97918c33aa7585aa0800000000000000
+      internalID: -6172086900786456199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_14
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 915
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2627c5f51ce275210800000000000000
+      internalID: 1321576423719989858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_15
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 937
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079f9ac7b841fdb10800000000000000
+      internalID: 2008346548155054448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_16
+      rect:
+        serializedVersion: 2
+        x: 424
+        y: 913
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 519b102fca5342fc0800000000000000
+      internalID: -3520629991786039019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_17
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 962
+        width: 16
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac57c878b19a1af50800000000000000
+      internalID: 6890974840556910026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_18
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 892
+        width: 10
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48ea9027416923c0800000000000000
+      internalID: -4383865804150871988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_19
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 876
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d3c033c2f7d0da70800000000000000
+      internalID: 8849810705439835097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_20
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 961
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55074e746d07d42c0800000000000000
+      internalID: -4445773191513345963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_21
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 874
+        width: 141
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df94810b5583b6a10800000000000000
+      internalID: 1903677208171923965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_22
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 931
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c234b8c400ce26db0800000000000000
+      internalID: -4800014766795177172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_23
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 961
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ec862b9830b730f0800000000000000
+      internalID: -1137246623720108829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_24
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 957
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc99eb144ac1fad30800000000000000
+      internalID: 4444802849041193421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_25
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 935
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45313f7b6d5968120800000000000000
+      internalID: 2415782999572550484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_26
+      rect:
+        serializedVersion: 2
+        x: 633
+        y: 882
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3344536f07bec79f0800000000000000
+      internalID: -469241390753823693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_27
+      rect:
+        serializedVersion: 2
+        x: 658
+        y: 935
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d81f88fdf9efa50800000000000000
+      internalID: 6556853889922075994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_28
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 923
+        width: 27
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9143a1f5e4280bde0800000000000000
+      internalID: -1319411417704942567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_29
+      rect:
+        serializedVersion: 2
+        x: 722
+        y: 937
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d64976a0ad48dde50800000000000000
+      internalID: 6835765881430578285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_30
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 917
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 858ebeb34d30dfe50800000000000000
+      internalID: 6844631218746288216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_31
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 878
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e17fc26b590ca6270800000000000000
+      internalID: 8244613817094174494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_32
+      rect:
+        serializedVersion: 2
+        x: 845
+        y: 876
+        width: 32
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65b920a8a19d0f340800000000000000
+      internalID: 4895651502959532886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_33
+      rect:
+        serializedVersion: 2
+        x: 855
+        y: 915
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfc436fb658f22500800000000000000
+      internalID: 370131170859633915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_34
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 909
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43d269958af3bd520800000000000000
+      internalID: 2727843991593037108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_35
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 907
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13b0f6d5096f14910800000000000000
+      internalID: 1820006824337673009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_36
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 866
+        width: 56
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b9ef50c9f523f0970800000000000000
+      internalID: 8723246389460860571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_37
+      rect:
+        serializedVersion: 2
+        x: 972
+        y: 864
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14133d4aaa27e7ff0800000000000000
+      internalID: -36465669737074367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_38
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 909
+        width: 54
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09d903d28ed4ab680800000000000000
+      internalID: -8738586467373113968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_39
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 859
+        width: 30
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99c189e4f3f9afa90800000000000000
+      internalID: -7279330753440637799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_40
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 917
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 080b5e2bc1909b9a0800000000000000
+      internalID: -6216927791743127424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_41
+      rect:
+        serializedVersion: 2
+        x: 1171
+        y: 953
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 688f1b8057a95cfd0800000000000000
+      internalID: -2322280205391890298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_42
+      rect:
+        serializedVersion: 2
+        x: 1202
+        y: 915
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04c65715fba24b500800000000000000
+      internalID: 411000467191327808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_43
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 892
+        width: 41
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a476ce7fa0266300800000000000000
+      internalID: 244919167856571552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_44
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 865
+        width: 23
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5360955a5d27e6c10800000000000000
+      internalID: 2048701142427829813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_45
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 925
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcc3b90b0a3aa3900800000000000000
+      internalID: 665023805543627979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_46
+      rect:
+        serializedVersion: 2
+        x: 1215
+        y: 888
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9df8b2ad303b3fa0800000000000000
+      internalID: -5820005052165063266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_47
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 915
+        width: 37
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be4d34cc1436ab180800000000000000
+      internalID: -9098850962897644309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_48
+      rect:
+        serializedVersion: 2
+        x: 1277
+        y: 874
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a00e05ede654b690800000000000000
+      internalID: -7587343892462305112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_49
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 870
+        width: 11
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d7dcafe46140f8b0800000000000000
+      internalID: -5120520874546636845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_50
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 882
+        width: 19
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d30178b2a5712c610800000000000000
+      internalID: 1639898890361049149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_51
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 866
+        width: 22
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1357d58e43e273750800000000000000
+      internalID: 6284542609790432561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_52
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 907
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdc223feb49d0ff90800000000000000
+      internalID: -6921793707109634849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_53
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 874
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fefa94361b685d80800000000000000
+      internalID: -8261735773295149325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_54
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 866
+        width: 39
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d31b3f706b1a01a0800000000000000
+      internalID: -6842626582570658861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_55
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 842
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae90fe2ab9e51e670800000000000000
+      internalID: 8566231988781910506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_56
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 0
+        width: 453
+        height: 849
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 835a51b94e35a03f0800000000000000
+      internalID: -933841731406420680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_57
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 19
+        width: 482
+        height: 831
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9b4e1f5a25c2adb0800000000000000
+      internalID: -4782043068538926177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_58
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 139
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3b490c132152b6e0800000000000000
+      internalID: -1823305687895553221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_59
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 118
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e070b3e607fbdd250800000000000000
+      internalID: 5971139170569750286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_60
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 112
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da15852f3072293e0800000000000000
+      internalID: -2048531982595894867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_61
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 98
+        width: 19
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00a7cc5149eff1940800000000000000
+      internalID: 5269210001021106688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_62
+      rect:
+        serializedVersion: 2
+        x: 412
+        y: 110
+        width: 23
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa1eb839d2dd6a790800000000000000
+      internalID: -7519079340029779537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_63
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 115
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4644e32ee32db4850800000000000000
+      internalID: 6362410066116494436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_64
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 114
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 995cac507b37012f0800000000000000
+      internalID: -1004175486990236263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_65
+      rect:
+        serializedVersion: 2
+        x: 454
+        y: 116
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1542f9bf23d1434e0800000000000000
+      internalID: -2002943829465947055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_66
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 116
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a8702f49fe64460800000000000000
+      internalID: 7225726075157318198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_67
+      rect:
+        serializedVersion: 2
+        x: 708
+        y: 118
+        width: 19
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d41ee37ac9ed32220800000000000000
+      internalID: 2460054585876603213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_68
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 74
+        width: 58
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8151d0c7bd2b3810800000000000000
+      internalID: 1746039547773407628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_69
+      rect:
+        serializedVersion: 2
+        x: 1044
+        y: 108
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c167f19245a23b80800000000000000
+      internalID: -8416483048266702395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_70
+      rect:
+        serializedVersion: 2
+        x: 1092
+        y: 110
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99b7c1904a1cae9e0800000000000000
+      internalID: -1591246608050390119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_71
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 112
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00e625844bf312b80800000000000000
+      internalID: -8421379784666092032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_72
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 96
+        width: 20
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a968322f9569f8ba0800000000000000
+      internalID: -6084479258495580518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_73
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 46
+        width: 41
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8a18409013aa5190800000000000000
+      internalID: -7972880898770593142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_74
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 108
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b96317e9307b3c420800000000000000
+      internalID: 2649162231994988187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_75
+      rect:
+        serializedVersion: 2
+        x: 1114
+        y: 93
+        width: 25
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cb76a3cc387e0920800000000000000
+      internalID: 2958434207604833224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_76
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 100
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e36eb899552ae0b60800000000000000
+      internalID: 7714281700264240702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_77
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 102
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36a0a6438a823c780800000000000000
+      internalID: -8664036555231720861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_78
+      rect:
+        serializedVersion: 2
+        x: 1293
+        y: 104
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 153525db66dbe0740800000000000000
+      internalID: 5120238075327435601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_79
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 94
+        width: 7
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8270ea924b2fd30800000000000000
+      internalID: 4463828271783946418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_80
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 104
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a45d756b15ccb1d0800000000000000
+      internalID: -3333572902703508311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_81
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 96
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0cb82ea81ee33910800000000000000
+      internalID: 1816056864528972814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_82
+      rect:
+        serializedVersion: 2
+        x: 627
+        y: 90
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffc0874460bfa5be0800000000000000
+      internalID: -1487600722555433729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_83
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 97
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fe98dc465af88040800000000000000
+      internalID: 4650241863823433456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_84
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 88
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e20b310c312a70a0800000000000000
+      internalID: -6883152538879982873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_85
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 94
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4682d317027ceae70800000000000000
+      internalID: 9128452436879288420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_86
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 80
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 089cf257e1e6878f0800000000000000
+      internalID: -542562678004004480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_87
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 66
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21d8ae1867f71f680800000000000000
+      internalID: -8723050856277439214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_88
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 71
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95cec9106794e5490800000000000000
+      internalID: -7755680737103385511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_89
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 66
+        width: 10
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9716def25858c600800000000000000
+      internalID: 488737673055704988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_90
+      rect:
+        serializedVersion: 2
+        x: 233
+        y: 82
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 778c63af149d8dda0800000000000000
+      internalID: -5919742832784521097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_91
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 66
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7126cebee35d67080800000000000000
+      internalID: -9189923523380092393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_92
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 74
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cd1b6e80a4a7ba40800000000000000
+      internalID: 5383952889035824582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_93
+      rect:
+        serializedVersion: 2
+        x: 1062
+        y: 0
+        width: 120
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab86a57290d0b4ab0800000000000000
+      internalID: -5022906626435553094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_94
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 80
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ed1646f8f6d277a0800000000000000
+      internalID: -6380801357258547735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_95
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 50
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09c40d1ca9cfbfdc0800000000000000
+      internalID: -3604009335173133168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_96
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 63
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 001ec7be9026bd570800000000000000
+      internalID: 8492489317082259712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_97
+      rect:
+        serializedVersion: 2
+        x: 635
+        y: 66
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7934fe7a9b8d0690800000000000000
+      internalID: -7634292297651963524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_98
+      rect:
+        serializedVersion: 2
+        x: 786
+        y: 54
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cda340c080fb4d60800000000000000
+      internalID: 7875652809159585224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_99
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 50
+        width: 35
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2cabb4e57b903550800000000000000
+      internalID: 6138577222756969516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_100
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 37
+        width: 31
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a17bbe44a3fe9650800000000000000
+      internalID: 6241694020603179432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_101
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 56
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1be04b93d19c20730800000000000000
+      internalID: 3963951749398793905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_102
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 48
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bed5e8642d5000390800000000000000
+      internalID: -7854271349449138709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_103
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 47
+        width: 9
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50f17d6afdda02320800000000000000
+      internalID: 2531214166670647045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_104
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 0
+        width: 101
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af66d156668f88b80800000000000000
+      internalID: -8392184786938140934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_105
+      rect:
+        serializedVersion: 2
+        x: 794
+        y: 50
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe2fe5813a8c02860800000000000000
+      internalID: 7503217582013346543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_106
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 56
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dbf924f1055a2740800000000000000
+      internalID: 5128004592594451413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_107
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 52
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e0cd67068601a7d0800000000000000
+      internalID: -2909036711584612121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_108
+      rect:
+        serializedVersion: 2
+        x: 1402
+        y: 48
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf320c965c4007180800000000000000
+      internalID: -9119783999495986180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_109
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 44
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cef071fd071f1dc50800000000000000
+      internalID: 6688392388703358956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_110
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 31
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe9de7f9eee56080800000000000000
+      internalID: -9194680375552663822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_111
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 32
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f569a536e65149440800000000000000
+      internalID: 4941598254989743711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_112
+      rect:
+        serializedVersion: 2
+        x: 1278
+        y: 48
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 322baccd02e39af20800000000000000
+      internalID: 3434344501710860835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_113
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 31
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d468d3796baa5160800000000000000
+      internalID: 7015107838986446033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_114
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 17
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6285c2a3767b63060800000000000000
+      internalID: 6932930330368956454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_115
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 9
+        width: 74
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e281de83bed1b5af0800000000000000
+      internalID: -406698445237315538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_116
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 15
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 042eba9567fd24fa0800000000000000
+      internalID: -5817842069205687744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_117
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 31
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bd084a8a0a3bde60800000000000000
+      internalID: 7988042181015768502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_118
+      rect:
+        serializedVersion: 2
+        x: 1255
+        y: 23
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 824a68a1954fee600800000000000000
+      internalID: 499605272219001896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_119
+      rect:
+        serializedVersion: 2
+        x: 1331
+        y: 0
+        width: 38
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ec48cf26d7c76480800000000000000
+      internalID: -8905930015363281689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_120
+      rect:
+        serializedVersion: 2
+        x: 1373
+        y: 31
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c1cc8675a19665450800000000000000
+      internalID: 6077160309039615004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_121
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 15
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5de44ab60542d450800000000000000
+      internalID: 6112023539492384091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_122
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 13
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c94f6d25bdee7980800000000000000
+      internalID: -8539126481040750144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_123
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 14
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6725d258eb5260f60800000000000000
+      internalID: 8000123288278618742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_124
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 18
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3596d7b4804945880800000000000000
+      internalID: -8623104623160497837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_125
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 15
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 376accfe0161c43f0800000000000000
+      internalID: -915332362264598925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_126
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 19
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aa82bcf1e1b704d0800000000000000
+      internalID: -3168368228666537310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_127
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 9
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 929c9048415d4a550800000000000000
+      internalID: 6171291673495718185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_128
+      rect:
+        serializedVersion: 2
+        x: 1012
+        y: 0
+        width: 61
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bffa01af2fca21ca0800000000000000
+      internalID: -6047581190027694085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_129
+      rect:
+        serializedVersion: 2
+        x: 1245
+        y: 0
+        width: 77
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4326c87f973d6cb50800000000000000
+      internalID: 6613205623637828148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_130
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0333e6bb9166a2450800000000000000
+      internalID: 6064772108912571184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Referencia_Casa_Principal_131
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 7
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0b8635d3f3036e90800000000000000
+      internalID: -7033773847233524980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Referencia_Casa_Principal_0: 1414716581224249026
+      Referencia_Casa_Principal_1: -8288710178348431329
+      Referencia_Casa_Principal_10: -6117661844242983091
+      Referencia_Casa_Principal_100: 6241694020603179432
+      Referencia_Casa_Principal_101: 3963951749398793905
+      Referencia_Casa_Principal_102: -7854271349449138709
+      Referencia_Casa_Principal_103: 2531214166670647045
+      Referencia_Casa_Principal_104: -8392184786938140934
+      Referencia_Casa_Principal_105: 7503217582013346543
+      Referencia_Casa_Principal_106: 5128004592594451413
+      Referencia_Casa_Principal_107: -2909036711584612121
+      Referencia_Casa_Principal_108: -9119783999495986180
+      Referencia_Casa_Principal_109: 6688392388703358956
+      Referencia_Casa_Principal_11: -6825693604375980649
+      Referencia_Casa_Principal_110: -9194680375552663822
+      Referencia_Casa_Principal_111: 4941598254989743711
+      Referencia_Casa_Principal_112: 3434344501710860835
+      Referencia_Casa_Principal_113: 7015107838986446033
+      Referencia_Casa_Principal_114: 6932930330368956454
+      Referencia_Casa_Principal_115: -406698445237315538
+      Referencia_Casa_Principal_116: -5817842069205687744
+      Referencia_Casa_Principal_117: 7988042181015768502
+      Referencia_Casa_Principal_118: 499605272219001896
+      Referencia_Casa_Principal_119: -8905930015363281689
+      Referencia_Casa_Principal_12: 5922600980968672472
+      Referencia_Casa_Principal_120: 6077160309039615004
+      Referencia_Casa_Principal_121: 6112023539492384091
+      Referencia_Casa_Principal_122: -8539126481040750144
+      Referencia_Casa_Principal_123: 8000123288278618742
+      Referencia_Casa_Principal_124: -8623104623160497837
+      Referencia_Casa_Principal_125: -915332362264598925
+      Referencia_Casa_Principal_126: -3168368228666537310
+      Referencia_Casa_Principal_127: 6171291673495718185
+      Referencia_Casa_Principal_128: -6047581190027694085
+      Referencia_Casa_Principal_129: 6613205623637828148
+      Referencia_Casa_Principal_13: -6172086900786456199
+      Referencia_Casa_Principal_130: 6064772108912571184
+      Referencia_Casa_Principal_131: -7033773847233524980
+      Referencia_Casa_Principal_14: 1321576423719989858
+      Referencia_Casa_Principal_15: 2008346548155054448
+      Referencia_Casa_Principal_16: -3520629991786039019
+      Referencia_Casa_Principal_17: 6890974840556910026
+      Referencia_Casa_Principal_18: -4383865804150871988
+      Referencia_Casa_Principal_19: 8849810705439835097
+      Referencia_Casa_Principal_2: -7851390616987876042
+      Referencia_Casa_Principal_20: -4445773191513345963
+      Referencia_Casa_Principal_21: 1903677208171923965
+      Referencia_Casa_Principal_22: -4800014766795177172
+      Referencia_Casa_Principal_23: -1137246623720108829
+      Referencia_Casa_Principal_24: 4444802849041193421
+      Referencia_Casa_Principal_25: 2415782999572550484
+      Referencia_Casa_Principal_26: -469241390753823693
+      Referencia_Casa_Principal_27: 6556853889922075994
+      Referencia_Casa_Principal_28: -1319411417704942567
+      Referencia_Casa_Principal_29: 6835765881430578285
+      Referencia_Casa_Principal_3: 3708993748689554908
+      Referencia_Casa_Principal_30: 6844631218746288216
+      Referencia_Casa_Principal_31: 8244613817094174494
+      Referencia_Casa_Principal_32: 4895651502959532886
+      Referencia_Casa_Principal_33: 370131170859633915
+      Referencia_Casa_Principal_34: 2727843991593037108
+      Referencia_Casa_Principal_35: 1820006824337673009
+      Referencia_Casa_Principal_36: 8723246389460860571
+      Referencia_Casa_Principal_37: -36465669737074367
+      Referencia_Casa_Principal_38: -8738586467373113968
+      Referencia_Casa_Principal_39: -7279330753440637799
+      Referencia_Casa_Principal_4: -1145933064296584970
+      Referencia_Casa_Principal_40: -6216927791743127424
+      Referencia_Casa_Principal_41: -2322280205391890298
+      Referencia_Casa_Principal_42: 411000467191327808
+      Referencia_Casa_Principal_43: 244919167856571552
+      Referencia_Casa_Principal_44: 2048701142427829813
+      Referencia_Casa_Principal_45: 665023805543627979
+      Referencia_Casa_Principal_46: -5820005052165063266
+      Referencia_Casa_Principal_47: -9098850962897644309
+      Referencia_Casa_Principal_48: -7587343892462305112
+      Referencia_Casa_Principal_49: -5120520874546636845
+      Referencia_Casa_Principal_5: -6929758934502246507
+      Referencia_Casa_Principal_50: 1639898890361049149
+      Referencia_Casa_Principal_51: 6284542609790432561
+      Referencia_Casa_Principal_52: -6921793707109634849
+      Referencia_Casa_Principal_53: -8261735773295149325
+      Referencia_Casa_Principal_54: -6842626582570658861
+      Referencia_Casa_Principal_55: 8566231988781910506
+      Referencia_Casa_Principal_56: -933841731406420680
+      Referencia_Casa_Principal_57: -4782043068538926177
+      Referencia_Casa_Principal_58: -1823305687895553221
+      Referencia_Casa_Principal_59: 5971139170569750286
+      Referencia_Casa_Principal_6: -7933418465119195918
+      Referencia_Casa_Principal_60: -2048531982595894867
+      Referencia_Casa_Principal_61: 5269210001021106688
+      Referencia_Casa_Principal_62: -7519079340029779537
+      Referencia_Casa_Principal_63: 6362410066116494436
+      Referencia_Casa_Principal_64: -1004175486990236263
+      Referencia_Casa_Principal_65: -2002943829465947055
+      Referencia_Casa_Principal_66: 7225726075157318198
+      Referencia_Casa_Principal_67: 2460054585876603213
+      Referencia_Casa_Principal_68: 1746039547773407628
+      Referencia_Casa_Principal_69: -8416483048266702395
+      Referencia_Casa_Principal_7: 2356717597020345316
+      Referencia_Casa_Principal_70: -1591246608050390119
+      Referencia_Casa_Principal_71: -8421379784666092032
+      Referencia_Casa_Principal_72: -6084479258495580518
+      Referencia_Casa_Principal_73: -7972880898770593142
+      Referencia_Casa_Principal_74: 2649162231994988187
+      Referencia_Casa_Principal_75: 2958434207604833224
+      Referencia_Casa_Principal_76: 7714281700264240702
+      Referencia_Casa_Principal_77: -8664036555231720861
+      Referencia_Casa_Principal_78: 5120238075327435601
+      Referencia_Casa_Principal_79: 4463828271783946418
+      Referencia_Casa_Principal_8: 3572721585163179511
+      Referencia_Casa_Principal_80: -3333572902703508311
+      Referencia_Casa_Principal_81: 1816056864528972814
+      Referencia_Casa_Principal_82: -1487600722555433729
+      Referencia_Casa_Principal_83: 4650241863823433456
+      Referencia_Casa_Principal_84: -6883152538879982873
+      Referencia_Casa_Principal_85: 9128452436879288420
+      Referencia_Casa_Principal_86: -542562678004004480
+      Referencia_Casa_Principal_87: -8723050856277439214
+      Referencia_Casa_Principal_88: -7755680737103385511
+      Referencia_Casa_Principal_89: 488737673055704988
+      Referencia_Casa_Principal_9: -7433282631655174469
+      Referencia_Casa_Principal_90: -5919742832784521097
+      Referencia_Casa_Principal_91: -9189923523380092393
+      Referencia_Casa_Principal_92: 5383952889035824582
+      Referencia_Casa_Principal_93: -5022906626435553094
+      Referencia_Casa_Principal_94: -6380801357258547735
+      Referencia_Casa_Principal_95: -3604009335173133168
+      Referencia_Casa_Principal_96: 8492489317082259712
+      Referencia_Casa_Principal_97: -7634292297651963524
+      Referencia_Casa_Principal_98: 7875652809159585224
+      Referencia_Casa_Principal_99: 6138577222756969516
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

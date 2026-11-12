@@ -182,6 +182,10 @@ public static class TechnopolisMenuVisualBuilder
         runtime.mainLabels = mainLabels;
         runtime.selectionBackground = selection;
         runtime.selectionArrow = arrow;
+        var animacion=canvasObject.AddComponent<TechnopolisMenuAnimacion>();
+        animacion.escenario=scenePlate;
+        animacion.seleccion=selection;
+        animacion.flecha=arrow;
         runtime.optionsPanel = optionsPanel.gameObject;
         runtime.optionsRows = optionsRows;
         runtime.optionsLabels = optionsLabels;

@@ -120,11 +120,11 @@ public sealed class TechnopolisCampana : MonoBehaviour
         oficina = exito ? Oficina.Contrato : Oficina.Reintento;
     }
 
-    void ElegirContrato(bool acepta)
+    void DejarContratoEnSuspenso()
     {
-        final = acepta
-            ? "Alex acepta el contrato y organiza el cuidado de Bit antes de viajar."
-            : "Alex rechaza el viaje y busca un contrato local para seguir junto a Bit.";
+        final = "El contrato sigue sobre la mesa, sin firmar.\n\n" +
+            "Alex mira a Bit. Antes de responder, una notificación ilumina su pantalla…\n\n" +
+            "Su aventura apenas comienza.\n\nCONTINUARÁ…";
         oficina = Oficina.Final;
         Sonido(true);
     }
@@ -184,9 +184,10 @@ public sealed class TechnopolisCampana : MonoBehaviour
                 break;
             case Oficina.Contrato:
                 dialogoOficina.Mostrar(false,
-                    "Restauraste el sistema. Te ofrezco un contrato millonario.\n\nTendrás que viajar varios meses sin Bit. ¿Qué decides?",
-                    "Aceptar el contrato", () => ElegirContrato(true),
-                    "Quedarse con Bit", () => ElegirContrato(false));
+                    "Restauraste el sistema. Te ofrezco un contrato millonario.\n\n" +
+                    "Pero hay una condición: tendrás que viajar varios meses sin Bit.\n\n" +
+                    "Don Dinero desliza el contrato hacia Alex y espera su respuesta…",
+                    "Continuar", DejarContratoEnSuspenso, null, null);
                 break;
             case Oficina.Final:
                 dialogoOficina.Mostrar(false, "FIN DE LA DEMO\n\n" + final,

@@ -35,6 +35,8 @@ public static class TechnopolisNivel2ExtrasTiles
             if (!path.EndsWith(".png", System.StringComparison.OrdinalIgnoreCase)) continue;
             TextureImporter importer = AssetImporter.GetAtPath(path) as TextureImporter;
             if (importer == null) continue;
+            var spriteSettings = new TextureImporterSettings();
+            importer.ReadTextureSettings(spriteSettings);
             bool changed = importer.textureType != TextureImporterType.Sprite ||
                            importer.spriteImportMode != SpriteImportMode.Single ||
                            importer.spritePixelsPerUnit != 128f ||
@@ -42,7 +44,7 @@ public static class TechnopolisNivel2ExtrasTiles
                            importer.mipmapEnabled ||
                            importer.textureCompression != TextureImporterCompression.Uncompressed ||
                            !importer.alphaIsTransparency ||
-                           importer.spriteAlignment != (int)SpriteAlignment.Custom;
+                           spriteSettings.spriteAlignment != (int)SpriteAlignment.Custom;
             if (changed)
             {
                 importer.textureType = TextureImporterType.Sprite;
@@ -52,8 +54,10 @@ public static class TechnopolisNivel2ExtrasTiles
                 importer.mipmapEnabled = false;
                 importer.textureCompression = TextureImporterCompression.Uncompressed;
                 importer.alphaIsTransparency = true;
-                importer.spriteAlignment = (int)SpriteAlignment.Custom;
-                importer.spritePivot = new Vector2(0.5f, 0f);
+                importer.ReadTextureSettings(spriteSettings);
+                spriteSettings.spriteAlignment = (int)SpriteAlignment.Custom;
+                spriteSettings.spritePivot = new Vector2(0.5f, 0f);
+                importer.SetTextureSettings(spriteSettings);
                 importer.SaveAndReimport();
             }
 

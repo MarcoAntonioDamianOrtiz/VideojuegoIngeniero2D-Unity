@@ -9,7 +9,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 /// <summary>Exploración, encargos y mapa compartidos por las tres escenas de campaña.</summary>
-public sealed class AventuraBarrio : MonoBehaviour
+public sealed partial class AventuraBarrio : MonoBehaviour
 {
     public sealed class Encargo
     {
@@ -44,8 +44,8 @@ public sealed class AventuraBarrio : MonoBehaviour
     bool rastroAvisado;
     TextMesh alerta;
     GameObject objetoHueso;
-    static readonly Color Oro = new Color32(205,164,95,255), Papel = new Color32(250,232,195,255);
-    static readonly Color Fondo = new Color32(34,29,30,248), Verde = new Color32(117,188,124,255);
+    static readonly Color Oro = new Color32(76,202,198,255), Papel = new Color32(215,239,233,255);
+    static readonly Color Fondo = new Color32(12,21,31,248), Verde = new Color32(112,218,148,255);
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Registrar()
@@ -67,10 +67,12 @@ public sealed class AventuraBarrio : MonoBehaviour
         bit = GameObject.Find("Bit")?.transform;
         if (!jugador) { enabled = false; yield break; }
         movimiento = jugador.GetComponent<MovimientoJugador>();
+        if(!jugador.GetComponent<TransparenciaBarrio>())jugador.gameObject.AddComponent<TransparenciaBarrio>();
         nivel = gameObject.scene.name.Contains("Silicio") ? 3 : gameObject.scene.name.Contains("Taller") ? 2 : 1;
         felicidad = FindFirstObjectByType<BarraFelicidadPerro>();
         if (EconomiaBarrio.Obtener().PanaderiaPagada) ProgresoTechnopolis.Premiar("panaderia", 0, 20);
         ConstruirUI();
+        EstilizarHUD();
         ConfigurarMapa();
         ConfigurarEncargos();
         ConfigurarSalida();
@@ -104,11 +106,12 @@ public sealed class AventuraBarrio : MonoBehaviour
         var go=new GameObject(texto,typeof(RectTransform),typeof(TextMeshProUGUI));
         var r=go.GetComponent<RectTransform>();r.SetParent(padre,false);r.anchorMin=r.anchorMax=new Vector2(0,1);r.pivot=new Vector2(0,1);r.anchoredPosition=pos;r.sizeDelta=size;
         var t=go.GetComponent<TextMeshProUGUI>();t.text=texto;t.fontSize=font;t.color=Papel;t.raycastTarget=false;t.textWrappingMode=TextWrappingModes.Normal;
+        var terminalFont=Resources.Load<TMP_FontAsset>("FuenteTerminal");if(terminalFont)t.font=terminalFont;
         return t;
     }
     Button Boton(string texto, Transform padre, Vector2 pos, Vector2 size, Action click)
     {
-        var r=Caja(texto,padre,pos,size,new Color32(77,66,49,255));var b=r.gameObject.AddComponent<Button>();
+        var r=Caja(texto,padre,pos,size,new Color32(24,55,65,255));var b=r.gameObject.AddComponent<Button>();
         b.targetGraphic=r.GetComponent<Image>();b.targetGraphic.raycastTarget=true;
         var colors=b.colors;colors.highlightedColor=new Color(1.25f,1.2f,1.1f);colors.pressedColor=new Color(.7f,.8f,.7f);b.colors=colors;
         var t=Texto(texto,r,new Vector2(12,-5),size-new Vector2(24,10),24);t.alignment=TextAlignmentOptions.Midline;
@@ -162,11 +165,14 @@ public sealed class AventuraBarrio : MonoBehaviour
     {
         var go=new GameObject("Cámara minimapa");go.transform.position=new Vector3(jugador.position.x,jugador.position.y,-10);camaraMapa=go.AddComponent<Camera>();camaraMapa.orthographic=true;camaraMapa.orthographicSize=16;camaraMapa.targetTexture=texturaMapa;camaraMapa.cullingMask=Camera.main?Camera.main.cullingMask & ~(1<<5):~(1<<5);camaraMapa.clearFlags=CameraClearFlags.SolidColor;camaraMapa.backgroundColor=new Color(.12f,.14f,.12f);camaraMapa.allowHDR=false;
         SceneManager.MoveGameObjectToScene(go,gameObject.scene);
+        mapaGrande=new GameObject("Mapa del distrito").AddComponent<MapaBarrioExpandido>();
+        mapaGrande.Configurar(jugador,gameObject.scene,RecibirMarcador);
+        var open=mapa.gameObject.AddComponent<Button>();open.targetGraphic=mapa.GetComponent<Image>();open.targetGraphic.raycastTarget=true;open.onClick.AddListener(mapaGrande.Abrir);
         foreach(var t in FindObjectsByType<Transform>(FindObjectsSortMode.None))
         {
             string n=t.name.ToLowerInvariant();
             if(n=="panaderia_ramona"||n=="taller"||n=="miscelanea"||n=="casa_alex"||n=="arbol_plaza"||n=="fuente_parque"||n=="biblioteca_barrio"||n.StartsWith("edificio_silicon_alley"))
-                Marcar(t,t.position,"● "+(n.Contains("panaderia")?"PAN":n.Contains("biblioteca")?"LIB":n.Contains("silicon")?"OFICINA":n=="arbol_plaza"?"PLAZA":n=="casa_alex"?"CASA":n=="miscelanea"?"TIENDA":"TALLER"),new Color32(236,209,143,255));
+                Marcar(t,t.position,"● "+(n.Contains("panaderia")?"PAN":n.Contains("biblioteca")?"LIB":n.Contains("silicon")?"OFICINA":n=="arbol_plaza"?"PLAZA":n=="fuente_parque"?"PARQUE":n=="casa_alex"?"CASA":n=="miscelanea"?"TIENDA":"TALLER"),new Color32(236,209,143,255));
         }
         Marcar(jugador,jugador.position,"▲",Color.white);
         if(bit)Marcar(bit,bit.position,"●",Verde);
@@ -175,6 +181,7 @@ public sealed class AventuraBarrio : MonoBehaviour
     {
         var t=Texto(simbolo,mapa,Vector2.zero,new Vector2(simbolo.Length>2?100:28,28),simbolo.Length>2?14:24);t.color=color;t.alignment=TextAlignmentOptions.Center;t.rectTransform.pivot=new Vector2(.5f,.5f);
         marcas.Add(new Marca{destino=destino,punto=punto,icono=t.rectTransform,texto=t,id=id});
+        mapaGrande?.Agregar(destino,punto,simbolo,color,id);
     }
     void ConfigurarEncargos()
     {
@@ -225,15 +232,16 @@ public sealed class AventuraBarrio : MonoBehaviour
     void Update()
     {
         if(!canvas||!jugador)return;
-        canvas.enabled=!TechnopolisGameFlow.IsMenuOpen && (nivel!=3 || movimiento.enabled || modal.activeSelf);
+        canvas.enabled=!TechnopolisGameFlow.IsMenuOpen;
+        ActualizarVisibilidad();
         if(!canvas.enabled)return;
         var safe=Screen.safeArea;seguro.anchorMin=new Vector2(safe.xMin/Screen.width,safe.yMin/Screen.height);seguro.anchorMax=new Vector2(safe.xMax/Screen.width,safe.yMax/Screen.height);
         int bienestar=ProgresoTechnopolis.Bienestar;
         if(Time.time-ultimoAnimo>=90 && movimiento.enabled&&!modal.activeSelf){ProgresoTechnopolis.CuidarBit(-2);ultimoAnimo=Time.time;}
         if(felicidad)felicidad.EstablecerFelicidad(bienestar);
         if(felicidad&&felicidad.IconoActual)retratoBit.sprite=felicidad.IconoActual;
-        animo.text=$"BIT · ÁNIMO   {bienestar}%";barraBit.rectTransform.sizeDelta=new Vector2(318*bienestar/100f,20);barraBit.color=bienestar>=60?Verde:bienestar>20?Oro:new Color32(210,105,82,255);
-        saldo.text="MONEDERO  $"+EconomiaBarrio.Obtener().Dinero.ToString("N0");reputacion.text=$"REPUTACIÓN   {ProgresoTechnopolis.Reputacion} / 100";barraReputacion.rectTransform.sizeDelta=new Vector2(394*ProgresoTechnopolis.Reputacion/100f,13);
+        animo.text=$"BIT  {bienestar}%";barraBit.rectTransform.sizeDelta=new Vector2(150*bienestar/100f,10);barraBit.color=bienestar>=60?Verde:bienestar>20?Oro:new Color32(210,105,82,255);
+        saldo.text="$ "+EconomiaBarrio.Obtener().Dinero.ToString("N0");reputacion.text=$"REP  {ProgresoTechnopolis.Reputacion}/100";barraReputacion.rectTransform.sizeDelta=new Vector2(210*ProgresoTechnopolis.Reputacion/100f,8);
         if(Time.unscaledTime>mensajeHasta)aviso.text="";
         float age=Time.unscaledTime-inicio;float a=Mathf.Min(Mathf.Clamp01(age),Mathf.Clamp01(5-age));bienvenida.alpha=a;
         bienvenida.rectTransform.anchoredPosition=new Vector2(0,Mathf.Lerp(-140,-180,Mathf.SmoothStep(0,1,Mathf.Clamp01(age))));
@@ -289,6 +297,7 @@ public sealed class AventuraBarrio : MonoBehaviour
         if(!camaraMapa||!jugador)return;
         camaraMapa.transform.position=new Vector3(jugador.position.x,jugador.position.y,-10);
         foreach(var m in marcas){m.icono.gameObject.SetActive(m.id==""||!ProgresoTechnopolis.Completada(m.id));Vector2 pos=m.destino?(Vector2)m.destino.position:m.punto;Vector2 d=pos-(Vector2)jugador.position;float x=d.x/(32*camaraMapa.aspect)*322,y=d.y/32*222;m.icono.anchoredPosition=new Vector2(161+Mathf.Clamp(x,-126,126),-111+Mathf.Clamp(y,-98,98));}
+        ActualizarMarcador();
     }
-    void OnDestroy(){if(camaraMapa)Destroy(camaraMapa.gameObject);if(texturaMapa){texturaMapa.Release();Destroy(texturaMapa);}if(canvas)Destroy(canvas.gameObject);}
+    void OnDestroy(){if(destinoMundo)Destroy(destinoMundo.gameObject);if(mapaGrande)Destroy(mapaGrande.gameObject);if(camaraMapa)Destroy(camaraMapa.gameObject);if(texturaMapa){texturaMapa.Release();Destroy(texturaMapa);}if(canvas)Destroy(canvas.gameObject);}
 }

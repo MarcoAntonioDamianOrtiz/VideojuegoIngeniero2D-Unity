@@ -101,6 +101,12 @@ public static class TechnopolisVerificarEscenaFiel
         foreach (Transform building in buildings)
             if (building.name.StartsWith("Vivienda_", StringComparison.Ordinal)) homes++;
         if (homes != 54) throw new InvalidOperationException($"Distribucion residencial incompleta: {homes} viviendas.");
+        bool callesAbiertas = barrio.Find("Calles_Despejadas");
+        if (callesAbiertas)
+        {
+            TechnopolisCallesAbiertas.Verificar();
+            Debug.Log("TECHNOPOLIS_CALLES_OK edificios, escaleras y suelo enlazados");
+        }
 
         PixelPerfectCamera pixelCamera = cameraObject.GetComponent<PixelPerfectCamera>();
         if (!pixelCamera || pixelCamera.assetsPPU != 32 || pixelCamera.refResolutionX != 640 || pixelCamera.refResolutionY != 360 ||
@@ -108,7 +114,7 @@ public static class TechnopolisVerificarEscenaFiel
             throw new InvalidOperationException("La camara pixel-perfect no esta configurada.");
 
         SpriteRenderer[] sprites = barrio.GetComponentsInChildren<SpriteRenderer>();
-        if (sprites.Length < 861) throw new InvalidOperationException($"Faltan sprites independientes: {sprites.Length}.");
+        if (sprites.Length < (callesAbiertas ? 250 : 861)) throw new InvalidOperationException($"Faltan sprites independientes: {sprites.Length}.");
         int[] generatedHouses = new int[NewHousePaths.Length];
         int parcelWalls = 0;
         int workshopCars = 0;
@@ -132,7 +138,7 @@ public static class TechnopolisVerificarEscenaFiel
         }
         foreach (int count in generatedHouses)
             if (count < 2) throw new InvalidOperationException("Falta alguna variante nueva de vivienda.");
-        if (parcelWalls < 90 || workshopCars != 1 || oldFences > 20)
+        if ((!callesAbiertas && parcelWalls < 90) || workshopCars != 1 || oldFences > 20)
             throw new InvalidOperationException($"Distribucion nueva incompleta: muros={parcelWalls}, auto={workshopCars}, vallas={oldFences}.");
 
         Collider2D[] obstacles = barrio.GetComponentsInChildren<Collider2D>();

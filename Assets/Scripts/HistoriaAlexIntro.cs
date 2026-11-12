@@ -98,7 +98,7 @@ public sealed class HistoriaAlexIntro : MonoBehaviour
         titulo.text=Titulos[indice];narracion.text=Relato[indice];narracion.maxVisibleCharacters=0;
         pagina.text=$"{indice+1} / {Relato.Length}   ·   ESPACIO / TOCA PARA AVANZAR";
         siguienteTexto.text=indice==Relato.Length-1?"Comenzar aventura":"Siguiente";atras.interactable=indice>0;
-        if(recursos)ilustracion.texture=indice==1?recursos.cuarto:indice==3?recursos.panaderia:recursos.tejados;
+        if(recursos)ilustracion.texture=indice==1?recursos.cuarto:indice==2?recursos.parque:indice==3?recursos.panaderia:recursos.tejados;
         alex.gameObject.SetActive(recursos&&recursos.alex&&(indice==0||indice==2));bit.gameObject.SetActive(recursos&&recursos.bit&&(indice==0||indice==2));ramona.gameObject.SetActive(recursos&&recursos.ramona&&indice==3);
         entrada.alpha=0;
     }

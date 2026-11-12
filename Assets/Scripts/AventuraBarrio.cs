@@ -55,7 +55,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
     }
     static void Cargar(Scene escena, LoadSceneMode modo)
     {
-        if (!escena.name.StartsWith("EscenaNivel") || (!escena.name.Contains("FielReferencia") && !escena.name.Contains("Taller") && !escena.name.Contains("Silicio"))) return;
+        if (escena.name != TechnopolisGameFlow.LevelScene && !TechnopolisGameFlow.EsNivel2(escena.name) && escena.name != "EscenaNivel3Silicio") return;
         var go = new GameObject("Aventura · mapa y misiones");
         SceneManager.MoveGameObjectToScene(go, escena);
         go.AddComponent<AventuraBarrio>();
@@ -68,7 +68,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
         if (!jugador) { enabled = false; yield break; }
         movimiento = jugador.GetComponent<MovimientoJugador>();
         if(!jugador.GetComponent<TransparenciaBarrio>())jugador.gameObject.AddComponent<TransparenciaBarrio>();
-        nivel = gameObject.scene.name.Contains("Silicio") ? 3 : gameObject.scene.name.Contains("Taller") ? 2 : 1;
+        nivel = gameObject.scene.name.Contains("Silicio") ? 3 : TechnopolisGameFlow.EsNivel2(gameObject.scene.name) ? 2 : 1;
         felicidad = FindFirstObjectByType<BarraFelicidadPerro>();
         if (EconomiaBarrio.Obtener().PanaderiaPagada) ProgresoTechnopolis.Premiar("panaderia", 0, 20);
         ConstruirUI();
@@ -174,6 +174,8 @@ public sealed partial class AventuraBarrio : MonoBehaviour
             if(n=="panaderia_ramona"||n=="taller"||n=="miscelanea"||n=="casa_alex"||n=="arbol_plaza"||n=="fuente_parque"||n=="biblioteca_barrio"||n.StartsWith("edificio_silicon_alley"))
                 Marcar(t,t.position,"● "+(n.Contains("panaderia")?"PAN":n.Contains("biblioteca")?"LIB":n.Contains("silicon")?"OFICINA":n=="arbol_plaza"?"PLAZA":n=="fuente_parque"?"PARQUE":n=="casa_alex"?"CASA":n=="miscelanea"?"TIENDA":"TALLER"),new Color32(236,209,143,255));
         }
+        var distrito=FindFirstObjectByType<DistritoNivel2>();
+        if(distrito){Marcar(distrito.taller,distrito.taller.position,"● TALLER",Papel);Marcar(distrito.donDinero,distrito.donDinero.position,"● NEGOCIO",Papel);}
         Marcar(jugador,jugador.position,"▲",Color.white);
         if(bit)Marcar(bit,bit.position,"●",Verde);
     }
@@ -194,12 +196,15 @@ public sealed partial class AventuraBarrio : MonoBehaviour
         {
             Vector2 punto=(Vector2)jugador.position+Vector2.right*2;
             foreach(var c in FindObjectsByType<BoxCollider2D>(FindObjectsSortMode.None))if(c.name=="Taller")punto=new Vector2(c.bounds.max.x+1.5f,c.bounds.min.y-1);
+            var distrito=FindFirstObjectByType<DistritoNivel2>();
+            if(distrito&&distrito.donDinero)punto=distrito.donDinero.position;
             var npc=new GameObject("Don Dinero · encargos");npc.transform.position=punto;var sr=npc.AddComponent<SpriteRenderer>();var texture=Resources.Load<Texture2D>("Personajes/DonDineroTransparente");
             if(texture){sr.sprite=Sprite.Create(texture,new Rect(0,0,texture.width,texture.height),new Vector2(.5f,0),texture.height/2f);sr.sortingOrder=TechnopolisOrdenBarrio.Orden(punto.y,1.25f);}
             var collider=npc.AddComponent<BoxCollider2D>();collider.size=new Vector2(.5f,.3f);collider.offset=new Vector2(0,.15f);
             encargos.Add(new Encargo{id="inventario",nombre="Inventario sin pérdidas",personaje="Don Dinero",pago=6000,reputacion=20,punto=punto,preguntas=new[]{"El inventario tiene 8 piezas y vendes 3. ¿Cuántas quedan?","¿Qué dato identifica cada producto sin confundirlo?","¿Qué validas antes de registrar una venta?"},opciones=new[]{new[]{"11","5","3"},new[]{"El identificador único","El color de la pantalla","La posición del botón"},new[]{"Que haya existencias","Que el sonido sea fuerte","Que el nombre sea largo"}},respuestas=new[]{1,0,0}});
             encargos.Add(new Encargo{id="respaldo",nombre="Respaldo del negocio",personaje="Don Dinero",pago=6000,reputacion=20,punto=punto,preguntas=new[]{"¿Dónde conservas una copia segura?","Antes de cambiar datos importantes…","¿Cómo verificas un respaldo?"},opciones=new[]{new[]{"Solo en la memoria RAM","En otro almacenamiento protegido","En la papelera"},new[]{"Borras todo","Desactivas controles","Guardas una copia"},new[]{"Pruebas restaurarlo","Cambias el icono","Cierras la ventana"}},respuestas=new[]{1,2,0}});
         }
+        if(nivel==2&&!encargos.Any(e=>e.id==ProgresoTechnopolis.Activa))ProgresoTechnopolis.Activa=encargos.FirstOrDefault(e=>!ProgresoTechnopolis.Completada(e.id))?.id??"";
         foreach(var e in encargos)if(!ProgresoTechnopolis.Completada(e.id))Marcar(null,e.punto,"!",Oro,e.id);
         if(nivel==1&&!ProgresoTechnopolis.Completada("panaderia")){ProgresoTechnopolis.Activa="panaderia";Marcar(GameObject.Find("Ramona_Npc")?.transform,new Vector2(4,-10.4f),"!",Oro,"panaderia");}
     }
@@ -209,6 +214,8 @@ public sealed partial class AventuraBarrio : MonoBehaviour
         var gate=GameObject.Find("Porton_Salida");
         var solido=gate?gate.GetComponentInChildren<Collider2D>():null;
         salida=solido?(Vector2)solido.bounds.center:gate?(Vector2)gate.transform.position:new Vector2(18,-46);
+        var distrito=FindFirstObjectByType<DistritoNivel2>();
+        if(distrito&&distrito.salida)salida=distrito.salida.position;
         foreach(var t in FindObjectsByType<Transform>(FindObjectsSortMode.None))
             if(t.name=="Porton_Salida"||t.name=="Conos_Salida"||t.name=="Aviso_Salida_Cerrada"||t.name=="senal_bloqueo_301")barreras.Add(t.gameObject);
         Marcar(null,salida,">",new Color32(114,202,223,255));
@@ -249,7 +256,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
         if(nivel<3&&!puertaAbierta&&ProgresoTechnopolis.PuedeAvanzar(nivel+1))
         {puertaAbierta=true;foreach(var g in barreras)if(g)g.SetActive(false);Avisar("¡Acceso desbloqueado! Sigue > en el minimapa.");}
         string active=ProgresoTechnopolis.Activa;
-        mision.text="OBJETIVO\n"+(active=="hueso"?"Bit sigue un rastro. Recoge el hueso marcado en verde.":active=="panaderia"?"Habla con Doña Ramona en la panadería.":encargos.FirstOrDefault(e=>e.id==active)?.nombre ?? (nivel<3?"Acceso: "+ProgresoTechnopolis.Requisito(nivel+1):"Visita a Don Dinero en Silicon Alley."));
+        mision.text="OBJETIVO\n"+(active=="hueso"?"Bit sigue un rastro. Recoge el hueso marcado en verde.":active=="panaderia"?"Habla con Doña Ramona en la panadería.":encargos.FirstOrDefault(e=>e.id==active)?.nombre ?? (nivel==2&&!ProgresoTechnopolis.Completada("inventario")?"Habla con Don Dinero (!).":nivel==2&&!ProgresoTechnopolis.Completada("respaldo")?"Completa el respaldo con Don Dinero (!).":nivel<3?"Acceso: "+ProgresoTechnopolis.Requisito(nivel+1):"Visita a Don Dinero en Silicon Alley."));
         bool bone=nivel==1&&objetoHueso&&Vector2.Distance(bit?bit.position:jugador.position,hueso)<5;
         if(bone&&!rastroAvisado){rastroAvisado=true;ProgresoTechnopolis.Activa="hueso";Avisar("¡Bit encontró un rastro! Busca la marca verde del mapa.");}
         bool missionNear=encargos.Any(e=>!ProgresoTechnopolis.Completada(e.id)&&Vector2.Distance(jugador.position,e.punto)<5);

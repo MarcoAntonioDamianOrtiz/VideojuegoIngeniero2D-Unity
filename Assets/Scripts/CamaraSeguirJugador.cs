@@ -5,10 +5,12 @@ public class CamaraSeguirJugador : MonoBehaviour
     [SerializeField] private Transform objetivo;
     private Camera camara;
     private SpriteRenderer terreno;
+    private DistritoNivel2 distrito;
 
     private void Awake()
     {
         camara = GetComponent<Camera>();
+        distrito = FindFirstObjectByType<DistritoNivel2>();
         GameObject baseTerreno = GameObject.Find("Terreno_Organico");
         if (baseTerreno)
             terreno = baseTerreno.GetComponentInChildren<SpriteRenderer>();
@@ -20,9 +22,9 @@ public class CamaraSeguirJugador : MonoBehaviour
             return;
 
         Vector3 destino = objetivo.position;
-        if (camara && terreno)
+        if (camara && (terreno || distrito))
         {
-            Bounds limites = terreno.bounds;
+            Bounds limites = terreno ? terreno.bounds : distrito.limites;
             float medioAlto = camara.orthographicSize;
             float medioAncho = medioAlto * camara.aspect;
             destino.x = medioAncho >= limites.extents.x

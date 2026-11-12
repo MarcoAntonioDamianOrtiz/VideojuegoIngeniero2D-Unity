@@ -11,7 +11,8 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     public const string LevelScene = "EscenaNivel1_FielReferencia";
     public const string MenuScene = "ESCENA NUEVA";
 
-    const string Nivel2 = "EscenaNivel2Taller";
+    const string Nivel2 = "Nivel2";
+    public static bool EsNivel2(string escena) => escena == Nivel2 || escena == "EscenaNivel2Taller";
     const string Nivel3 = "EscenaNivel3Silicio";
     const string NivelGuardado = "Technopolis.Campaign.Scene";
     static string currentLevel = LevelScene;
@@ -25,7 +26,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
         currentLevel = siguiente;
         SceneManager.LoadScene(siguiente, LoadSceneMode.Single);
     }
-    static string SavePrefix => currentLevel == Nivel3 ? "Technopolis.Level3." : currentLevel == Nivel2 ? "Technopolis.Level2." : "Technopolis.Level1.";
+    static string SavePrefix => currentLevel == Nivel3 ? "Technopolis.Level3." : EsNivel2(currentLevel) ? "Technopolis.Level2." : "Technopolis.Level1.";
     static string SaveVersion => SavePrefix + "Version";
     static string SaveX => SavePrefix + "PlayerX";
     static string SaveY => SavePrefix + "PlayerY";
@@ -66,7 +67,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
 
     static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        if (scene.name == LevelScene || scene.name == Nivel2 || scene.name == Nivel3)
+        if (scene.name == LevelScene || EsNivel2(scene.name) || scene.name == Nivel3)
         {
             currentLevel = scene.name;
             GameObject found = GameObject.Find("Jugador");
@@ -163,19 +164,21 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
             return;
         }
         string guardado = PlayerPrefs.GetString(NivelGuardado, currentLevel);
+        bool migrarNivel2 = guardado == "EscenaNivel2Taller";
+        if (migrarNivel2) guardado = Nivel2;
         if (guardado == LevelScene || guardado == Nivel2 || guardado == Nivel3)
             currentLevel = guardado;
         if (!HasSavedGame) return;
 
         if (SceneManager.GetSceneByName(currentLevel).isLoaded)
         {
-            RestorePosition();
+            if (!migrarNivel2) RestorePosition();
             sessionStarted = true;
             CloseMenu();
         }
         else
         {
-            restoreOnLoad = true;
+            restoreOnLoad = !migrarNivel2;
             startWithoutMenu = true;
             menuOpen = false;
             Time.timeScale = 1f;

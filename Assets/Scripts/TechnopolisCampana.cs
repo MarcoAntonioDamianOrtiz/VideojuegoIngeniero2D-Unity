@@ -46,6 +46,8 @@ public sealed class TechnopolisCampana : MonoBehaviour
             }
         }
         objetivo = "Conecta el módulo en orden: alimentación, señal, prueba.";
+        var distrito = FindFirstObjectByType<DistritoNivel2>();
+        if (nivel == 2 && distrito && distrito.taller) punto = distrito.taller.position;
         audioEvento = gameObject.AddComponent<AudioSource>();
         audioEvento.playOnAwake = false;
         if (nivel == 3 && terminal)

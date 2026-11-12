@@ -56,6 +56,7 @@ public sealed class MapaBarrioExpandido : MonoBehaviour
         Bounds bounds=new Bounds(jugador.position,Vector3.one*10);var terreno=GameObject.Find("Terreno_Organico");
         if(terreno&&terreno.GetComponentInChildren<SpriteRenderer>())bounds=terreno.GetComponentInChildren<SpriteRenderer>().bounds;
         else{var grid=GameObject.Find("Grid");if(grid)foreach(var r in grid.GetComponentsInChildren<Renderer>())if(r.bounds.size.x>0)bounds.Encapsulate(r.bounds);}
+        var distrito=FindFirstObjectByType<DistritoNivel2>();if(distrito)bounds=distrito.limites;
         camara.transform.position=new Vector3(bounds.center.x,bounds.center.y,-10);camara.orthographicSize=Mathf.Max(bounds.extents.x,bounds.extents.y)*1.04f;
         Texto("> COLOCA UN DESTINO",panel,new Vector2(875,-95),new Vector2(600,45),29);
         Texto("Haz clic o toca cualquier punto del mapa.\n\nEl marcador aparecerá en el barrio y en el minimapa.\n\nLa distancia se actualiza al caminar.\n1 unidad del mundo = 1 metro.\nDistancia en línea recta.",panel,new Vector2(875,-165),new Vector2(600,275),25);

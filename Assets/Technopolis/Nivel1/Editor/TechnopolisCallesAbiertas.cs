@@ -83,14 +83,22 @@ public static class TechnopolisCallesAbiertas
         for(int y=0;y<lado;y++)for(int x=0;x<lado;x++)
         {
             Vector2 p=new Vector2((x+.5f)/16f,64-(y+.5f)/16f);bool road=Calles.Any(c=>c.Contains(p));
-            if(!road||Terrazas.Any(t=>t.Contains(p)))continue;
-            uint hash=Hash(x,y);int ruido=(int)(hash&7)-3+(int)(Hash(x/30,y/30)&15)-7;
+            if(!road||Terrazas.Skip(1).Any(t=>t.Contains(p)))continue;
+            uint hash=Hash(x,y);
+            float moteado=Mathf.PerlinNoise(x*.018f,y*.018f);
+            int ruido=(int)(hash&7)-3+Mathf.RoundToInt((moteado-.5f)*24);
             float edge=Calles.Where(c=>c.Contains(p)).Max(c=>Mathf.Min(Mathf.Min(p.x-c.xMin,c.xMax-p.x),Mathf.Min(p.y-c.yMin,c.yMax-p.y)));
-            byte alpha=(byte)(edge<.12f?100:edge<.25f?190:255);
+            float irregular=.08f+Mathf.PerlinNoise(x*.09f,y*.09f)*.16f;
+            byte alpha=(byte)(edge<irregular?95:edge<irregular+.15f?185:255);
             uint celda=Hash(x/4,y/4);bool piedra=(celda&127)==0&&x%4<2&&y%4<2;
-            bool desgaste=(Hash(x/13,y/13)&31)==0;
-            int extra=desgaste?-10:0;
-            pixels[y*lado+x]=piedra?new Color32(143,132,111,alpha):new Color32((byte)(193+ruido+extra),(byte)(151+ruido+extra),(byte)(94+ruido+extra),alpha);
+            bool desgaste=Mathf.PerlinNoise(x*.07f+50,y*.07f+50)>.71f;
+            int extra=desgaste?-9:0;
+            // Tierra apisonada en el centro, ripio irregular en las orillas.
+            int centro=Mathf.RoundToInt(Mathf.SmoothStep(0,1,Mathf.Clamp01(edge/1.1f))*9);
+            bool ripio=edge<.38f&&(hash&31)<5;
+            bool surco=edge>.55f&&edge<.72f&&moteado>.46f;
+            if(surco)extra-=10;
+            pixels[y*lado+x]=piedra||ripio?new Color32((byte)(139+ruido),(byte)(126+ruido),(byte)(99+ruido),alpha):new Color32((byte)(179+ruido+extra+centro),(byte)(140+ruido+extra+centro),(byte)(87+ruido+extra+centro),alpha);
         }
         texture.SetPixels32(pixels);texture.Apply();File.WriteAllBytes(Suelo,texture.EncodeToPNG());UnityEngine.Object.DestroyImmediate(texture);AssetDatabase.ImportAsset(Suelo);
         var importer=(TextureImporter)AssetImporter.GetAtPath(Suelo);importer.textureType=TextureImporterType.Sprite;importer.spriteImportMode=SpriteImportMode.Single;importer.filterMode=FilterMode.Point;importer.mipmapEnabled=false;importer.spritePixelsPerUnit=16;importer.textureCompression=TextureImporterCompression.Uncompressed;importer.userData="Suelo original procedural para las calles de TECHNOPOLIS. Generado por TechnopolisCallesAbiertas.cs, sin fuentes externas.";importer.SaveAndReimport();

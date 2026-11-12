@@ -171,11 +171,14 @@ public sealed partial class AventuraBarrio : MonoBehaviour
         foreach(var t in FindObjectsByType<Transform>(FindObjectsSortMode.None))
         {
             string n=t.name.ToLowerInvariant();
+            if(n=="taller"&&TechnopolisGameFlow.EsNivel2(gameObject.scene.name))continue;
             if(n=="panaderia_ramona"||n=="taller"||n=="miscelanea"||n=="casa_alex"||n=="arbol_plaza"||n=="fuente_parque"||n=="biblioteca_barrio"||n.StartsWith("edificio_silicon_alley"))
                 Marcar(t,t.position,"● "+(n.Contains("panaderia")?"PAN":n.Contains("biblioteca")?"LIB":n.Contains("silicon")?"OFICINA":n=="arbol_plaza"?"PLAZA":n=="fuente_parque"?"PARQUE":n=="casa_alex"?"CASA":n=="miscelanea"?"TIENDA":"TALLER"),new Color32(236,209,143,255));
         }
         var distrito=FindFirstObjectByType<DistritoNivel2>();
-        if(distrito){Marcar(distrito.taller,distrito.taller.position,"● TALLER",Papel);Marcar(distrito.donDinero,distrito.donDinero.position,"● NEGOCIO",Papel);}
+        if(distrito){Marcar(distrito.taller,distrito.taller.position,"● TALLER",Papel);Marcar(distrito.donDinero,distrito.donDinero.position,"● NEGOCIO",Papel);
+            foreach(var nombre in new[]{"Edificio_Banco","Edificio_Cafeteria","Edificio_Clinica"}){var lugar=GameObject.Find(nombre);if(lugar)Marcar(lugar.transform,lugar.transform.position,"● "+nombre.Substring(9).ToUpperInvariant(),Papel);}
+        }
         Marcar(jugador,jugador.position,"▲",Color.white);
         if(bit)Marcar(bit,bit.position,"●",Verde);
     }

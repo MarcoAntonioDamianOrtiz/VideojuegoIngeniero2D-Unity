@@ -52,6 +52,7 @@ public static class DisenoComercialNivel2
  cfg.transform.Find("Porton_Salida").position=new Vector2(17,-50.5f);cfg.transform.Find("Señal Ciudad de Silicio").position=new Vector2(16,-47);
  var p=GameObject.Find("Jugador");p.transform.position=new Vector2(-28,-6.4f);p.transform.localScale=new Vector3(1.8f,1.8f,1);GameObject.Find("Bit").transform.position=p.transform.position+Vector3.left;GameObject.Find("Bit").transform.localScale=Vector3.one*.14f;
  Box("Límite_norte",new Vector2(-22,12),new Vector2(88,.4f));Box("Límite_sur",new Vector2(-22,-52),new Vector2(88,.4f));Box("Límite_oeste",new Vector2(-66,-20),new Vector2(.4f,64));Box("Límite_este",new Vector2(22,-20),new Vector2(.4f,64));
+ ArbolesJardinesDistrito.Aplicar();
  Physics2D.SyncTransforms();EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);
  }
  static Transform Group(string name,Transform parent){var go=new GameObject(name);go.transform.SetParent(parent,false);return go.transform;}

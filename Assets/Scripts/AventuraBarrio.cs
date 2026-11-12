@@ -43,6 +43,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
     bool jugando, movimientoAnterior, puertaAbierta;
     bool rastroAvisado;
     TextMesh alerta;
+    TechnopolisCampana oficinaSilicio;
     GameObject objetoHueso;
     static readonly Color Oro = new Color32(76,202,198,255), Papel = new Color32(215,239,233,255);
     static readonly Color Fondo = new Color32(12,21,31,248), Verde = new Color32(112,218,148,255);
@@ -201,8 +202,8 @@ public sealed partial class AventuraBarrio : MonoBehaviour
             foreach(var c in FindObjectsByType<BoxCollider2D>(FindObjectsSortMode.None))if(c.name=="Taller")punto=new Vector2(c.bounds.max.x+1.5f,c.bounds.min.y-1);
             var distrito=FindFirstObjectByType<DistritoNivel2>();
             if(distrito&&distrito.donDinero)punto=distrito.donDinero.position;
-            var npc=new GameObject("Don Dinero · encargos");npc.transform.position=punto;var sr=npc.AddComponent<SpriteRenderer>();var texture=Resources.Load<Texture2D>("Personajes/DonDineroTransparente");
-            if(texture){sr.sprite=Sprite.Create(texture,new Rect(0,0,texture.width,texture.height),new Vector2(.5f,0),texture.height/2f);sr.sortingOrder=TechnopolisOrdenBarrio.Orden(punto.y,1.25f);}
+            var npc=new GameObject("Don Dinero · encargos");npc.transform.position=punto;var sr=npc.AddComponent<SpriteRenderer>();var texture=Resources.Load<Texture2D>("Personajes/DonDineroCuerpoCompleto");
+            if(texture){sr.sprite=Sprite.Create(texture,new Rect(0,0,texture.width,texture.height),new Vector2(.5f,0),texture.height/2.4f);sr.sortingOrder=TechnopolisOrdenBarrio.Orden(punto.y,1.25f);}
             var collider=npc.AddComponent<BoxCollider2D>();collider.size=new Vector2(.5f,.3f);collider.offset=new Vector2(0,.15f);
             encargos.Add(new Encargo{id="inventario",nombre="Inventario sin pérdidas",personaje="Don Dinero",pago=6000,reputacion=20,punto=punto,preguntas=new[]{"El inventario tiene 8 piezas y vendes 3. ¿Cuántas quedan?","¿Qué dato identifica cada producto sin confundirlo?","¿Qué validas antes de registrar una venta?"},opciones=new[]{new[]{"11","5","3"},new[]{"El identificador único","El color de la pantalla","La posición del botón"},new[]{"Que haya existencias","Que el sonido sea fuerte","Que el nombre sea largo"}},respuestas=new[]{1,0,0}});
             encargos.Add(new Encargo{id="respaldo",nombre="Respaldo del negocio",personaje="Don Dinero",pago=6000,reputacion=20,punto=punto,preguntas=new[]{"¿Dónde conservas una copia segura?","Antes de cambiar datos importantes…","¿Cómo verificas un respaldo?"},opciones=new[]{new[]{"Solo en la memoria RAM","En otro almacenamiento protegido","En la papelera"},new[]{"Borras todo","Desactivas controles","Guardas una copia"},new[]{"Pruebas restaurarlo","Cambias el icono","Cierras la ventana"}},respuestas=new[]{1,2,0}});
@@ -258,6 +259,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
         bienvenida.text="BIENVENIDO A\n"+(nivel==3?"LA CIUDAD DE SILICIO":nivel==2?"EL BARRIO DE LOS NEGOCIOS":"EL SEMESTRE DEL HAMBRE");
         if(nivel<3&&!puertaAbierta&&ProgresoTechnopolis.PuedeAvanzar(nivel+1))
         {puertaAbierta=true;foreach(var g in barreras)if(g)g.SetActive(false);Avisar("¡Acceso desbloqueado! Sigue > en el minimapa.");}
+        if(nivel==2&&puertaAbierta&&movimiento.enabled&&Mathf.Abs(jugador.position.x-salida.x)<1.4f&&jugador.position.y<salida.y-.55f&&Vector2.Distance(jugador.position,salida)<2f){TechnopolisGameFlow.AvanzarCampana(3);return;}
         string active=ProgresoTechnopolis.Activa;
         mision.text="OBJETIVO\n"+(active=="hueso"?"Bit sigue un rastro. Recoge el hueso marcado en verde.":active=="panaderia"?"Habla con Doña Ramona en la panadería.":encargos.FirstOrDefault(e=>e.id==active)?.nombre ?? (nivel==2&&!ProgresoTechnopolis.Completada("inventario")?"Habla con Don Dinero (!).":nivel==2&&!ProgresoTechnopolis.Completada("respaldo")?"Completa el respaldo con Don Dinero (!).":nivel<3?"Acceso: "+ProgresoTechnopolis.Requisito(nivel+1):"Visita a Don Dinero en Silicon Alley."));
         bool bone=nivel==1&&objetoHueso&&Vector2.Distance(bit?bit.position:jugador.position,hueso)<5;
@@ -271,6 +273,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
     }
     string Prompt()
     {
+        if(nivel==3){if(!oficinaSilicio)oficinaSilicio=FindFirstObjectByType<TechnopolisCampana>();if(oficinaSilicio&&oficinaSilicio.TieneInteraccion)return oficinaSilicio.AccionInteraccion;}
         if(objetoHueso&&Vector2.Distance(jugador.position,hueso)<1.6f)return "Recoger el hueso de Bit (E)";
         if(nivel<3&&Vector2.Distance(jugador.position,salida)<4)return puertaAbierta?"Cruzar al siguiente distrito (E)":"Revisar requisitos del acceso (E)";
         var e=encargos.FirstOrDefault(q=>!ProgresoTechnopolis.Completada(q.id)&&Vector2.Distance(jugador.position,q.punto)<2.4f);
@@ -280,6 +283,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
     void Interactuar()
     {
         if(modal.activeSelf||!movimiento.enabled)return;
+        if(nivel==3&&oficinaSilicio&&oficinaSilicio.TieneInteraccion){oficinaSilicio.AbrirInteraccion();return;}
         if(objetoHueso&&Vector2.Distance(jugador.position,hueso)<1.6f){ProgresoTechnopolis.Premiar("hueso",0,5);ProgresoTechnopolis.CuidarBit(25);if(!ProgresoTechnopolis.Completada("panaderia"))ProgresoTechnopolis.Activa="panaderia";Destroy(objetoHueso);Avisar("¡Bit encontró su hueso! +5 reputación y +25 bienestar");return;}
         if(nivel<3&&Vector2.Distance(jugador.position,salida)<4){if(puertaAbierta)TechnopolisGameFlow.AvanzarCampana(nivel+1);else Avisar("Para abrir el acceso necesitas "+ProgresoTechnopolis.Requisito(nivel+1));return;}
         actual=encargos.FirstOrDefault(e=>!ProgresoTechnopolis.Completada(e.id)&&Vector2.Distance(jugador.position,e.punto)<2.4f);

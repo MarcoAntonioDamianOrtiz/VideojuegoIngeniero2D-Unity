@@ -7,6 +7,14 @@ public sealed class TechnopolisMenuAnimacion : MonoBehaviour
     public RectTransform escenario;
     public Image seleccion;
     public Image flecha;
+    public Texture2D caricias;
+    public Rect[] recortesCaricia;
+    public Image alexSentado, bitSentado;
+    public RectTransform personajes;
+    Sprite[] fotogramas;
+    Image pareja;
+    Vector2 origenPersonajes;
+    float inicio;
     Vector2 posicionInicial;
     Vector3 escalaInicial;
     Color colorSeleccion;
@@ -18,6 +26,17 @@ public sealed class TechnopolisMenuAnimacion : MonoBehaviour
         posicionInicial=escenario.anchoredPosition;
         escalaInicial=escenario.localScale;
         colorSeleccion=seleccion?seleccion.color:Color.white;
+        inicio=Time.unscaledTime;
+        if(personajes)origenPersonajes=personajes.anchoredPosition;
+        if(caricias&&recortesCaricia!=null&&recortesCaricia.Length==4&&personajes){
+            fotogramas=new Sprite[4];
+            for(int i=0;i<4;i++)fotogramas[i]=Sprite.Create(caricias,recortesCaricia[i],new Vector2(.5f,0),100,0,SpriteMeshType.FullRect);
+            var go=new GameObject("Alex y Bit · caricia",typeof(RectTransform),typeof(CanvasRenderer),typeof(Image));
+            pareja=go.GetComponent<Image>();pareja.raycastTarget=false;pareja.preserveAspect=true;
+            var rt=pareja.rectTransform;rt.SetParent(personajes,false);rt.anchorMin=rt.anchorMax=rt.pivot=Vector2.zero;
+            rt.anchoredPosition=new Vector2(375,98);rt.sizeDelta=new Vector2(257*recortesCaricia[0].width/recortesCaricia[0].height,257);
+            pareja.sprite=fotogramas[0];if(alexSentado)alexSentado.enabled=false;if(bitSentado)bitSentado.enabled=false;
+        }
     }
     void OnEnable()
     {
@@ -31,17 +50,30 @@ public sealed class TechnopolisMenuAnimacion : MonoBehaviour
     void LateUpdate()
     {
         float t=Time.unscaledTime;
-        escenario.localScale=escalaInicial*1.012f;
-        escenario.anchoredPosition=posicionInicial+new Vector2(Mathf.Round(Mathf.Sin(t*.14f)*3),Mathf.Round(Mathf.Sin(t*.19f)*2));
+        Vector2 viaje=new Vector2(Mathf.Round(Mathf.Sin(t*.18f)*14),Mathf.Round(Mathf.Sin(t*.13f)*6));
+        escenario.localScale=escalaInicial*1.035f;
+        escenario.anchoredPosition=posicionInicial+viaje;
+        if(personajes)personajes.anchoredPosition=origenPersonajes+viaje*.6f;
+        if(pareja&&fotogramas!=null){
+            // Reposa, levanta la mano, acaricia dos veces y vuelve a su pose.
+            float ciclo=Mathf.Repeat(t-inicio,16);
+            int frame=0;
+            if(ciclo>=9&&ciclo<9.4f)frame=1;
+            else if(ciclo>=9.4f&&ciclo<12.2f)frame=2+(Mathf.FloorToInt((ciclo-9.4f)*4)%2);
+            else if(ciclo>=12.2f&&ciclo<12.6f)frame=1;
+            pareja.sprite=fotogramas[frame];
+        }
         if(seleccion){Color c=colorSeleccion;c.a*=.9f+.1f*Mathf.Sin(t*2);seleccion.color=c;}
         if(flecha)flecha.rectTransform.anchoredPosition=new Vector2(10+Mathf.Round(Mathf.Sin(t*3)*3),-18);
     }
     void OnDisable()
     {
         if(escenario){escenario.anchoredPosition=posicionInicial;escenario.localScale=escalaInicial;}
+        if(personajes)personajes.anchoredPosition=origenPersonajes;
         if(seleccion)seleccion.color=colorSeleccion;
         if(ambiente)ambiente.gameObject.SetActive(false);
     }
+    void OnDestroy(){if(fotogramas!=null)foreach(var s in fotogramas)if(s)Destroy(s);}
 }
 
 /// <summary>Partículas de pocos píxeles y luces suaves; no intercepta la interfaz.</summary>

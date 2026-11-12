@@ -10,7 +10,7 @@ public sealed class TechnopolisCampana : MonoBehaviour
     MinijuegoAleatorioPanaderia terminal;
     Vector2 punto;
     AudioSource audioEvento;
-    enum Oficina { Calle, Encargo, Sabotaje, Terminal, Reintento, Contrato, Final }
+    enum Oficina { Calle, Encargo, Sabotaje, Terminal, Reintento, Contrato, Final, Diego }
     Oficina oficina;
     Texture2D retratoDonDinero;
     Texture2D retratoDiego;
@@ -19,10 +19,12 @@ public sealed class TechnopolisCampana : MonoBehaviour
     bool calibrando;
     int conexion;
     string objetivo;
+    HabitantesSilicio habitantes;
 
     public void Configurar(int numero, MovimientoJugador personaje)
     {
         nivel = numero;
+        habitantes=FindFirstObjectByType<HabitantesSilicio>();
         jugador = personaje;
         Vector2 origen = jugador.transform.position;
         foreach (GameObject raiz in gameObject.scene.GetRootGameObjects())
@@ -58,7 +60,10 @@ public sealed class TechnopolisCampana : MonoBehaviour
         }
     }
 
-    bool Cerca => ((Vector2)jugador.transform.position - punto).sqrMagnitude <= 2.25f;
+    bool Cerca => ((Vector2)jugador.transform.position - punto).sqrMagnitude <= 2.25f || (habitantes&&habitantes.Cerca(jugador.transform.position));
+    public bool TieneInteraccion => nivel==3&&oficina==Oficina.Calle&&Cerca&&!TechnopolisGameFlow.IsMenuOpen;
+    public string AccionInteraccion => habitantes&&habitantes.CercaDiego(jugador.transform.position)?"Hablar con Diego Byte (E)":"Hablar con Don Dinero (E)";
+    public void AbrirInteraccion(){if(TieneInteraccion)Interactuar();}
     bool TerminalAbierta => terminal && terminal.gameObject.activeInHierarchy;
 
     void Start()
@@ -86,7 +91,7 @@ public sealed class TechnopolisCampana : MonoBehaviour
         {
             if (!terminal) return;
             jugador.enabled = false;
-            oficina = Oficina.Encargo;
+            oficina = habitantes&&habitantes.CercaDiego(jugador.transform.position)?Oficina.Diego:Oficina.Encargo;
             return;
         }
         if (nivel == 2)
@@ -166,6 +171,9 @@ public sealed class TechnopolisCampana : MonoBehaviour
         estadoMostrado = oficina;
         switch (oficina)
         {
+            case Oficina.Diego:
+                dialogoOficina.Mostrar(true,"Así que tú eres Alex… Don Dinero te espera en la entrada.\n\nAquí no basta con tener suerte. Veremos qué sabes hacer.","Volver",()=>{oficina=Oficina.Calle;jugador.enabled=true;},null,null);
+                break;
             case Oficina.Encargo:
                 dialogoOficina.Mostrar(false,
                     "Alex, conecta el módulo y revisa la terminal.\n\nNecesito el diagnóstico antes de aprobar el trabajo.",
@@ -261,6 +269,7 @@ public sealed class TechnopolisCampana : MonoBehaviour
 
     void OnGUI()
     {
+        if(nivel==3)return;
         if (!jugador || cargando || TerminalAbierta || TechnopolisGameFlow.IsMenuOpen ||
             oficina != Oficina.Calle || (!calibrando && !Cerca)) return;
         float ancho = Mathf.Min(630f, Screen.width - 24f);

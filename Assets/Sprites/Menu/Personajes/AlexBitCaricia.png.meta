@@ -1,0 +1,3198 @@
+fileFormatVersion: 2
+guid: 2db16c9702ae87941871d993c493a449
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7656291106433829363
+    second: AlexBitCaricia_0
+  - first:
+      213: 3481099758231773429
+    second: AlexBitCaricia_1
+  - first:
+      213: 6237193887651640305
+    second: AlexBitCaricia_2
+  - first:
+      213: 6448697781976407955
+    second: AlexBitCaricia_3
+  - first:
+      213: -6322925542240839522
+    second: AlexBitCaricia_4
+  - first:
+      213: -8269982245748298948
+    second: AlexBitCaricia_5
+  - first:
+      213: 8447700492919809066
+    second: AlexBitCaricia_6
+  - first:
+      213: 2284014238069661675
+    second: AlexBitCaricia_7
+  - first:
+      213: -6775232818885310014
+    second: AlexBitCaricia_8
+  - first:
+      213: -8947111578570295358
+    second: AlexBitCaricia_9
+  - first:
+      213: -2801119687840640195
+    second: AlexBitCaricia_10
+  - first:
+      213: 866518145436626422
+    second: AlexBitCaricia_11
+  - first:
+      213: 5240671746798706281
+    second: AlexBitCaricia_12
+  - first:
+      213: -6294789591519920476
+    second: AlexBitCaricia_13
+  - first:
+      213: -3529400015894272305
+    second: AlexBitCaricia_14
+  - first:
+      213: 4319640589533731022
+    second: AlexBitCaricia_15
+  - first:
+      213: 6714972090660439959
+    second: AlexBitCaricia_16
+  - first:
+      213: -8035876887484435320
+    second: AlexBitCaricia_17
+  - first:
+      213: 3308346275469345423
+    second: AlexBitCaricia_18
+  - first:
+      213: -8772509374944921483
+    second: AlexBitCaricia_19
+  - first:
+      213: -8052865297052387263
+    second: AlexBitCaricia_20
+  - first:
+      213: 4957389982469747966
+    second: AlexBitCaricia_21
+  - first:
+      213: -1999460295425781762
+    second: AlexBitCaricia_22
+  - first:
+      213: 8812255315794724255
+    second: AlexBitCaricia_23
+  - first:
+      213: -745679284045325447
+    second: AlexBitCaricia_24
+  - first:
+      213: 331139337699655192
+    second: AlexBitCaricia_25
+  - first:
+      213: -2514299891267274703
+    second: AlexBitCaricia_26
+  - first:
+      213: -6426748403625455120
+    second: AlexBitCaricia_27
+  - first:
+      213: 1398815737580617176
+    second: AlexBitCaricia_28
+  - first:
+      213: -2341960194546520531
+    second: AlexBitCaricia_29
+  - first:
+      213: -6143364274433633725
+    second: AlexBitCaricia_30
+  - first:
+      213: -1985800369494940086
+    second: AlexBitCaricia_31
+  - first:
+      213: -762870986902266043
+    second: AlexBitCaricia_32
+  - first:
+      213: -383436080579785263
+    second: AlexBitCaricia_33
+  - first:
+      213: -1463892130436010482
+    second: AlexBitCaricia_34
+  - first:
+      213: 3035348430207538148
+    second: AlexBitCaricia_35
+  - first:
+      213: -4675157743176602906
+    second: AlexBitCaricia_36
+  - first:
+      213: -8624376262060318448
+    second: AlexBitCaricia_37
+  - first:
+      213: 4717927387239066386
+    second: AlexBitCaricia_38
+  - first:
+      213: 591345735613154667
+    second: AlexBitCaricia_39
+  - first:
+      213: -5155814028851233980
+    second: AlexBitCaricia_40
+  - first:
+      213: -10948671188677525
+    second: AlexBitCaricia_41
+  - first:
+      213: -6522327782252489037
+    second: AlexBitCaricia_42
+  - first:
+      213: -4648117895926751210
+    second: AlexBitCaricia_43
+  - first:
+      213: 6342546891632374270
+    second: AlexBitCaricia_44
+  - first:
+      213: 315948100719474418
+    second: AlexBitCaricia_45
+  - first:
+      213: -5029478696796418710
+    second: AlexBitCaricia_46
+  - first:
+      213: 4200148102360643392
+    second: AlexBitCaricia_47
+  - first:
+      213: -3688101635899300854
+    second: AlexBitCaricia_48
+  - first:
+      213: -1541354670224610995
+    second: AlexBitCaricia_49
+  - first:
+      213: -4765955212348484887
+    second: AlexBitCaricia_50
+  - first:
+      213: 7469838725113204910
+    second: AlexBitCaricia_51
+  - first:
+      213: -7913562516719016612
+    second: AlexBitCaricia_52
+  - first:
+      213: 4370778981679881184
+    second: AlexBitCaricia_53
+  - first:
+      213: -2977404404020926292
+    second: AlexBitCaricia_54
+  - first:
+      213: 8658682863104022199
+    second: AlexBitCaricia_55
+  - first:
+      213: 5603758932786762936
+    second: AlexBitCaricia_56
+  - first:
+      213: 614119094487517089
+    second: AlexBitCaricia_57
+  - first:
+      213: -2531351757095519923
+    second: AlexBitCaricia_58
+  - first:
+      213: 7423155242912125100
+    second: AlexBitCaricia_59
+  - first:
+      213: -8235637898419708919
+    second: AlexBitCaricia_60
+  - first:
+      213: -8488472799775359536
+    second: AlexBitCaricia_61
+  - first:
+      213: -4954444719111838349
+    second: AlexBitCaricia_62
+  - first:
+      213: -6528097128920100380
+    second: AlexBitCaricia_63
+  - first:
+      213: -8036896846745381677
+    second: AlexBitCaricia_64
+  - first:
+      213: 3839981410662766776
+    second: AlexBitCaricia_65
+  - first:
+      213: -2493997910014788483
+    second: AlexBitCaricia_66
+  - first:
+      213: -3807874306277842393
+    second: AlexBitCaricia_67
+  - first:
+      213: -4935922882720706098
+    second: AlexBitCaricia_68
+  - first:
+      213: -2018774319209184909
+    second: AlexBitCaricia_69
+  - first:
+      213: 3142398161413900218
+    second: AlexBitCaricia_70
+  - first:
+      213: -8123156086635503379
+    second: AlexBitCaricia_71
+  - first:
+      213: -3255389943980376496
+    second: AlexBitCaricia_72
+  - first:
+      213: 4280312181446819622
+    second: AlexBitCaricia_73
+  - first:
+      213: -882225800223354669
+    second: AlexBitCaricia_74
+  - first:
+      213: -678207209583100800
+    second: AlexBitCaricia_75
+  - first:
+      213: -3251704314003317680
+    second: AlexBitCaricia_76
+  - first:
+      213: -7400685857612218916
+    second: AlexBitCaricia_77
+  - first:
+      213: -7268130824778364077
+    second: AlexBitCaricia_78
+  - first:
+      213: 2075316963602607608
+    second: AlexBitCaricia_79
+  - first:
+      213: -4038998827052027740
+    second: AlexBitCaricia_80
+  - first:
+      213: -8956967610253907350
+    second: AlexBitCaricia_81
+  - first:
+      213: 8191474166160591031
+    second: AlexBitCaricia_82
+  - first:
+      213: 4717037109036741009
+    second: AlexBitCaricia_83
+  - first:
+      213: 4440019100777920517
+    second: AlexBitCaricia_84
+  - first:
+      213: 1125523570802551354
+    second: AlexBitCaricia_85
+  - first:
+      213: -793184983166390137
+    second: AlexBitCaricia_86
+  - first:
+      213: 2563448177080206290
+    second: AlexBitCaricia_87
+  - first:
+      213: -7824593155537513154
+    second: AlexBitCaricia_88
+  - first:
+      213: 1442789951502420014
+    second: AlexBitCaricia_89
+  - first:
+      213: -1822275902203766871
+    second: AlexBitCaricia_90
+  - first:
+      213: 7042600160805481
+    second: AlexBitCaricia_91
+  - first:
+      213: 5605225739452745104
+    second: AlexBitCaricia_92
+  - first:
+      213: 2719630164238959144
+    second: AlexBitCaricia_93
+  - first:
+      213: -6501233199594016030
+    second: AlexBitCaricia_94
+  - first:
+      213: -2581441452457933500
+    second: AlexBitCaricia_95
+  - first:
+      213: -4703941452506462625
+    second: AlexBitCaricia_96
+  - first:
+      213: -8395066533658319185
+    second: AlexBitCaricia_97
+  - first:
+      213: 3185378001982597261
+    second: AlexBitCaricia_98
+  - first:
+      213: 898572206742501624
+    second: AlexBitCaricia_99
+  - first:
+      213: 3021006750529318191
+    second: AlexBitCaricia_100
+  - first:
+      213: -3296194651113996653
+    second: AlexBitCaricia_101
+  - first:
+      213: 6513144523031001918
+    second: AlexBitCaricia_102
+  - first:
+      213: 8898358625984605921
+    second: AlexBitCaricia_103
+  - first:
+      213: -7826249970512828419
+    second: AlexBitCaricia_104
+  - first:
+      213: 2873602362098849081
+    second: AlexBitCaricia_105
+  - first:
+      213: -5976493230137309897
+    second: AlexBitCaricia_106
+  - first:
+      213: -2643230663800113811
+    second: AlexBitCaricia_107
+  - first:
+      213: -8478547478566696764
+    second: AlexBitCaricia_108
+  - first:
+      213: -7803330048453955562
+    second: AlexBitCaricia_109
+  - first:
+      213: -5702147034451468260
+    second: AlexBitCaricia_110
+  - first:
+      213: 7216952939026096620
+    second: AlexBitCaricia_111
+  - first:
+      213: 6613409229497463817
+    second: AlexBitCaricia_112
+  - first:
+      213: 801936562099601170
+    second: AlexBitCaricia_113
+  - first:
+      213: 5701599995985831879
+    second: AlexBitCaricia_114
+  - first:
+      213: 5702885386471287620
+    second: AlexBitCaricia_115
+  - first:
+      213: 4038536679545952420
+    second: AlexBitCaricia_116
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlexBitCaricia_0
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 1225
+        width: 28
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f988ff423c904a60800000000000000
+      internalID: 7656291106433829363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_1
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1232
+        width: 58
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f06a1559c95f4030800000000000000
+      internalID: 3481099758231773429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_2
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 1228
+        width: 38
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f3b6b47bc6fe8650800000000000000
+      internalID: 6237193887651640305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_3
+      rect:
+        serializedVersion: 2
+        x: 890
+        y: 1230
+        width: 39
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39f9d8e47706e7950800000000000000
+      internalID: 6448697781976407955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_4
+      rect:
+        serializedVersion: 2
+        x: 928
+        y: 1230
+        width: 6
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e989d7938b47048a0800000000000000
+      internalID: -6322925542240839522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_5
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1230
+        width: 21
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3ba267b6fe1b3d80800000000000000
+      internalID: -8269982245748298948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_6
+      rect:
+        serializedVersion: 2
+        x: 969
+        y: 1197
+        width: 31
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a24a06927d24c3570800000000000000
+      internalID: 8447700492919809066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 521
+        width: 621
+        height: 706
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bef931a29d272bf10800000000000000
+      internalID: 2284014238069661675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_8
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1201
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c9c5cfd5a989f1a0800000000000000
+      internalID: -6775232818885310014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_9
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 536
+        width: 612
+        height: 690
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c778815c6975d380800000000000000
+      internalID: -8947111578570295358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_10
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 1215
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33d7e02c7c6029d0800000000000000
+      internalID: -2801119687840640195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_11
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 1217
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6fd2e2a89ad760c00800000000000000
+      internalID: 866518145436626422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_12
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1202
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96edc5cff2b9ab840800000000000000
+      internalID: 5240671746798706281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_13
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 1199
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4aef0adb73a64a8a0800000000000000
+      internalID: -6294789591519920476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_14
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1197
+        width: 17
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc62d56926d050fc0800000000000000
+      internalID: -3529400015894272305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_15
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 1193
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec85480da3272fb30800000000000000
+      internalID: 4319640589533731022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_16
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 1199
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7974a7cf98f503d50800000000000000
+      internalID: 6714972090660439959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_17
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 1181
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 884f7b6fb84da7090800000000000000
+      internalID: -8035876887484435320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_18
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 1180
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f82465fb86b99ed20800000000000000
+      internalID: 3308346275469345423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_19
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 1179
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578bf95c339c14680800000000000000
+      internalID: -8772509374944921483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_20
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1177
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1483f11ada97e3090800000000000000
+      internalID: -8052865297052387263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_21
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 1177
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef470367cef2cc440800000000000000
+      internalID: 4957389982469747966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_22
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 1173
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eff06a4747d7044e0800000000000000
+      internalID: -1999460295425781762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_23
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 1178
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f950ef7358b6b4a70800000000000000
+      internalID: 8812255315794724255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_24
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1181
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97b5c1654a0d6a5f0800000000000000
+      internalID: -745679284045325447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_25
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1183
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81efeb22971789400800000000000000
+      internalID: 331139337699655192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_26
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1173
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 138f53af1996b1dd0800000000000000
+      internalID: -2514299891267274703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_27
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 1138
+        width: 18
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0f19815906a9fc6a0800000000000000
+      internalID: -6426748403625455120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_28
+      rect:
+        serializedVersion: 2
+        x: 548
+        y: 1161
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ddf7b88087996310800000000000000
+      internalID: 1398815737580617176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_29
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1164
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2e23fd7c9faf7fd0800000000000000
+      internalID: -2341960194546520531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_30
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 1156
+        width: 14
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342de88cdb26ebaa0800000000000000
+      internalID: -6143364274433633725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_31
+      rect:
+        serializedVersion: 2
+        x: 1048
+        y: 1171
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a462a6dc5150174e0800000000000000
+      internalID: -1985800369494940086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_32
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 1155
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54f1d3811ecb965f0800000000000000
+      internalID: -762870986902266043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_33
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 1130
+        width: 21
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dd49fe8ae2cdaaf0800000000000000
+      internalID: -383436080579785263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_34
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 1129
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0e2fd70dd53fabe0800000000000000
+      internalID: -1463892130436010482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_35
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 1130
+        width: 38
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e35f08b059bf1a20800000000000000
+      internalID: 3035348430207538148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_36
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 1057
+        width: 43
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6eaaa097dc08e1fb0800000000000000
+      internalID: -4675157743176602906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_37
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 1113
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 011659acb7f005880800000000000000
+      internalID: -8624376262060318448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_38
+      rect:
+        serializedVersion: 2
+        x: 1173
+        y: 1062
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21ba87846f1797140800000000000000
+      internalID: 4717927387239066386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_39
+      rect:
+        serializedVersion: 2
+        x: 1228
+        y: 1084
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b650aae30d1e43800800000000000000
+      internalID: 591345735613154667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_40
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 1043
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44bb85a157ed278b0800000000000000
+      internalID: -5155814028851233980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_41
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 701
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6c4907dd3a19dff0800000000000000
+      internalID: -10948671188677525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_42
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 659
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b6dd2650790c75a0800000000000000
+      internalID: -6522327782252489037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_43
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 647
+        width: 42
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 610662386619e7fb0800000000000000
+      internalID: -4648117895926751210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_44
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 663
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef1710f2bc0450850800000000000000
+      internalID: 6342546891632374270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_45
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 669
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f6f7d6af19726400800000000000000
+      internalID: 315948100719474418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_46
+      rect:
+        serializedVersion: 2
+        x: 690
+        y: 630
+        width: 29
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6d0e08c5c3b33ab0800000000000000
+      internalID: -5029478696796418710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_47
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 659
+        width: 7
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047bc3d127ce94a30800000000000000
+      internalID: 4200148102360643392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_48
+      rect:
+        serializedVersion: 2
+        x: 1027
+        y: 663
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a046fa04a1b31dcc0800000000000000
+      internalID: -3688101635899300854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_49
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 670
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d496f5808120c9ae0800000000000000
+      internalID: -1541354670224610995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_50
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 661
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e21c884cfcebddb0800000000000000
+      internalID: -4765955212348484887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_51
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 659
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea054db5eb23aa760800000000000000
+      internalID: 7469838725113204910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_52
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 655
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c55ed13a1d06d2290800000000000000
+      internalID: -7913562516719016612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_53
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 651
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebd5c2935028ac30800000000000000
+      internalID: 4370778981679881184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_54
+      rect:
+        serializedVersion: 2
+        x: 1034
+        y: 645
+        width: 19
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca826a138722ea6d0800000000000000
+      internalID: -2977404404020926292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_55
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 641
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6d3163032d92870800000000000000
+      internalID: 8658682863104022199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_56
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 632
+        width: 18
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b45da33f0d84cd40800000000000000
+      internalID: 5603758932786762936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_57
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 634
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a786bc001ac58800800000000000000
+      internalID: 614119094487517089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_58
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 627
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d49b2c41df4dedcd0800000000000000
+      internalID: -2531351757095519923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_59
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 543
+        width: 121
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca01b562d58540760800000000000000
+      internalID: 7423155242912125100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_60
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 630
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90cd2f537f225bd80800000000000000
+      internalID: -8235637898419708919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_61
+      rect:
+        serializedVersion: 2
+        x: 1203
+        y: 632
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ddf2d366f2e23a80800000000000000
+      internalID: -8488472799775359536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_62
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 568
+        width: 76
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 375670a17c64e3bb0800000000000000
+      internalID: -4954444719111838349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_63
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 580
+        width: 39
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e15873af3a8765a0800000000000000
+      internalID: -6528097128920100380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_64
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 620
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d4d84136e4377090800000000000000
+      internalID: -8036896846745381677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_65
+      rect:
+        serializedVersion: 2
+        x: 1116
+        y: 626
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b858a67fba5a4530800000000000000
+      internalID: 3839981410662766776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_66
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 616
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7c70075d1a836dd0800000000000000
+      internalID: -2493997910014788483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_67
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 599
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722e8f05e76b72bc0800000000000000
+      internalID: -3807874306277842393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_68
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 596
+        width: 23
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1d5b03a44108bb0800000000000000
+      internalID: -4935922882720706098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_69
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 604
+        width: 14
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3710bddd37fdbf3e0800000000000000
+      internalID: -2018774319209184909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_70
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 598
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab78ae98a7a0c9b20800000000000000
+      internalID: 3142398161413900218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_71
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 608
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0e909d390c44f80800000000000000
+      internalID: -8123156086635503379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_72
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 600
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05ebbaff71882d2d0800000000000000
+      internalID: -3255389943980376496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_73
+      rect:
+        serializedVersion: 2
+        x: 1017
+        y: 602
+        width: 6
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62f3aee3049b66b30800000000000000
+      internalID: 4280312181446819622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_74
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 598
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d090061f44b1c3f0800000000000000
+      internalID: -882225800223354669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_75
+      rect:
+        serializedVersion: 2
+        x: 1106
+        y: 584
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08cb0bcd2268696f0800000000000000
+      internalID: -678207209583100800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_76
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 612
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c1a399720afd2d0800000000000000
+      internalID: -3251704314003317680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_77
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 574
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd34ca4c6b7b4990800000000000000
+      internalID: -7400685857612218916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_78
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 600
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35bc408e589622b90800000000000000
+      internalID: -7268130824778364077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_79
+      rect:
+        serializedVersion: 2
+        x: 1007
+        y: 539
+        width: 36
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8fd20eb68c10dcc10800000000000000
+      internalID: 2075316963602607608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_80
+      rect:
+        serializedVersion: 2
+        x: 1021
+        y: 604
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0385167f792f7c0800000000000000
+      internalID: -4038998827052027740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_81
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 588
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6ae22e1a6572b380800000000000000
+      internalID: -8956967610253907350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_82
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 549
+        width: 38
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b88ac49a56fda170800000000000000
+      internalID: 8191474166160591031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_83
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 549
+        width: 63
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 191787c3248467140800000000000000
+      internalID: 4717037109036741009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_84
+      rect:
+        serializedVersion: 2
+        x: 706
+        y: 588
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50831d119dd1e9d30800000000000000
+      internalID: 4440019100777920517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_85
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 580
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3ae30079b9ae9f00800000000000000
+      internalID: 1125523570802551354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_86
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 547
+        width: 44
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7807135d57a0ef4f0800000000000000
+      internalID: -793184983166390137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_87
+      rect:
+        serializedVersion: 2
+        x: 510
+        y: 531
+        width: 43
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d30dfa0982339320800000000000000
+      internalID: 2563448177080206290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_88
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 501
+        width: 30
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e35db344bf5796390800000000000000
+      internalID: -7824593155537513154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_89
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 552
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e280ec011d1d50410800000000000000
+      internalID: 1442789951502420014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_90
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 553
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a7d366c8b9f5b6e0800000000000000
+      internalID: -1822275902203766871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_91
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 543
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96241e02535091000800000000000000
+      internalID: 7042600160805481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_92
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 507
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09505fdbc13c9cd40800000000000000
+      internalID: 5605225739452745104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_93
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 589
+        height: 539
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82286e3a9311eb520800000000000000
+      internalID: 2719630164238959144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_94
+      rect:
+        serializedVersion: 2
+        x: 582
+        y: 506
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e2f83899daf6c5a0800000000000000
+      internalID: -6501233199594016030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_95
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 416
+        width: 28
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 445c6c11da0ec2cd0800000000000000
+      internalID: -2581441452457933500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_96
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 0
+        width: 616
+        height: 542
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f560e17eb2e38beb0800000000000000
+      internalID: -4703941452506462625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_97
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 505
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa6a683777bbe7b80800000000000000
+      internalID: -8395066533658319185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_98
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 468
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88248b7a6cb43c20800000000000000
+      internalID: 3185378001982597261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_99
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 456
+        width: 36
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f8fce349ae587c00800000000000000
+      internalID: 898572206742501624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_100
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 452
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2d6b5532a5cce920800000000000000
+      internalID: 3021006750529318191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_101
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 424
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 39ebec5cd609142d0800000000000000
+      internalID: -3296194651113996653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_102
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 426
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3b3b028f66536a50800000000000000
+      internalID: 6513144523031001918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_103
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 361
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ee68d956025d7b70800000000000000
+      internalID: 8898358625984605921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_104
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 369
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df7eb28fd13936390800000000000000
+      internalID: -7826249970512828419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_105
+      rect:
+        serializedVersion: 2
+        x: 570
+        y: 290
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93510a29f1611e720800000000000000
+      internalID: 2873602362098849081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_106
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 264
+        width: 25
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735832f621b3f0da0800000000000000
+      internalID: -5976493230137309897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_107
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 286
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6536c837bb515bd0800000000000000
+      internalID: -2643230663800113811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_108
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 74
+        width: 120
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c88fb05df5265a80800000000000000
+      internalID: -8478547478566696764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_109
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 56
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61035cc2aa005b390800000000000000
+      internalID: -7803330048453955562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_110
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 33
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c102972cb77edd0b0800000000000000
+      internalID: -5702147034451468260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_111
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 33
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1ac530674c72460800000000000000
+      internalID: 7216952939026096620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_112
+      rect:
+        serializedVersion: 2
+        x: 841
+        y: 23
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9047c76a7ac87cb50800000000000000
+      internalID: 6613409229497463817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_113
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 35
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f385ced0d012b00800000000000000
+      internalID: 801936562099601170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_114
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 23
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7aa1cecf6202f40800000000000000
+      internalID: 5701599995985831879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_115
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 23
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44b23673b08b42f40800000000000000
+      internalID: 5702885386471287620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlexBitCaricia_116
+      rect:
+        serializedVersion: 2
+        x: 977
+        y: 23
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a8d8b486b3cb0830800000000000000
+      internalID: 4038536679545952420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AlexBitCaricia_0: 7656291106433829363
+      AlexBitCaricia_1: 3481099758231773429
+      AlexBitCaricia_10: -2801119687840640195
+      AlexBitCaricia_100: 3021006750529318191
+      AlexBitCaricia_101: -3296194651113996653
+      AlexBitCaricia_102: 6513144523031001918
+      AlexBitCaricia_103: 8898358625984605921
+      AlexBitCaricia_104: -7826249970512828419
+      AlexBitCaricia_105: 2873602362098849081
+      AlexBitCaricia_106: -5976493230137309897
+      AlexBitCaricia_107: -2643230663800113811
+      AlexBitCaricia_108: -8478547478566696764
+      AlexBitCaricia_109: -7803330048453955562
+      AlexBitCaricia_11: 866518145436626422
+      AlexBitCaricia_110: -5702147034451468260
+      AlexBitCaricia_111: 7216952939026096620
+      AlexBitCaricia_112: 6613409229497463817
+      AlexBitCaricia_113: 801936562099601170
+      AlexBitCaricia_114: 5701599995985831879
+      AlexBitCaricia_115: 5702885386471287620
+      AlexBitCaricia_116: 4038536679545952420
+      AlexBitCaricia_12: 5240671746798706281
+      AlexBitCaricia_13: -6294789591519920476
+      AlexBitCaricia_14: -3529400015894272305
+      AlexBitCaricia_15: 4319640589533731022
+      AlexBitCaricia_16: 6714972090660439959
+      AlexBitCaricia_17: -8035876887484435320
+      AlexBitCaricia_18: 3308346275469345423
+      AlexBitCaricia_19: -8772509374944921483
+      AlexBitCaricia_2: 6237193887651640305
+      AlexBitCaricia_20: -8052865297052387263
+      AlexBitCaricia_21: 4957389982469747966
+      AlexBitCaricia_22: -1999460295425781762
+      AlexBitCaricia_23: 8812255315794724255
+      AlexBitCaricia_24: -745679284045325447
+      AlexBitCaricia_25: 331139337699655192
+      AlexBitCaricia_26: -2514299891267274703
+      AlexBitCaricia_27: -6426748403625455120
+      AlexBitCaricia_28: 1398815737580617176
+      AlexBitCaricia_29: -2341960194546520531
+      AlexBitCaricia_3: 6448697781976407955
+      AlexBitCaricia_30: -6143364274433633725
+      AlexBitCaricia_31: -1985800369494940086
+      AlexBitCaricia_32: -762870986902266043
+      AlexBitCaricia_33: -383436080579785263
+      AlexBitCaricia_34: -1463892130436010482
+      AlexBitCaricia_35: 3035348430207538148
+      AlexBitCaricia_36: -4675157743176602906
+      AlexBitCaricia_37: -8624376262060318448
+      AlexBitCaricia_38: 4717927387239066386
+      AlexBitCaricia_39: 591345735613154667
+      AlexBitCaricia_4: -6322925542240839522
+      AlexBitCaricia_40: -5155814028851233980
+      AlexBitCaricia_41: -10948671188677525
+      AlexBitCaricia_42: -6522327782252489037
+      AlexBitCaricia_43: -4648117895926751210
+      AlexBitCaricia_44: 6342546891632374270
+      AlexBitCaricia_45: 315948100719474418
+      AlexBitCaricia_46: -5029478696796418710
+      AlexBitCaricia_47: 4200148102360643392
+      AlexBitCaricia_48: -3688101635899300854
+      AlexBitCaricia_49: -1541354670224610995
+      AlexBitCaricia_5: -8269982245748298948
+      AlexBitCaricia_50: -4765955212348484887
+      AlexBitCaricia_51: 7469838725113204910
+      AlexBitCaricia_52: -7913562516719016612
+      AlexBitCaricia_53: 4370778981679881184
+      AlexBitCaricia_54: -2977404404020926292
+      AlexBitCaricia_55: 8658682863104022199
+      AlexBitCaricia_56: 5603758932786762936
+      AlexBitCaricia_57: 614119094487517089
+      AlexBitCaricia_58: -2531351757095519923
+      AlexBitCaricia_59: 7423155242912125100
+      AlexBitCaricia_6: 8447700492919809066
+      AlexBitCaricia_60: -8235637898419708919
+      AlexBitCaricia_61: -8488472799775359536
+      AlexBitCaricia_62: -4954444719111838349
+      AlexBitCaricia_63: -6528097128920100380
+      AlexBitCaricia_64: -8036896846745381677
+      AlexBitCaricia_65: 3839981410662766776
+      AlexBitCaricia_66: -2493997910014788483
+      AlexBitCaricia_67: -3807874306277842393
+      AlexBitCaricia_68: -4935922882720706098
+      AlexBitCaricia_69: -2018774319209184909
+      AlexBitCaricia_7: 2284014238069661675
+      AlexBitCaricia_70: 3142398161413900218
+      AlexBitCaricia_71: -8123156086635503379
+      AlexBitCaricia_72: -3255389943980376496
+      AlexBitCaricia_73: 4280312181446819622
+      AlexBitCaricia_74: -882225800223354669
+      AlexBitCaricia_75: -678207209583100800
+      AlexBitCaricia_76: -3251704314003317680
+      AlexBitCaricia_77: -7400685857612218916
+      AlexBitCaricia_78: -7268130824778364077
+      AlexBitCaricia_79: 2075316963602607608
+      AlexBitCaricia_8: -6775232818885310014
+      AlexBitCaricia_80: -4038998827052027740
+      AlexBitCaricia_81: -8956967610253907350
+      AlexBitCaricia_82: 8191474166160591031
+      AlexBitCaricia_83: 4717037109036741009
+      AlexBitCaricia_84: 4440019100777920517
+      AlexBitCaricia_85: 1125523570802551354
+      AlexBitCaricia_86: -793184983166390137
+      AlexBitCaricia_87: 2563448177080206290
+      AlexBitCaricia_88: -7824593155537513154
+      AlexBitCaricia_89: 1442789951502420014
+      AlexBitCaricia_9: -8947111578570295358
+      AlexBitCaricia_90: -1822275902203766871
+      AlexBitCaricia_91: 7042600160805481
+      AlexBitCaricia_92: 5605225739452745104
+      AlexBitCaricia_93: 2719630164238959144
+      AlexBitCaricia_94: -6501233199594016030
+      AlexBitCaricia_95: -2581441452457933500
+      AlexBitCaricia_96: -4703941452506462625
+      AlexBitCaricia_97: -8395066533658319185
+      AlexBitCaricia_98: 3185378001982597261
+      AlexBitCaricia_99: 898572206742501624
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

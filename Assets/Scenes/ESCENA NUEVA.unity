@@ -2284,6 +2284,31 @@ MonoBehaviour:
   escenario: {fileID: 1741259687}
   seleccion: {fileID: 260656913}
   flecha: {fileID: 1349918285}
+  caricias: {fileID: 2800000, guid: 2db16c9702ae87941871d993c493a449, type: 3}
+  recortesCaricia:
+  - serializedVersion: 2
+    x: 22
+    y: 724
+    width: 553
+    height: 444
+  - serializedVersion: 2
+    x: 645
+    y: 724
+    width: 553
+    height: 444
+  - serializedVersion: 2
+    x: 22
+    y: 93
+    width: 553
+    height: 444
+  - serializedVersion: 2
+    x: 645
+    y: 93
+    width: 553
+    height: 444
+  alexSentado: {fileID: 1509693049}
+  bitSentado: {fileID: 338734645}
+  personajes: {fileID: 4905474}
 --- !u!1 &1407997179
 GameObject:
   m_ObjectHideFlags: 0

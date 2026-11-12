@@ -186,6 +186,7 @@ public static class TechnopolisMenuVisualBuilder
         animacion.escenario=scenePlate;
         animacion.seleccion=selection;
         animacion.flecha=arrow;
+        ConfigurarCariciaMenu.Aplicar(animacion,characters);
         runtime.optionsPanel = optionsPanel.gameObject;
         runtime.optionsRows = optionsRows;
         runtime.optionsLabels = optionsLabels;

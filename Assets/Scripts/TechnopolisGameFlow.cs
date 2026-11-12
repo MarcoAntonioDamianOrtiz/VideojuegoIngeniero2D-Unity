@@ -45,7 +45,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
 
     public static bool HasSavedGame => PlayerPrefs.GetInt(SaveVersion, 0) == 1;
     public static bool CanContinue => sessionStarted || HasSavedGame || PlayerPrefs.HasKey(NivelGuardado);
-    public static bool IsMenuOpen => menuOpen || HistoriaAlexIntro.IsPlaying;
+    public static bool IsMenuOpen => menuOpen || HistoriaAlexIntro.IsPlaying || MapaBarrioExpandido.Abierto;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Initialize()
@@ -246,7 +246,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
 
     void Update()
     {
-        if (!sessionStarted || IsMenuOpen || Time.unscaledTime < HistoriaAlexIntro.ReanudarEn) return;
+        if (!sessionStarted || IsMenuOpen || Time.unscaledTime < HistoriaAlexIntro.ReanudarEn || Time.unscaledTime < MapaBarrioExpandido.ReanudarEn) return;
 
         bool open = Input.GetKeyDown(KeyCode.Escape);
 #if ENABLE_INPUT_SYSTEM

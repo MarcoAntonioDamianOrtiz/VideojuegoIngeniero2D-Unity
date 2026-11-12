@@ -16,10 +16,11 @@ public static class BitRutaObstaculos
         var queue=new Queue<int>();parent[start]=-1;queue.Enqueue(start);
         var overlaps=new Collider2D[16];var filter=new ContactFilter2D();filter.useTriggers=false;filter.SetLayerMask(Physics2D.GetLayerCollisionMask(caja.gameObject.layer));
         Vector2 offset=(Vector2)caja.bounds.center-(Vector2)caja.transform.position;
-        int iterations=0;
+        int iterations=0, final=-1;
         while(queue.Count>0&&parent[goal]==-2&&iterations++<12000)
         {
             int cell=queue.Dequeue(),x=cell%w,y=cell/w;
+            if(Vector2.Distance(min+new Vector2(x,y)*paso,hasta)<.65f){final=cell;break;}
             foreach(int next in new[]{x>0?cell-1:-1,x<w-1?cell+1:-1,y>0?cell-w:-1,y<h-1?cell+w:-1})
             {
                 if(next<0||parent[next]!=-2)continue;
@@ -31,8 +32,9 @@ public static class BitRutaObstaculos
                 parent[next]=cell;queue.Enqueue(next);
             }
         }
-        var result=new List<Vector2>();if(parent[goal]<-1)return result;
-        for(int c=goal;c!=start&&c>=0;c=parent[c])result.Add(min+new Vector2(c%w,c/w)*paso);
+        if(final<0&&parent[goal]>=-1)final=goal;
+        var result=new List<Vector2>();if(final<0)return result;
+        for(int c=final;c!=start&&c>=0;c=parent[c])result.Add(min+new Vector2(c%w,c/w)*paso);
         result.Reverse();return result;
     }
 }

@@ -19,6 +19,7 @@ public sealed class TechnopolisMenuAnimacion : MonoBehaviour
     Vector3 escalaInicial;
     Color colorSeleccion;
     MenuAmbientePixel ambiente;
+    static readonly int[] CariciaSuave={0,1,2,3,4,5,6,7,6,5,4,5,6,7,8,9,10,11,0};
 
     void Awake()
     {
@@ -27,16 +28,23 @@ public sealed class TechnopolisMenuAnimacion : MonoBehaviour
         escalaInicial=escenario.localScale;
         colorSeleccion=seleccion?seleccion.color:Color.white;
         inicio=Time.unscaledTime;
+        PermitirMovimientoSuave(escenario);
+        if(personajes)PermitirMovimientoSuave(personajes);
         if(personajes)origenPersonajes=personajes.anchoredPosition;
-        if(caricias&&recortesCaricia!=null&&recortesCaricia.Length==4&&personajes){
-            fotogramas=new Sprite[4];
-            for(int i=0;i<4;i++)fotogramas[i]=Sprite.Create(caricias,recortesCaricia[i],new Vector2(.5f,0),100,0,SpriteMeshType.FullRect);
+        if(caricias&&recortesCaricia!=null&&recortesCaricia.Length>=4&&personajes){
+            fotogramas=new Sprite[recortesCaricia.Length];
+            for(int i=0;i<fotogramas.Length;i++)fotogramas[i]=Sprite.Create(caricias,recortesCaricia[i],new Vector2(.5f,0),100,0,SpriteMeshType.FullRect);
             var go=new GameObject("Alex y Bit · caricia",typeof(RectTransform),typeof(CanvasRenderer),typeof(Image));
             pareja=go.GetComponent<Image>();pareja.raycastTarget=false;pareja.preserveAspect=true;
             var rt=pareja.rectTransform;rt.SetParent(personajes,false);rt.anchorMin=rt.anchorMax=rt.pivot=Vector2.zero;
             rt.anchoredPosition=new Vector2(375,98);rt.sizeDelta=new Vector2(257*recortesCaricia[0].width/recortesCaricia[0].height,257);
             pareja.sprite=fotogramas[0];if(alexSentado)alexSentado.enabled=false;if(bitSentado)bitSentado.enabled=false;
         }
+    }
+    static void PermitirMovimientoSuave(RectTransform rect)
+    {
+        var canvas=rect.GetComponent<Canvas>();if(!canvas)canvas=rect.gameObject.AddComponent<Canvas>();
+        canvas.overridePixelPerfect=true;canvas.pixelPerfect=false;
     }
     void OnEnable()
     {
@@ -50,21 +58,27 @@ public sealed class TechnopolisMenuAnimacion : MonoBehaviour
     void LateUpdate()
     {
         float t=Time.unscaledTime;
-        Vector2 viaje=new Vector2(Mathf.Round(Mathf.Sin(t*.18f)*14),Mathf.Round(Mathf.Sin(t*.13f)*6));
+        float elapsed=t-inicio;
+        Vector2 viaje=new Vector2(Mathf.Sin(elapsed*.18f)*14,Mathf.Sin(elapsed*.13f)*6);
         escenario.localScale=escalaInicial*1.035f;
         escenario.anchoredPosition=posicionInicial+viaje;
         if(personajes)personajes.anchoredPosition=origenPersonajes+viaje*.6f;
         if(pareja&&fotogramas!=null){
-            // Reposa, levanta la mano, acaricia dos veces y vuelve a su pose.
+            // Las poses intermedias conservan los pies en la misma línea del tejado.
             float ciclo=Mathf.Repeat(t-inicio,16);
             int frame=0;
-            if(ciclo>=9&&ciclo<9.4f)frame=1;
-            else if(ciclo>=9.4f&&ciclo<12.2f)frame=2+(Mathf.FloorToInt((ciclo-9.4f)*4)%2);
-            else if(ciclo>=12.2f&&ciclo<12.6f)frame=1;
+            if(fotogramas.Length>=12){
+                int paso=Mathf.FloorToInt((ciclo-8)*8);
+                if(paso>=0&&paso<CariciaSuave.Length)frame=CariciaSuave[paso];
+            }else{
+                if(ciclo>=9&&ciclo<9.4f)frame=1;
+                else if(ciclo>=9.4f&&ciclo<12.2f)frame=2+(Mathf.FloorToInt((ciclo-9.4f)*4)%2);
+                else if(ciclo>=12.2f&&ciclo<12.6f)frame=1;
+            }
             pareja.sprite=fotogramas[frame];
         }
         if(seleccion){Color c=colorSeleccion;c.a*=.9f+.1f*Mathf.Sin(t*2);seleccion.color=c;}
-        if(flecha)flecha.rectTransform.anchoredPosition=new Vector2(10+Mathf.Round(Mathf.Sin(t*3)*3),-18);
+        if(flecha)flecha.rectTransform.anchoredPosition=new Vector2(10+Mathf.Sin(t*2.2f)*3,-18);
     }
     void OnDisable()
     {
@@ -80,11 +94,10 @@ public sealed class TechnopolisMenuAnimacion : MonoBehaviour
 public sealed class MenuAmbientePixel : MaskableGraphic
 {
     readonly UIVertex[] quad=new UIVertex[4];
-    int anterior=-1;
-    void Update(){int frame=Mathf.FloorToInt(Time.unscaledTime*12);if(frame==anterior)return;anterior=frame;SetVerticesDirty();}
+    void Update(){SetVerticesDirty();}
     protected override void OnPopulateMesh(VertexHelper vh)
     {
-        vh.Clear();Rect r=rectTransform.rect;float w=r.width,h=r.height,t=Mathf.Floor(Time.unscaledTime*12)/12;
+        vh.Clear();Rect r=rectTransform.rect;float w=r.width,h=r.height,t=Time.unscaledTime;
         Vector2 fire=new Vector2(.604f*w,.255f*h);
         for(int i=0;i<15;i++){
             float age=Mathf.Repeat(t*.22f+i*.137f,1);
@@ -111,7 +124,7 @@ public sealed class MenuAmbientePixel : MaskableGraphic
     }
     void Draw(VertexHelper vh,Rect r,Vector2 center,Vector2 size,Color color)
     {
-        center+=r.min;center.x=Mathf.Round(center.x);center.y=Mathf.Round(center.y);
+        center+=r.min;
         Vector2 lo=center-size*.5f,hi=center+size*.5f;
         for(int i=0;i<4;i++){quad[i]=UIVertex.simpleVert;quad[i].color=color;quad[i].uv0=Vector2.zero;}
         quad[0].position=new Vector3(lo.x,lo.y);quad[1].position=new Vector3(lo.x,hi.y);quad[2].position=new Vector3(hi.x,hi.y);quad[3].position=new Vector3(hi.x,lo.y);vh.AddUIVertexQuad(quad);

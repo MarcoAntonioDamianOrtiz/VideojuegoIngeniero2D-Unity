@@ -2147,6 +2147,7 @@ GameObject:
   - component: {fileID: 1405327274}
   - component: {fileID: 1405327273}
   - component: {fileID: 1405327277}
+  - component: {fileID: 1405327278}
   m_Layer: 0
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -2284,31 +2285,83 @@ MonoBehaviour:
   escenario: {fileID: 1741259687}
   seleccion: {fileID: 260656913}
   flecha: {fileID: 1349918285}
-  caricias: {fileID: 2800000, guid: 2db16c9702ae87941871d993c493a449, type: 3}
+  caricias: {fileID: 2800000, guid: ece5257a37aeb63409691008b9c41573, type: 3}
   recortesCaricia:
   - serializedVersion: 2
-    x: 22
-    y: 724
-    width: 553
-    height: 444
+    x: 15
+    y: 788
+    width: 318
+    height: 263
   - serializedVersion: 2
-    x: 645
-    y: 724
-    width: 553
-    height: 444
+    x: 377
+    y: 789
+    width: 318
+    height: 263
   - serializedVersion: 2
-    x: 22
-    y: 93
-    width: 553
-    height: 444
+    x: 739
+    y: 788
+    width: 318
+    height: 263
   - serializedVersion: 2
-    x: 645
-    y: 93
-    width: 553
-    height: 444
+    x: 1101
+    y: 788
+    width: 318
+    height: 263
+  - serializedVersion: 2
+    x: 15
+    y: 426
+    width: 318
+    height: 263
+  - serializedVersion: 2
+    x: 377
+    y: 426
+    width: 318
+    height: 263
+  - serializedVersion: 2
+    x: 739
+    y: 426
+    width: 318
+    height: 263
+  - serializedVersion: 2
+    x: 1101
+    y: 426
+    width: 318
+    height: 263
+  - serializedVersion: 2
+    x: 15
+    y: 64
+    width: 318
+    height: 263
+  - serializedVersion: 2
+    x: 377
+    y: 64
+    width: 318
+    height: 263
+  - serializedVersion: 2
+    x: 739
+    y: 64
+    width: 318
+    height: 263
+  - serializedVersion: 2
+    x: 1101
+    y: 64
+    width: 318
+    height: 263
   alexSentado: {fileID: 1509693049}
   bitSentado: {fileID: 338734645}
   personajes: {fileID: 4905474}
+--- !u!114 &1405327278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1405327272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481bdb4d9d6808b4e991e801f861a556, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TechnopolisMenuAudio
 --- !u!1 &1407997179
 GameObject:
   m_ObjectHideFlags: 0

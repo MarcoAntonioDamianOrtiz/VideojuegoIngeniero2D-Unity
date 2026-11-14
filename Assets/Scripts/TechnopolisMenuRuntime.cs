@@ -33,6 +33,7 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
     int selected;
     float nextStickMove;
     Vector2 lastMousePosition;
+    TechnopolisMenuAudio audioMenu;
 
     void Awake()
     {
@@ -50,6 +51,8 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
         if (PlayerPrefs.HasKey(FullscreenKey))
             Screen.fullScreen = PlayerPrefs.GetInt(FullscreenKey, 1) == 1;
         lastMousePosition = Input.mousePosition;
+        audioMenu=GetComponent<TechnopolisMenuAudio>();
+        if(!audioMenu)audioMenu=gameObject.AddComponent<TechnopolisMenuAudio>();
         OpenMain();
     }
 
@@ -57,7 +60,7 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Backspace) || ControllerBack())
         {
-            if (page != Page.Main) OpenMain();
+            if (page != Page.Main){audioMenu.Volver();OpenMain();}
             return;
         }
 
@@ -116,6 +119,7 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
     void MoveSelection(int direction)
     {
         if (page == Page.Credits) return;
+        int previous=selected;
         int count = page == Page.Main ? mainRows.Length : optionsRows.Length;
         for (int attempt = 0; attempt < count; attempt++)
         {
@@ -123,6 +127,7 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
             if (page != Page.Main || selected != 1 || TechnopolisGameFlow.CanContinue) break;
         }
         RefreshSelection();
+        if(selected!=previous)audioMenu.Mover();
     }
 
     void RefreshSelection()
@@ -167,6 +172,7 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
 
     void ChangeOption(int direction)
     {
+        audioMenu.Mover();
         if (selected == 0)
         {
             int current = Mathf.Clamp(PlayerPrefs.GetInt(VolumeKey, 100), 0, 100);
@@ -186,6 +192,8 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
 
     void Activate()
     {
+        if(page==Page.Credits||(page==Page.Options&&selected==2))audioMenu.Volver();
+        else if(page!=Page.Options)audioMenu.Confirmar();
         if (page == Page.Options)
         {
             if (selected == 2) OpenMain();
@@ -200,8 +208,8 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
 
         switch (selected)
         {
-            case 0: TechnopolisGameFlow.StartNewGame(); break;
-            case 1: if (TechnopolisGameFlow.CanContinue) TechnopolisGameFlow.ContinueGame(); break;
+            case 0: audioMenu.PrepararSalida();TechnopolisGameFlow.StartNewGame(); break;
+            case 1: if (TechnopolisGameFlow.CanContinue){audioMenu.PrepararSalida();TechnopolisGameFlow.ContinueGame();}break;
             case 2: OpenOptions(); break;
             case 3: OpenCredits(); break;
             case 4:
@@ -231,6 +239,7 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
             {
                 selected = i;
                 RefreshSelection();
+                audioMenu.Mover();
             }
             if (Input.GetMouseButtonDown(0)) Activate();
             return;

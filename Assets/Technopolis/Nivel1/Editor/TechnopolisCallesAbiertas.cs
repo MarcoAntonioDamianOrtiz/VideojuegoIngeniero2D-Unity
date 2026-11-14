@@ -83,7 +83,7 @@ public static class TechnopolisCallesAbiertas
         for(int y=0;y<lado;y++)for(int x=0;x<lado;x++)
         {
             Vector2 p=new Vector2((x+.5f)/16f,64-(y+.5f)/16f);bool road=Calles.Any(c=>c.Contains(p));
-            if(!road||Terrazas.Skip(1).Any(t=>t.Contains(p)))continue;
+            if(!road||Terrazas.Skip(1).Any(t=>t.xMin!=34&&t.Contains(p)))continue;
             uint hash=Hash(x,y);
             float moteado=Mathf.PerlinNoise(x*.018f,y*.018f);
             int ruido=(int)(hash&7)-3+Mathf.RoundToInt((moteado-.5f)*24);
@@ -98,7 +98,10 @@ public static class TechnopolisCallesAbiertas
             bool ripio=edge<.38f&&(hash&31)<5;
             bool surco=edge>.55f&&edge<.72f&&moteado>.46f;
             if(surco)extra-=10;
-            pixels[y*lado+x]=piedra||ripio?new Color32((byte)(139+ruido),(byte)(126+ruido),(byte)(99+ruido),alpha):new Color32((byte)(179+ruido+extra+centro),(byte)(140+ruido+extra+centro),(byte)(87+ruido+extra+centro),alpha);
+            bool bordePiedra=edge>.18f&&edge<.63f;
+            int junta=(x+(y/4%2)*3)%6;
+            if(bordePiedra){int tono=(int)(Hash(x/6,y/4)%25)-12;bool union=junta==0||y%4==0;pixels[y*lado+x]=union?new Color32(105,92,67,alpha):new Color32((byte)(158+tono),(byte)(145+tono),(byte)(114+tono),alpha);}
+            else pixels[y*lado+x]=piedra||ripio?new Color32((byte)(139+ruido),(byte)(126+ruido),(byte)(99+ruido),alpha):new Color32((byte)(179+ruido+extra+centro),(byte)(140+ruido+extra+centro),(byte)(87+ruido+extra+centro),alpha);
         }
         texture.SetPixels32(pixels);texture.Apply();File.WriteAllBytes(Suelo,texture.EncodeToPNG());UnityEngine.Object.DestroyImmediate(texture);AssetDatabase.ImportAsset(Suelo);
         var importer=(TextureImporter)AssetImporter.GetAtPath(Suelo);importer.textureType=TextureImporterType.Sprite;importer.spriteImportMode=SpriteImportMode.Single;importer.filterMode=FilterMode.Point;importer.mipmapEnabled=false;importer.spritePixelsPerUnit=16;importer.textureCompression=TextureImporterCompression.Uncompressed;importer.userData="Suelo original procedural para las calles de TECHNOPOLIS. Generado por TechnopolisCallesAbiertas.cs, sin fuentes externas.";importer.SaveAndReimport();

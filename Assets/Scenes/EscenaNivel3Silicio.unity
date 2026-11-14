@@ -108684,6 +108684,7 @@ GameObject:
   - component: {fileID: 485302489}
   - component: {fileID: 485302491}
   - component: {fileID: 485302490}
+  - component: {fileID: 485302492}
   m_Layer: 0
   m_Name: DiegoByte_Npc
   m_TagString: Untagged
@@ -108744,7 +108745,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 13.4125, y: 18.3125}
+    oldSize: {x: 10.73, y: 14.66}
     newSize: {x: 13.4125, y: 18.3125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -108811,6 +108812,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &485302492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 485302488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bd1b4634f238a47a9bab3668dac908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCBarrioAnimado
 --- !u!1 &486911283
 GameObject:
   m_ObjectHideFlags: 0
@@ -359059,6 +359072,7 @@ GameObject:
   - component: {fileID: 1264261134}
   - component: {fileID: 1264261136}
   - component: {fileID: 1264261135}
+  - component: {fileID: 1264261137}
   m_Layer: 0
   m_Name: DonDinero_Npc
   m_TagString: Untagged
@@ -359186,6 +359200,18 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1264261137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264261133}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f1bd1b4634f238a47a9bab3668dac908, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCBarrioAnimado
 --- !u!1 &1266167450
 GameObject:
   m_ObjectHideFlags: 0

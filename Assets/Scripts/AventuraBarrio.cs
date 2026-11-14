@@ -205,6 +205,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
             var npc=new GameObject("Don Dinero · encargos");npc.transform.position=punto;var sr=npc.AddComponent<SpriteRenderer>();var texture=Resources.Load<Texture2D>("Personajes/DonDineroCuerpoCompleto");
             if(texture){sr.sprite=Sprite.Create(texture,new Rect(0,0,texture.width,texture.height),new Vector2(.5f,0),texture.height/2.4f);sr.sortingOrder=TechnopolisOrdenBarrio.Orden(punto.y,1.25f);}
             var collider=npc.AddComponent<BoxCollider2D>();collider.size=new Vector2(.5f,.3f);collider.offset=new Vector2(0,.15f);
+            npc.AddComponent<NPCBarrioAnimado>();
             encargos.Add(new Encargo{id="inventario",nombre="Inventario sin pérdidas",personaje="Don Dinero",pago=6000,reputacion=20,punto=punto,preguntas=new[]{"El inventario tiene 8 piezas y vendes 3. ¿Cuántas quedan?","¿Qué dato identifica cada producto sin confundirlo?","¿Qué validas antes de registrar una venta?"},opciones=new[]{new[]{"11","5","3"},new[]{"El identificador único","El color de la pantalla","La posición del botón"},new[]{"Que haya existencias","Que el sonido sea fuerte","Que el nombre sea largo"}},respuestas=new[]{1,0,0}});
             encargos.Add(new Encargo{id="respaldo",nombre="Respaldo del negocio",personaje="Don Dinero",pago=6000,reputacion=20,punto=punto,preguntas=new[]{"¿Dónde conservas una copia segura?","Antes de cambiar datos importantes…","¿Cómo verificas un respaldo?"},opciones=new[]{new[]{"Solo en la memoria RAM","En otro almacenamiento protegido","En la papelera"},new[]{"Borras todo","Desactivas controles","Guardas una copia"},new[]{"Pruebas restaurarlo","Cambias el icono","Cierras la ventana"}},respuestas=new[]{1,2,0}});
         }
@@ -273,6 +274,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
     }
     string Prompt()
     {
+        if(nivel==1&&!UnityEngine.Device.Application.isMobilePlatform&&ramonaInteraccion&&ramonaInteraccion.PuedeInteractuar&&!ramonaInteraccion.DialogoActivo)return "Hablar con Doña Ramona (E)";
         if(nivel==3){if(!oficinaSilicio)oficinaSilicio=FindFirstObjectByType<TechnopolisCampana>();if(oficinaSilicio&&oficinaSilicio.TieneInteraccion)return oficinaSilicio.AccionInteraccion;}
         if(objetoHueso&&Vector2.Distance(jugador.position,hueso)<1.6f)return "Recoger el hueso de Bit (E)";
         if(nivel<3&&Vector2.Distance(jugador.position,salida)<4)return puertaAbierta?"Cruzar al siguiente distrito (E)":"Revisar requisitos del acceso (E)";
@@ -283,6 +285,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
     void Interactuar()
     {
         if(modal.activeSelf||!movimiento.enabled)return;
+        if(nivel==1&&ramonaInteraccion&&ramonaInteraccion.PuedeInteractuar){ramonaInteraccion.Interactuar();return;}
         if(nivel==3&&oficinaSilicio&&oficinaSilicio.TieneInteraccion){oficinaSilicio.AbrirInteraccion();return;}
         if(objetoHueso&&Vector2.Distance(jugador.position,hueso)<1.6f){ProgresoTechnopolis.Premiar("hueso",0,5);ProgresoTechnopolis.CuidarBit(25);if(!ProgresoTechnopolis.Completada("panaderia"))ProgresoTechnopolis.Activa="panaderia";Destroy(objetoHueso);Avisar("¡Bit encontró su hueso! +5 reputación y +25 bienestar");return;}
         if(nivel<3&&Vector2.Distance(jugador.position,salida)<4){if(puertaAbierta)TechnopolisGameFlow.AvanzarCampana(nivel+1);else Avisar("Para abrir el acceso necesitas "+ProgresoTechnopolis.Requisito(nivel+1));return;}

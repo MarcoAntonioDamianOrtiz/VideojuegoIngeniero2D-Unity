@@ -52,12 +52,12 @@ public sealed class TechnopolisOrdenBarrio : MonoBehaviour
     void ActualizarCiudad()
     {
         if (jugador) jugador.sortingOrder = OrdenCiudad(jugador.bounds.min.y);
-        perro.sortingOrder = OrdenCiudad(perro.bounds.min.y);
+        if(perro) perro.sortingOrder = OrdenCiudad(perro.bounds.min.y);
     }
 
     void LateUpdate()
     {
-        if (perro)
+        if (perro || (Application.isPlaying && TechnopolisGameFlow.EsNivel2(gameObject.scene.name)))
         {
             if (Application.isPlaying) ActualizarCiudad();
             return;

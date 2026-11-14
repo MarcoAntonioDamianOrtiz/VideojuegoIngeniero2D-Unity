@@ -18,6 +18,7 @@ public class InteraccionDonaRamona : MonoBehaviour
     // Estados internos
     private bool jugadorEnTrigger = false;
     private bool dialogoActivo = false;
+    private int ultimoFotogramaInteraccion = -1;
 
     void Start()
     {
@@ -27,7 +28,7 @@ public class InteraccionDonaRamona : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E)) Interactuar();
+        if (!TechnopolisGameFlow.IsMenuOpen && Input.GetKeyDown(KeyCode.E)) Interactuar();
     }
 
     public bool PuedeInteractuar => isActiveAndEnabled && jugadorEnTrigger &&
@@ -38,7 +39,8 @@ public class InteraccionDonaRamona : MonoBehaviour
     // Lo llaman tanto el teclado como los controles táctiles.
     public void Interactuar()
     {
-        if (!PuedeInteractuar) return;
+        if (!PuedeInteractuar || ultimoFotogramaInteraccion == Time.frameCount) return;
+        ultimoFotogramaInteraccion = Time.frameCount;
 
         if (dialogoActivo) CerrarDialogoYAbrirMinijuego();
         else AbrirDialogo();

@@ -1,0 +1,2964 @@
+fileFormatVersion: 2
+guid: 58991109c4b86654f8d112a88cdc1efd
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6674141815471562111
+    second: DiegoByteAnimado_0
+  - first:
+      213: 3645141463507187683
+    second: DiegoByteAnimado_1
+  - first:
+      213: -4231985526250487425
+    second: DiegoByteAnimado_2
+  - first:
+      213: -1579857916899752094
+    second: DiegoByteAnimado_3
+  - first:
+      213: -8617679025542114669
+    second: DiegoByteAnimado_4
+  - first:
+      213: 6427568912952051065
+    second: DiegoByteAnimado_5
+  - first:
+      213: 2396689437428747209
+    second: DiegoByteAnimado_6
+  - first:
+      213: -5358232406407968036
+    second: DiegoByteAnimado_7
+  - first:
+      213: 9152590321313943693
+    second: DiegoByteAnimado_8
+  - first:
+      213: 68489203458606741
+    second: DiegoByteAnimado_9
+  - first:
+      213: -20894020189582868
+    second: DiegoByteAnimado_10
+  - first:
+      213: -3529581701385981303
+    second: DiegoByteAnimado_11
+  - first:
+      213: -5340053821661065052
+    second: DiegoByteAnimado_12
+  - first:
+      213: -5244017812013166335
+    second: DiegoByteAnimado_13
+  - first:
+      213: 8773675706635852222
+    second: DiegoByteAnimado_14
+  - first:
+      213: 5369347608815630404
+    second: DiegoByteAnimado_15
+  - first:
+      213: -4793803635766641447
+    second: DiegoByteAnimado_16
+  - first:
+      213: -2367555469132857567
+    second: DiegoByteAnimado_17
+  - first:
+      213: 2914221569654967341
+    second: DiegoByteAnimado_18
+  - first:
+      213: 5043248937278321133
+    second: DiegoByteAnimado_19
+  - first:
+      213: -6731852780224260727
+    second: DiegoByteAnimado_20
+  - first:
+      213: 5550690266617796807
+    second: DiegoByteAnimado_21
+  - first:
+      213: -5798959648190471418
+    second: DiegoByteAnimado_22
+  - first:
+      213: -5503143935370642383
+    second: DiegoByteAnimado_23
+  - first:
+      213: -5662607002502246747
+    second: DiegoByteAnimado_24
+  - first:
+      213: -3757514491690971439
+    second: DiegoByteAnimado_25
+  - first:
+      213: 4018749326142932098
+    second: DiegoByteAnimado_26
+  - first:
+      213: -9205596181859094463
+    second: DiegoByteAnimado_27
+  - first:
+      213: 5830540752783259382
+    second: DiegoByteAnimado_28
+  - first:
+      213: 4554358038988444045
+    second: DiegoByteAnimado_29
+  - first:
+      213: -5479654606227296932
+    second: DiegoByteAnimado_30
+  - first:
+      213: -2331760209429047977
+    second: DiegoByteAnimado_31
+  - first:
+      213: -5410007039025292657
+    second: DiegoByteAnimado_32
+  - first:
+      213: -4106396479608944546
+    second: DiegoByteAnimado_33
+  - first:
+      213: -2222724626630978968
+    second: DiegoByteAnimado_34
+  - first:
+      213: 1484664970291069960
+    second: DiegoByteAnimado_35
+  - first:
+      213: -1961793221730216229
+    second: DiegoByteAnimado_36
+  - first:
+      213: 8903487482099326566
+    second: DiegoByteAnimado_37
+  - first:
+      213: -1639795850084169100
+    second: DiegoByteAnimado_38
+  - first:
+      213: 94103088662660353
+    second: DiegoByteAnimado_39
+  - first:
+      213: 4578655245092753537
+    second: DiegoByteAnimado_40
+  - first:
+      213: 7177774088033326082
+    second: DiegoByteAnimado_41
+  - first:
+      213: -4832230634679193821
+    second: DiegoByteAnimado_42
+  - first:
+      213: -3389815373683173306
+    second: DiegoByteAnimado_43
+  - first:
+      213: 3484846465428078269
+    second: DiegoByteAnimado_44
+  - first:
+      213: 7776123622504145532
+    second: DiegoByteAnimado_45
+  - first:
+      213: -4312071660298745998
+    second: DiegoByteAnimado_46
+  - first:
+      213: -4316342641686335962
+    second: DiegoByteAnimado_47
+  - first:
+      213: -3318782422546633519
+    second: DiegoByteAnimado_48
+  - first:
+      213: -1839914464078681838
+    second: DiegoByteAnimado_49
+  - first:
+      213: -2572607161661438720
+    second: DiegoByteAnimado_50
+  - first:
+      213: 1590307166142312128
+    second: DiegoByteAnimado_51
+  - first:
+      213: 5046350880841104289
+    second: DiegoByteAnimado_52
+  - first:
+      213: -6566035017968861055
+    second: DiegoByteAnimado_53
+  - first:
+      213: -103678641650833700
+    second: DiegoByteAnimado_54
+  - first:
+      213: -895490236254252635
+    second: DiegoByteAnimado_55
+  - first:
+      213: 8767985964690383030
+    second: DiegoByteAnimado_56
+  - first:
+      213: -6941381869654114088
+    second: DiegoByteAnimado_57
+  - first:
+      213: 2185494610422611731
+    second: DiegoByteAnimado_58
+  - first:
+      213: -5046299990429391089
+    second: DiegoByteAnimado_59
+  - first:
+      213: 8803897390218662520
+    second: DiegoByteAnimado_60
+  - first:
+      213: -1558019415853434002
+    second: DiegoByteAnimado_61
+  - first:
+      213: 975669436070757635
+    second: DiegoByteAnimado_62
+  - first:
+      213: -8603727603392135400
+    second: DiegoByteAnimado_63
+  - first:
+      213: 672632410547999645
+    second: DiegoByteAnimado_64
+  - first:
+      213: 7320371097539274155
+    second: DiegoByteAnimado_65
+  - first:
+      213: 8639130747719711797
+    second: DiegoByteAnimado_66
+  - first:
+      213: 335522826764684252
+    second: DiegoByteAnimado_67
+  - first:
+      213: -8150714043115156398
+    second: DiegoByteAnimado_68
+  - first:
+      213: 6402262133492944088
+    second: DiegoByteAnimado_69
+  - first:
+      213: 249308445257235652
+    second: DiegoByteAnimado_70
+  - first:
+      213: 8883426319371861450
+    second: DiegoByteAnimado_71
+  - first:
+      213: -5749945793926876198
+    second: DiegoByteAnimado_72
+  - first:
+      213: -6305877434239149691
+    second: DiegoByteAnimado_73
+  - first:
+      213: -7861815688355780733
+    second: DiegoByteAnimado_74
+  - first:
+      213: 6874820479302835305
+    second: DiegoByteAnimado_75
+  - first:
+      213: -6692687743091082993
+    second: DiegoByteAnimado_76
+  - first:
+      213: -716554959478218738
+    second: DiegoByteAnimado_77
+  - first:
+      213: -7810949275477400686
+    second: DiegoByteAnimado_78
+  - first:
+      213: -3769278013147548442
+    second: DiegoByteAnimado_79
+  - first:
+      213: -4723939809889622098
+    second: DiegoByteAnimado_80
+  - first:
+      213: -258918150137682853
+    second: DiegoByteAnimado_81
+  - first:
+      213: -5202241297596490845
+    second: DiegoByteAnimado_82
+  - first:
+      213: -2554573405169834806
+    second: DiegoByteAnimado_83
+  - first:
+      213: 8252432088943359943
+    second: DiegoByteAnimado_84
+  - first:
+      213: 5643932464167955949
+    second: DiegoByteAnimado_85
+  - first:
+      213: -912158299894434953
+    second: DiegoByteAnimado_86
+  - first:
+      213: -1437634270263087414
+    second: DiegoByteAnimado_87
+  - first:
+      213: 2929692265174845777
+    second: DiegoByteAnimado_88
+  - first:
+      213: -8117612955884530377
+    second: DiegoByteAnimado_89
+  - first:
+      213: -8655610533710431658
+    second: DiegoByteAnimado_90
+  - first:
+      213: -8940732191517937340
+    second: DiegoByteAnimado_91
+  - first:
+      213: 7002138237015386457
+    second: DiegoByteAnimado_92
+  - first:
+      213: -5028537874746317921
+    second: DiegoByteAnimado_93
+  - first:
+      213: -8591655458239277552
+    second: DiegoByteAnimado_94
+  - first:
+      213: 4757256421019446805
+    second: DiegoByteAnimado_95
+  - first:
+      213: -2088054493461038306
+    second: DiegoByteAnimado_96
+  - first:
+      213: 6112124458257826734
+    second: DiegoByteAnimado_97
+  - first:
+      213: 4759838818999335568
+    second: DiegoByteAnimado_98
+  - first:
+      213: -22715538068398386
+    second: DiegoByteAnimado_99
+  - first:
+      213: -3688774024697719068
+    second: DiegoByteAnimado_100
+  - first:
+      213: -470253296942023320
+    second: DiegoByteAnimado_101
+  - first:
+      213: -2780053441969967794
+    second: DiegoByteAnimado_102
+  - first:
+      213: 2866252470505678104
+    second: DiegoByteAnimado_103
+  - first:
+      213: 937462313451750923
+    second: DiegoByteAnimado_104
+  - first:
+      213: -1930571479220943247
+    second: DiegoByteAnimado_105
+  - first:
+      213: -3395409736852172404
+    second: DiegoByteAnimado_106
+  - first:
+      213: -1261825589537742377
+    second: DiegoByteAnimado_107
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 0
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: iOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DiegoByteAnimado_0
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 717
+        width: 40
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182ac34416fa063a0800000000000000
+      internalID: -6674141815471562111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_1
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 467
+        width: 210
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e7b46829d4269230800000000000000
+      internalID: 3645141463507187683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_2
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 821
+        width: 75
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f71ce3df597f445c0800000000000000
+      internalID: -4231985526250487425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_3
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 801
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2670a935897331ae0800000000000000
+      internalID: -1579857916899752094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_4
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 811
+        width: 30
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3925a3ea59ad76880800000000000000
+      internalID: -8617679025542114669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_5
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 465
+        width: 278
+        height: 422
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 975c9d12fdf433950800000000000000
+      internalID: 6427568912952051065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_6
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 662
+        width: 118
+        height: 217
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb0fda5850c24120800000000000000
+      internalID: 2396689437428747209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_7
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 467
+        width: 235
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda0118f30cb3a5b0800000000000000
+      internalID: -5358232406407968036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_8
+      rect:
+        serializedVersion: 2
+        x: 1236
+        y: 791
+        width: 63
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d80989c9768840f70800000000000000
+      internalID: 9152590321313943693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_9
+      rect:
+        serializedVersion: 2
+        x: 1274
+        y: 662
+        width: 104
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5968913519253f000800000000000000
+      internalID: 68489203458606741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_10
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 797
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce98ba4dff4c5bff0800000000000000
+      internalID: -20894020189582868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_11
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 850
+        width: 26
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9827b23a428640fc0800000000000000
+      internalID: -3529581701385981303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_12
+      rect:
+        serializedVersion: 2
+        x: 1302
+        y: 803
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a0dc6e875154e5b0800000000000000
+      internalID: -5340053821661065052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_13
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 854
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 101522f75918937b0800000000000000
+      internalID: -5244017812013166335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_14
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 846
+        width: 41
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9118cf19b52c970800000000000000
+      internalID: 8773675706635852222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_15
+      rect:
+        serializedVersion: 2
+        x: 1467
+        y: 467
+        width: 292
+        height: 420
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4487c03c331c38a40800000000000000
+      internalID: 5369347608815630404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_16
+      rect:
+        serializedVersion: 2
+        x: 426
+        y: 774
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dc372fedfcf87db0800000000000000
+      internalID: -4793803635766641447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_17
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 787
+        width: 14
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12f7d4c38d0c42fd0800000000000000
+      internalID: -2367555469132857567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_18
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 731
+        width: 56
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2cc010d315617820800000000000000
+      internalID: 2914221569654967341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_19
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 763
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de1375c20383df540800000000000000
+      internalID: 5043248937278321133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_20
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 779
+        width: 18
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 985d1823097a392a0800000000000000
+      internalID: -6731852780224260727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_21
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 748
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8d8ff7363080d40800000000000000
+      internalID: 5550690266617796807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_22
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 737
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60368c69ce4f58fa0800000000000000
+      internalID: -5798959648190471418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_23
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 507
+        width: 170
+        height: 229
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13c33686fb7e0a3b0800000000000000
+      internalID: -5503143935370642383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_24
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 725
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5aec639dee06a61b0800000000000000
+      internalID: -5662607002502246747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_25
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 723
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1de806c5a70aadbc0800000000000000
+      internalID: -3757514491690971439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 684
+        width: 5
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 284071a483775c730800000000000000
+      internalID: 4018749326142932098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_27
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 680
+        width: 59
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 140b892cb072f3080800000000000000
+      internalID: -9205596181859094463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_28
+      rect:
+        serializedVersion: 2
+        x: 871
+        y: 579
+        width: 51
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f6b5125ced3ae050800000000000000
+      internalID: 5830540752783259382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_29
+      rect:
+        serializedVersion: 2
+        x: 1709
+        y: 663
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d81d9d5a184543f30800000000000000
+      internalID: 4554358038988444045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 506
+        width: 114
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d2df70b2b54f3b0800000000000000
+      internalID: -5479654606227296932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_31
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 601
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7555797917ce3afd0800000000000000
+      internalID: -2331760209429047977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_32
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 577
+        width: 35
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8ad88ee24bcbe4b0800000000000000
+      internalID: -5410007039025292657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_33
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 581
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e588efd88262307c0800000000000000
+      internalID: -4106396479608944546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_34
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 599
+        width: 23
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 862d5248abb4721e0800000000000000
+      internalID: -2222724626630978968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_35
+      rect:
+        serializedVersion: 2
+        x: 917
+        y: 600
+        width: 24
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8044aa4ace69a9410800000000000000
+      internalID: 1484664970291069960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_36
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 618
+        width: 15
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd65008757f46c4e0800000000000000
+      internalID: -1961793221730216229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_37
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 634
+        width: 40
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66edaa831ba8f8b70800000000000000
+      internalID: 8903487482099326566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_38
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 561
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47ac293cc564e39e0800000000000000
+      internalID: -1639795850084169100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_39
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 584
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1054104b2425e4100800000000000000
+      internalID: 94103088662660353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_40
+      rect:
+        serializedVersion: 2
+        x: 1363
+        y: 566
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1809bb8cfa6aa8f30800000000000000
+      internalID: 4578655245092753537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_41
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 576
+        width: 21
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 204da3be0839c9360800000000000000
+      internalID: 7177774088033326082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_42
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 556
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32faf2b07d770fcb0800000000000000
+      internalID: -4832230634679193821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_43
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 545
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 648d47da0e4f4f0d0800000000000000
+      internalID: -3389815373683173306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_44
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 565
+        width: 15
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbebd949569ac5030800000000000000
+      internalID: 3484846465428078269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_45
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 539
+        width: 43
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7222e82c375aeb60800000000000000
+      internalID: 7776123622504145532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_46
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 517
+        width: 31
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2774dd9dba17824c0800000000000000
+      internalID: -4312071660298745998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_47
+      rect:
+        serializedVersion: 2
+        x: 941
+        y: 547
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62e2a618c354914c0800000000000000
+      internalID: -4316342641686335962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_48
+      rect:
+        serializedVersion: 2
+        x: 1298
+        y: 423
+        width: 118
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1dc2c4968f051f1d0800000000000000
+      internalID: -3318782422546633519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_49
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 531
+        width: 20
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 219ac7f0b8f4776e0800000000000000
+      internalID: -1839914464078681838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_50
+      rect:
+        serializedVersion: 2
+        x: 447
+        y: 501
+        width: 26
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0054b8eaa634c4cd0800000000000000
+      internalID: -2572607161661438720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_51
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 521
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ceaba911f7e11610800000000000000
+      internalID: 1590307166142312128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_52
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 477
+        width: 43
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab7380b36d380640800000000000000
+      internalID: 5046350880841104289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_53
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 458
+        width: 64
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 180c03380f1c0e4a0800000000000000
+      internalID: -6566035017968861055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_54
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 504
+        width: 21
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd66b9123d8af8ef0800000000000000
+      internalID: -103678641650833700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_55
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 491
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a11c38ef549293f0800000000000000
+      internalID: -895490236254252635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_56
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 397
+        width: 72
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b02bf4b7c42ea970800000000000000
+      internalID: 8767985964690383030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_57
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 440
+        width: 11
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d00ee077f14baf90800000000000000
+      internalID: -6941381869654114088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_58
+      rect:
+        serializedVersion: 2
+        x: 1669
+        y: 469
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f35c8d4cf645e10800000000000000
+      internalID: 2185494610422611731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 276
+        width: 78
+        height: 186
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07266825e0f7f9b0800000000000000
+      internalID: -5046299990429391089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_60
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 459
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872d8f6080abd2a70800000000000000
+      internalID: 8803897390218662520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_61
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 442
+        width: 19
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6bf4e4989dc06ae0800000000000000
+      internalID: -1558019415853434002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_62
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 457
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 305043bce264a8d00800000000000000
+      internalID: 975669436070757635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_63
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 438
+        width: 20
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81fb697445b699880800000000000000
+      internalID: -8603727603392135400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_64
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 307
+        width: 49
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93d0271d9ba55900800000000000000
+      internalID: 672632410547999645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_65
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 23
+        width: 202
+        height: 423
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba56ddc6abe279560800000000000000
+      internalID: 7320371097539274155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_66
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 426
+        width: 21
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53cfcf994ab54e770800000000000000
+      internalID: 8639130747719711797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_67
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 438
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb0857bb3408a400800000000000000
+      internalID: 335522826764684252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_68
+      rect:
+        serializedVersion: 2
+        x: 1347
+        y: 442
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25c455a13c8d2ee80800000000000000
+      internalID: -8150714043115156398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_69
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 426
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc08c16d7769d850800000000000000
+      internalID: 6402262133492944088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_70
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 23
+        width: 169
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4ccff07c5b8b57300800000000000000
+      internalID: 249308445257235652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_71
+      rect:
+        serializedVersion: 2
+        x: 387
+        y: 418
+        width: 64
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: acdf38acb25484b70800000000000000
+      internalID: 8883426319371861450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_72
+      rect:
+        serializedVersion: 2
+        x: 851
+        y: 346
+        width: 41
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad3bc33d3c61430b0800000000000000
+      internalID: -5749945793926876198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_73
+      rect:
+        serializedVersion: 2
+        x: 1029
+        y: 23
+        width: 186
+        height: 415
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 589160f22e50d78a0800000000000000
+      internalID: -6305877434239149691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_74
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 100
+        width: 126
+        height: 325
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387e5fdf84835e290800000000000000
+      internalID: -7861815688355780733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_75
+      rect:
+        serializedVersion: 2
+        x: 1336
+        y: 418
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96c1d633dc4486f50800000000000000
+      internalID: 6874820479302835305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_76
+      rect:
+        serializedVersion: 2
+        x: 1343
+        y: 402
+        width: 23
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09f17005fbce13a0800000000000000
+      internalID: -6692687743091082993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_77
+      rect:
+        serializedVersion: 2
+        x: 1461
+        y: 24
+        width: 304
+        height: 414
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e00a1429f094e06f0800000000000000
+      internalID: -716554959478218738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_78
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 322
+        width: 39
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2932394a40fe99390800000000000000
+      internalID: -7810949275477400686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_79
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 352
+        width: 32
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e476a61e95d0bbc0800000000000000
+      internalID: -3769278013147548442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_80
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 386
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea7e33b75c1317eb0800000000000000
+      internalID: -4723939809889622098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_81
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 325
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5464237053286cf0800000000000000
+      internalID: -258918150137682853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_82
+      rect:
+        serializedVersion: 2
+        x: 1288
+        y: 351
+        width: 25
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3abd4ec3a1dedc7b0800000000000000
+      internalID: -5202241297596490845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_83
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 346
+        width: 28
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac42130d5055c8cd0800000000000000
+      internalID: -2554573405169834806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_84
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 265
+        width: 48
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c7f08af247868270800000000000000
+      internalID: 8252432088943359943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_85
+      rect:
+        serializedVersion: 2
+        x: 1320
+        y: 297
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deda60f5ca6435e40800000000000000
+      internalID: 5643932464167955949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_86
+      rect:
+        serializedVersion: 2
+        x: 1325
+        y: 305
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7733edbebdc5753f0800000000000000
+      internalID: -912158299894434953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_87
+      rect:
+        serializedVersion: 2
+        x: 345
+        y: 76
+        width: 150
+        height: 211
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ace6a048f3f7c0ce0800000000000000
+      internalID: -1437634270263087414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_88
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 284
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 159c4fec79b58a820800000000000000
+      internalID: 2929692265174845777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_89
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 63
+        width: 73
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 735d46c8602785f80800000000000000
+      internalID: -8117612955884530377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_90
+      rect:
+        serializedVersion: 2
+        x: 1427
+        y: 223
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65a7f08341811e780800000000000000
+      internalID: -8655610533710431658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_91
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 63
+        width: 48
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4417cac11732ce380800000000000000
+      internalID: -8940732191517937340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_92
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 154
+        width: 11
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9596b7da0a79c2160800000000000000
+      internalID: 7002138237015386457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_93
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 150
+        width: 35
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f93e52cf17b073ab0800000000000000
+      internalID: -5028537874746317921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_94
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 144
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0161a1b91ee44c880800000000000000
+      internalID: -8591655458239277552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_95
+      rect:
+        serializedVersion: 2
+        x: 919
+        y: 160
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51e6f48828b250240800000000000000
+      internalID: 4757256421019446805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_96
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 128
+        width: 20
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1bb89d408db503e0800000000000000
+      internalID: -2088054493461038306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_97
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 120
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea34f65bfc0a2d450800000000000000
+      internalID: 6112124458257826734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_98
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 132
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09af19aef285e0240800000000000000
+      internalID: 4759838818999335568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_99
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 110
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece1d86a65c4faff0800000000000000
+      internalID: -22715538068398386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_100
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 7
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e654398197deccc0800000000000000
+      internalID: -3688774024697719068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_101
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 69
+        width: 18
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86d70513e135979f0800000000000000
+      internalID: -470253296942023320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_102
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 39
+        width: 32
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4d27c6bf144b69d0800000000000000
+      internalID: -2780053441969967794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_103
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 63
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815a3159f69f6c720800000000000000
+      internalID: 2866252470505678104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_104
+      rect:
+        serializedVersion: 2
+        x: 885
+        y: 74
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b068b97d109820d00800000000000000
+      internalID: 937462313451750923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_105
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 27
+        width: 46
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176098fd77b3535e0800000000000000
+      internalID: -1930571479220943247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_106
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 45
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c81160085d411e0d0800000000000000
+      internalID: -3395409736852172404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DiegoByteAnimado_107
+      rect:
+        serializedVersion: 2
+        x: 879
+        y: 24
+        width: 31
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d1ea1fcf481d7ee0800000000000000
+      internalID: -1261825589537742377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DiegoByteAnimado_0: -6674141815471562111
+      DiegoByteAnimado_1: 3645141463507187683
+      DiegoByteAnimado_10: -20894020189582868
+      DiegoByteAnimado_100: -3688774024697719068
+      DiegoByteAnimado_101: -470253296942023320
+      DiegoByteAnimado_102: -2780053441969967794
+      DiegoByteAnimado_103: 2866252470505678104
+      DiegoByteAnimado_104: 937462313451750923
+      DiegoByteAnimado_105: -1930571479220943247
+      DiegoByteAnimado_106: -3395409736852172404
+      DiegoByteAnimado_107: -1261825589537742377
+      DiegoByteAnimado_11: -3529581701385981303
+      DiegoByteAnimado_12: -5340053821661065052
+      DiegoByteAnimado_13: -5244017812013166335
+      DiegoByteAnimado_14: 8773675706635852222
+      DiegoByteAnimado_15: 5369347608815630404
+      DiegoByteAnimado_16: -4793803635766641447
+      DiegoByteAnimado_17: -2367555469132857567
+      DiegoByteAnimado_18: 2914221569654967341
+      DiegoByteAnimado_19: 5043248937278321133
+      DiegoByteAnimado_2: -4231985526250487425
+      DiegoByteAnimado_20: -6731852780224260727
+      DiegoByteAnimado_21: 5550690266617796807
+      DiegoByteAnimado_22: -5798959648190471418
+      DiegoByteAnimado_23: -5503143935370642383
+      DiegoByteAnimado_24: -5662607002502246747
+      DiegoByteAnimado_25: -3757514491690971439
+      DiegoByteAnimado_26: 4018749326142932098
+      DiegoByteAnimado_27: -9205596181859094463
+      DiegoByteAnimado_28: 5830540752783259382
+      DiegoByteAnimado_29: 4554358038988444045
+      DiegoByteAnimado_3: -1579857916899752094
+      DiegoByteAnimado_30: -5479654606227296932
+      DiegoByteAnimado_31: -2331760209429047977
+      DiegoByteAnimado_32: -5410007039025292657
+      DiegoByteAnimado_33: -4106396479608944546
+      DiegoByteAnimado_34: -2222724626630978968
+      DiegoByteAnimado_35: 1484664970291069960
+      DiegoByteAnimado_36: -1961793221730216229
+      DiegoByteAnimado_37: 8903487482099326566
+      DiegoByteAnimado_38: -1639795850084169100
+      DiegoByteAnimado_39: 94103088662660353
+      DiegoByteAnimado_4: -8617679025542114669
+      DiegoByteAnimado_40: 4578655245092753537
+      DiegoByteAnimado_41: 7177774088033326082
+      DiegoByteAnimado_42: -4832230634679193821
+      DiegoByteAnimado_43: -3389815373683173306
+      DiegoByteAnimado_44: 3484846465428078269
+      DiegoByteAnimado_45: 7776123622504145532
+      DiegoByteAnimado_46: -4312071660298745998
+      DiegoByteAnimado_47: -4316342641686335962
+      DiegoByteAnimado_48: -3318782422546633519
+      DiegoByteAnimado_49: -1839914464078681838
+      DiegoByteAnimado_5: 6427568912952051065
+      DiegoByteAnimado_50: -2572607161661438720
+      DiegoByteAnimado_51: 1590307166142312128
+      DiegoByteAnimado_52: 5046350880841104289
+      DiegoByteAnimado_53: -6566035017968861055
+      DiegoByteAnimado_54: -103678641650833700
+      DiegoByteAnimado_55: -895490236254252635
+      DiegoByteAnimado_56: 8767985964690383030
+      DiegoByteAnimado_57: -6941381869654114088
+      DiegoByteAnimado_58: 2185494610422611731
+      DiegoByteAnimado_59: -5046299990429391089
+      DiegoByteAnimado_6: 2396689437428747209
+      DiegoByteAnimado_60: 8803897390218662520
+      DiegoByteAnimado_61: -1558019415853434002
+      DiegoByteAnimado_62: 975669436070757635
+      DiegoByteAnimado_63: -8603727603392135400
+      DiegoByteAnimado_64: 672632410547999645
+      DiegoByteAnimado_65: 7320371097539274155
+      DiegoByteAnimado_66: 8639130747719711797
+      DiegoByteAnimado_67: 335522826764684252
+      DiegoByteAnimado_68: -8150714043115156398
+      DiegoByteAnimado_69: 6402262133492944088
+      DiegoByteAnimado_7: -5358232406407968036
+      DiegoByteAnimado_70: 249308445257235652
+      DiegoByteAnimado_71: 8883426319371861450
+      DiegoByteAnimado_72: -5749945793926876198
+      DiegoByteAnimado_73: -6305877434239149691
+      DiegoByteAnimado_74: -7861815688355780733
+      DiegoByteAnimado_75: 6874820479302835305
+      DiegoByteAnimado_76: -6692687743091082993
+      DiegoByteAnimado_77: -716554959478218738
+      DiegoByteAnimado_78: -7810949275477400686
+      DiegoByteAnimado_79: -3769278013147548442
+      DiegoByteAnimado_8: 9152590321313943693
+      DiegoByteAnimado_80: -4723939809889622098
+      DiegoByteAnimado_81: -258918150137682853
+      DiegoByteAnimado_82: -5202241297596490845
+      DiegoByteAnimado_83: -2554573405169834806
+      DiegoByteAnimado_84: 8252432088943359943
+      DiegoByteAnimado_85: 5643932464167955949
+      DiegoByteAnimado_86: -912158299894434953
+      DiegoByteAnimado_87: -1437634270263087414
+      DiegoByteAnimado_88: 2929692265174845777
+      DiegoByteAnimado_89: -8117612955884530377
+      DiegoByteAnimado_9: 68489203458606741
+      DiegoByteAnimado_90: -8655610533710431658
+      DiegoByteAnimado_91: -8940732191517937340
+      DiegoByteAnimado_92: 7002138237015386457
+      DiegoByteAnimado_93: -5028537874746317921
+      DiegoByteAnimado_94: -8591655458239277552
+      DiegoByteAnimado_95: 4757256421019446805
+      DiegoByteAnimado_96: -2088054493461038306
+      DiegoByteAnimado_97: 6112124458257826734
+      DiegoByteAnimado_98: 4759838818999335568
+      DiegoByteAnimado_99: -22715538068398386
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

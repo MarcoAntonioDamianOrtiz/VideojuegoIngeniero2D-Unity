@@ -66,5 +66,5 @@ public class BitSeguidor : MonoBehaviour
         return true;
     }
     void Cambiar(string nombre){if(animacion==nombre)return;animator.Play(nombre,0,0);animacion=nombre;}
-    void LateUpdate(){if(gameObject.scene.name!="EscenaNivel3Silicio"&&dibujo&&dibujo.sprite)dibujo.sortingOrder=TechnopolisOrdenBarrio.Orden(caja?caja.bounds.min.y:dibujo.bounds.min.y,1.25f);}
+    void LateUpdate(){if(gameObject.scene.name!="EscenaNivel3Silicio"&&dibujo&&dibujo.sprite){float pie=caja?caja.bounds.min.y:dibujo.bounds.min.y;dibujo.sortingOrder=TechnopolisGameFlow.EsNivel2(gameObject.scene.name)?15000-Mathf.RoundToInt(pie*100):TechnopolisOrdenBarrio.Orden(pie,1.25f);}}
 }

@@ -38,7 +38,8 @@ public static class AcabadoDistritoNivel2
  bool forecourt=d>=4&&(Mathf.Abs(wy+5)<1.45f||Mathf.Abs(wy+25)<1.45f||Mathf.Abs(wy+45)<1.45f);
  bool exit=wx>13&&wx<21&&wy<-46;
  if(d<2||exit){
- c=Color.Lerp(new Color32(73,70,79,255),new Color32(102,93,97,255),patch*.8f);c+=(Color)new Color(n/255f,n/255f,n/255f,0);
+ float grano=(Mathf.PerlinNoise(x*.21f,y*.21f)-.5f)*.055f;
+ c=Color.Lerp(new Color32(73,70,79,255),new Color32(102,93,97,255),patch*.8f);c+=new Color(n/170f+grano,n/170f+grano,n/170f+grano,0);
  bool stripe=(dx<.055f&&Mathf.Repeat(wy+52,3.5f)<1.6f&&dy>4)||(dy<.055f&&Mathf.Repeat(wx+66,3.5f)<1.6f&&dx>4);
  bool cross=(dx<1.65f&&dy>2.7f&&dy<4.5f&&Mathf.Repeat(wx+66,.6f)<.28f)||(dy<1.65f&&dx>2.7f&&dx<4.5f&&Mathf.Repeat(wy+52,.6f)<.28f);
  if(stripe)c=new Color32(208,168,65,255);if(cross)c=new Color32(207,202,175,255);
@@ -47,10 +48,12 @@ public static class AcabadoDistritoNivel2
  }else if(d<4||plaza||forecourt){
  int row=y/12,col=(x+(row%2)*8)/16;
  bool seam=(x+(row%2)*8)%16==0||y%12==0;int variation=(int)(Hash(col,row)%15)-7;
- c=seam?new Color32(128,108,101,255):new Color32((byte)(183+variation+n),(byte)(161+variation+n),(byte)(144+variation+n),255);
+ int pock=(int)(hash%9)-4;float wear=Mathf.PerlinNoise(x*.087f,y*.087f);
+ c=seam?new Color32(128,108,101,255):new Color32((byte)(183+variation+n+pock),(byte)(161+variation+n+pock),(byte)(144+variation+n+pock),255);
+ if(!seam&&wear>.65f)c=Color.Lerp(c,new Color32(139,130,109,255),(wear-.65f)*1.3f);
  if(!seam&&y%12==1)c+=new Color(.035f,.03f,.025f,0);
  if(d<2.12f)c=new Color32(216,199,175,255);
- if(plaza){float ring=Vector2.Distance(new Vector2(wx,wy),new Vector2(-22,-20));if(Mathf.Abs(ring-5)<.18f||Mathf.Abs(ring-2.8f)<.14f)c=new Color32(137,112,101,255);}
+ if(plaza){float ring=Vector2.Distance(new Vector2(wx,wy),new Vector2(-22,-20));if(Mathf.Abs(ring-5)<.18f||Mathf.Abs(ring-2.8f)<.14f)c=new Color32(137,112,101,255);if(Mathf.Abs(ring-4.7f)<.07f)c=new Color32(212,188,145,255);if(ring<2.25f){c=Color.Lerp(new Color32(93,113,54,255),new Color32(137,147,79,255),patch);if(hash%23==0)c=new Color32(157,156,85,255);}if(Mathf.Abs(ring-2.25f)<.12f)c=new Color32(131,116,94,255);}
  }else{
  float blot=Mathf.PerlinNoise(x*.021f+13,y*.021f+21);c=Color.Lerp(new Color32(104,119,60,255),new Color32(133,147,71,255),patch);
  if(blot>.66f)c=Color.Lerp(c,new Color32(151,130,81,255),(blot-.66f)*2);

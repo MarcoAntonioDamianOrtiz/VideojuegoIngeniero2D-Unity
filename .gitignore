@@ -115,3 +115,5 @@ InitTestScene*.unity*
 
 # Local Python bytecode from the level generation tools
 /Tools/Nivel1/__pycache__/
+
+/apk/

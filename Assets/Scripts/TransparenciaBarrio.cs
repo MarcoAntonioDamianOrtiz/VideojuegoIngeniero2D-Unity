@@ -12,7 +12,7 @@ public sealed class TransparenciaBarrio : MonoBehaviour
         foreach(var s in FindObjectsByType<SpriteRenderer>(FindObjectsSortMode.None))
         {
             string name=(s.name+" "+(s.transform.parent?s.transform.parent.name:"")).ToLowerInvariant();
-            if(s!=actor&&(name.Contains("arbol")||name.Contains("vivienda")||name.Contains("panaderia")||name.Contains("taller")||name.Contains("edificio"))&&s.bounds.size.y>2)originales[s]=s.color;
+            if(s!=actor&&(name.Contains("arbol")||name.Contains("vivienda")||name.Contains("panaderia")||name.Contains("taller")||name.Contains("edificio")||name.Contains("biblioteca"))&&s.bounds.size.y>2)originales[s]=s.color;
         }
     }
     void LateUpdate()

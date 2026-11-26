@@ -55,7 +55,7 @@ public static class InstalarBibliotecaBarrio
         biblioteca.position = lugarVisible;
         fachada.localPosition = Vector3.zero;
         var render = fachada.GetComponent<SpriteRenderer>();
-        if (render) render.sortingOrder = TechnopolisOrdenBarrio.Orden(biblioteca.position.y);
+        if (render) render.sortingOrder = TechnopolisOrdenBarrio.Orden(biblioteca.position.y, 1.25f);
         Physics2D.SyncTransforms();
         EditorSceneManager.MarkSceneDirty(escena);
         EditorSceneManager.SaveScene(escena);
@@ -84,7 +84,7 @@ public static class InstalarBibliotecaBarrio
         Transform anterior = Buscar(escena, "Biblioteca_Barrio");
         if (anterior) Object.DestroyImmediate(anterior.gameObject);
 
-        Vector3 lugar = casa.position;
+        Vector3 lugar = casa.position + Vector3.left * 2.2f;
         casa.gameObject.SetActive(false);
         casa.name = "Vivienda_36_Reemplazada_por_Biblioteca";
 
@@ -97,13 +97,14 @@ public static class InstalarBibliotecaBarrio
         SpriteRenderer render = fachada.AddComponent<SpriteRenderer>();
         render.sprite = sprite;
         render.spriteSortPoint = SpriteSortPoint.Pivot;
-        render.sortingOrder = TechnopolisOrdenBarrio.Orden(lugar.y);
+        render.sortingOrder = TechnopolisOrdenBarrio.Orden(lugar.y, 1.25f);
         float escala = 5.25f / sprite.bounds.size.x;
         fachada.transform.localScale = new Vector3(escala, escala, 1);
 
+        biblioteca.AddComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         var baseFisica = biblioteca.AddComponent<BoxCollider2D>();
-        baseFisica.size = new Vector2(4.25f, .8f);
-        baseFisica.offset = new Vector2(0, .36f);
+        baseFisica.size = new Vector2(4.25f, 1.6f);
+        baseFisica.offset = new Vector2(0, .76f);
 
         var puerta = new GameObject("Acceso_Lectura_E");
         puerta.transform.SetParent(biblioteca.transform, false);

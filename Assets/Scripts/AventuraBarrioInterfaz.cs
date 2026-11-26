@@ -19,6 +19,10 @@ public sealed partial class AventuraBarrio
     Vector2? puntoDonDinero;
     string objetivoGuiado;
     GameObject senalPanaderia;
+    BibliotecaInteractiva biblioteca;
+    Collider2D entradaBiblioteca;
+    bool alertaBitMostrada;
+    bool alertaHambreMostrada;
 
     void Colocar(RectTransform r,Vector2 pos,Vector2 size){r.anchoredPosition=pos;r.sizeDelta=size;}
     void EstilizarHUD()
@@ -34,15 +38,28 @@ public sealed partial class AventuraBarrio
         Colocar(reputacion.rectTransform,new Vector2(260,-40),new Vector2(240,25));reputacion.fontSize=21;
         Colocar(barraReputacion.transform.parent as RectTransform,new Vector2(260,-73),new Vector2(210,8));
         var food=alimentar.GetComponent<RectTransform>();food.anchorMin=food.anchorMax=food.pivot=Vector2.zero;Colocar(food,new Vector2(18,18),new Vector2(270,36));alimentar.GetComponentInChildren<TMP_Text>().fontSize=20;
+        if (nivel == 2)
+        {
+            panel.anchoredPosition = new Vector2(18, 88);
+            Colocar(food, new Vector2(18, 18), new Vector2(420, 58));
+            var etiqueta = alimentar.GetComponentInChildren<TMP_Text>();
+            Colocar(etiqueta.rectTransform, new Vector2(12, -5), new Vector2(396, 48));
+            etiqueta.fontSize = 24;
+            etiqueta.fontStyle = FontStyles.Bold;
+        }
         var mini=seguro.Find("Minimapa") as RectTransform;mini.localScale=Vector3.one*.72f;
         var objetivos=seguro.Find("Objetivo activo") as RectTransform;objetivos.localScale=Vector3.one*.72f;objetivos.anchoredPosition=new Vector2(-24,-250);objetivos.sizeDelta=new Vector2(350,120);
         mision.fontSize=21;mision.rectTransform.sizeDelta=new Vector2(322,100);
-        if (!UnityEngine.Device.Application.isMobilePlatform)
+        if (nivel < 3)
         {
-            var controles = Caja("Guía de controles", seguro, new Vector2(18, -24), new Vector2(490, 67), Fondo);
-            var instrucciones = Texto("WASD / flechas  ·  Mover a Alex\nE  ·  Interactuar cerca    M  ·  Mapa    Esc  ·  Menú",
-                controles, new Vector2(12, -6), new Vector2(466, 55), 20);
-            instrucciones.alignment = TextAlignmentOptions.MidlineLeft;
+            objetivos.sizeDelta = new Vector2(350, 242);
+            mision.rectTransform.sizeDelta = new Vector2(322, 218);
+        }
+        if (nivel == 1)
+        {
+            biblioteca = FindFirstObjectByType<BibliotecaInteractiva>();
+            if (biblioteca && biblioteca.TryGetComponent(out entradaBiblioteca))
+                biblioteca.LibroCerrado += AlCerrarBiblioteca;
         }
         destinoContenedor=Caja("Destino",seguro,Vector2.zero,new Vector2(236,66),new Color32(8,23,31,240));
         destinoContenedor.anchorMin=destinoContenedor.anchorMax=Vector2.zero;destinoContenedor.pivot=new Vector2(.5f,.5f);
@@ -86,9 +103,54 @@ public sealed partial class AventuraBarrio
 
     void ActualizarGuiaObjetivo()
     {
+        if (entradaBiblioteca && ProgresoTechnopolis.Completada("panaderia") &&
+            ProgresoTechnopolis.VisitaBiblioteca == 0 && !ocupado)
+        {
+            ProgresoTechnopolis.VisitaBiblioteca = 2;
+            movimientoAnterior = movimiento.enabled;
+            movimiento.enabled = false;
+            tituloModal.text = "Biblioteca del pueblo";
+            textoModal.text = "Ya ayudaste a Doña Ramona. Puedes visitar la biblioteca del pueblo antes de ir al siguiente distrito.";
+            modal.SetActive(true);
+            MostrarOpciones(new[] { "Visitar la biblioteca", "Seguir adelante" }, opcion =>
+            {
+                if (opcion == 0) ProgresoTechnopolis.VisitaBiblioteca = 1;
+                Cerrar();
+            });
+        }
         string nombre = null;
         Vector2 punto = Vector2.zero;
-        if (puertaAbierta)
+        if (nivel == 2 && ProgresoTechnopolis.BitEnfermo && hospitalBit != null)
+        {
+            if (!alertaBitMostrada && !ocupado)
+            {
+                alertaBitMostrada = true;
+                MostrarAvisoBit("Bit está enfermo",
+                    "Lleva a Bit a la veterinaria. Su entrada está marcada en el mapa.", "Ir a la veterinaria");
+            }
+            nombre = "Veterinaria";
+            punto = hospitalBit.Entrada;
+        }
+        else if (nivel == 2 && ProgresoTechnopolis.BitCurado && !ProgresoTechnopolis.BitComioCroquetas && tiendaBit != null)
+        {
+            if (ProgresoTechnopolis.Croquetas == 0)
+            {
+                if (!alertaHambreMostrada && !ocupado)
+                {
+                    alertaHambreMostrada = true;
+                    MostrarAvisoBit("Bit tiene hambre",
+                        "Bit ya se recuperó. Compra una ración en la tienda marcada y pulsa «Dar croquetas a Bit».", "Ir a la tienda");
+                }
+                nombre = "Tienda de croquetas";
+                punto = tiendaBit.Entrada;
+            }
+        }
+        else if (entradaBiblioteca && ProgresoTechnopolis.VisitaBiblioteca == 1)
+        {
+            nombre = "Biblioteca";
+            punto = entradaBiblioteca.bounds.center;
+        }
+        else if (puertaAbierta)
         {
             nombre = "Salida";
             punto = salida;
@@ -111,6 +173,21 @@ public sealed partial class AventuraBarrio
         if (senalPanaderia) senalPanaderia.SetActive(nombre == "Doña Ramona");
         if (nombre == null) mapaGrande.QuitarObjetivo();
         else mapaGrande.MarcarObjetivo(nombre, punto);
+    }
+    void MostrarAvisoBit(string titulo, string mensaje, string boton)
+    {
+        movimientoAnterior = movimiento.enabled;
+        movimiento.enabled = false;
+        tituloModal.text = titulo;
+        textoModal.text = mensaje;
+        modal.SetActive(true);
+        MostrarOpciones(new[] { boton }, _ => Cerrar());
+    }
+
+    void AlCerrarBiblioteca()
+    {
+        if (ProgresoTechnopolis.VisitaBiblioteca == 1)
+            ProgresoTechnopolis.VisitaBiblioteca = 2;
     }
     void RecibirMarcador(Vector2? punto)
     {

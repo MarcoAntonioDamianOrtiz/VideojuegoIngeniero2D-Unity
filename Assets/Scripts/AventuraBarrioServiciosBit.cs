@@ -58,8 +58,7 @@ public sealed partial class AventuraBarrio
 
         hospitalBit = CrearServicioBit(hospital, true, new Vector2(180, 0));
         tiendaBit = CrearServicioBit(tienda, false, new Vector2(210, 0));
-        if (ProgresoTechnopolis.EnfermarBitEnNivel2())
-            Avisar("Bit se siente mal. Llévalo al veterinario.");
+        ProgresoTechnopolis.EnfermarBitEnNivel2();
     }
 
     SalaServicioBit CrearServicioBit(GameObject edificio, bool veterinaria, Vector2 centro)

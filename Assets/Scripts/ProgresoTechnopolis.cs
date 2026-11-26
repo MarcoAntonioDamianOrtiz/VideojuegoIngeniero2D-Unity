@@ -12,6 +12,7 @@ public static class ProgresoTechnopolis
     public const int PagoTaller = 5000;
     public const int PagoEncargo = 6000;
     public static int Croquetas => PlayerPrefs.GetInt(Prefix + "Croquetas", 0);
+    public static bool BitComioCroquetas => PlayerPrefs.GetInt(Prefix + "BitComioCroquetas", 0) == 1;
     public static bool BitEnfermo => PlayerPrefs.GetInt(Prefix + "SaludBit", 0) == 1;
     public static bool BitCurado => PlayerPrefs.GetInt(Prefix + "SaludBit", 0) == 2;
     public static int GananciasPrevias =>
@@ -48,8 +49,20 @@ public static class ProgresoTechnopolis
     {
         if (BitEnfermo || Croquetas <= 0 || Bienestar >= 100) return false;
         PlayerPrefs.SetInt(Prefix + "Croquetas", Croquetas - 1);
+        PlayerPrefs.SetInt(Prefix + "BitComioCroquetas", 1);
         CuidarBit(30);
         return true;
+    }
+
+    // 0: sin invitacion, 1: visita elegida, 2: continuar al siguiente distrito.
+    public static int VisitaBiblioteca
+    {
+        get => PlayerPrefs.GetInt(Prefix + "VisitaBiblioteca", 0);
+        set
+        {
+            PlayerPrefs.SetInt(Prefix + "VisitaBiblioteca", value);
+            PlayerPrefs.Save();
+        }
     }
 
     public static bool Completada(string id) => PlayerPrefs.GetInt(Prefix + id, 0) == 1;
@@ -92,6 +105,8 @@ public static class ProgresoTechnopolis
     public static void Reiniciar()
     {
         PlayerPrefs.DeleteKey(AccesoNivel2);
+        PlayerPrefs.DeleteKey(Prefix + "VisitaBiblioteca");
+        PlayerPrefs.DeleteKey(Prefix + "BitComioCroquetas");
         foreach (string key in new[] { "Reputacion", "Bit", "Activa", "panaderia", "taller", "inventario", "respaldo", "auditoria", "hueso", "Croquetas", "SaludBit" })
             PlayerPrefs.DeleteKey(Prefix + key);
         PlayerPrefs.Save();

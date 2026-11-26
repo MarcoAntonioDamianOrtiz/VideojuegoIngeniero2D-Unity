@@ -263,7 +263,10 @@ public sealed partial class AventuraBarrio : MonoBehaviour
         {
             if (ProgresoTechnopolis.BitEnfermo) Avisar("Bit necesita tratamiento veterinario.");
             else if (ProgresoTechnopolis.Bienestar >= 100) Avisar("Bit ya está al 100% de bienestar.");
-            else if (ProgresoTechnopolis.DarCroquetas()) Avisar("Bit comió una ración de croquetas.");
+            else if (ProgresoTechnopolis.DarCroquetas())
+                Avisar(nivel == 2 && (!ProgresoTechnopolis.Completada("inventario") || !ProgresoTechnopolis.Completada("respaldo"))
+                    ? "¡Bit ya comió! Sigue el marcador hacia Don Dinero."
+                    : "Bit comió una ración de croquetas.");
             else Avisar(nivel == 2 ? "Compra croquetas en la tienda del distrito." : "Ya no tienes croquetas.");
             return;
         }
@@ -285,7 +288,16 @@ public sealed partial class AventuraBarrio : MonoBehaviour
         if(felicidad&&felicidad.IconoActual)retratoBit.sprite=felicidad.IconoActual;
         animo.text=ProgresoTechnopolis.BitEnfermo ? "BIT · ENFERMO" : $"BIT  {bienestar}%";barraBit.rectTransform.sizeDelta=new Vector2(150*bienestar/100f,10);barraBit.color=bienestar>=60?Verde:bienestar>20?Oro:new Color32(210,105,82,255);
         saldo.text="$ "+EconomiaBarrio.Obtener().Dinero.ToString("N0");reputacion.text=$"REP  {ProgresoTechnopolis.Reputacion}/100";barraReputacion.rectTransform.sizeDelta=new Vector2(210*ProgresoTechnopolis.Reputacion/100f,8);
-        if (nivel >= 2) alimentar.GetComponentInChildren<TMP_Text>().text = $"Dar croquetas · {ProgresoTechnopolis.Croquetas}";
+        if (nivel == 2)
+        {
+            int raciones = ProgresoTechnopolis.Croquetas;
+            alimentar.GetComponentInChildren<TMP_Text>().text = ProgresoTechnopolis.BitEnfermo
+                ? "Bit necesita al veterinario"
+                : raciones == 0 ? "Croquetas · 0 raciones" : $"Dar croquetas a Bit · {raciones}";
+            alimentar.interactable = !ProgresoTechnopolis.BitEnfermo && raciones > 0;
+            alimentar.targetGraphic.color = alimentar.interactable ? new Color32(41, 103, 70, 255) : new Color32(24, 55, 65, 255);
+        }
+        else if (nivel == 3) alimentar.GetComponentInChildren<TMP_Text>().text = $"Dar croquetas · {ProgresoTechnopolis.Croquetas}";
         if(Time.unscaledTime>mensajeHasta)aviso.text="";
         if (EnInteriorBit)
         {
@@ -306,6 +318,13 @@ public sealed partial class AventuraBarrio : MonoBehaviour
         ActualizarGuiaObjetivo();
         if(nivel==2&&puertaAbierta&&movimiento.enabled&&Mathf.Abs(jugador.position.x-salida.x)<1.4f&&jugador.position.y<salida.y-.55f&&Vector2.Distance(jugador.position,salida)<2f){TechnopolisGameFlow.AvanzarCampana(3);return;}
         mision.text = "OBJETIVO\n" + TextoObjetivo();
+        if (nivel < 3 && !puertaAbierta)
+        {
+            var economia = EconomiaBarrio.Obtener();
+            mision.text += nivel == 1
+                ? $"\n\nSALIDA AL NIVEL 2\nSaldo: ${economia.Dinero:N0} / $10,000\nReputación: {ProgresoTechnopolis.Reputacion} / 20"
+                : $"\n\nSALIDA A SILICIO\nGanancias: ${economia.Ganancias:N0} / $20,000\nReputación: {ProgresoTechnopolis.Reputacion} / 60\nBit: {(ProgresoTechnopolis.BitCurado ? "recuperado" : "requiere atención veterinaria")}";
+        }
         bool bone=nivel==1&&objetoHueso&&Vector2.Distance(bit?bit.position:jugador.position,hueso)<5;
         if(bone&&!rastroAvisado){rastroAvisado=true;ProgresoTechnopolis.Activa="hueso";Avisar("¡Bit encontró un rastro! Busca la marca verde del mapa.");}
         bool missionNear=encargos.Any(e=>!ProgresoTechnopolis.Completada(e.id)&&Vector2.Distance(jugador.position,e.punto)<5);
@@ -321,6 +340,14 @@ public sealed partial class AventuraBarrio : MonoBehaviour
     }
     string TextoObjetivo()
     {
+        if (nivel == 2 && ProgresoTechnopolis.BitEnfermo)
+            return "Bit está enfermo. Llévalo a la veterinaria (VET).";
+        if (nivel == 2 && ProgresoTechnopolis.BitCurado && !ProgresoTechnopolis.BitComioCroquetas)
+            return ProgresoTechnopolis.Croquetas == 0
+                ? "Bit tiene hambre. Compra una ración en la tienda."
+                : "Pulsa «Dar croquetas a Bit» debajo de su barra de bienestar.";
+        if (nivel == 1 && mapaGrande.NombreObjetivo == "Biblioteca")
+            return "Visita la biblioteca (LIB) del barrio.";
         if (puertaAbierta) return "Ve a la salida (>) marcada en el mapa.";
 
         if (nivel == 1)
@@ -341,7 +368,7 @@ public sealed partial class AventuraBarrio : MonoBehaviour
             if (!ProgresoTechnopolis.Completada("inventario")) return "Habla con Don Dinero (!).";
         }
 
-        return nivel < 3 ? "Acceso: " + ProgresoTechnopolis.Requisito(nivel + 1) : "Visita a Don Dinero en Silicon Alley.";
+        return nivel < 3 ? "Reúne los requisitos de la salida." : "Visita a Don Dinero en Silicon Alley.";
     }
     string Prompt()
     {

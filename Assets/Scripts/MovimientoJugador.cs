@@ -10,12 +10,14 @@ using UnityEngine.InputSystem;
 public class MovimientoJugador : MonoBehaviour
 {
     [SerializeField] private float velocidad = 3f;
+    [SerializeField, Min(1f)] private float multiplicadorCarrera = 1.6f;
 
     private Rigidbody2D cuerpo;
     private Animator animator;
     private SpriteRenderer spriteRenderer;
     private Vector2 movimiento;
     private Vector2 movimientoTactil;
+    private bool corriendo;
 
     public void SetTouchDirection(Vector2 direccion)
     {
@@ -26,6 +28,7 @@ public class MovimientoJugador : MonoBehaviour
     {
         movimiento = Vector2.zero;
         movimientoTactil = Vector2.zero;
+        corriendo = false;
         if (animator != null) animator.SetBool("Caminando", false);
     }
 
@@ -70,7 +73,7 @@ public class MovimientoJugador : MonoBehaviour
     {
         Vector2 nuevaPosicion =
             cuerpo.position +
-            movimiento * velocidad * Time.fixedDeltaTime;
+            movimiento * velocidad * (corriendo ? multiplicadorCarrera : 1f) * Time.fixedDeltaTime;
 
         cuerpo.MovePosition(nuevaPosicion);
     }
@@ -80,6 +83,7 @@ public class MovimientoJugador : MonoBehaviour
 #if ENABLE_INPUT_SYSTEM
         movimiento = Vector2.zero;
         Keyboard teclado = Keyboard.current;
+        corriendo = teclado != null && (teclado.leftShiftKey.isPressed || teclado.rightShiftKey.isPressed);
 
         if (teclado != null)
         {
@@ -108,6 +112,7 @@ public class MovimientoJugador : MonoBehaviour
                 (abajo ? 1f : 0f);
         }
 #else
+        corriendo = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
         movimiento = new Vector2(
             Input.GetAxisRaw("Horizontal"),
             Input.GetAxisRaw("Vertical")

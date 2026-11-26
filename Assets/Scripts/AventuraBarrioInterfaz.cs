@@ -49,7 +49,10 @@ public sealed partial class AventuraBarrio
         if(terminales!=null)foreach(var t in terminales)ocupado|=t&&t.gameObject.activeInHierarchy;
         ocupado|=ramonaInteraccion&&ramonaInteraccion.panelDialogo&&ramonaInteraccion.panelDialogo.activeInHierarchy;
         foreach(var g in gruposHUD){g.alpha=ocupado?0:1;g.interactable=!ocupado;g.blocksRaycasts=!ocupado;}
-        if(mapaGrande)mapaGrande.PermitirAbrir=!ocupado;
+        if (mapaGrande) mapaGrande.PermitirAbrir = !ocupado && !EnInteriorBit;
+        mapa.parent.parent.gameObject.SetActive(!EnInteriorBit);
+        mision.transform.parent.gameObject.SetActive(!EnInteriorBit);
+        destinoContenedor.gameObject.SetActive(!EnInteriorBit && puntoUsuario.HasValue);
         if(destinoMundo)destinoMundo.gameObject.SetActive(!ocupado&&puntoUsuario.HasValue);
     }
     void RecibirMarcador(Vector2? punto)

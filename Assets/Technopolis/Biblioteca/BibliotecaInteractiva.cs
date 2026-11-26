@@ -120,6 +120,8 @@ public sealed class BibliotecaInteractiva : MonoBehaviour
         Mostrar(Vista.Indice);
     }
 
+    public event System.Action LibroCerrado;
+
     public void Cerrar()
     {
         if (!abierto) return;
@@ -128,6 +130,7 @@ public sealed class BibliotecaInteractiva : MonoBehaviour
         abierto = false;
         libro.SetActive(false);
         if (movimientoJugador && movimientoEstabaActivo) movimientoJugador.enabled = true;
+        if (isActiveAndEnabled) LibroCerrado?.Invoke();
     }
 
     void OnDisable()

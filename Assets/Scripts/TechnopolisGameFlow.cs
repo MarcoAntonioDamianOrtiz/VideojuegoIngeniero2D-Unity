@@ -191,6 +191,8 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     {
         if (sessionStarted)
         {
+            if (currentLevel == Nivel3)
+                FindFirstObjectByType<TechnopolisCampana>()?.ReanudarTrasFinal();
             CloseMenu();
             return;
         }

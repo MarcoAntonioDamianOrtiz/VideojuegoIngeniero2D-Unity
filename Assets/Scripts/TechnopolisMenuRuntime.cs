@@ -8,7 +8,7 @@ using UnityEngine.InputSystem;
 /// <summary>Input and actions for the editable menu Canvas.</summary>
 public sealed class TechnopolisMenuRuntime : MonoBehaviour
 {
-    enum Page { Main, Options, Credits }
+    enum Page { Main, Options, Credits, ConfirmNewGame }
 
     const string VolumeKey = "Technopolis.Menu.Volume";
     const string FullscreenKey = "Technopolis.Menu.Fullscreen";
@@ -34,6 +34,8 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
     float nextStickMove;
     Vector2 lastMousePosition;
     TechnopolisMenuAudio audioMenu;
+    string newGameLabel;
+    string continueLabel;
 
     void Awake()
     {
@@ -51,6 +53,8 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
         if (PlayerPrefs.HasKey(FullscreenKey))
             Screen.fullScreen = PlayerPrefs.GetInt(FullscreenKey, 1) == 1;
         lastMousePosition = Input.mousePosition;
+        newGameLabel = mainLabels[0].text;
+        continueLabel = mainLabels[1].text;
         audioMenu=GetComponent<TechnopolisMenuAudio>();
         if(!audioMenu)audioMenu=gameObject.AddComponent<TechnopolisMenuAudio>();
         OpenMain();
@@ -89,10 +93,23 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
     void OpenMain()
     {
         page = Page.Main;
+        mainLabels[0].text = newGameLabel;
+        mainLabels[1].text = continueLabel;
+        for (int i = 2; i < mainRows.Length; i++) mainRows[i].gameObject.SetActive(true);
         mainPanel.SetActive(true);
         optionsPanel.SetActive(false);
         creditsPanel.SetActive(false);
         selected = 0;
+        RefreshMainSelection();
+    }
+
+    void ConfirmNewGame()
+    {
+        page = Page.ConfirmNewGame;
+        selected = 0;
+        mainLabels[0].text = "CANCELAR";
+        mainLabels[1].text = "BORRAR GUARDADO";
+        for (int i = 2; i < mainRows.Length; i++) mainRows[i].gameObject.SetActive(false);
         RefreshMainSelection();
     }
 
@@ -120,7 +137,7 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
     {
         if (page == Page.Credits) return;
         int previous=selected;
-        int count = page == Page.Main ? mainRows.Length : optionsRows.Length;
+        int count = page == Page.ConfirmNewGame ? 2 : page == Page.Main ? mainRows.Length : optionsRows.Length;
         for (int attempt = 0; attempt < count; attempt++)
         {
             selected = (selected + direction + count) % count;
@@ -132,14 +149,14 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
 
     void RefreshSelection()
     {
-        if (page == Page.Main) RefreshMainSelection();
+        if (page == Page.Main || page == Page.ConfirmNewGame) RefreshMainSelection();
         else if (page == Page.Options) RefreshOptions();
         else RefreshCredits();
     }
 
     void RefreshMainSelection()
     {
-        bool canContinue = TechnopolisGameFlow.CanContinue;
+        bool canContinue = page == Page.ConfirmNewGame || TechnopolisGameFlow.CanContinue;
         if (!canContinue && selected == 1) selected = 2;
         for (int i = 0; i < mainLabels.Length; i++)
             mainLabels[i].color = i == 1 && !canContinue
@@ -192,6 +209,12 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
 
     void Activate()
     {
+        if (page == Page.ConfirmNewGame)
+        {
+            if (selected == 0) { audioMenu.Volver(); OpenMain(); }
+            else StartNewGame();
+            return;
+        }
         if(page==Page.Credits||(page==Page.Options&&selected==2))audioMenu.Volver();
         else if(page!=Page.Options)audioMenu.Confirmar();
         if (page == Page.Options)
@@ -208,7 +231,10 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
 
         switch (selected)
         {
-            case 0: audioMenu.PrepararSalida();TechnopolisGameFlow.StartNewGame(); break;
+            case 0:
+                if (TechnopolisGameFlow.CanContinue) ConfirmNewGame();
+                else StartNewGame();
+                break;
             case 1: if (TechnopolisGameFlow.CanContinue){audioMenu.PrepararSalida();TechnopolisGameFlow.ContinueGame();}break;
             case 2: OpenOptions(); break;
             case 3: OpenCredits(); break;
@@ -222,6 +248,12 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
         }
     }
 
+    void StartNewGame()
+    {
+        audioMenu.PrepararSalida();
+        TechnopolisGameFlow.StartNewGame();
+    }
+
     void HandlePointer()
     {
         Vector2 pointer = Input.mousePosition;
@@ -229,11 +261,11 @@ public sealed class TechnopolisMenuRuntime : MonoBehaviour
         lastMousePosition = pointer;
         if (!moved && !Input.GetMouseButtonDown(0)) return;
 
-        RectTransform[] rows = page == Page.Main ? mainRows :
+        RectTransform[] rows = page == Page.Main || page == Page.ConfirmNewGame ? mainRows :
             page == Page.Options ? optionsRows : new[] { creditsBackRow };
         for (int i = 0; i < rows.Length; i++)
         {
-            if (!rows[i] || !RectTransformUtility.RectangleContainsScreenPoint(rows[i], pointer)) continue;
+            if (!rows[i] || !rows[i].gameObject.activeInHierarchy || !RectTransformUtility.RectangleContainsScreenPoint(rows[i], pointer)) continue;
             if (page == Page.Main && i == 1 && !TechnopolisGameFlow.CanContinue) return;
             if (selected != i)
             {

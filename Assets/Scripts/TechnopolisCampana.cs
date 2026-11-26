@@ -64,16 +64,56 @@ public sealed class TechnopolisCampana : MonoBehaviour
     public bool TieneInteraccion => nivel==3&&oficina==Oficina.Calle&&Cerca&&!TechnopolisGameFlow.IsMenuOpen;
     public string AccionInteraccion => habitantes&&habitantes.CercaDiego(jugador.transform.position)?"Hablar con Diego Byte (E)":"Hablar con Don Dinero (E)";
     public void AbrirInteraccion(){if(TieneInteraccion)Interactuar();}
+    public void ReanudarTrasFinal()
+    {
+        if (oficina != Oficina.Final) return;
+
+        oficina = Oficina.Calle;
+        jugador.enabled = true;
+    }
+
     bool TerminalAbierta => terminal && terminal.gameObject.activeInHierarchy;
 
     void Start()
     {
+        CrearPerimetro();
         if (jugador.TryGetComponent<Collider2D>(out _)) return;
         Bounds sprite = jugador.GetComponent<SpriteRenderer>().bounds;
         Transform t = jugador.transform;
         var pies = jugador.gameObject.AddComponent<BoxCollider2D>();
         pies.offset = t.InverseTransformPoint(new Vector3(sprite.center.x, sprite.min.y + .12f, t.position.z));
         pies.size = new Vector2(.42f / Mathf.Abs(t.lossyScale.x), .24f / Mathf.Abs(t.lossyScale.y));
+    }
+
+    void CrearPerimetro()
+    {
+        Vector2[] puntos;
+        if (nivel == 3)
+        {
+            // El terreno principal llega a (82, 88) y el barrio norte a (80, 92).
+            puntos = new[] { Vector2.zero, new Vector2(82, 0), new Vector2(82, 88),
+                new Vector2(80, 88), new Vector2(80, 92), new Vector2(0, 92), Vector2.zero };
+        }
+        else
+        {
+            var distrito = FindFirstObjectByType<DistritoNivel2>();
+            var terreno = GameObject.Find("Terreno_Base_Sprite")?.GetComponent<SpriteRenderer>();
+            if (!distrito && !terreno) return;
+
+            Bounds limites = distrito ? distrito.limites : terreno.bounds;
+            Vector2 min = limites.min;
+            Vector2 max = limites.max;
+            puntos = new[] { min, new Vector2(max.x, min.y), max, new Vector2(min.x, max.y), min };
+        }
+
+        var perimetro = new GameObject("Perímetro del mapa");
+        perimetro.transform.SetParent(transform, false);
+        var borde = perimetro.AddComponent<EdgeCollider2D>();
+        borde.points = puntos;
+        borde.adjacentStartPoint = puntos[puntos.Length - 2];
+        borde.adjacentEndPoint = puntos[1];
+        borde.useAdjacentStartPoint = true;
+        borde.useAdjacentEndPoint = true;
     }
 
     void Update()

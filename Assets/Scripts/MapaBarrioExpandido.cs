@@ -18,6 +18,7 @@ public sealed class MapaBarrioExpandido : MonoBehaviour
     RectTransform superficie;
     TMP_Text informacion,seleccion;
     Vector2? marcador;
+    public string NombreObjetivo { get; private set; }
     float tiempoAnterior;
     string clave;
     static MapaBarrioExpandido abierto;
@@ -66,7 +67,7 @@ public sealed class MapaBarrioExpandido : MonoBehaviour
         Texto("▲ Alex   ! misión   ● edificio   X destino",panel,new Vector2(30,-905),new Vector2(1450,35),22);
         seleccion=Texto("X",superficie,Vector2.zero,new Vector2(40,40),36);seleccion.color=Cian;seleccion.rectTransform.pivot=new Vector2(.5f,.5f);seleccion.gameObject.SetActive(false);
         canvas.enabled=false;camara.enabled=false;
-        if(PlayerPrefs.GetInt(clave+".Set",0)==1){marcador=new Vector2(PlayerPrefs.GetFloat(clave+".X"),PlayerPrefs.GetFloat(clave+".Y"));cambiado(marcador);}
+        RestaurarMarcadorPersonal();
     }
     public void Agregar(Transform target,Vector2 point,string label,Color color,string id)
     {
@@ -91,9 +92,41 @@ public sealed class MapaBarrioExpandido : MonoBehaviour
     }
     public void ColocarMarcador(Vector2 point)
     {
+        NombreObjetivo = null;
         marcador=point;PlayerPrefs.SetInt(clave+".Set",1);PlayerPrefs.SetFloat(clave+".X",point.x);PlayerPrefs.SetFloat(clave+".Y",point.y);PlayerPrefs.Save();cambiado(marcador);
     }
-    public void Quitar(){marcador=null;PlayerPrefs.DeleteKey(clave+".Set");PlayerPrefs.DeleteKey(clave+".X");PlayerPrefs.DeleteKey(clave+".Y");PlayerPrefs.Save();cambiado(null);}
+    public void MarcarObjetivo(string nombre, Vector2 punto)
+    {
+        NombreObjetivo = nombre;
+        marcador = punto;
+        cambiado(marcador);
+    }
+    public void QuitarObjetivo()
+    {
+        if (NombreObjetivo == null) return;
+        NombreObjetivo = null;
+        RestaurarMarcadorPersonal();
+    }
+    void RestaurarMarcadorPersonal()
+    {
+        marcador = PlayerPrefs.GetInt(clave + ".Set", 0) == 1
+            ? new Vector2(PlayerPrefs.GetFloat(clave + ".X"), PlayerPrefs.GetFloat(clave + ".Y"))
+            : (Vector2?)null;
+        cambiado(marcador);
+    }
+    public void Quitar()
+    {
+        if (NombreObjetivo != null)
+        {
+            QuitarObjetivo();
+            return;
+        }
+        PlayerPrefs.DeleteKey(clave + ".Set");
+        PlayerPrefs.DeleteKey(clave + ".X");
+        PlayerPrefs.DeleteKey(clave + ".Y");
+        PlayerPrefs.Save();
+        RestaurarMarcadorPersonal();
+    }
     void Posicionar(RectTransform r,Vector2 world){Vector3 v=camara.WorldToViewportPoint(world);r.anchorMin=r.anchorMax=Vector2.zero;r.anchoredPosition=new Vector2(v.x*800,v.y*800);}
     void Update()
     {
@@ -101,8 +134,14 @@ public sealed class MapaBarrioExpandido : MonoBehaviour
         if(abierto!=this)return;
         if(Input.GetKeyDown(KeyCode.Escape)){Cerrar();return;}
         foreach(var p in puntos){p.etiqueta.gameObject.SetActive(p.id==""||!ProgresoTechnopolis.Completada(p.id));Posicionar(p.etiqueta,p.destino?(Vector2)p.destino.position:p.pos);}
-        seleccion.gameObject.SetActive(marcador.HasValue);
-        if(marcador.HasValue){Posicionar(seleccion.rectTransform,marcador.Value);informacion.text=$"DESTINO PERSONAL\n{Mathf.CeilToInt(Vector2.Distance(jugador.position,marcador.Value))} metros";}else informacion.text="Sin marcador personal";
+        seleccion.gameObject.SetActive(marcador.HasValue && NombreObjetivo == null);
+        if (marcador.HasValue)
+        {
+            if (NombreObjetivo == null) Posicionar(seleccion.rectTransform, marcador.Value);
+            string nombre = NombreObjetivo ?? "DESTINO PERSONAL";
+            informacion.text = $"{nombre}\n{Mathf.CeilToInt(Vector2.Distance(jugador.position, marcador.Value))} metros";
+        }
+        else informacion.text = "Sin marcador personal";
     }
     void OnDestroy(){if(abierto==this){abierto=null;Time.timeScale=tiempoAnterior;}if(camara)Destroy(camara.gameObject);if(textura){textura.Release();Destroy(textura);}}
 }

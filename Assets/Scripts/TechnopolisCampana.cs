@@ -120,7 +120,7 @@ public sealed class TechnopolisCampana : MonoBehaviour
     {
         using (MedirObjetivo.Auto())
         {
-            if (!jugador || cargando || oficina != Oficina.Calle || calibrando || TerminalAbierta || TechnopolisGameFlow.IsMenuOpen) return;
+            if (!jugador || !jugador.enabled || cargando || oficina != Oficina.Calle || calibrando || TerminalAbierta || TechnopolisGameFlow.IsMenuOpen) return;
             if (Cerca && Input.GetKeyDown(KeyCode.E)) Interactuar();
         }
     }
@@ -154,7 +154,7 @@ public sealed class TechnopolisCampana : MonoBehaviour
             return;
         }
         paso = 1;
-        ProgresoTechnopolis.Premiar("taller", 5000, 20);
+        ProgresoTechnopolis.Premiar("taller", ProgresoTechnopolis.PagoTaller, 20);
         objetivo = "Módulo calibrado. Trabajo del taller completado.";
     }
 
@@ -169,7 +169,7 @@ public sealed class TechnopolisCampana : MonoBehaviour
     {
         final = "El contrato sigue sobre la mesa, sin firmar.\n\n" +
             "Alex mira a Bit. Antes de responder, una notificación ilumina su pantalla…\n\n" +
-            "Su aventura apenas comienza.\n\nCONTINUARÁ…";
+            "Su aventura apenas comienza.";
         oficina = Oficina.Final;
         Sonido(true);
     }
@@ -238,8 +238,8 @@ public sealed class TechnopolisCampana : MonoBehaviour
                     "Continuar", DejarContratoEnSuspenso, null, null);
                 break;
             case Oficina.Final:
-                dialogoOficina.Mostrar(false, "FIN DE LA DEMO\n\n" + final,
-                    "Volver al menú", TechnopolisGameFlow.ReturnToMenu, null, null);
+                dialogoOficina.Mostrar(false, final,
+                    "Ver final", TechnopolisGameFlow.MostrarFinDemo, null, null);
                 break;
         }
     }

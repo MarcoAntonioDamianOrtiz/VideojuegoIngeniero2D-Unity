@@ -6,6 +6,31 @@ public class CamaraSeguirJugador : MonoBehaviour
     private Camera camara;
     private SpriteRenderer terreno;
     private DistritoNivel2 distrito;
+    private Vector2? centroInterior;
+    private float zoomExterior;
+    private Color fondoExterior;
+    private CameraClearFlags borradoExterior;
+
+    public void EnfocarInterior(Vector2? centro)
+    {
+        if (!camara) return;
+        if (centro.HasValue && !centroInterior.HasValue)
+        {
+            zoomExterior = camara.orthographicSize;
+            fondoExterior = camara.backgroundColor;
+            borradoExterior = camara.clearFlags;
+            camara.clearFlags = CameraClearFlags.SolidColor;
+            camara.backgroundColor = new Color32(22, 26, 29, 255);
+        }
+        if (!centro.HasValue && centroInterior.HasValue)
+        {
+            camara.orthographicSize = zoomExterior;
+            camara.backgroundColor = fondoExterior;
+            camara.clearFlags = borradoExterior;
+        }
+        centroInterior = centro;
+        LateUpdate();
+    }
 
     private void Awake()
     {
@@ -18,6 +43,14 @@ public class CamaraSeguirJugador : MonoBehaviour
 
     private void LateUpdate()
     {
+        if (centroInterior.HasValue)
+        {
+            Vector2 centro = centroInterior.Value;
+            camara.orthographicSize = Mathf.Max(4.8f, 7.5f / Mathf.Max(.1f, camara.aspect));
+            transform.position = new Vector3(centro.x, centro.y, transform.position.z);
+            return;
+        }
+
         if (objetivo == null)
             return;
 

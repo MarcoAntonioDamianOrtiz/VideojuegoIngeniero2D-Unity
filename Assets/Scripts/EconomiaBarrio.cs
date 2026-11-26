@@ -7,7 +7,11 @@ public sealed class EconomiaBarrio : MonoBehaviour
 {
     const string ClaveDinero = "Technopolis.Level1.Dinero";
     const string ClavePagoPanaderia = "Technopolis.Level1.PanaderiaPagada";
-    const int PagoPanaderia = 10000;
+    internal const int PagoPanaderia = 10000;
+    const string ClaveGanancias = "Technopolis.Campaign.Ganancias";
+    int ganancias;
+    public int Ganancias => ganancias;
+    public static bool PanaderiaPagadaEnGuardado => PlayerPrefs.GetInt(ClavePagoPanaderia, 0) == 1;
 
     public TMP_Text textoCantidad;
 
@@ -37,7 +41,8 @@ public sealed class EconomiaBarrio : MonoBehaviour
     {
         instancia = this;
         dinero = Mathf.Max(0, PlayerPrefs.GetInt(ClaveDinero, 0));
-        panaderiaPagada = PlayerPrefs.GetInt(ClavePagoPanaderia, 0) == 1;
+        panaderiaPagada = PanaderiaPagadaEnGuardado;
+        ganancias = PlayerPrefs.GetInt(ClaveGanancias, Mathf.Max(dinero, ProgresoTechnopolis.GananciasPrevias));
         ActualizarTexto();
     }
 
@@ -50,6 +55,7 @@ public sealed class EconomiaBarrio : MonoBehaviour
     {
         if (cantidad <= 0) return;
         dinero = dinero > int.MaxValue - cantidad ? int.MaxValue : dinero + cantidad;
+        ganancias = (int)System.Math.Min((long)ganancias + cantidad, int.MaxValue);
         Guardar();
     }
 
@@ -69,9 +75,11 @@ public sealed class EconomiaBarrio : MonoBehaviour
         ProgresoTechnopolis.Reiniciar();
         PlayerPrefs.DeleteKey(ClaveDinero);
         PlayerPrefs.DeleteKey(ClavePagoPanaderia);
+        PlayerPrefs.DeleteKey(ClaveGanancias);
         PlayerPrefs.Save();
         if (!instancia) return;
         instancia.dinero = 0;
+        instancia.ganancias = 0;
         instancia.panaderiaPagada = false;
         instancia.ActualizarTexto();
     }
@@ -79,6 +87,7 @@ public sealed class EconomiaBarrio : MonoBehaviour
     void Guardar()
     {
         PlayerPrefs.SetInt(ClaveDinero, dinero);
+        PlayerPrefs.SetInt(ClaveGanancias, ganancias);
         PlayerPrefs.SetInt(ClavePagoPanaderia, panaderiaPagada ? 1 : 0);
         PlayerPrefs.Save();
         ActualizarTexto();

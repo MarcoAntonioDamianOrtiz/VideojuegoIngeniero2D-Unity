@@ -14,6 +14,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     const string Nivel2 = "Nivel2";
     public static bool EsNivel2(string escena) => escena == Nivel2 || escena == "EscenaNivel2Taller";
     const string Nivel3 = "EscenaNivel3Silicio";
+    const string EscenaFinDemo = "EscenaFinDemo";
     const string NivelGuardado = "Technopolis.Campaign.Scene";
     static string currentLevel = LevelScene;
 
@@ -41,12 +42,13 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     static bool startWithoutMenu;
     static bool restoreOnLoad;
     static bool introPendiente;
+    static bool controlesAbiertos;
 
     float saveElapsed;
 
     public static bool HasSavedGame => PlayerPrefs.GetInt(SaveVersion, 0) == 1;
     public static bool CanContinue => sessionStarted || HasSavedGame || PlayerPrefs.HasKey(NivelGuardado);
-    public static bool IsMenuOpen => menuOpen || HistoriaAlexIntro.IsPlaying || MapaBarrioExpandido.Abierto;
+    public static bool IsMenuOpen => menuOpen || HistoriaAlexIntro.IsPlaying || controlesAbiertos || MapaBarrioExpandido.Abierto;
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     static void Initialize()
@@ -62,6 +64,7 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
         startWithoutMenu = false;
         restoreOnLoad = false;
         introPendiente = false;
+        controlesAbiertos = false;
         Time.timeScale = 1f;
     }
 
@@ -153,7 +156,35 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     {
         if (!introPendiente) return;
         introPendiente = false;
-        HistoriaAlexIntro.Mostrar(SavePosition);
+        HistoriaAlexIntro.Mostrar(MostrarControles);
+    }
+
+    static void MostrarControles()
+    {
+        controlesAbiertos = true;
+        Time.timeScale = 0f;
+        TechnopolisPantallaHolografica.MostrarControles(() =>
+        {
+            controlesAbiertos = false;
+            Time.timeScale = 1f;
+            SavePosition();
+        });
+    }
+
+    public static void MostrarFinDemo()
+    {
+        SavePosition();
+        sessionStarted = false;
+        player = null;
+        Time.timeScale = 1f;
+        SceneManager.LoadScene(EscenaFinDemo, LoadSceneMode.Single);
+    }
+
+    public static void VolverAlMenuDesdeFinal()
+    {
+        firstLevelLoad = true;
+        menuOpen = false;
+        SceneManager.LoadScene(LevelScene, LoadSceneMode.Single);
     }
 
     public static void ContinueGame()
@@ -234,8 +265,12 @@ public sealed class TechnopolisGameFlow : MonoBehaviour
     static void SavePosition()
     {
         if (!sessionStarted || !player) return;
-        PlayerPrefs.SetFloat(SaveX, player.position.x);
-        PlayerPrefs.SetFloat(SaveY, player.position.y);
+        var aventura = FindFirstObjectByType<AventuraBarrio>();
+        Vector2 posicion = aventura && aventura.PosicionExteriorBit.HasValue
+            ? aventura.PosicionExteriorBit.Value
+            : (Vector2)player.position;
+        PlayerPrefs.SetFloat(SaveX, posicion.x);
+        PlayerPrefs.SetFloat(SaveY, posicion.y);
         PlayerPrefs.SetInt(SaveVersion, 1);
         PlayerPrefs.SetString(NivelGuardado, currentLevel);
         PlayerPrefs.Save();
